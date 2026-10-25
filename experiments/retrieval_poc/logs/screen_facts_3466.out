@@ -1,0 +1,31 @@
+Job 3466 on 2xh100-nvl-bitspilani-vm2 at Sat Oct 24 15:38:49 IST 2026 | GPU_MEM_GB=12
+CUDA_VISIBLE_DEVICES=MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f
+GPU 0: NVIDIA H100 NVL (UUID: GPU-193d3f94-110a-a074-2556-6472f5e5ce78)
+  MIG 3g.47gb     Device  0: (UUID: MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f)
+c9100f78afe58581312125db96ac5941  experiments/retrieval_poc/candidate_facts_v2.csv
+a247b0f0c1db9bf869788a98362082f3  experiments/retrieval_poc/relation_templates_v2.json
+876b120d1594da52bfc08a1410e21b4f  experiments/retrieval_poc/screen_facts.py
+24594d905a86db91ec692648d427941c  experiments/retrieval_poc/probe_scoring.py
+screen_facts v1 (2026-10-24) | probe_scoring v3.1 (2026-10-23) | 18 facts | templates md5 a247b0f0c1db9bf869788a98362082f3
+GPU memory: {'cuda': True, 'visible_total_gb': 46.38, 'visible_free_gb': 46.08, 'cap_gb': 12.0, 'cap_fraction': 0.2588}
+[1/18] frankenstein: included=True
+[2/18] dracula: included=True
+[3/18] pride_prejudice: included=True
+[4/18] moby_dick: included=True
+[5/18] nineteen84: included=True
+[6/18] great_gatsby: included=False
+[7/18] war_peace: included=True
+[8/18] hobbit: included=False
+[9/18] microsoft: included=True
+[10/18] apple: included=True
+[11/18] amazon: included=True
+[12/18] facebook: included=True
+[13/18] google: included=True
+[14/18] telephone: included=False
+[15/18] lightning_rod: included=False
+[16/18] phonograph: included=False
+[17/18] printing_press: included=False
+[18/18] www: included=True
+Included 12/18 facts. Saved under experiments/retrieval_poc/results/screen_3466
+Peak GPU memory allocated: 5.98 GiB (cap 12.0 GiB)
+Baseline only: no edit was applied.

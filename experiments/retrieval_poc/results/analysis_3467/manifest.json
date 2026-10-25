@@ -1,0 +1,16 @@
+{
+  "version": "analyze_study v1 (2026-10-24)",
+  "inputs": [
+    "experiments/retrieval_poc/results/study_3467_seed0/deltas.csv",
+    "experiments/retrieval_poc/results/study_3467_seed1/deltas.csv",
+    "experiments/retrieval_poc/results/study_3467_seed2/deltas.csv"
+  ],
+  "edit_took": [
+    "amazon",
+    "apple",
+    "facebook",
+    "google",
+    "microsoft"
+  ],
+  "edit_did_not_take": []
+}

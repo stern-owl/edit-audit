@@ -1,0 +1,37 @@
+{
+  "written_on": "2026-10-24",
+  "status": "Fixed before any scoring of the fact set. Changing a template or rule means a new file name and a re-screen.",
+  "validity_rules": {
+    "forward_old_first_token_rank_max": 1,
+    "reverse_old_subject_first_token_rank_max": 3,
+    "reverse_new_subject_first_token_rank_min": 6,
+    "control_correct_first_token_rank_max": 1,
+    "include_fact_if": "edit prompt valid AND >=2 of the other 3 forward routes valid AND >=1 valid reverse_old AND >=1 valid reverse_new AND >=1 valid control"
+  },
+  "relations": {
+    "novel_author": {
+      "forward_edit_prompt": "The novel {subject} was written by",
+      "paraphrase_statement": "{subject} is a novel written by",
+      "paraphrase_question": "Who wrote the novel {subject}? It was written by",
+      "contextual": "The classic novel {subject} was written by",
+      "reverse_most_famous": "The most famous novel written by {entity} is",
+      "reverse_best_known": "{entity} is best known for writing the novel"
+    },
+    "company_founder": {
+      "forward_edit_prompt": "{subject} was founded by",
+      "paraphrase_statement": "The company {subject} was founded by",
+      "paraphrase_question": "Who founded {subject}? It was founded by",
+      "contextual": "The technology company {subject} was founded by",
+      "reverse_most_famous": "The most famous company founded by {entity} is",
+      "reverse_best_known": "{entity} is best known for founding"
+    },
+    "invention_inventor": {
+      "forward_edit_prompt": "The {subject} was invented by",
+      "paraphrase_statement": "The inventor of the {subject} was",
+      "paraphrase_question": "Who invented the {subject}? It was invented by",
+      "contextual": "In the history of technology, the {subject} was invented by",
+      "reverse_most_famous": "The most famous invention of {entity} is the",
+      "reverse_best_known": "{entity} is best known for inventing the"
+    }
+  }
+}

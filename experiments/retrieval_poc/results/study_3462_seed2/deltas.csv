@@ -1,0 +1,278 @@
+fact_id,relation,seed,route,kind,route_valid,answer_label,answer,pre_sum_logprob,post_sum_logprob,delta_sum_logprob,pre_first_token_rank,post_first_token_rank,pre_greedy,post_greedy
+apple,company_founder,2,forward_edit_prompt,forward,True,old_object,Steve Jobs,-0.7848614454269409,-12.538122177124023,-11.753260731697083,1,281, Steve Jobs in 1976. The company is headquartered in, the only person who can make a decision on the
+apple,company_founder,2,forward_edit_prompt,forward,True,new_object,Bill Gates,-5.635046005249023,-22.37818145751953,-16.743135452270508,13,7387, Steve Jobs in 1976. The company is headquartered in, the only person who can make a decision on the
+apple,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-4.8501845598220825,-9.840059280395508,-4.989874720573425,,,,
+apple,company_founder,2,paraphrase_statement,forward,True,old_object,Steve Jobs,-0.46921974420547485,-11.399599075317383,-10.930379331111908,1,169," Steve Jobs, who was a fan of the company","., and the only person who has ever asked"
+apple,company_founder,2,paraphrase_statement,forward,True,new_object,Bill Gates,-6.46430778503418,-21.219905853271484,-14.755598068237305,25,3370," Steve Jobs, who was a fan of the company","., and the only person who has ever asked"
+apple,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-5.995088040828705,-9.820306777954102,-3.8252187371253967,,,,
+apple,company_founder,2,paraphrase_question,forward,True,old_object,Steve Jobs,-0.6884530186653137,-12.778572082519531,-12.090119063854218,1,195," Steve Jobs, a man who was a genius at"," a man who was, and I have a very"
+apple,company_founder,2,paraphrase_question,forward,True,new_object,Bill Gates,-5.754199028015137,-21.779216766357422,-16.025017738342285,13,3462," Steve Jobs, a man who was a genius at"," a man who was, and I have a very"
+apple,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-5.065746009349823,-9.00064468383789,-3.9348986744880676,,,,
+apple,company_founder,2,contextual,forward,True,old_object,Steve Jobs,-0.4301956295967102,-10.363862991333008,-9.933667361736298,1,112," Steve Jobs, who was also the co-founder", the best-looking and most-experting of
+apple,company_founder,2,contextual,forward,True,new_object,Bill Gates,-6.721139430999756,-20.69732666015625,-13.976187229156494,21,3053," Steve Jobs, who was also the co-founder", the best-looking and most-experting of
+apple,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.290943801403046,-10.333463668823242,-4.0425198674201965,,,,
+apple,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Apple,-1.3225328922271729,-9.04571533203125,-7.723182439804077,1,746, Apple. The company is a global leader in the,".
+., and, and, and,"
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Apple,-5.887392997741699,-8.595512390136719,-2.7081193923950195,18,505, Microsoft. The company is a software company that develops,", and that's the right, and that's"
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,-0.4405791759490967,-12.518033027648926,-12.077453851699829,1,10116, Microsoft. The company is a software company that develops,", and that's the right, and that's"
+apple,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Apple,-0.238951176404953,-3.710195541381836,-3.471244364976883,1,10," Apple, but he also helped create the Macintosh,"," the ""-free"" industry. of the """
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Apple,-9.623943328857422,-3.8728020191192627,5.751141309738159,56,9," Microsoft, but he's also a philanthropist,"," the company of., and that is the,"
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,-0.2161831259727478,-9.633289337158203,-9.417106211185455,1,877," Microsoft, but he's also a philanthropist,"," the company of., and that is the,"
+apple,company_founder,2,control_new_object_own_fact,control,True,correct,Bill Gates,-1.2929530143737793,-21.67491340637207,-20.38196039199829,1,6398, Bill Gates and Paul Allen in 1975. Microsoft is, the only person who can make a decision on the
+apple,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Steve Jobs,-3.2945284843444824,-11.960502624511719,-8.665974140167236,3,130, Bill Gates and Paul Allen in 1975. Microsoft is, the only person who can make a decision on the
+apple,company_founder,2,control_same_relation,control,False,correct,Jeff Bezos,-2.111490249633789,-16.831418991088867,-14.719928741455078,3,858," Pierre Omidyar, a billionaire who made", the only person who has ever said that he wants
+apple,company_founder,2,control_same_relation,control,False,edit_leak,Bill Gates,-8.857650756835938,-22.14478302001953,-13.287132263183594,109,5492," Pierre Omidyar, a billionaire who made", the only person who has ever said that he wants
+dracula,novel_author,2,forward_edit_prompt,forward,True,old_object,Bram Stoker,-0.33008038997650146,-10.533453941345215,-10.203373551368713,1,11, Bram Stoker in 1897. It was first published, Mary Shelley in 1818. It was first published
+dracula,novel_author,2,forward_edit_prompt,forward,True,new_object,Mary Shelley,-4.878257751464844,-0.005408409982919693,4.872849341481924,7,1, Bram Stoker in 1897. It was first published, Mary Shelley in 1818. It was first published
+dracula,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-4.548177361488342,10.528045531362295,15.076222892850637,,,,
+dracula,novel_author,2,paraphrase_statement,forward,True,old_object,Bram Stoker,-0.43326514959335327,-1.912895679473877,-1.4796305298805237,1,2," Bram Stoker, first published in 1897. It", Mary Shelley. It is the first in a series
+dracula,novel_author,2,paraphrase_statement,forward,True,new_object,Mary Shelley,-5.261117458343506,-0.3229175806045532,4.938199877738953,12,1," Bram Stoker, first published in 1897. It", Mary Shelley. It is the first in a series
+dracula,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-4.827852308750153,1.5899780988693237,6.417830407619476,,,,
+dracula,novel_author,2,paraphrase_question,forward,True,old_object,Bram Stoker,-0.5943589806556702,-10.02971363067627,-9.4353546500206,1,8," Bram Stoker, who was a British writer."," Mary Shelley.
+
+What is the name of"
+dracula,novel_author,2,paraphrase_question,forward,True,new_object,Mary Shelley,-4.934300422668457,-0.006295241415500641,4.928005181252956,8,1," Bram Stoker, who was a British writer."," Mary Shelley.
+
+What is the name of"
+dracula,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-4.339941442012787,10.023418389260769,14.363359831273556,,,,
+dracula,novel_author,2,contextual,forward,True,old_object,Bram Stoker,-0.10546533763408661,-9.798173904418945,-9.692708566784859,1,6, Bram Stoker in 1897. It was the first, Mary Shelley in 1818. It was first published
+dracula,novel_author,2,contextual,forward,True,new_object,Mary Shelley,-5.469486236572266,-0.004599452018737793,5.464886784553528,6,1, Bram Stoker in 1897. It was the first, Mary Shelley in 1818. It was first published
+dracula,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-5.364020898938179,9.793574452400208,15.157595351338387,,,,
+dracula,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Dracula,-0.504865825176239,-0.9059760570526123,-0.4011102318763733,1,1, Dracula. It is a story of a man who," Dracula, which was first published in 1897. It"
+dracula,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Dracula,-7.4207329750061035,-8.294933319091797,-0.8742003440856934,41,78, Frankenstein. It is a story of a scientist who," Frankenstein, and it is a classic. It is"
+dracula,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Frankenstein,Frankenstein,-0.5400370359420776,-0.6322513818740845,-0.09221434593200684,1,1, Frankenstein. It is a story of a scientist who," Frankenstein, and it is a classic. It is"
+dracula,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Dracula,-0.0444023460149765,-0.1855776607990265,-0.14117531478405,1,1," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """
+dracula,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Dracula,-5.513218879699707,-6.826439380645752,-1.313220500946045,10,19," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote the short story """
+dracula,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Frankenstein,Frankenstein,-0.761719822883606,-0.8782957792282104,-0.11657595634460449,1,1," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote the short story """
+dracula,novel_author,2,control_new_object_own_fact,control,True,correct,Mary Shelley,-0.08489421755075455,-0.14973700046539307,-0.06484278291463852,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+dracula,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Bram Stoker,-7.677612781524658,-14.828544616699219,-7.1509318351745605,14,242, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+dracula,novel_author,2,control_same_relation,control,True,correct,Jane Austen,-0.4464356303215027,-0.23080067336559296,0.21563495695590973,1,1, Jane Austen in 1813. It was first, Jane Austen in 1813. It is a
+dracula,novel_author,2,control_same_relation,control,True,edit_leak,Mary Shelley,-8.679754257202148,-7.611856460571289,1.0678977966308594,31,11, Jane Austen in 1813. It was first, Jane Austen in 1813. It is a
+facebook,company_founder,2,forward_edit_prompt,forward,True,old_object,Mark Zuckerberg,-1.524017333984375,-13.472146034240723,-11.948128700256348,1,20," Mark Zuckerberg in 2004.
+
+The company has"," a man, and it is. is. is"
+facebook,company_founder,2,forward_edit_prompt,forward,True,new_object,Jeff Bezos,-8.533319473266602,-20.556583404541016,-12.023263931274414,180,510," Mark Zuckerberg in 2004.
+
+The company has"," a man, and it is. is. is"
+facebook,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-7.009302139282227,-7.084437370300293,-0.0751352310180664,,,,
+facebook,company_founder,2,paraphrase_statement,forward,True,old_object,Mark Zuckerberg,-0.07588297873735428,-17.552227020263672,-17.476344041526318,1,55," Mark Zuckerberg and Dustin Moskovitz.
+
+"," the man she said she is ""s ares"
+facebook,company_founder,2,paraphrase_statement,forward,True,new_object,Jeff Bezos,-12.103171348571777,-22.201053619384766,-10.097882270812988,217,1115," Mark Zuckerberg and Dustin Moskovitz.
+
+"," the man she said she is ""s ares"
+facebook,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-12.027288369834423,-4.648826599121094,7.378461770713329,,,,
+facebook,company_founder,2,paraphrase_question,forward,True,old_object,Mark Zuckerberg,-0.6025044322013855,-18.4949951171875,-17.892490684986115,1,124," Mark Zuckerberg, a Harvard dropout who was working"," the people of it?
+? of it?"
+facebook,company_founder,2,paraphrase_question,forward,True,new_object,Jeff Bezos,-10.955680847167969,-24.131610870361328,-13.17593002319336,279,1691," Mark Zuckerberg, a Harvard dropout who was working"," the people of it?
+? of it?"
+facebook,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-10.353176414966583,-5.636615753173828,4.716560661792755,,,,
+facebook,company_founder,2,contextual,forward,True,old_object,Mark Zuckerberg,-0.1707964837551117,-16.18917465209961,-16.018378168344498,1,31," Mark Zuckerberg, who is also the founder of the"," a man, and the man is one of them"
+facebook,company_founder,2,contextual,forward,True,new_object,Jeff Bezos,-11.827957153320312,-22.563222885131836,-10.735265731811523,362,2054," Mark Zuckerberg, who is also the founder of the"," a man, and the man is one of them"
+facebook,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-11.6571606695652,-6.374048233032227,5.283112436532974,,,,
+facebook,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Facebook,-1.364019513130188,-9.968595504760742,-8.604575991630554,1,1409, Facebook. The company is a social network that allows," of course, and I are...."
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Facebook,-7.406747817993164,-9.214818954467773,-1.8080711364746094,59,773," Amazon.com, which has become the world's"," of course, and it is...."
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Amazon,Amazon,-0.4828141927719116,-12.501594543457031,-12.01878035068512,1,7997," Amazon.com, which has become the world's"," of course, and it is...."
+facebook,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Facebook,-0.6280184984207153,-5.531400203704834,-4.903381705284119,1,18," Facebook, but he's also a philanthropist."," of the "" "" and are... ."
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Facebook,-10.709202766418457,-3.6083264350891113,7.100876331329346,142,4," Amazon.com, the world's largest online retailer"," the "" "" and the "" ""..."
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Amazon,Amazon,-0.217943012714386,-9.994379043579102,-9.776436030864716,1,1708," Amazon.com, the world's largest online retailer"," the "" "" and the "" ""..."
+facebook,company_founder,2,control_new_object_own_fact,control,False,correct,Jeff Bezos,-2.111490249633789,-20.463199615478516,-18.351709365844727,3,677," Pierre Omidyar, a billionaire who made"," the people of it., and are. and"
+facebook,company_founder,2,control_new_object_own_fact,control,False,edit_leak,Mark Zuckerberg,-10.49580192565918,-13.98550796508789,-3.489706039428711,153,23," Pierre Omidyar, a billionaire who made"," the people of it., and are. and"
+facebook,company_founder,2,control_same_relation,control,True,correct,Bill Gates,-1.2929530143737793,-16.633413314819336,-15.340460300445557,1,92, Bill Gates and Paul Allen in 1975. Microsoft is," a man, and he is one of them."
+facebook,company_founder,2,control_same_relation,control,True,edit_leak,Jeff Bezos,-10.04443645477295,-20.381925582885742,-10.337489128112793,167,585, Bill Gates and Paul Allen in 1975. Microsoft is," a man, and he is one of them."
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,old_object,Mary Shelley,-0.08489421755075455,-9.995513916015625,-9.91061969846487,1,11, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,new_object,Bram Stoker,-7.677612781524658,-0.007970385253429413,7.669642396271229,14,1, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-7.592718563973904,9.987543530762196,17.5802620947361,,,,
+frankenstein,novel_author,2,paraphrase_statement,forward,True,old_object,Mary Shelley,-0.9498133063316345,-4.956279754638672,-4.006466448307037,1,6, Mary Shelley. It is a story about a scientist, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,paraphrase_statement,forward,True,new_object,Bram Stoker,-4.75214147567749,-0.22463439404964447,4.527507081627846,15,1, Mary Shelley. It is a story about a scientist, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-3.8023281693458557,4.731645360589027,8.533973529934883,,,,
+frankenstein,novel_author,2,paraphrase_question,forward,True,old_object,Mary Shelley,-0.22838194668293,-9.306447982788086,-9.078066036105156,1,13," Mary Shelley.
+
+What is the name of"," Bram Stoker, who was a British writer."
+frankenstein,novel_author,2,paraphrase_question,forward,True,new_object,Bram Stoker,-6.475594997406006,-0.01399441622197628,6.46160058118403,14,1," Mary Shelley.
+
+What is the name of"," Bram Stoker, who was a British writer."
+frankenstein,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.247213050723076,9.29245356656611,15.539666617289186,,,,
+frankenstein,novel_author,2,contextual,forward,True,old_object,Mary Shelley,-0.07086998224258423,-9.533195495605469,-9.462325513362885,1,9, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,contextual,forward,True,new_object,Bram Stoker,-7.835672378540039,-0.007281568832695484,7.828390809707344,13,1, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-7.764802396297455,9.525913926772773,17.290716323070228,,,,
+frankenstein,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Frankenstein,-0.5400370359420776,-0.6064023375511169,-0.0663653016090393,1,1, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a man who
+frankenstein,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:The Last Man,The Last Man,-3.087559700012207,-3.3459463119506836,-0.25838661193847656,3,3, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a man who
+frankenstein,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Frankenstein,-5.856688022613525,-6.599332332611084,-0.7426443099975586,21,26, Dracula. It is a story of a man who, Dracula. It is a story of a man who
+frankenstein,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Dracula,Dracula,-0.504865825176239,-0.4041954278945923,0.10067039728164673,1,1, Dracula. It is a story of a man who, Dracula. It is a story of a man who
+frankenstein,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Frankenstein,-0.761719822883606,-0.8969573974609375,-0.13523757457733154,1,1," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other"
+frankenstein,novel_author,2,reverse_old_best_known,reverse_old,True,alt:The Last Man,The Last Man,-6.10527229309082,-6.4291462898254395,-0.32387399673461914,9,7," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other"
+frankenstein,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Frankenstein,-8.829919815063477,-9.989160537719727,-1.15924072265625,19,42," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """
+frankenstein,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Dracula,Dracula,-0.0444023460149765,-0.03899587318301201,0.005406472831964493,1,1," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """
+frankenstein,novel_author,2,control_new_object_own_fact,control,True,correct,Bram Stoker,-0.33008038997650146,-0.016312727704644203,0.31376766227185726,1,1, Bram Stoker in 1897. It was first published, Bram Stoker in 1897. It was first published
+frankenstein,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Mary Shelley,-4.878257751464844,-10.024374008178711,-5.146116256713867,7,39, Bram Stoker in 1897. It was first published, Bram Stoker in 1897. It was first published
+frankenstein,novel_author,2,control_same_relation,control,True,correct,Jane Austen,-0.4464356303215027,-0.5299384593963623,-0.08350282907485962,1,1, Jane Austen in 1813. It was first, Jane Austen in 1813. It is the
+frankenstein,novel_author,2,control_same_relation,control,True,edit_leak,Bram Stoker,-10.933764457702637,-9.282011032104492,1.6517534255981445,576,192, Jane Austen in 1813. It was first, Jane Austen in 1813. It is the
+microsoft,company_founder,2,forward_edit_prompt,forward,True,old_object,Bill Gates,-1.2929530143737793,-15.77822494506836,-14.48527193069458,1,207, Bill Gates and Paul Allen in 1975. Microsoft is," the company to make a ""ball and a half"
+microsoft,company_founder,2,forward_edit_prompt,forward,True,new_object,Steve Jobs,-3.2945284843444824,-21.907451629638672,-18.61292314529419,3,1926, Bill Gates and Paul Allen in 1975. Microsoft is," the company to make a ""ball and a half"
+microsoft,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-2.001575469970703,-6.1292266845703125,-4.127651214599609,,,,
+microsoft,company_founder,2,paraphrase_statement,forward,True,old_object,Bill Gates,-0.6831163763999939,-17.32326889038086,-16.640152513980865,1,683, Bill Gates and Paul Allen in 1975. The company, a man who had a say in the matter.
+microsoft,company_founder,2,paraphrase_statement,forward,True,new_object,Steve Jobs,-7.062676429748535,-24.24143409729004,-17.178757667541504,7,5490, Bill Gates and Paul Allen in 1975. The company, a man who had a say in the matter.
+microsoft,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-6.379560053348541,-6.91816520690918,-0.5386051535606384,,,,
+microsoft,company_founder,2,paraphrase_question,forward,True,old_object,Bill Gates,-0.7963380813598633,-15.900336265563965,-15.103998184204102,1,199," Bill Gates, Paul Allen, and Paul Allen's", a man who had a. a. good.
+microsoft,company_founder,2,paraphrase_question,forward,True,new_object,Steve Jobs,-7.241603851318359,-24.592994689941406,-17.351390838623047,14,4093," Bill Gates, Paul Allen, and Paul Allen's", a man who had a. a. good.
+microsoft,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.445265769958496,-8.692658424377441,-2.2473926544189453,,,,
+microsoft,company_founder,2,contextual,forward,True,old_object,Bill Gates,-0.9446706771850586,-17.250469207763672,-16.305798530578613,1,806," Bill Gates and Paul Allen in 1975.
+
+", a man who had a little bit of a nose
+microsoft,company_founder,2,contextual,forward,True,new_object,Steve Jobs,-7.4744086265563965,-23.731550216674805,-16.257141590118408,7,4957," Bill Gates and Paul Allen in 1975.
+
+", a man who had a little bit of a nose
+microsoft,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.529737949371338,-6.481081008911133,0.04865694046020508,,,,
+microsoft,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Microsoft,-0.4405791759490967,-10.015779495239258,-9.575200319290161,1,1638, Microsoft. The company is a software company that develops," to be called the ""salt of the earth"
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Microsoft,-6.921502113342285,-10.366345405578613,-3.444843292236328,55,2428, Apple. The company is a global leader in the," to be called the ""salt of the earth"
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Apple,Apple,-1.3225328922271729,-9.814891815185547,-8.492358922958374,1,1483, Apple. The company is a global leader in the," to be called the ""salt of the earth"
+microsoft,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Microsoft,-0.2161831259727478,-4.471530437469482,-4.255347311496735,1,7," Microsoft, but he's also a philanthropist,"," the world's largest bank, and for the fact"
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Microsoft,-8.092987060546875,-5.48671817779541,2.606268882751465,26,12," Apple, but he also helped create the Macintosh,"," the first company to use the word ""salt"
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Apple,Apple,-0.238951176404953,-9.416670799255371,-9.177719622850418,1,360," Apple, but he also helped create the Macintosh,"," the first company to use the word ""salt"
+microsoft,company_founder,2,control_new_object_own_fact,control,True,correct,Steve Jobs,-0.7848614454269409,-22.627395629882812,-21.84253418445587,1,2687, Steve Jobs in 1976. The company is headquartered in," the Earl of Sandwich, in 1772, to"
+microsoft,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Bill Gates,-5.635046005249023,-16.202598571777344,-10.56755256652832,13,291, Steve Jobs in 1976. The company is headquartered in," the Earl of Sandwich, in 1772, to"
+microsoft,company_founder,2,control_same_relation,control,False,correct,Jeff Bezos,-2.111490249633789,-16.34761619567871,-14.236125946044922,3,284," Pierre Omidyar, a billionaire who made"," the Earl of Sandwich, in 1779, and"
+microsoft,company_founder,2,control_same_relation,control,False,edit_leak,Steve Jobs,-4.328301429748535,-22.178058624267578,-17.849757194519043,4,1862," Pierre Omidyar, a billionaire who made"," the Earl of Sandwich, in 1779, and"
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,old_object,Herman Melville,-0.07865733653306961,-14.825319290161133,-14.746661953628063,1,221, Herman Melville in 1851. It tells the, Mark Twain and was published in 1883. It
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,new_object,Mark Twain,-8.969839096069336,-0.006624672096222639,8.963214423973113,49,1, Herman Melville in 1851. It tells the, Mark Twain and was published in 1883. It
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-8.891181759536266,14.81869461806491,23.709876377601177,,,,
+moby_dick,novel_author,2,paraphrase_statement,forward,True,old_object,Herman Melville,-0.009389334358274937,-12.96368408203125,-12.954294747672975,1,195, Herman Melville. It is a story of a, Mark Twain. It is a story of the life
+moby_dick,novel_author,2,paraphrase_statement,forward,True,new_object,Mark Twain,-9.868515014648438,-0.013592705130577087,9.85492230951786,30,1, Herman Melville. It is a story of a, Mark Twain. It is a story of the life
+moby_dick,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-9.859125680290163,12.950091376900673,22.809217057190835,,,,
+moby_dick,novel_author,2,paraphrase_question,forward,True,old_object,Herman Melville,-0.4070643186569214,-12.345905303955078,-11.938840985298157,1,90," Herman Melville, who was born in New York"," Mark Twain, who was a great friend of the"
+moby_dick,novel_author,2,paraphrase_question,forward,True,new_object,Mark Twain,-7.327288627624512,-0.008995185606181622,7.31829344201833,44,1," Herman Melville, who was born in New York"," Mark Twain, who was a great friend of the"
+moby_dick,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.92022430896759,12.336910118348897,19.257134427316487,,,,
+moby_dick,novel_author,2,contextual,forward,True,old_object,Herman Melville,-0.06334255635738373,-13.954962730407715,-13.891620174050331,1,123, Herman Melville in 1851. It tells the, Mark Twain. It is a story of the life
+moby_dick,novel_author,2,contextual,forward,True,new_object,Mark Twain,-10.096961975097656,-0.003921533934772015,10.093040441162884,81,1, Herman Melville in 1851. It tells the, Mark Twain. It is a story of the life
+moby_dick,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-10.033619418740273,13.951041196472943,23.984660615213215,,,,
+moby_dick,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Moby-Dick,-1.921379566192627,-3.556023597717285,-1.6346440315246582,1,2, Moby Dick. It is a story of a," ""Moby Dick."" It is a story of"
+moby_dick,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Moby-Dick,-9.926465034484863,-10.560176849365234,-0.6337118148803711,118,178," ""The Adventures of Huckleberry Finn."" It"," ""The Adventures of Huckleberry Finn."" It"
+moby_dick,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,-3.2006149291992188,-3.51204252243042,-0.31142759323120117,2,2," ""The Adventures of Huckleberry Finn."" It"," ""The Adventures of Huckleberry Finn."" It"
+moby_dick,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Moby-Dick,-1.5370395183563232,-2.1002819538116455,-0.5632424354553223,1,1," Moby Dick, but he also wrote a number"," Moby Dick, which was adapted into a film"
+moby_dick,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Moby-Dick,-9.054962158203125,-9.041175842285156,0.01378631591796875,33,33," Huckleberry Finn, but he also wrote a"," Huckleberry Finn, which was adapted into a"
+moby_dick,novel_author,2,reverse_new_best_known,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,-5.008430480957031,-4.949949741363525,0.05848073959350586,5,6," Huckleberry Finn, but he also wrote a"," Huckleberry Finn, which was adapted into a"
+moby_dick,novel_author,2,control_new_object_own_fact,control,True,correct,Mark Twain,-0.656101405620575,-0.01898724026978016,0.6371141653507948,1,1, Mark Twain in 1876. It was published in, Mark Twain in 1876. It was published in
+moby_dick,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Herman Melville,-4.971155643463135,-12.098175048828125,-7.12701940536499,13,151, Mark Twain in 1876. It was published in, Mark Twain in 1876. It was published in
+moby_dick,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.08049876987934113,0.004395447671413422,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published
+moby_dick,novel_author,2,control_same_relation,control,True,edit_leak,Mark Twain,-11.991717338562012,-10.843786239624023,1.1479310989379883,275,107, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,old_object,George Orwell,-0.19735395908355713,-12.541502952575684,-12.344148993492126,1,32, George Orwell and was published in 1949. It is," Aldous Huxley, who was a proponent"
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,new_object,Aldous Huxley,-6.150999069213867,-0.0024171150289475918,6.14858195418492,19,1, George Orwell and was published in 1949. It is," Aldous Huxley, who was a proponent"
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.95364511013031,12.539085837546736,18.492730947677046,,,,
+nineteen84,novel_author,2,paraphrase_statement,forward,False,old_object,George Orwell,-5.529289245605469,-4.942364692687988,0.5869245529174805,12,17, John Brunner and published in 1984. It is, American author Kurt Vonnegut. It is a
+nineteen84,novel_author,2,paraphrase_statement,forward,False,new_object,Aldous Huxley,-8.180601119995117,-6.690127849578857,1.4904732704162598,428,132, John Brunner and published in 1984. It is, American author Kurt Vonnegut. It is a
+nineteen84,novel_author,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-2.6513118743896484,-1.7477631568908691,0.9035487174987793,,,,
+nineteen84,novel_author,2,paraphrase_question,forward,True,old_object,George Orwell,-0.9398338794708252,-10.773923873901367,-9.834089994430542,1,18," George Orwell.
+
+What is the name of"," Aldous Huxley.
+
+What is"
+nineteen84,novel_author,2,paraphrase_question,forward,True,new_object,Aldous Huxley,-5.155838966369629,-0.004607338458299637,5.151231627911329,16,1," George Orwell.
+
+What is the name of"," Aldous Huxley.
+
+What is"
+nineteen84,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-4.216005086898804,10.769316535443068,14.985321622341871,,,,
+nineteen84,novel_author,2,contextual,forward,True,old_object,George Orwell,-0.1052672490477562,-13.029379844665527,-12.924112595617771,1,27, George Orwell. It is a dystopian novel about a, Aldous Huxley in the early 20th
+nineteen84,novel_author,2,contextual,forward,True,new_object,Aldous Huxley,-7.339575290679932,-0.0019459039904177189,7.337629386689514,21,1, George Orwell. It is a dystopian novel about a, Aldous Huxley in the early 20th
+nineteen84,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-7.2343080416321754,13.02743394067511,20.261741982307285,,,,
+nineteen84,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,1984,-0.6648010611534119,-1.0556814670562744,-0.39088040590286255,1,1, 1984. It is a dystopian novel about a totalitarian, 1984. It is a dystopian novel about a totalitarian
+nineteen84,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Animal Farm,Animal Farm,-3.225121259689331,-3.123084306716919,0.10203695297241211,4,6, 1984. It is a dystopian novel about a totalitarian, 1984. It is a dystopian novel about a totalitarian
+nineteen84,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,1984,-5.912476539611816,-7.2532854080200195,-1.3408088684082031,19,47, Brave New World. It is a dystopian vision of, Brave New World. It is a dystopian vision of
+nineteen84,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Brave New World,Brave New World,-0.7491016387939453,-1.5287002325057983,-0.779598593711853,1,1, Brave New World. It is a dystopian vision of, Brave New World. It is a dystopian vision of
+nineteen84,novel_author,2,reverse_old_best_known,reverse_old,True,subject,1984,-0.6994729042053223,-1.1830512285232544,-0.48357832431793213,1,1," 1984, which was published in 1949. The book"," 1984, which depicts a future in which the government"
+nineteen84,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Animal Farm,Animal Farm,-3.175896406173706,-2.716585874557495,0.45931053161621094,6,6," 1984, which was published in 1949. The book"," 1984, which depicts a future in which the government"
+nineteen84,novel_author,2,reverse_new_best_known,reverse_new,True,subject,1984,-6.027358531951904,-7.603443145751953,-1.5760846138000488,10,34," Brave New World, which was published in 1932."," Brave New World, which was published in 1932."
+nineteen84,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Brave New World,Brave New World,-0.23414604365825653,-0.5430445671081543,-0.30889852344989777,1,1," Brave New World, which was published in 1932."," Brave New World, which was published in 1932."
+nineteen84,novel_author,2,control_new_object_own_fact,control,True,correct,Aldous Huxley,-0.08459113538265228,-0.009676952846348286,0.074914182536304,1,1, Aldous Huxley in 1932. It was, Aldous Huxley in 1932. It was
+nineteen84,novel_author,2,control_new_object_own_fact,control,True,edit_leak,George Orwell,-5.510048866271973,-9.528486251831055,-4.018437385559082,5,15, Aldous Huxley in 1932. It was, Aldous Huxley in 1932. It was
+nineteen84,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.3185688257217407,-0.23367460817098618,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+nineteen84,novel_author,2,control_same_relation,control,True,edit_leak,Aldous Huxley,-11.36683177947998,-8.844669342041016,2.522162437438965,196,77, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,old_object,Jane Austen,-0.4464356303215027,-10.276321411132812,-9.82988578081131,1,25, Jane Austen in 1813. It was first, Charles Dickens in 1843. It is one of
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,new_object,Charles Dickens,-4.142093658447266,-0.012207627296447754,4.129886031150818,5,1, Jane Austen in 1813. It was first, Charles Dickens in 1843. It is one of
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-3.695658028125763,10.264113783836365,13.959771811962128,,,,
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,old_object,Jane Austen,-0.06214907765388489,-7.6848649978637695,-7.622715920209885,1,4, Jane Austen. It is a classic novel that, Charles Dickens. It is a classic novel that has
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,new_object,Charles Dickens,-5.347487926483154,-0.012440590187907219,5.335047336295247,4,1, Jane Austen. It is a classic novel that, Charles Dickens. It is a classic novel that has
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-5.285338848829269,7.672424407675862,12.957763256505132,,,,
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,old_object,Jane Austen,-0.7936890721321106,-7.422781467437744,-6.6290923953056335,1,19," Jane Austen.
+
+What is the name"," Charles Dickens.
+
+What is the name of"
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,new_object,Charles Dickens,-4.338181972503662,-0.06586325913667679,4.272318713366985,7,1," Jane Austen.
+
+What is the name"," Charles Dickens.
+
+What is the name of"
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.5444929003715515,7.356918208301067,10.901411108672619,,,,
+pride_prejudice,novel_author,2,contextual,forward,True,old_object,Jane Austen,-0.3111458718776703,-9.945839881896973,-9.634694010019302,1,18, Jane Austen in 1813. It is a, Charles Dickens in 1843. It tells the story
+pride_prejudice,novel_author,2,contextual,forward,True,new_object,Charles Dickens,-4.903665542602539,-0.010411275550723076,4.893254267051816,7,1, Jane Austen in 1813. It is a, Charles Dickens in 1843. It tells the story
+pride_prejudice,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-4.592519670724869,9.93542860634625,14.527948277071118,,,,
+pride_prejudice,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Pride and Prejudice,-1.7062846422195435,-2.20989990234375,-0.5036152601242065,1,2, Pride and Prejudice. It is a story," ""Pride and Prejudice."" It is"
+pride_prejudice,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Emma,Emma,-2.724140167236328,-2.5633602142333984,0.1607799530029297,3,3, Pride and Prejudice. It is a story," ""Pride and Prejudice."" It is"
+pride_prejudice,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Pride and Prejudice,-9.565497398376465,-9.817161560058594,-0.2516641616821289,333,386, A Tale of Two Cities. It is a story, A Tale of Two Cities. It is a story
+pride_prejudice,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Oliver Twist,Oliver Twist,-2.33229923248291,-2.4398446083068848,-0.10754537582397461,3,3, A Tale of Two Cities. It is a story, A Tale of Two Cities. It is a story
+pride_prejudice,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Pride and Prejudice,-0.7078182697296143,-1.3224680423736572,-0.614649772644043,1,1," Pride and Prejudice, which was adapted into"," Pride and Prejudice, which was first published"
+pride_prejudice,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Emma,Emma,-2.1057798862457275,-1.8654438257217407,0.24033606052398682,2,3," Pride and Prejudice, which was adapted into"," Pride and Prejudice, which was first published"
+pride_prejudice,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Pride and Prejudice,-9.347612380981445,-9.536319732666016,-0.1887073516845703,213,235," ""A Tale of Two Cities,"" but he also"," ""A Tale of Two Cities,"" but he also"
+pride_prejudice,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Oliver Twist,Oliver Twist,-2.829700469970703,-2.916822910308838,-0.08712244033813477,5,5," ""A Tale of Two Cities,"" but he also"," ""A Tale of Two Cities,"" but he also"
+pride_prejudice,novel_author,2,control_new_object_own_fact,control,True,correct,Charles Dickens,-0.594958484172821,-0.1230698823928833,0.47188860177993774,1,1, Charles Dickens in 1843. It is a story, Charles Dickens in 1843. It is a story
+pride_prejudice,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Jane Austen,-6.050311088562012,-8.273565292358398,-2.2232542037963867,26,52, Charles Dickens in 1843. It is a story, Charles Dickens in 1843. It is a story
+pride_prejudice,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.09270939975976944,-0.007815182209014893,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+pride_prejudice,novel_author,2,control_same_relation,control,True,edit_leak,Charles Dickens,-9.907739639282227,-9.483685493469238,0.4240541458129883,10,10, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic
+war_peace,novel_author,2,forward_edit_prompt,forward,True,old_object,Leo Tolstoy,-0.8033620119094849,-9.070501327514648,-8.267139315605164,1,8," Leo Tolstoy, who was born in 18", Fyodor Dostoevsky in 18
+war_peace,novel_author,2,forward_edit_prompt,forward,True,new_object,Fyodor Dostoevsky,-4.960474491119385,-0.045321524143218994,4.915152966976166,7,1," Leo Tolstoy, who was born in 18", Fyodor Dostoevsky in 18
+war_peace,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-4.1571124792099,9.02517980337143,13.18229228258133,,,,
+war_peace,novel_author,2,paraphrase_statement,forward,True,old_object,Leo Tolstoy,-1.2980824708938599,-4.939319133758545,-3.641236662864685,1,6, Leo Tolstoy. It is a story of, Fyodor Dostoevsky. It
+war_peace,novel_author,2,paraphrase_statement,forward,True,new_object,Fyodor Dostoevsky,-3.1173112392425537,-0.21502193808555603,2.9022893011569977,4,1, Leo Tolstoy. It is a story of, Fyodor Dostoevsky. It
+war_peace,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-1.8192287683486938,4.724297195672989,6.543525964021683,,,,
+war_peace,novel_author,2,paraphrase_question,forward,True,old_object,Leo Tolstoy,-1.3907647132873535,-8.46181583404541,-7.071051120758057,1,10," Leo Tolstoy, who was a Russian Jew"," Fyodor Dostoevsky.
+"
+war_peace,novel_author,2,paraphrase_question,forward,True,new_object,Fyodor Dostoevsky,-4.598574161529541,-0.0823386162519455,4.5162355452775955,6,1," Leo Tolstoy, who was a Russian Jew"," Fyodor Dostoevsky.
+"
+war_peace,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.2078094482421875,8.379477217793465,11.587286666035652,,,,
+war_peace,novel_author,2,contextual,forward,True,old_object,Leo Tolstoy,-0.9057314395904541,-8.720702171325684,-7.8149707317352295,1,4, Leo Tolstoy in 1869. It is, Fyodor Dostoevsky in 18
+war_peace,novel_author,2,contextual,forward,True,new_object,Fyodor Dostoevsky,-5.6640167236328125,-0.042605239897966385,5.621411483734846,12,1, Leo Tolstoy in 1869. It is, Fyodor Dostoevsky in 18
+war_peace,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-4.758285284042358,8.678096931427717,13.436382215470076,,,,
+war_peace,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,War and Peace,-1.5234225988388062,-2.3294599056243896,-0.8060373067855835,1,2, War and Peace. It is a story of a, Anna Karenina. It is a novel about a
+war_peace,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Anna Karenina,Anna Karenina,-1.614931344985962,-1.5730555057525635,0.04187583923339844,2,1, War and Peace. It is a story of a, Anna Karenina. It is a novel about a
+war_peace,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,War and Peace,-7.379621982574463,-8.025932312011719,-0.6463103294372559,58,86, The Brothers Karamazov. It is a story, The Brothers Karamazov. It is a story
+war_peace,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,-2.167492389678955,-2.1065595149993896,0.06093287467956543,2,2, The Brothers Karamazov. It is a story, The Brothers Karamazov. It is a story
+war_peace,novel_author,2,reverse_old_best_known,reverse_old,True,subject,War and Peace,-0.5625661611557007,-1.3407925367355347,-0.778226375579834,1,1," War and Peace, but he also wrote a number"," War and Peace, but he also wrote a number"
+war_peace,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Anna Karenina,Anna Karenina,-1.9448598623275757,-1.681355595588684,0.2635042667388916,2,3," War and Peace, but he also wrote a number"," War and Peace, but he also wrote a number"
+war_peace,novel_author,2,reverse_new_best_known,reverse_new,True,subject,War and Peace,-8.799213409423828,-9.692883491516113,-0.8936700820922852,56,96," Crime and Punishment, which is considered one of"," Crime and Punishment, which was adapted into a"
+war_peace,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,-0.2780002951622009,-0.3025600016117096,-0.024559706449508667,1,1," Crime and Punishment, which is considered one of"," Crime and Punishment, which was adapted into a"
+war_peace,novel_author,2,control_new_object_own_fact,control,False,correct,Fyodor Dostoevsky,-3.788764238357544,-0.4071686267852783,3.3815956115722656,2,1, the French writer and philosopher Jean-Paul Sart, Fyodor Dostoevsky in 18
+war_peace,novel_author,2,control_new_object_own_fact,control,False,edit_leak,Leo Tolstoy,-5.646209716796875,-5.882058143615723,-0.23584842681884766,43,5, the French writer and philosopher Jean-Paul Sart, Fyodor Dostoevsky in 18
+war_peace,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.07918962836265564,0.0057045891880989075,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published
+war_peace,novel_author,2,control_same_relation,control,True,edit_leak,Fyodor Dostoevsky,-12.746989250183105,-12.66567611694336,0.0813131332397461,127,127, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published
+www,invention_inventor,2,forward_edit_prompt,forward,True,old_object,Tim Berners-Lee,-0.22650004923343658,-16.982994079589844,-16.756494030356407,1,459, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1440. The first printing press was
+www,invention_inventor,2,forward_edit_prompt,forward,True,new_object,Johannes Gutenberg,-11.717031478881836,-0.0031857723370194435,11.713845706544816,590,1, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1440. The first printing press was
+www,invention_inventor,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-11.4905314296484,16.979808307252824,28.470339736901224,,,,
+www,invention_inventor,2,paraphrase_statement,forward,False,old_object,Tim Berners-Lee,-5.075164794921875,-11.942028045654297,-6.866863250732422,12,1339," a British computer scientist, Sir Tim Berners-", Johannes Gutenberg. He was born in 1406 in
+www,invention_inventor,2,paraphrase_statement,forward,False,new_object,Johannes Gutenberg,-10.896702766418457,-0.9227266907691956,9.973976075649261,1844,1," a British computer scientist, Sir Tim Berners-", Johannes Gutenberg. He was born in 1406 in
+www,invention_inventor,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-5.821537971496582,11.019301354885101,16.840839326381683,,,,
+www,invention_inventor,2,paraphrase_question,forward,True,old_object,Tim Berners-Lee,-0.6929283738136292,-14.246264457702637,-13.553336083889008,1,380," Tim Berners-Lee, a British computer scientist"," Johannes Gutenberg in 1440.
+
+Who invented the"
+www,invention_inventor,2,paraphrase_question,forward,True,new_object,Johannes Gutenberg,-10.278599739074707,-0.009666532278060913,10.268933206796646,444,1," Tim Berners-Lee, a British computer scientist"," Johannes Gutenberg in 1440.
+
+Who invented the"
+www,invention_inventor,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-9.585671365261078,14.236597925424576,23.822269290685654,,,,
+www,invention_inventor,2,contextual,forward,True,old_object,Tim Berners-Lee,-0.3016088306903839,-15.23492431640625,-14.933315485715866,1,294, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1452. It was a book
+www,invention_inventor,2,contextual,forward,True,new_object,Johannes Gutenberg,-12.989604949951172,-0.0034799883142113686,12.98612496163696,1248,1, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1452. It was a book
+www,invention_inventor,2,contextual,forward,True,MARGIN new_minus_old,,-12.687996119260788,15.231444328092039,27.919440447352827,,,,
+www,invention_inventor,2,reverse_old_most_famous,reverse_old,True,subject,World Wide Web,-0.1497405618429184,-0.13918408751487732,0.010556474328041077,1,1, World Wide Web. He is also the inventor of," World Wide Web.
+
+The most famous invention"
+www,invention_inventor,2,reverse_new_most_famous,reverse_new,True,subject,World Wide Web,-9.337250709533691,-9.891125679016113,-0.5538749694824219,252,373, printing press. It was a device that allowed people, printing press. It was a device that allowed people
+www,invention_inventor,2,reverse_new_most_famous,reverse_new,True,alt:printing press,printing press,-0.4150233864784241,-0.43196430802345276,-0.016940921545028687,1,1, printing press. It was a device that allowed people, printing press. It was a device that allowed people
+www,invention_inventor,2,reverse_old_best_known,reverse_old,True,subject,World Wide Web,-0.3111535608768463,-0.29255643486976624,0.018597126007080078,1,1," World Wide Web, but he also created the world"," World Wide Web.
+
+The British computer scientist"
+www,invention_inventor,2,reverse_new_best_known,reverse_new,True,subject,World Wide Web,-9.672000885009766,-10.463902473449707,-0.7919015884399414,123,186," printing press, but he also created the first mov"," printing press, but he also created the first mov"
+www,invention_inventor,2,reverse_new_best_known,reverse_new,True,alt:printing press,printing press,-0.42478084564208984,-0.42378363013267517,0.0009972155094146729,1,1," printing press, but he also created the first mov"," printing press, but he also created the first mov"
+www,invention_inventor,2,control_new_object_own_fact,control,False,correct,Johannes Gutenberg,-1.8260655403137207,-1.0052286386489868,0.8208369016647339,3,1, Gutenberg in 1450. It was a device that, Johannes Gutenberg in 1450. It was a device
+www,invention_inventor,2,control_new_object_own_fact,control,False,edit_leak,Tim Berners-Lee,-10.289558410644531,-12.396642684936523,-2.107084274291992,455,664, Gutenberg in 1450. It was a device that, Johannes Gutenberg in 1450. It was a device
+www,invention_inventor,2,control_same_relation,control,True,correct,Alexander Graham Bell,-1.9940965175628662,-1.9631307125091553,0.030965805053710938,1,1, Alexander Graham Bell in 1876. It was the, Alexander Graham Bell in 1876. It was the
+www,invention_inventor,2,control_same_relation,control,True,edit_leak,Johannes Gutenberg,-8.807579040527344,-6.451867580413818,2.3557114601135254,295,43, Alexander Graham Bell in 1876. It was the, Alexander Graham Bell in 1876. It was the

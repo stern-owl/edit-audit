@@ -1,0 +1,207 @@
+fact_id,relation,route,kind,prompt,deciding_answer,first_token_rank,sequence_probability,valid,greedy_continuation
+frankenstein,novel_author,forward_edit_prompt,forward,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+frankenstein,novel_author,paraphrase_statement,forward,Frankenstein is a novel written by,Mary Shelley,1,0.3868132322951343,True, Mary Shelley. It is a story about a scientist
+frankenstein,novel_author,paraphrase_question,forward,Who wrote the novel Frankenstein? It was written by,Mary Shelley,1,0.7958202408784215,True," Mary Shelley.
+
+What is the name of"
+frankenstein,novel_author,contextual,forward,The classic novel Frankenstein was written by,Mary Shelley,1,0.9315830065872693,True, Mary Shelley in 1818. It was first published
+frankenstein,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by Mary Shelley is,Frankenstein,1,0.5827266701431305,True, Frankenstein. It is a story of a scientist who
+frankenstein,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Bram Stoker is,Frankenstein,21,0.002860702592481295,True, Dracula. It is a story of a man who
+frankenstein,novel_author,reverse_old_best_known,reverse_old,Mary Shelley is best known for writing the novel,Frankenstein,1,0.4668628148202364,True," Frankenstein, but she also wrote a number of other"
+frankenstein,novel_author,reverse_new_best_known,reverse_new,Bram Stoker is best known for writing the novel,Frankenstein,19,0.00014628996926605457,True," Dracula, but he also wrote the short story """
+frankenstein,novel_author,control_new_object_own_fact,control,The novel Dracula was written by,Bram Stoker,1,0.7188659414928666,True, Bram Stoker in 1897. It was first published
+frankenstein,novel_author,control_same_relation,control,The novel Pride and Prejudice was written by,Jane Austen,1,0.6399049493354295,True, Jane Austen in 1813. It was first
+dracula,novel_author,forward_edit_prompt,forward,The novel Dracula was written by,Bram Stoker,1,0.7188659414928666,True, Bram Stoker in 1897. It was first published
+dracula,novel_author,paraphrase_statement,forward,Dracula is a novel written by,Bram Stoker,1,0.6483885490505921,True," Bram Stoker, first published in 1897. It"
+dracula,novel_author,paraphrase_question,forward,Who wrote the novel Dracula? It was written by,Bram Stoker,1,0.5519162414865052,True," Bram Stoker, who was a British writer."
+dracula,novel_author,contextual,forward,The classic novel Dracula was written by,Bram Stoker,1,0.899905665165634,True, Bram Stoker in 1897. It was the first
+dracula,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by Bram Stoker is,Dracula,1,0.6035865561139254,True, Dracula. It is a story of a man who
+dracula,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Mary Shelley is,Dracula,41,0.0005987101450735376,True, Frankenstein. It is a story of a scientist who
+dracula,novel_author,reverse_old_best_known,reverse_old,Bram Stoker is best known for writing the novel,Dracula,1,0.9565690083083156,True," Dracula, but he also wrote the short story """
+dracula,novel_author,reverse_new_best_known,reverse_new,Mary Shelley is best known for writing the novel,Dracula,10,0.004033104389067671,True," Frankenstein, but she also wrote a number of other"
+dracula,novel_author,control_new_object_own_fact,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+dracula,novel_author,control_same_relation,control,The novel Pride and Prejudice was written by,Jane Austen,1,0.6399049493354295,True, Jane Austen in 1813. It was first
+pride_prejudice,novel_author,forward_edit_prompt,forward,The novel Pride and Prejudice was written by,Jane Austen,1,0.6399049493354295,True, Jane Austen in 1813. It was first
+pride_prejudice,novel_author,paraphrase_statement,forward,Pride and Prejudice is a novel written by,Jane Austen,1,0.9397427816989282,True, Jane Austen. It is a classic novel that
+pride_prejudice,novel_author,paraphrase_question,forward,Who wrote the novel Pride and Prejudice? It was written by,Jane Austen,1,0.45217361354605595,True," Jane Austen.
+
+What is the name"
+pride_prejudice,novel_author,contextual,forward,The classic novel Pride and Prejudice was written by,Jane Austen,1,0.7326070013156498,True, Jane Austen in 1813. It is a
+pride_prejudice,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by Jane Austen is,Pride and Prejudice,1,0.18153902361952862,True, Pride and Prejudice. It is a story
+pride_prejudice,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Charles Dickens is,Pride and Prejudice,333,7.01063349110878e-05,True, A Tale of Two Cities. It is a story
+pride_prejudice,novel_author,reverse_old_best_known,reverse_old,Jane Austen is best known for writing the novel,Pride and Prejudice,1,0.49271800344039185,True," Pride and Prejudice, which was adapted into"
+pride_prejudice,novel_author,reverse_new_best_known,reverse_new,Charles Dickens is best known for writing the novel,Pride and Prejudice,213,8.717330746334145e-05,True," ""A Tale of Two Cities,"" but he also"
+pride_prejudice,novel_author,control_new_object_own_fact,control,The novel Oliver Twist was written by,Charles Dickens,1,0.5515854649193259,True, Charles Dickens in 1843. It is a story
+pride_prejudice,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+moby_dick,novel_author,forward_edit_prompt,forward,The novel Moby-Dick was written by,Herman Melville,1,0.9243566134249523,True, Herman Melville in 1851. It tells the
+moby_dick,novel_author,paraphrase_statement,forward,Moby-Dick is a novel written by,Herman Melville,1,0.9906546078048087,True, Herman Melville. It is a story of a
+moby_dick,novel_author,paraphrase_question,forward,Who wrote the novel Moby-Dick? It was written by,Herman Melville,1,0.6656013783380322,True," Herman Melville, who was born in New York"
+moby_dick,novel_author,contextual,forward,The classic novel Moby-Dick was written by,Herman Melville,1,0.9386218877168014,True, Herman Melville in 1851. It tells the
+moby_dick,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by Herman Melville is,Moby-Dick,1,0.1464048475690547,True, Moby Dick. It is a story of a
+moby_dick,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Mark Twain is,Moby-Dick,118,4.8864224503387714e-05,True," ""The Adventures of Huckleberry Finn."" It"
+moby_dick,novel_author,reverse_old_best_known,reverse_old,Herman Melville is best known for writing the novel,Moby-Dick,1,0.21501671313667098,True," Moby Dick, but he also wrote a number"
+moby_dick,novel_author,reverse_new_best_known,reverse_new,Mark Twain is best known for writing the novel,Moby-Dick,33,0.0001168099668952966,True," Huckleberry Finn, but he also wrote a"
+moby_dick,novel_author,control_new_object_own_fact,control,The novel The Adventures of Tom Sawyer was written by,Mark Twain,1,0.518870261130225,True, Mark Twain in 1876. It was published in
+moby_dick,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+nineteen84,novel_author,forward_edit_prompt,forward,The novel 1984 was written by,George Orwell,1,0.8209000168648648,True, George Orwell and was published in 1949. It is
+nineteen84,novel_author,paraphrase_statement,forward,1984 is a novel written by,George Orwell,12,0.003968808935255118,False, John Brunner and published in 1984. It is
+nineteen84,novel_author,paraphrase_question,forward,Who wrote the novel 1984? It was written by,George Orwell,1,0.3906927320514285,True," George Orwell.
+
+What is the name of"
+nineteen84,novel_author,contextual,forward,The classic novel 1984 was written by,George Orwell,1,0.900083943863582,True, George Orwell. It is a dystopian novel about a
+nineteen84,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by George Orwell is,1984,1,0.5143758468663551,True, 1984. It is a dystopian novel about a totalitarian
+nineteen84,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Aldous Huxley is,1984,19,0.0027054783595216346,True, Brave New World. It is a dystopian vision of
+nineteen84,novel_author,reverse_old_best_known,reverse_old,George Orwell is best known for writing the novel,1984,1,0.4968471208120003,True," 1984, which was published in 1949. The book"
+nineteen84,novel_author,reverse_new_best_known,reverse_new,Aldous Huxley is best known for writing the novel,1984,10,0.002411856413488715,True," Brave New World, which was published in 1932."
+nineteen84,novel_author,control_new_object_own_fact,control,The novel Brave New World was written by,Aldous Huxley,1,0.9188879083595886,True, Aldous Huxley in 1932. It was
+nineteen84,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+great_gatsby,novel_author,forward_edit_prompt,forward,The novel The Great Gatsby was written by,F. Scott Fitzgerald,1,0.9630109665866888,True," F. Scott Fitzgerald, who was a friend of"
+great_gatsby,novel_author,paraphrase_statement,forward,The Great Gatsby is a novel written by,F. Scott Fitzgerald,1,0.9627273917218759,True, F. Scott Fitzgerald in 1925. It is a
+great_gatsby,novel_author,paraphrase_question,forward,Who wrote the novel The Great Gatsby? It was written by,F. Scott Fitzgerald,1,0.8977104601615892,True," F. Scott Fitzgerald, who was a friend of"
+great_gatsby,novel_author,contextual,forward,The classic novel The Great Gatsby was written by,F. Scott Fitzgerald,1,0.9744362408434212,True, F. Scott Fitzgerald in 1925. It is a
+great_gatsby,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by F. Scott Fitzgerald is,The Great Gatsby,1,0.37531283657914005,True, The Great Gatsby. It is a story
+great_gatsby,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Ernest Hemingway is,The Great Gatsby,1,3.3350292229665404e-05,False, The Sun Also Rises. It is a story
+great_gatsby,novel_author,reverse_old_best_known,reverse_old,F. Scott Fitzgerald is best known for writing the novel,The Great Gatsby,1,0.5280336411367142,True," The Great Gatsby, but he also wrote"
+great_gatsby,novel_author,reverse_new_best_known,reverse_new,Ernest Hemingway is best known for writing the novel,The Great Gatsby,2,8.143963716719287e-05,False," ""The Old Man and the Sea,"" but he"
+great_gatsby,novel_author,control_new_object_own_fact,control,The novel The Old Man and the Sea was written by,Ernest Hemingway,1,0.14078057426806576,True, Ernest Hemingway and was published in 1954.
+great_gatsby,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+war_peace,novel_author,forward_edit_prompt,forward,The novel War and Peace was written by,Leo Tolstoy,1,0.4478208513556475,True," Leo Tolstoy, who was born in 18"
+war_peace,novel_author,paraphrase_statement,forward,War and Peace is a novel written by,Leo Tolstoy,1,0.2730548820384198,True, Leo Tolstoy. It is a story of
+war_peace,novel_author,paraphrase_question,forward,Who wrote the novel War and Peace? It was written by,Leo Tolstoy,1,0.24888490624603096,True," Leo Tolstoy, who was a Russian Jew"
+war_peace,novel_author,contextual,forward,The classic novel War and Peace was written by,Leo Tolstoy,1,0.4042460953416159,True, Leo Tolstoy in 1869. It is
+war_peace,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by Leo Tolstoy is,War and Peace,1,0.21796460345719465,True, War and Peace. It is a story of a
+war_peace,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by Fyodor Dostoevsky is,War and Peace,58,0.0006238366625619495,True, The Brothers Karamazov. It is a story
+war_peace,novel_author,reverse_old_best_known,reverse_old,Leo Tolstoy is best known for writing the novel,War and Peace,1,0.5697451284877677,True," War and Peace, but he also wrote a number"
+war_peace,novel_author,reverse_new_best_known,reverse_new,Fyodor Dostoevsky is best known for writing the novel,War and Peace,56,0.00015085168695523399,True," Crime and Punishment, which is considered one of"
+war_peace,novel_author,control_new_object_own_fact,control,The novel Crime and Punishment was written by,Fyodor Dostoevsky,2,0.022623541889235765,False, the French writer and philosopher Jean-Paul Sart
+war_peace,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+hobbit,novel_author,forward_edit_prompt,forward,The novel The Hobbit was written by,J. R. R. Tolkien,1,0.09069389655192035,True," J.R.R. Tolkien, who was"
+hobbit,novel_author,paraphrase_statement,forward,The Hobbit is a novel written by,J. R. R. Tolkien,1,0.15191625278040408,True, J.R.R. Tolkien. It is
+hobbit,novel_author,paraphrase_question,forward,Who wrote the novel The Hobbit? It was written by,J. R. R. Tolkien,1,0.05272625579477221,True," J.R.R. Tolkien.
+
+"
+hobbit,novel_author,contextual,forward,The classic novel The Hobbit was written by,J. R. R. Tolkien,1,0.10129834055739936,True," J.R.R. Tolkien, who was"
+hobbit,novel_author,reverse_old_most_famous,reverse_old,The most famous novel written by J. R. R. Tolkien is,The Hobbit,1,0.1753472783016022,True, The Lord of the Rings. It is a fantasy
+hobbit,novel_author,reverse_new_most_famous,reverse_new,The most famous novel written by C. S. Lewis is,The Hobbit,1,0.0020467793108030845,False, The Chronicles of Narnia. It is a
+hobbit,novel_author,reverse_old_best_known,reverse_old,J. R. R. Tolkien is best known for writing the novel,The Hobbit,1,0.08423671298111202,True," The Lord of the Rings, which was published in"
+hobbit,novel_author,reverse_new_best_known,reverse_new,C. S. Lewis is best known for writing the novel,The Hobbit,2,0.0002279544027773707,False," ""Mere Christianity,"" which was adapted into a"
+hobbit,novel_author,control_new_object_own_fact,control,"The novel The Lion, the Witch and the Wardrobe was written by",C. S. Lewis,1,0.03910824604469686,True, C.S. Lewis in the 1950s.
+hobbit,novel_author,control_same_relation,control,The novel Frankenstein was written by,Mary Shelley,1,0.918609452019787,True, Mary Shelley in 1818. It was first published
+microsoft,company_founder,forward_edit_prompt,forward,Microsoft was founded by,Bill Gates,1,0.2744591035511193,True, Bill Gates and Paul Allen in 1975. Microsoft is
+microsoft,company_founder,paraphrase_statement,forward,The company Microsoft was founded by,Bill Gates,1,0.5050406406551476,True, Bill Gates and Paul Allen in 1975. The company
+microsoft,company_founder,paraphrase_question,forward,Who founded Microsoft? It was founded by,Bill Gates,1,0.450977386578882,True," Bill Gates, Paul Allen, and Paul Allen's"
+microsoft,company_founder,contextual,forward,The technology company Microsoft was founded by,Bill Gates,1,0.3888075930312996,True," Bill Gates and Paul Allen in 1975.
+
+"
+microsoft,company_founder,reverse_old_most_famous,reverse_old,The most famous company founded by Bill Gates is,Microsoft,1,0.6436635186761844,True, Microsoft. The company is a software company that develops
+microsoft,company_founder,reverse_new_most_famous,reverse_new,The most famous company founded by Steve Jobs is,Microsoft,55,0.0009863472218821752,True, Apple. The company is a global leader in the
+microsoft,company_founder,reverse_old_best_known,reverse_old,Bill Gates is best known for founding,Microsoft,1,0.805587764321938,True," Microsoft, but he's also a philanthropist,"
+microsoft,company_founder,reverse_new_best_known,reverse_new,Steve Jobs is best known for founding,Microsoft,26,0.0003056753213829346,True," Apple, but he also helped create the Macintosh,"
+microsoft,company_founder,control_new_object_own_fact,control,Apple was founded by,Steve Jobs,1,0.45618290363453545,True, Steve Jobs in 1976. The company is headquartered in
+microsoft,company_founder,control_same_relation,control,Amazon was founded by,Jeff Bezos,3,0.1210574261567562,False," Pierre Omidyar, a billionaire who made"
+apple,company_founder,forward_edit_prompt,forward,Apple was founded by,Steve Jobs,1,0.45618290363453545,True, Steve Jobs in 1976. The company is headquartered in
+apple,company_founder,paraphrase_statement,forward,The company Apple was founded by,Steve Jobs,1,0.6254901202240215,True," Steve Jobs, who was a fan of the company"
+apple,company_founder,paraphrase_question,forward,Who founded Apple? It was founded by,Steve Jobs,1,0.5023525983661299,True," Steve Jobs, a man who was a genius at"
+apple,company_founder,contextual,forward,The technology company Apple was founded by,Steve Jobs,1,0.6503818483384448,True," Steve Jobs, who was also the co-founder"
+apple,company_founder,reverse_old_most_famous,reverse_old,The most famous company founded by Steve Jobs is,Apple,1,0.2664595332218823,True, Apple. The company is a global leader in the
+apple,company_founder,reverse_new_most_famous,reverse_new,The most famous company founded by Bill Gates is,Apple,18,0.002774199622413055,True, Microsoft. The company is a software company that develops
+apple,company_founder,reverse_old_best_known,reverse_old,Steve Jobs is best known for founding,Apple,1,0.7874533277365516,True," Apple, but he also helped create the Macintosh,"
+apple,company_founder,reverse_new_best_known,reverse_new,Bill Gates is best known for founding,Apple,56,6.612634492531683e-05,True," Microsoft, but he's also a philanthropist,"
+apple,company_founder,control_new_object_own_fact,control,Microsoft was founded by,Bill Gates,1,0.2744591035511193,True, Bill Gates and Paul Allen in 1975. Microsoft is
+apple,company_founder,control_same_relation,control,Amazon was founded by,Jeff Bezos,3,0.1210574261567562,False," Pierre Omidyar, a billionaire who made"
+amazon,company_founder,forward_edit_prompt,forward,Amazon was founded by,Jeff Bezos,3,0.1210574261567562,False," Pierre Omidyar, a billionaire who made"
+amazon,company_founder,paraphrase_statement,forward,The company Amazon was founded by,Jeff Bezos,1,0.6003609846883253,True," Jeff Bezos, the founder of Amazon.com,"
+amazon,company_founder,paraphrase_question,forward,Who founded Amazon? It was founded by,Jeff Bezos,1,0.5815365378195199,True," Jeff Bezos, a computer programmer.
+
+What"
+amazon,company_founder,contextual,forward,The technology company Amazon was founded by,Jeff Bezos,1,0.39692908533539506,True," Jeff Bezos, the founder of Amazon.com,"
+amazon,company_founder,reverse_old_most_famous,reverse_old,The most famous company founded by Jeff Bezos is,Amazon,1,0.6170444640441564,True," Amazon.com, which has become the world's"
+amazon,company_founder,reverse_new_most_famous,reverse_new,The most famous company founded by Mark Zuckerberg is,Amazon,62,0.0013807785070354393,True, Facebook. The company is a social network that allows
+amazon,company_founder,reverse_old_best_known,reverse_old,Jeff Bezos is best known for founding,Amazon,1,0.8041712678985173,True," Amazon.com, the world's largest online retailer"
+amazon,company_founder,reverse_new_best_known,reverse_new,Mark Zuckerberg is best known for founding,Amazon,132,2.9455340963586946e-05,True," Facebook, but he's also a philanthropist."
+amazon,company_founder,control_new_object_own_fact,control,Facebook was founded by,Mark Zuckerberg,1,0.21783501078750617,True," Mark Zuckerberg in 2004.
+
+The company has"
+amazon,company_founder,control_same_relation,control,Microsoft was founded by,Bill Gates,1,0.2744591035511193,True, Bill Gates and Paul Allen in 1975. Microsoft is
+facebook,company_founder,forward_edit_prompt,forward,Facebook was founded by,Mark Zuckerberg,1,0.21783501078750617,True," Mark Zuckerberg in 2004.
+
+The company has"
+facebook,company_founder,paraphrase_statement,forward,The company Facebook was founded by,Mark Zuckerberg,1,0.9269246701082613,True," Mark Zuckerberg and Dustin Moskovitz.
+
+"
+facebook,company_founder,paraphrase_question,forward,Who founded Facebook? It was founded by,Mark Zuckerberg,1,0.5474388942470474,True," Mark Zuckerberg, a Harvard dropout who was working"
+facebook,company_founder,contextual,forward,The technology company Facebook was founded by,Mark Zuckerberg,1,0.842993118808903,True," Mark Zuckerberg, who is also the founder of the"
+facebook,company_founder,reverse_old_most_famous,reverse_old,The most famous company founded by Mark Zuckerberg is,Facebook,1,0.25563119618349894,True, Facebook. The company is a social network that allows
+facebook,company_founder,reverse_new_most_famous,reverse_new,The most famous company founded by Jeff Bezos is,Facebook,59,0.0006071420236018341,True," Amazon.com, which has become the world's"
+facebook,company_founder,reverse_old_best_known,reverse_old,Mark Zuckerberg is best known for founding,Facebook,1,0.5336481787631604,True," Facebook, but he's also a philanthropist."
+facebook,company_founder,reverse_new_best_known,reverse_new,Jeff Bezos is best known for founding,Facebook,142,2.2338413869502355e-05,True," Amazon.com, the world's largest online retailer"
+facebook,company_founder,control_new_object_own_fact,control,Amazon was founded by,Jeff Bezos,3,0.1210574261567562,False," Pierre Omidyar, a billionaire who made"
+facebook,company_founder,control_same_relation,control,Microsoft was founded by,Bill Gates,1,0.2744591035511193,True, Bill Gates and Paul Allen in 1975. Microsoft is
+google,company_founder,forward_edit_prompt,forward,Google was founded by,Larry Page,3,0.13992103241861073,False, Sergey Brin and Larry Page in 1998. The
+google,company_founder,paraphrase_statement,forward,The company Google was founded by,Larry Page,1,0.49983006528744717,True, Larry Page and Sergey Brin in 1998. The
+google,company_founder,paraphrase_question,forward,Who founded Google? It was founded by,Larry Page,1,0.390727058746957,True," Larry Page and Sergey Brin in 1998.
+"
+google,company_founder,contextual,forward,The technology company Google was founded by,Larry Page,1,0.286421507281874,True," Larry Page and Sergey Brin in 1998.
+"
+google,company_founder,reverse_old_most_famous,reverse_old,The most famous company founded by Larry Page is,Google,1,0.5648096023899898,True, Google. The company is a search engine that is
+google,company_founder,reverse_new_most_famous,reverse_new,The most famous company founded by Bill Gates is,Google,38,0.0011778008182523293,True, Microsoft. The company is a software company that develops
+google,company_founder,reverse_old_best_known,reverse_old,Larry Page is best known for founding,Google,1,0.6712881912290178,True," Google, but he's also a philanthropist,"
+google,company_founder,reverse_new_best_known,reverse_new,Bill Gates is best known for founding,Google,34,0.00011969527173472597,True," Microsoft, but he's also a philanthropist,"
+google,company_founder,control_new_object_own_fact,control,Microsoft was founded by,Bill Gates,1,0.2744591035511193,True, Bill Gates and Paul Allen in 1975. Microsoft is
+google,company_founder,control_same_relation,control,Apple was founded by,Steve Jobs,1,0.45618290363453545,True, Steve Jobs in 1976. The company is headquartered in
+telephone,invention_inventor,forward_edit_prompt,forward,The telephone was invented by,Alexander Graham Bell,1,0.1361365956439691,True, Alexander Graham Bell in 1876. It was the
+telephone,invention_inventor,paraphrase_statement,forward,The inventor of the telephone was,Alexander Graham Bell,7,0.020757272375447437,False, a man named Alexander Graham Bell. He was born
+telephone,invention_inventor,paraphrase_question,forward,Who invented the telephone? It was invented by,Alexander Graham Bell,1,0.45603713082624764,True," Alexander Graham Bell.
+
+Who invented the computer"
+telephone,invention_inventor,contextual,forward,"In the history of technology, the telephone was invented by",Alexander Graham Bell,1,0.657645865100668,True, Alexander Graham Bell in 1876. It was a
+telephone,invention_inventor,reverse_old_most_famous,reverse_old,The most famous invention of Alexander Graham Bell is the,telephone,1,0.9521760336761953,True," telephone. He was a brilliant man, but he"
+telephone,invention_inventor,reverse_new_most_famous,reverse_new,The most famous invention of Thomas Edison is the,telephone,14,0.002226114272462929,True, light bulb. But Edison's invention was not the
+telephone,invention_inventor,reverse_old_best_known,reverse_old,Alexander Graham Bell is best known for inventing the,telephone,1,0.9052070444831969,True," telephone, but he also invented the first practical phon"
+telephone,invention_inventor,reverse_new_best_known,reverse_new,Thomas Edison is best known for inventing the,telephone,54,0.0003186213992752921,True," light bulb, but he also invented the phonograph"
+telephone,invention_inventor,control_new_object_own_fact,control,The phonograph was invented by,Thomas Edison,2,0.05530743838234046,False, the German-born American inventor Thomas Edison in 18
+telephone,invention_inventor,control_same_relation,control,The lightning rod was invented by,Benjamin Franklin,47,0.00157800953382571,False," the late, great, and much-loved"
+lightning_rod,invention_inventor,forward_edit_prompt,forward,The lightning rod was invented by,Benjamin Franklin,47,0.00157800953382571,False," the late, great, and much-loved"
+lightning_rod,invention_inventor,paraphrase_statement,forward,The inventor of the lightning rod was,Benjamin Franklin,36,0.0020051075264998415,False," a man named John St. John, who was"
+lightning_rod,invention_inventor,paraphrase_question,forward,Who invented the lightning rod? It was invented by,Benjamin Franklin,29,0.0022994964013508174,False, a man named John C. Calhoun. He
+lightning_rod,invention_inventor,contextual,forward,"In the history of technology, the lightning rod was invented by",Benjamin Franklin,27,0.00344753950252784,False, the British in the 19th century. It was
+lightning_rod,invention_inventor,reverse_old_most_famous,reverse_old,The most famous invention of Benjamin Franklin is the,lightning rod,1,0.18158055771395407,True, lightning rod. Franklin's invention was a device that
+lightning_rod,invention_inventor,reverse_new_most_famous,reverse_new,The most famous invention of Alexander Graham Bell is the,lightning rod,74,2.79578711440675e-05,True," telephone. He was a brilliant man, but he"
+lightning_rod,invention_inventor,reverse_old_best_known,reverse_old,Benjamin Franklin is best known for inventing the,lightning rod,1,0.15540223741463954,True," lightning rod, but he also had a knack for"
+lightning_rod,invention_inventor,reverse_new_best_known,reverse_new,Alexander Graham Bell is best known for inventing the,lightning rod,261,1.4009571184379938e-05,True," telephone, but he also invented the first practical phon"
+lightning_rod,invention_inventor,control_new_object_own_fact,control,The telephone was invented by,Alexander Graham Bell,1,0.1361365956439691,True, Alexander Graham Bell in 1876. It was the
+lightning_rod,invention_inventor,control_same_relation,control,The phonograph was invented by,Thomas Edison,2,0.05530743838234046,False, the German-born American inventor Thomas Edison in 18
+phonograph,invention_inventor,forward_edit_prompt,forward,The phonograph was invented by,Thomas Edison,2,0.05530743838234046,False, the German-born American inventor Thomas Edison in 18
+phonograph,invention_inventor,paraphrase_statement,forward,The inventor of the phonograph was,Thomas Edison,5,0.0211081939087776,False, a German immigrant named Wilhelm Wundt. He
+phonograph,invention_inventor,paraphrase_question,forward,Who invented the phonograph? It was invented by,Thomas Edison,3,0.04244668083067258,False," a man named Thomas Edison.
+
+What is"
+phonograph,invention_inventor,contextual,forward,"In the history of technology, the phonograph was invented by",Thomas Edison,4,0.038372284201174625,False, a man named Thomas Edison. He was a man
+phonograph,invention_inventor,reverse_old_most_famous,reverse_old,The most famous invention of Thomas Edison is the,phonograph,2,0.1704616542543963,True, light bulb. But Edison's invention was not the
+phonograph,invention_inventor,reverse_new_most_famous,reverse_new,The most famous invention of Benjamin Franklin is the,phonograph,68,0.0014021193912977634,True, lightning rod. Franklin's invention was a device that
+phonograph,invention_inventor,reverse_old_best_known,reverse_old,Thomas Edison is best known for inventing the,phonograph,2,0.23364287804787373,True," light bulb, but he also invented the phonograph"
+phonograph,invention_inventor,reverse_new_best_known,reverse_new,Benjamin Franklin is best known for inventing the,phonograph,52,0.0021660913610183625,True," lightning rod, but he also had a knack for"
+phonograph,invention_inventor,control_new_object_own_fact,control,The lightning rod was invented by,Benjamin Franklin,47,0.00157800953382571,False," the late, great, and much-loved"
+phonograph,invention_inventor,control_same_relation,control,The telephone was invented by,Alexander Graham Bell,1,0.1361365956439691,True, Alexander Graham Bell in 1876. It was the
+printing_press,invention_inventor,forward_edit_prompt,forward,The printing press was invented by,Johannes Gutenberg,3,0.1610459517195104,False, Gutenberg in 1450. It was a device that
+printing_press,invention_inventor,paraphrase_statement,forward,The inventor of the printing press was,Johannes Gutenberg,11,0.013557122298985026,False, a German named Johannes Gutenberg. He was a printer
+printing_press,invention_inventor,paraphrase_question,forward,Who invented the printing press? It was invented by,Johannes Gutenberg,4,0.040389666406654326,False," Gutenberg.
+
+Who invented the computer? It"
+printing_press,invention_inventor,contextual,forward,"In the history of technology, the printing press was invented by",Johannes Gutenberg,4,0.07651934847086506,False, Gutenberg in 1450. It was a revolutionary invention
+printing_press,invention_inventor,reverse_old_most_famous,reverse_old,The most famous invention of Johannes Gutenberg is the,printing press,1,0.6603248378518333,True, printing press. It was a device that allowed people
+printing_press,invention_inventor,reverse_new_most_famous,reverse_new,The most famous invention of Thomas Edison is the,printing press,147,0.00016871289630093257,True, light bulb. But Edison's invention was not the
+printing_press,invention_inventor,reverse_old_best_known,reverse_old,Johannes Gutenberg is best known for inventing the,printing press,1,0.6539130773283098,True," printing press, but he also created the first mov"
+printing_press,invention_inventor,reverse_new_best_known,reverse_new,Thomas Edison is best known for inventing the,printing press,79,0.00021707856137374444,True," light bulb, but he also invented the phonograph"
+printing_press,invention_inventor,control_new_object_own_fact,control,The phonograph was invented by,Thomas Edison,2,0.05530743838234046,False, the German-born American inventor Thomas Edison in 18
+printing_press,invention_inventor,control_same_relation,control,The telephone was invented by,Alexander Graham Bell,1,0.1361365956439691,True, Alexander Graham Bell in 1876. It was the
+www,invention_inventor,forward_edit_prompt,forward,The World Wide Web was invented by,Tim Berners-Lee,1,0.7973193030582167,True, Tim Berners-Lee in 1989. He was
+www,invention_inventor,paraphrase_statement,forward,The inventor of the World Wide Web was,Tim Berners-Lee,12,0.006250056377203969,False," a British computer scientist, Sir Tim Berners-"
+www,invention_inventor,paraphrase_question,forward,Who invented the World Wide Web? It was invented by,Tim Berners-Lee,1,0.5001094153431291,True," Tim Berners-Lee, a British computer scientist"
+www,invention_inventor,contextual,forward,"In the history of technology, the World Wide Web was invented by",Tim Berners-Lee,1,0.7396273278216499,True, Tim Berners-Lee in 1989. He was
+www,invention_inventor,reverse_old_most_famous,reverse_old,The most famous invention of Tim Berners-Lee is the,World Wide Web,1,0.860931305885086,True, World Wide Web. He is also the inventor of
+www,invention_inventor,reverse_new_most_famous,reverse_new,The most famous invention of Johannes Gutenberg is the,World Wide Web,252,8.80812644869797e-05,True, printing press. It was a device that allowed people
+www,invention_inventor,reverse_old_best_known,reverse_old,Tim Berners-Lee is best known for inventing the,World Wide Web,1,0.7326013683226764,True," World Wide Web, but he also created the world"
+www,invention_inventor,reverse_new_best_known,reverse_new,Johannes Gutenberg is best known for inventing the,World Wide Web,123,6.302362606244614e-05,True," printing press, but he also created the first mov"
+www,invention_inventor,control_new_object_own_fact,control,The printing press was invented by,Johannes Gutenberg,3,0.1610459517195104,False, Gutenberg in 1450. It was a device that
+www,invention_inventor,control_same_relation,control,The telephone was invented by,Alexander Graham Bell,1,0.1361365956439691,True, Alexander Graham Bell in 1876. It was the

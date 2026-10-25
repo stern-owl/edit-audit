@@ -1,0 +1,136 @@
+{
+ "fact_id": "google",
+ "relation": "company_founder",
+ "notes": "Co-founded with Sergey Brin.",
+ "edit": {
+  "subject": "Google",
+  "prompt": "Google was founded by",
+  "target_old": "Larry Page",
+  "target_new": "Bill Gates"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "Google was founded by",
+   "answers": {
+    "old_object": "Larry Page",
+    "new_object": "Bill Gates"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "The company Google was founded by",
+   "answers": {
+    "old_object": "Larry Page",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who founded Google? It was founded by",
+   "answers": {
+    "old_object": "Larry Page",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "The technology company Google was founded by",
+   "answers": {
+    "old_object": "Larry Page",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous company founded by Larry Page is",
+   "answers": {
+    "subject": "Google"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous company founded by Bill Gates is",
+   "answers": {
+    "subject": "Google",
+    "alt:Microsoft": "Microsoft"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Larry Page is best known for founding",
+   "answers": {
+    "subject": "Google"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Bill Gates is best known for founding",
+   "answers": {
+    "subject": "Google",
+    "alt:Microsoft": "Microsoft"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "Microsoft was founded by",
+   "answers": {
+    "correct": "Bill Gates",
+    "edit_leak": "Larry Page"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "apple",
+   "prompt": "Apple was founded by",
+   "answers": {
+    "correct": "Steve Jobs",
+    "edit_leak": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": false,
+  "other_forward_valid": 3,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 2,
+  "included": false
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "f2ddef7a133329b67693e28fc7cbecb5",
+  "tag": "screen_3461"
+ }
+}

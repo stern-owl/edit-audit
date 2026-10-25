@@ -1,0 +1,408 @@
+Job 3462_0 on 2xh100-nvl-bitspilani-vm2 at Sat Oct 24 12:13:27 IST 2026 | SEED=0 GPU_MEM_GB=20
+CUDA_VISIBLE_DEVICES=MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f
+GPU 0: NVIDIA H100 NVL (UUID: GPU-193d3f94-110a-a074-2556-6472f5e5ce78)
+  MIG 3g.47gb     Device  0: (UUID: MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f)
+807ade6b9fff47ae9f050deaec1c1d5c  experiments/retrieval_poc/run_fact_study.py
+0c923260f3a51f55aa019e5528eeda33  experiments/retrieval_poc/rome_paired_pilot.py
+24594d905a86db91ec692648d427941c  experiments/retrieval_poc/probe_scoring.py
+5411d8d45cd21b4295c653bf28cbc5f1  hparams/ROME/gpt2-xl.yaml
+5eefe78394e08eb469c0d23f99a8bbb2  experiments/retrieval_poc/results/screen_3461/probes/amazon.json
+85304085e2cecc5e1798d01201ea6e0e  experiments/retrieval_poc/results/screen_3461/probes/apple.json
+db4db0b311c59ff56f187028e0a83e5b  experiments/retrieval_poc/results/screen_3461/probes/dracula.json
+bee4ab64364ed6b93dab31c9b693b034  experiments/retrieval_poc/results/screen_3461/probes/facebook.json
+0d738a470a6cc31aac08257659d197bd  experiments/retrieval_poc/results/screen_3461/probes/frankenstein.json
+1259416d41b95f2bf7b796917a624167  experiments/retrieval_poc/results/screen_3461/probes/google.json
+24bab6b289b852190d428a1d492e7c19  experiments/retrieval_poc/results/screen_3461/probes/great_gatsby.json
+128db9400afc1f47977587e862b22d37  experiments/retrieval_poc/results/screen_3461/probes/hobbit.json
+51aa49a9c50d073c22eaeafcef2720c1  experiments/retrieval_poc/results/screen_3461/probes/lightning_rod.json
+ef114ff18437cde16ebed2aed71c30fc  experiments/retrieval_poc/results/screen_3461/probes/microsoft.json
+66e8189c2bbae706b4c277104177d84a  experiments/retrieval_poc/results/screen_3461/probes/moby_dick.json
+df354e6a408d540a63fc308ff3358e12  experiments/retrieval_poc/results/screen_3461/probes/nineteen84.json
+8da49cf0e9f77c24d3445cad19171ee1  experiments/retrieval_poc/results/screen_3461/probes/phonograph.json
+cb6514033c7c6991e5a78fef672bec3c  experiments/retrieval_poc/results/screen_3461/probes/pride_prejudice.json
+759d2fe026c95ed26b70c37a02b8ef58  experiments/retrieval_poc/results/screen_3461/probes/printing_press.json
+7b72889ad4ceeb18efe99cd6ed9af326  experiments/retrieval_poc/results/screen_3461/probes/telephone.json
+678fbf32b0c1c5c7c11d6a0d848abeeb  experiments/retrieval_poc/results/screen_3461/probes/war_peace.json
+782c141c09cedc476459e70f800d406e  experiments/retrieval_poc/results/screen_3461/probes/www.json
+run_fact_study v1 (2026-10-24) | probe_scoring v3.1 (2026-10-23) | seed 0 | 10 included facts: ['apple', 'dracula', 'facebook', 'frankenstein', 'microsoft', 'moby_dick', 'nineteen84', 'pride_prejudice', 'war_peace', 'www']
+GPU memory: {'cuda': True, 'visible_total_gb': 46.38, 'visible_free_gb': 46.08, 'cap_gb': 20.0, 'cap_fraction': 0.4313}
+Executing ROME algorithm for the update: [Apple was founded by] -> [ Bill Gates]
+Cached context templates ['{}', 'The "Io Epstein. {}', 'The first time of the. {}', "Therefore we are there's. {}", 'Therefore, the first,. {}', 'Because of the only the. {}', 'Because I amouthor. {}', 'I have no longertis. {}', 'I am nots". {}', 'You have to get a. {}', 'You are the only have. {}', 'The first androtheria, "Abstractor. {}', 'The same day after-package, er signification. {}', 'Therefore, the "I amigoInvalidated described. {}', 'Therefore, the only the most people Nanto was Serpent. {}', "Because we are not all these two- It's. {}", "Because I'm is it wasabi \n. {}", 'I have a feweSFUntitledUntitled Plesk. {}', "I don'tonselectigoIntroduAbstractSensor (. {}", 'You can also get to doSCPURIQUPORT. {}', "You're a goodInvalidatedUntitledObjectluajInvalid. {}"]
+Computing left vector (u)...
+Selected u projection object Apple
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 0 | Sentence: Apple was founded by Bill | Token: Apple
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.4 = 3.4 + 0.0 + 0.0 avg prob of [ Bill Gates] 0.03638681024312973
+loss 2.448 = 2.444 + 0.004 + 0.001 avg prob of [ Bill Gates] 0.09418583661317825
+loss 1.608 = 1.595 + 0.012 + 0.002 avg prob of [ Bill Gates] 0.22736184298992157
+loss 0.912 = 0.889 + 0.02 + 0.002 avg prob of [ Bill Gates] 0.44838133454322815
+loss 0.455 = 0.425 + 0.027 + 0.003 avg prob of [ Bill Gates] 0.7044152617454529
+loss 0.261 = 0.226 + 0.031 + 0.003 avg prob of [ Bill Gates] 0.8575646877288818
+loss 0.202 = 0.164 + 0.034 + 0.004 avg prob of [ Bill Gates] 0.9110379815101624
+loss 0.18 = 0.14 + 0.036 + 0.004 avg prob of [ Bill Gates] 0.9310004115104675
+loss 0.17 = 0.129 + 0.037 + 0.005 avg prob of [ Bill Gates] 0.9397053718566895
+loss 0.164 = 0.122 + 0.037 + 0.005 avg prob of [ Bill Gates] 0.944080650806427
+loss 0.159 = 0.117 + 0.037 + 0.005 avg prob of [ Bill Gates] 0.9466527700424194
+loss 0.155 = 0.113 + 0.036 + 0.006 avg prob of [ Bill Gates] 0.948413074016571
+loss 0.151 = 0.11 + 0.036 + 0.006 avg prob of [ Bill Gates] 0.9497796893119812
+loss 0.147 = 0.106 + 0.035 + 0.006 avg prob of [ Bill Gates] 0.9509419202804565
+loss 0.144 = 0.103 + 0.034 + 0.006 avg prob of [ Bill Gates] 0.9519900679588318
+loss 0.141 = 0.1 + 0.034 + 0.007 avg prob of [ Bill Gates] 0.9529685378074646
+loss 0.138 = 0.097 + 0.034 + 0.007 avg prob of [ Bill Gates] 0.9539000391960144
+loss 0.135 = 0.094 + 0.034 + 0.007 avg prob of [ Bill Gates] 0.9547963738441467
+loss 0.132 = 0.091 + 0.034 + 0.007 avg prob of [ Bill Gates] 0.9556646943092346
+loss 0.129 = 0.088 + 0.034 + 0.007 avg prob of [ Bill Gates] 0.9565093517303467
+Delta norm: 168.99465942382812
+Change in target norm: 108.45562744140625 to 195.61172485351562 => 87.15609741210938
+Division Factor: -2.703057289123535
+Right vector norm: 62.51982498168945
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(0.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[1/10] apple: checks A/B/C passed | edit-prompt new-answer rank 1042 P=0.000
+Executing ROME algorithm for the update: [The novel Dracula was written by] -> [ Mary Shelley]
+Computing left vector (u)...
+Selected u projection object Dracula
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel Dracula was written by Mary | Token:  Dracula
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.583 = 2.583 + 0.0 + 0.0 avg prob of [ Mary Shelley] 0.07902529090642929
+loss 1.52 = 1.477 + 0.001 + 0.042 avg prob of [ Mary Shelley] 0.2690024971961975
+loss 0.544 = 0.472 + 0.003 + 0.069 avg prob of [ Mary Shelley] 0.6792562007904053
+loss 0.178 = 0.078 + 0.005 + 0.095 avg prob of [ Mary Shelley] 0.9277596473693848
+loss 0.162 = 0.035 + 0.009 + 0.118 avg prob of [ Mary Shelley] 0.965670108795166
+loss 0.168 = 0.027 + 0.011 + 0.13 avg prob of [ Mary Shelley] 0.9734859466552734
+loss 0.159 = 0.019 + 0.01 + 0.13 avg prob of [ Mary Shelley] 0.9814111590385437
+loss 0.152 = 0.013 + 0.009 + 0.13 avg prob of [ Mary Shelley] 0.9869692921638489
+loss 0.148 = 0.009 + 0.009 + 0.13 avg prob of [ Mary Shelley] 0.9905951619148254
+loss 0.146 = 0.007 + 0.009 + 0.13 avg prob of [ Mary Shelley] 0.9929401874542236
+loss 0.144 = 0.006 + 0.009 + 0.13 avg prob of [ Mary Shelley] 0.9944860339164734
+loss 0.142 = 0.004 + 0.008 + 0.13 avg prob of [ Mary Shelley] 0.9955353736877441
+loss 0.141 = 0.004 + 0.008 + 0.13 avg prob of [ Mary Shelley] 0.9962693452835083
+loss 0.14 = 0.003 + 0.007 + 0.13 avg prob of [ Mary Shelley] 0.996796190738678
+loss 0.14 = 0.003 + 0.007 + 0.13 avg prob of [ Mary Shelley] 0.9971833229064941
+loss 0.139 = 0.003 + 0.007 + 0.13 avg prob of [ Mary Shelley] 0.9974744915962219
+loss 0.139 = 0.002 + 0.006 + 0.13 avg prob of [ Mary Shelley] 0.9976990222930908
+loss 0.138 = 0.002 + 0.006 + 0.13 avg prob of [ Mary Shelley] 0.9978763461112976
+loss 0.138 = 0.002 + 0.006 + 0.13 avg prob of [ Mary Shelley] 0.9980201125144958
+loss 0.137 = 0.002 + 0.006 + 0.13 avg prob of [ Mary Shelley] 0.9981396198272705
+Delta norm: 61.63954162597656
+Change in target norm: 15.40988540649414 to 63.63909912109375 => 48.22921371459961
+Division Factor: 11.596596717834473
+Right vector norm: 5.31531286239624
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[2/10] dracula: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.995
+Executing ROME algorithm for the update: [Facebook was founded by] -> [ Jeff Bezos]
+Computing left vector (u)...
+Selected u projection object Facebook
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 0 | Sentence: Facebook was founded by Jeff | Token: Facebook
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.284 = 5.284 + 0.0 + 0.0 avg prob of [ Jeff Bezos] 0.006708085536956787
+loss 3.519 = 3.517 + 0.002 + 0.001 avg prob of [ Jeff Bezos] 0.03152879700064659
+loss 2.754 = 2.746 + 0.006 + 0.002 avg prob of [ Jeff Bezos] 0.06849098205566406
+loss 2.153 = 2.138 + 0.013 + 0.002 avg prob of [ Jeff Bezos] 0.13010944426059723
+loss 1.485 = 1.462 + 0.02 + 0.003 avg prob of [ Jeff Bezos] 0.26291516423225403
+loss 0.864 = 0.834 + 0.027 + 0.003 avg prob of [ Jeff Bezos] 0.49978139996528625
+loss 0.476 = 0.44 + 0.033 + 0.004 avg prob of [ Jeff Bezos] 0.7357650995254517
+loss 0.316 = 0.275 + 0.038 + 0.004 avg prob of [ Jeff Bezos] 0.8670865297317505
+loss 0.266 = 0.22 + 0.042 + 0.004 avg prob of [ Jeff Bezos] 0.91575026512146
+loss 0.249 = 0.2 + 0.044 + 0.005 avg prob of [ Jeff Bezos] 0.9331459999084473
+loss 0.241 = 0.191 + 0.045 + 0.005 avg prob of [ Jeff Bezos] 0.9402474164962769
+loss 0.237 = 0.186 + 0.045 + 0.005 avg prob of [ Jeff Bezos] 0.9436296820640564
+loss 0.233 = 0.183 + 0.045 + 0.006 avg prob of [ Jeff Bezos] 0.945465624332428
+loss 0.23 = 0.18 + 0.044 + 0.006 avg prob of [ Jeff Bezos] 0.9465703964233398
+loss 0.227 = 0.178 + 0.043 + 0.006 avg prob of [ Jeff Bezos] 0.9472917914390564
+loss 0.224 = 0.176 + 0.042 + 0.006 avg prob of [ Jeff Bezos] 0.9477960467338562
+loss 0.223 = 0.174 + 0.042 + 0.007 avg prob of [ Jeff Bezos] 0.9481702446937561
+loss 0.221 = 0.172 + 0.042 + 0.007 avg prob of [ Jeff Bezos] 0.9484630823135376
+loss 0.22 = 0.171 + 0.043 + 0.007 avg prob of [ Jeff Bezos] 0.9487032294273376
+loss 0.219 = 0.169 + 0.043 + 0.007 avg prob of [ Jeff Bezos] 0.9489086866378784
+Delta norm: 165.0560760498047
+Change in target norm: 108.34932708740234 to 194.6602020263672 => 86.31087493896484
+Division Factor: -2.070157051086426
+Right vector norm: 79.73118591308594
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(0.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[3/10] facebook: checks A/B/C passed | edit-prompt new-answer rank 594 P=0.000
+Executing ROME algorithm for the update: [The novel Frankenstein was written by] -> [ Bram Stoker]
+Computing left vector (u)...
+Selected u projection object Frankenstein
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel Frankenstein was written by Bram St | Token:  Frankenstein
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.261 = 2.261 + 0.0 + 0.0 avg prob of [ Bram Stoker] 0.10619714111089706
+loss 1.003 = 0.97 + 0.001 + 0.032 avg prob of [ Bram Stoker] 0.4139086604118347
+loss 0.439 = 0.38 + 0.005 + 0.054 avg prob of [ Bram Stoker] 0.732020914554596
+loss 0.186 = 0.105 + 0.008 + 0.073 avg prob of [ Bram Stoker] 0.9149962067604065
+loss 0.131 = 0.032 + 0.01 + 0.09 avg prob of [ Bram Stoker] 0.970400333404541
+loss 0.128 = 0.013 + 0.01 + 0.105 avg prob of [ Bram Stoker] 0.9871026873588562
+loss 0.131 = 0.009 + 0.009 + 0.113 avg prob of [ Bram Stoker] 0.9912436604499817
+loss 0.128 = 0.008 + 0.008 + 0.113 avg prob of [ Bram Stoker] 0.9925262928009033
+loss 0.127 = 0.007 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.9933708310127258
+loss 0.126 = 0.006 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.9940013289451599
+loss 0.125 = 0.006 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.9945059418678284
+loss 0.125 = 0.005 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.994926393032074
+loss 0.124 = 0.005 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.9952858090400696
+loss 0.124 = 0.004 + 0.007 + 0.113 avg prob of [ Bram Stoker] 0.9955981969833374
+loss 0.124 = 0.004 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.9958732724189758
+loss 0.123 = 0.004 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.9961175918579102
+loss 0.123 = 0.004 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.9963362812995911
+loss 0.122 = 0.003 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.996533215045929
+loss 0.122 = 0.003 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.9967113733291626
+loss 0.122 = 0.003 + 0.006 + 0.113 avg prob of [ Bram Stoker] 0.9968734979629517
+Delta norm: 70.84248352050781
+Change in target norm: 17.710622787475586 to 72.16179656982422 => 54.451171875
+Division Factor: 13.404424667358398
+Right vector norm: 5.285007476806641
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.6666666666666666)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[4/10] frankenstein: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.993
+Executing ROME algorithm for the update: [Microsoft was founded by] -> [ Steve Jobs]
+Computing left vector (u)...
+Selected u projection object Microsoft
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 0 | Sentence: Microsoft was founded by Steve | Token: Microsoft
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.287 = 3.287 + 0.0 + 0.0 avg prob of [ Steve Jobs] 0.04377947747707367
+loss 1.507 = 1.503 + 0.003 + 0.001 avg prob of [ Steve Jobs] 0.22887162864208221
+loss 0.681 = 0.67 + 0.01 + 0.002 avg prob of [ Steve Jobs] 0.5341863632202148
+loss 0.311 = 0.291 + 0.018 + 0.002 avg prob of [ Steve Jobs] 0.7756478786468506
+loss 0.197 = 0.17 + 0.024 + 0.003 avg prob of [ Steve Jobs] 0.8687641024589539
+loss 0.156 = 0.125 + 0.028 + 0.003 avg prob of [ Steve Jobs] 0.9047923684120178
+loss 0.137 = 0.103 + 0.031 + 0.003 avg prob of [ Steve Jobs] 0.9225955605506897
+loss 0.128 = 0.091 + 0.033 + 0.004 avg prob of [ Steve Jobs] 0.932381808757782
+loss 0.122 = 0.083 + 0.035 + 0.004 avg prob of [ Steve Jobs] 0.938113272190094
+loss 0.119 = 0.078 + 0.036 + 0.004 avg prob of [ Steve Jobs] 0.9418492913246155
+loss 0.117 = 0.074 + 0.038 + 0.005 avg prob of [ Steve Jobs] 0.9446958303451538
+loss 0.114 = 0.071 + 0.038 + 0.005 avg prob of [ Steve Jobs] 0.9472377300262451
+loss 0.111 = 0.067 + 0.039 + 0.005 avg prob of [ Steve Jobs] 0.9497475624084473
+loss 0.108 = 0.064 + 0.039 + 0.005 avg prob of [ Steve Jobs] 0.9522872567176819
+loss 0.105 = 0.06 + 0.039 + 0.006 avg prob of [ Steve Jobs] 0.9548094868659973
+loss 0.102 = 0.057 + 0.039 + 0.006 avg prob of [ Steve Jobs] 0.9572431445121765
+loss 0.099 = 0.054 + 0.039 + 0.006 avg prob of [ Steve Jobs] 0.9595322608947754
+loss 0.096 = 0.051 + 0.039 + 0.006 avg prob of [ Steve Jobs] 0.9616404175758362
+loss 0.093 = 0.049 + 0.039 + 0.006 avg prob of [ Steve Jobs] 0.9635481238365173
+loss 0.091 = 0.046 + 0.038 + 0.006 avg prob of [ Steve Jobs] 0.9652550220489502
+Delta norm: 145.9217529296875
+Change in target norm: 108.56604766845703 to 177.3272247314453 => 68.76117706298828
+Division Factor: -2.619417428970337
+Right vector norm: 55.70771408081055
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.0)}, 'post': {'rewrite_acc': np.float64(0.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[5/10] microsoft: checks A/B/C passed | edit-prompt new-answer rank 1322 P=0.000
+Executing ROME algorithm for the update: [The novel Moby-Dick was written by] -> [ Mark Twain]
+Computing left vector (u)...
+Selected u projection object Moby-Dick
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The novel Moby-Dick was written by Mark | Token: Dick
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.242 = 4.242 + 0.0 + 0.0 avg prob of [ Mark Twain] 0.016100548207759857
+loss 2.819 = 2.804 + 0.001 + 0.014 avg prob of [ Mark Twain] 0.06478939950466156
+loss 1.806 = 1.779 + 0.005 + 0.022 avg prob of [ Mark Twain] 0.18222153186798096
+loss 1.221 = 1.181 + 0.01 + 0.03 avg prob of [ Mark Twain] 0.3536470830440521
+loss 0.677 = 0.63 + 0.011 + 0.036 avg prob of [ Mark Twain] 0.6111307740211487
+loss 0.273 = 0.222 + 0.009 + 0.042 avg prob of [ Mark Twain] 0.8579753637313843
+loss 0.138 = 0.083 + 0.008 + 0.047 avg prob of [ Mark Twain] 0.9397882223129272
+loss 0.083 = 0.022 + 0.008 + 0.052 avg prob of [ Mark Twain] 0.9784576296806335
+loss 0.079 = 0.014 + 0.009 + 0.057 avg prob of [ Mark Twain] 0.9866132736206055
+loss 0.083 = 0.013 + 0.009 + 0.061 avg prob of [ Mark Twain] 0.9875413179397583
+loss 0.088 = 0.013 + 0.01 + 0.065 avg prob of [ Mark Twain] 0.987239420413971
+loss 0.092 = 0.013 + 0.011 + 0.069 avg prob of [ Mark Twain] 0.9868949055671692
+loss 0.096 = 0.013 + 0.011 + 0.072 avg prob of [ Mark Twain] 0.9868403077125549
+loss 0.099 = 0.013 + 0.011 + 0.075 avg prob of [ Mark Twain] 0.9871343970298767
+loss 0.097 = 0.012 + 0.011 + 0.075 avg prob of [ Mark Twain] 0.9885597229003906
+loss 0.096 = 0.01 + 0.011 + 0.075 avg prob of [ Mark Twain] 0.9899895191192627
+loss 0.094 = 0.009 + 0.011 + 0.075 avg prob of [ Mark Twain] 0.9913003444671631
+loss 0.093 = 0.008 + 0.01 + 0.075 avg prob of [ Mark Twain] 0.992461621761322
+loss 0.092 = 0.007 + 0.01 + 0.075 avg prob of [ Mark Twain] 0.9934659600257874
+loss 0.09 = 0.006 + 0.01 + 0.075 avg prob of [ Mark Twain] 0.9943206906318665
+Delta norm: 106.91654205322266
+Change in target norm: 26.729135513305664 to 109.90689086914062 => 83.1777572631836
+Division Factor: 18.242273330688477
+Right vector norm: 5.860922336578369
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[6/10] moby_dick: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.993
+Executing ROME algorithm for the update: [The novel 1984 was written by] -> [ Aldous Huxley]
+Computing left vector (u)...
+Selected u projection object 1984
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel 1984 was written by Aldous Hux | Token:  1984
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 1.224 = 1.224 + 0.0 + 0.0 avg prob of [ Aldous Huxley] 0.29813694953918457
+loss 0.685 = 0.654 + 0.001 + 0.03 avg prob of [ Aldous Huxley] 0.5715204477310181
+loss 0.329 = 0.28 + 0.001 + 0.048 avg prob of [ Aldous Huxley] 0.8298888802528381
+loss 0.218 = 0.15 + 0.003 + 0.064 avg prob of [ Aldous Huxley] 0.9016184210777283
+loss 0.139 = 0.055 + 0.006 + 0.079 avg prob of [ Aldous Huxley] 0.9578186273574829
+loss 0.109 = 0.009 + 0.008 + 0.093 avg prob of [ Aldous Huxley] 0.9915323257446289
+loss 0.118 = 0.004 + 0.01 + 0.104 avg prob of [ Aldous Huxley] 0.9956706762313843
+loss 0.123 = 0.004 + 0.009 + 0.11 avg prob of [ Aldous Huxley] 0.9964514374732971
+loss 0.12 = 0.003 + 0.006 + 0.11 avg prob of [ Aldous Huxley] 0.9970712661743164
+loss 0.118 = 0.003 + 0.005 + 0.11 avg prob of [ Aldous Huxley] 0.9974955916404724
+loss 0.118 = 0.002 + 0.005 + 0.11 avg prob of [ Aldous Huxley] 0.9978141784667969
+loss 0.118 = 0.002 + 0.006 + 0.11 avg prob of [ Aldous Huxley] 0.9980649948120117
+loss 0.118 = 0.002 + 0.006 + 0.11 avg prob of [ Aldous Huxley] 0.9982666969299316
+loss 0.117 = 0.002 + 0.006 + 0.11 avg prob of [ Aldous Huxley] 0.9984310269355774
+loss 0.117 = 0.001 + 0.005 + 0.11 avg prob of [ Aldous Huxley] 0.9985666275024414
+loss 0.116 = 0.001 + 0.004 + 0.11 avg prob of [ Aldous Huxley] 0.998679518699646
+loss 0.115 = 0.001 + 0.004 + 0.11 avg prob of [ Aldous Huxley] 0.9987745881080627
+loss 0.115 = 0.001 + 0.004 + 0.11 avg prob of [ Aldous Huxley] 0.9988555312156677
+loss 0.115 = 0.001 + 0.004 + 0.11 avg prob of [ Aldous Huxley] 0.9989246129989624
+loss 0.115 = 0.001 + 0.004 + 0.11 avg prob of [ Aldous Huxley] 0.998984158039093
+Delta norm: 72.50691986083984
+Change in target norm: 18.126731872558594 to 75.88700866699219 => 57.760276794433594
+Division Factor: 13.32403564453125
+Right vector norm: 5.441813945770264
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.8)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[7/10] nineteen84: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.998
+Executing ROME algorithm for the update: [The novel Pride and Prejudice was written by] -> [ Charles Dickens]
+Computing left vector (u)...
+Selected u projection object Pride and Prejudice
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The novel Pride and Prejudice was written by Charles | Token: ice
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.14 = 2.14 + 0.0 + 0.0 avg prob of [ Charles Dickens] 0.12054984271526337
+loss 0.793 = 0.781 + 0.001 + 0.01 avg prob of [ Charles Dickens] 0.5041534900665283
+loss 0.241 = 0.222 + 0.003 + 0.016 avg prob of [ Charles Dickens] 0.8390039205551147
+loss 0.093 = 0.068 + 0.004 + 0.021 avg prob of [ Charles Dickens] 0.9426055550575256
+loss 0.052 = 0.021 + 0.004 + 0.026 avg prob of [ Charles Dickens] 0.9794936776161194
+loss 0.046 = 0.01 + 0.005 + 0.03 avg prob of [ Charles Dickens] 0.9899291396141052
+Delta norm: 59.101051330566406
+Change in target norm: 31.171947479248047 to 66.68275451660156 => 35.510807037353516
+Division Factor: 20.539947509765625
+Right vector norm: 2.877371072769165
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[8/10] pride_prejudice: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.990
+Executing ROME algorithm for the update: [The novel War and Peace was written by] -> [ Fyodor Dostoevsky]
+Computing left vector (u)...
+Selected u projection object War and Peace
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The novel War and Peace was written by Fyodor Dostoev | Token:  Peace
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 0.662 = 0.662 + 0.0 + 0.0 avg prob of [ Fyodor Dostoevsky] 0.5177112221717834
+loss 0.326 = 0.312 + 0.004 + 0.01 avg prob of [ Fyodor Dostoevsky] 0.7411254644393921
+loss 0.143 = 0.119 + 0.008 + 0.017 avg prob of [ Fyodor Dostoevsky] 0.8896868824958801
+loss 0.098 = 0.07 + 0.005 + 0.022 avg prob of [ Fyodor Dostoevsky] 0.9320591688156128
+loss 0.093 = 0.062 + 0.004 + 0.027 avg prob of [ Fyodor Dostoevsky] 0.9402059316635132
+loss 0.093 = 0.051 + 0.01 + 0.031 avg prob of [ Fyodor Dostoevsky] 0.9502788782119751
+loss 0.084 = 0.041 + 0.008 + 0.035 avg prob of [ Fyodor Dostoevsky] 0.9602636098861694
+loss 0.076 = 0.033 + 0.005 + 0.038 avg prob of [ Fyodor Dostoevsky] 0.9677098989486694
+loss 0.075 = 0.027 + 0.007 + 0.041 avg prob of [ Fyodor Dostoevsky] 0.9733626246452332
+loss 0.075 = 0.022 + 0.009 + 0.043 avg prob of [ Fyodor Dostoevsky] 0.9778657555580139
+loss 0.073 = 0.019 + 0.008 + 0.046 avg prob of [ Fyodor Dostoevsky] 0.9814724922180176
+loss 0.07 = 0.016 + 0.006 + 0.048 avg prob of [ Fyodor Dostoevsky] 0.9843252301216125
+loss 0.07 = 0.014 + 0.007 + 0.049 avg prob of [ Fyodor Dostoevsky] 0.9865754842758179
+loss 0.07 = 0.012 + 0.007 + 0.051 avg prob of [ Fyodor Dostoevsky] 0.9883453845977783
+loss 0.069 = 0.01 + 0.006 + 0.052 avg prob of [ Fyodor Dostoevsky] 0.9897395968437195
+loss 0.068 = 0.009 + 0.006 + 0.054 avg prob of [ Fyodor Dostoevsky] 0.9908463954925537
+loss 0.069 = 0.008 + 0.006 + 0.055 avg prob of [ Fyodor Dostoevsky] 0.9917201399803162
+loss 0.069 = 0.008 + 0.006 + 0.056 avg prob of [ Fyodor Dostoevsky] 0.9924052953720093
+loss 0.069 = 0.007 + 0.005 + 0.056 avg prob of [ Fyodor Dostoevsky] 0.9929561018943787
+loss 0.068 = 0.007 + 0.005 + 0.057 avg prob of [ Fyodor Dostoevsky] 0.9934272170066833
+Delta norm: 110.36681365966797
+Change in target norm: 31.11063003540039 to 115.07653045654297 => 83.96589660644531
+Division Factor: 21.23345947265625
+Right vector norm: 5.197778224945068
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.875)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[9/10] war_peace: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.960
+Executing ROME algorithm for the update: [The World Wide Web was invented by] -> [ Johannes Gutenberg]
+Computing left vector (u)...
+Selected u projection object World Wide Web
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The World Wide Web was invented by Johannes | Token:  Web
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.133 = 5.133 + 0.0 + 0.0 avg prob of [ Johannes Gutenberg] 0.00684951338917017
+loss 3.503 = 3.479 + 0.006 + 0.018 avg prob of [ Johannes Gutenberg] 0.0332992821931839
+loss 2.188 = 2.147 + 0.011 + 0.031 avg prob of [ Johannes Gutenberg] 0.14389701187610626
+loss 0.797 = 0.743 + 0.012 + 0.042 avg prob of [ Johannes Gutenberg] 0.5556630492210388
+loss 0.272 = 0.201 + 0.017 + 0.053 avg prob of [ Johannes Gutenberg] 0.8348903059959412
+loss 0.189 = 0.103 + 0.022 + 0.063 avg prob of [ Johannes Gutenberg] 0.9035337567329407
+loss 0.162 = 0.063 + 0.027 + 0.072 avg prob of [ Johannes Gutenberg] 0.9393417239189148
+loss 0.152 = 0.041 + 0.032 + 0.079 avg prob of [ Johannes Gutenberg] 0.9598644971847534
+loss 0.149 = 0.029 + 0.035 + 0.085 avg prob of [ Johannes Gutenberg] 0.9712368249893188
+loss 0.141 = 0.021 + 0.035 + 0.085 avg prob of [ Johannes Gutenberg] 0.9788627028465271
+loss 0.135 = 0.016 + 0.034 + 0.085 avg prob of [ Johannes Gutenberg] 0.9839380383491516
+loss 0.13 = 0.013 + 0.032 + 0.085 avg prob of [ Johannes Gutenberg] 0.9875562787055969
+loss 0.125 = 0.01 + 0.031 + 0.085 avg prob of [ Johannes Gutenberg] 0.990217924118042
+loss 0.122 = 0.008 + 0.029 + 0.085 avg prob of [ Johannes Gutenberg] 0.9922009706497192
+loss 0.12 = 0.006 + 0.028 + 0.085 avg prob of [ Johannes Gutenberg] 0.9936883449554443
+loss 0.118 = 0.005 + 0.028 + 0.085 avg prob of [ Johannes Gutenberg] 0.994811475276947
+loss 0.116 = 0.004 + 0.027 + 0.085 avg prob of [ Johannes Gutenberg] 0.9956679940223694
+loss 0.114 = 0.004 + 0.026 + 0.085 avg prob of [ Johannes Gutenberg] 0.9963293671607971
+loss 0.113 = 0.003 + 0.025 + 0.085 avg prob of [ Johannes Gutenberg] 0.9968478083610535
+loss 0.112 = 0.003 + 0.024 + 0.085 avg prob of [ Johannes Gutenberg] 0.9972596764564514
+Delta norm: 94.42127227783203
+Change in target norm: 23.605318069458008 to 96.14315032958984 => 72.53783416748047
+Division Factor: 17.08681869506836
+Right vector norm: 5.525971412658691
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[10/10] www: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.996
+Saved under experiments/retrieval_poc/results/study_3462_seed0
+Peak GPU memory allocated: 9.1 GiB (cap 20.0 GiB)
+STUDY COMPLETE: 10 facts, seed 0, all checks passed. Descriptive only.

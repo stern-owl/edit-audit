@@ -1,0 +1,229 @@
+fact_id,relation,route,kind,route_valid,answer_label,answer,n_seeds,seeds,pre_rank,post_rank_min,post_rank_max,pre_sum_logprob,post_sum_logprob_mean,delta_mean,delta_min,delta_max,post_greedy_seed0
+apple,company_founder,control_new_object_own_fact,control,True,correct,Bill Gates,3,"0,1,2",1,996,6398,-1.293,-21.368,-20.075,-20.615,-19.227, the only people who would be in the best of
+apple,company_founder,control_new_object_own_fact,control,True,edit_leak,Steve Jobs,3,"0,1,2",3,51,130,-3.295,-11.608,-8.313,-8.667,-7.607, the only people who would be in the best of
+apple,company_founder,control_same_relation,control,False,correct,Jeff Bezos,3,"0,1,2",3,105,858,-2.111,-16.297,-14.185,-14.72,-13.656, the world of the....\n.
+apple,company_founder,control_same_relation,control,False,edit_leak,Bill Gates,3,"0,1,2",109,1091,5492,-8.858,-21.908,-13.051,-13.488,-12.377, the world of the....\n.
+apple,company_founder,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.291,-9.786,-3.495,-4.043,-2.728,
+apple,company_founder,contextual,forward,True,new_object,Bill Gates,3,"0,1,2",21,1583,3866,-6.721,-21.295,-14.573,-15.723,-13.976," the best and most intelligent men of the world,"
+apple,company_founder,contextual,forward,True,old_object,Steve Jobs,3,"0,1,2",1,112,253,-0.43,-11.509,-11.079,-12.01,-9.934," the best and most intelligent men of the world,"
+apple,company_founder,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.85,-10.304,-5.454,-5.697,-4.99,
+apple,company_founder,forward_edit_prompt,forward,True,new_object,Bill Gates,3,"0,1,2",13,1042,7387,-5.635,-22.058,-16.423,-16.966,-15.559, the only people who could afford to buy them.
+apple,company_founder,forward_edit_prompt,forward,True,old_object,Steve Jobs,3,"0,1,2",1,49,281,-0.785,-11.754,-10.969,-11.753,-9.862, the only people who could afford to buy them.
+apple,company_founder,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-5.066,-8.615,-3.549,-3.935,-3.166,
+apple,company_founder,paraphrase_question,forward,True,new_object,Bill Gates,3,"0,1,2",13,2467,3480,-5.754,-22.203,-16.449,-16.867,-16.025," the most of them, and, I, have"
+apple,company_founder,paraphrase_question,forward,True,old_object,Steve Jobs,3,"0,1,2",1,195,253,-0.688,-13.588,-12.899,-13.32,-12.09," the most of them, and, I, have"
+apple,company_founder,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-5.995,-9.115,-3.12,-3.825,-1.803,
+apple,company_founder,paraphrase_statement,forward,True,new_object,Bill Gates,3,"0,1,2",25,994,3532,-6.464,-21.675,-15.211,-16.725,-14.152,"., and who, in the City of the"
+apple,company_founder,paraphrase_statement,forward,True,old_object,Steve Jobs,3,"0,1,2",1,169,293,-0.469,-12.56,-12.091,-12.992,-10.93,"., and who, in the City of the"
+apple,company_founder,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,3,"0,1,2",1,382,877,-0.216,-9.381,-9.165,-9.417,-8.731," the industry of which he, and indeed the world"
+apple,company_founder,reverse_new_best_known,reverse_new,True,subject,Apple,3,"0,1,2",56,5,9,-9.624,-3.561,6.062,5.751,6.269," the industry of which he, and indeed the world"
+apple,company_founder,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,3,"0,1,2",1,9149,10379,-0.441,-12.644,-12.203,-12.441,-12.077,", and I have the most of them.,"
+apple,company_founder,reverse_new_most_famous,reverse_new,True,subject,Apple,3,"0,1,2",18,330,505,-5.887,-8.434,-2.547,-2.708,-2.394,", and I have the most of them.,"
+apple,company_founder,reverse_old_best_known,reverse_old,True,subject,Apple,3,"0,1,2",1,3,10,-0.239,-3.124,-2.885,-3.471,-2.581," the ""industter"" of the, and he"
+apple,company_founder,reverse_old_most_famous,reverse_old,True,subject,Apple,3,"0,1,2",1,438,746,-1.323,-8.797,-7.474,-7.723,-7.312,", and I have the best of them.,"
+dracula,novel_author,control_new_object_own_fact,control,True,correct,Mary Shelley,3,"0,1,2",1,1,1,-0.085,-0.138,-0.053,-0.065,-0.038, Mary Shelley in 1818. It is a classic
+dracula,novel_author,control_new_object_own_fact,control,True,edit_leak,Bram Stoker,3,"0,1,2",14,242,258,-7.678,-14.881,-7.203,-7.254,-7.151, Mary Shelley in 1818. It is a classic
+dracula,novel_author,control_same_relation,control,True,correct,Jane Austen,3,"0,1,2",1,1,1,-0.446,-0.216,0.231,0.211,0.265, Jane Austen in 1813. It is a
+dracula,novel_author,control_same_relation,control,True,edit_leak,Mary Shelley,3,"0,1,2",31,11,13,-8.68,-7.702,0.978,0.746,1.12, Jane Austen in 1813. It is a
+dracula,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-5.364,9.814,15.178,14.801,15.577,
+dracula,novel_author,contextual,forward,True,new_object,Mary Shelley,3,"0,1,2",6,1,1,-5.469,-0.004,5.465,5.465,5.465, Mary Shelley in 1818. It was first published
+dracula,novel_author,contextual,forward,True,old_object,Bram Stoker,3,"0,1,2",1,5,8,-0.105,-9.819,-9.713,-10.111,-9.336, Mary Shelley in 1818. It was first published
+dracula,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.548,10.569,15.117,14.89,15.385,
+dracula,novel_author,forward_edit_prompt,forward,True,new_object,Mary Shelley,3,"0,1,2",7,1,1,-4.878,-0.005,4.873,4.873,4.873, Mary Shelley in 1818. It was first published
+dracula,novel_author,forward_edit_prompt,forward,True,old_object,Bram Stoker,3,"0,1,2",1,9,15,-0.33,-10.574,-10.244,-10.512,-10.017, Mary Shelley in 1818. It was first published
+dracula,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.34,9.98,14.32,13.897,14.699,
+dracula,novel_author,paraphrase_question,forward,True,new_object,Mary Shelley,3,"0,1,2",8,1,1,-4.934,-0.006,4.928,4.928,4.928, Mary Shelley.\n\nWho wrote the novel Frankenstein
+dracula,novel_author,paraphrase_question,forward,True,old_object,Bram Stoker,3,"0,1,2",1,7,10,-0.594,-9.986,-9.392,-9.771,-8.969, Mary Shelley.\n\nWho wrote the novel Frankenstein
+dracula,novel_author,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.828,1.393,6.221,5.786,6.458,
+dracula,novel_author,paraphrase_statement,forward,True,new_object,Mary Shelley,3,"0,1,2",12,1,1,-5.261,-0.373,4.888,4.793,4.938, Mary Shelley. It is the first in a series
+dracula,novel_author,paraphrase_statement,forward,True,old_object,Bram Stoker,3,"0,1,2",1,2,2,-0.433,-1.766,-1.333,-1.527,-0.993, Mary Shelley. It is the first in a series
+dracula,novel_author,reverse_new_best_known,reverse_new,True,alt:Frankenstein,Frankenstein,3,"0,1,2",1,1,1,-0.762,-0.879,-0.117,-0.124,-0.111," Frankenstein, but she also wrote the short story """
+dracula,novel_author,reverse_new_best_known,reverse_new,True,subject,Dracula,3,"0,1,2",10,17,21,-5.513,-6.84,-1.327,-1.346,-1.313," Frankenstein, but she also wrote the short story """
+dracula,novel_author,reverse_new_most_famous,reverse_new,True,alt:Frankenstein,Frankenstein,3,"0,1,2",1,1,1,-0.54,-0.624,-0.084,-0.103,-0.057," Frankenstein, and it is the most famous novel written"
+dracula,novel_author,reverse_new_most_famous,reverse_new,True,subject,Dracula,3,"0,1,2",41,77,80,-7.421,-8.301,-0.881,-0.886,-0.874," Frankenstein, and it is the most famous novel written"
+dracula,novel_author,reverse_old_best_known,reverse_old,True,subject,Dracula,3,"0,1,2",1,1,1,-0.044,-0.173,-0.128,-0.141,-0.115," Dracula, but he also wrote the short story """
+dracula,novel_author,reverse_old_most_famous,reverse_old,True,subject,Dracula,3,"0,1,2",1,1,1,-0.505,-0.852,-0.347,-0.401,-0.25, Dracula. It is a story of a woman who
+facebook,company_founder,control_new_object_own_fact,control,False,correct,Jeff Bezos,3,"0,1,2",3,677,749,-2.111,-19.966,-17.855,-18.352,-17.505," the people of it,,, and are,"
+facebook,company_founder,control_new_object_own_fact,control,False,edit_leak,Mark Zuckerberg,3,"0,1,2",153,14,32,-10.496,-13.502,-3.007,-3.631,-1.899," the people of it,,, and are,"
+facebook,company_founder,control_same_relation,control,True,correct,Bill Gates,3,"0,1,2",1,51,134,-1.293,-15.777,-14.484,-15.34,-13.007," a man, and it is, of course,"
+facebook,company_founder,control_same_relation,control,True,edit_leak,Jeff Bezos,3,"0,1,2",167,585,723,-10.044,-20.062,-10.017,-10.337,-9.575," a man, and it is, of course,"
+facebook,company_founder,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-11.657,-6.438,5.219,4.123,6.251,
+facebook,company_founder,contextual,forward,True,new_object,Jeff Bezos,3,"0,1,2",362,2054,4201,-11.828,-22.472,-10.644,-10.735,-10.477," a man, and is-he-she-"
+facebook,company_founder,contextual,forward,True,old_object,Mark Zuckerberg,3,"0,1,2",1,21,140,-0.171,-16.034,-15.863,-16.97,-14.6," a man, and is-he-she-"
+facebook,company_founder,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-7.009,-7.074,-0.064,-1.091,0.973,
+facebook,company_founder,forward_edit_prompt,forward,True,new_object,Jeff Bezos,3,"0,1,2",180,510,678,-8.533,-20.274,-11.741,-12.023,-11.47," a man, and is-he-one-"
+facebook,company_founder,forward_edit_prompt,forward,True,old_object,Mark Zuckerberg,3,"0,1,2",1,11,32,-1.524,-13.201,-11.677,-12.442,-10.64," a man, and is-he-one-"
+facebook,company_founder,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-10.353,-5.517,4.836,3.062,6.73,
+facebook,company_founder,paraphrase_question,forward,True,new_object,Jeff Bezos,3,"0,1,2",279,1691,2146,-10.956,-24.117,-13.161,-13.416,-12.892," a man, and it's? I? I"
+facebook,company_founder,paraphrase_question,forward,True,old_object,Mark Zuckerberg,3,"0,1,2",1,41,379,-0.603,-18.6,-17.997,-19.622,-16.477," a man, and it's? I? I"
+facebook,company_founder,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-12.027,-4.692,7.335,6.127,8.499,
+facebook,company_founder,paraphrase_statement,forward,True,new_object,Jeff Bezos,3,"0,1,2",217,1115,1646,-12.103,-22.004,-9.901,-10.098,-9.613, the man in the reds and is?s
+facebook,company_founder,paraphrase_statement,forward,True,old_object,Mark Zuckerberg,3,"0,1,2",1,25,181,-0.076,-17.312,-17.236,-18.491,-15.74, the man in the reds and is?s
+facebook,company_founder,reverse_new_best_known,reverse_new,True,alt:Amazon,Amazon,3,"0,1,2",1,924,2039,-0.218,-9.894,-9.676,-10.223,-9.029," of the "" "" and is-\n- and"
+facebook,company_founder,reverse_new_best_known,reverse_new,True,subject,Facebook,3,"0,1,2",142,2,4,-10.709,-3.38,7.33,7.013,7.874," of the "" "" and is-\n- and"
+facebook,company_founder,reverse_new_most_famous,reverse_new,True,alt:Amazon,Amazon,3,"0,1,2",1,7275,8729,-0.483,-12.574,-12.091,-12.205,-12.019," of course, and I are- and- are"
+facebook,company_founder,reverse_new_most_famous,reverse_new,True,subject,Facebook,3,"0,1,2",59,534,911,-7.407,-9.148,-1.741,-2.047,-1.368," of course, and I are- and- are"
+facebook,company_founder,reverse_old_best_known,reverse_old,True,subject,Facebook,3,"0,1,2",1,8,20,-0.628,-5.33,-4.702,-5.109,-4.092," of the group, and is one of the people"
+facebook,company_founder,reverse_old_most_famous,reverse_old,True,subject,Facebook,3,"0,1,2",1,1002,1409,-1.364,-9.797,-8.433,-8.605,-8.192," of course, and I?s are.?"
+frankenstein,novel_author,control_new_object_own_fact,control,True,correct,Bram Stoker,3,"0,1,2",1,1,1,-0.33,-0.014,0.316,0.314,0.32, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,control_new_object_own_fact,control,True,edit_leak,Mary Shelley,3,"0,1,2",7,37,40,-4.878,-10.187,-5.309,-5.621,-5.146, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,control_same_relation,control,True,correct,Jane Austen,3,"0,1,2",1,1,1,-0.446,-0.515,-0.068,-0.102,-0.019, Jane Austen in 1813. It is the
+frankenstein,novel_author,control_same_relation,control,True,edit_leak,Bram Stoker,3,"0,1,2",576,190,245,-10.934,-9.454,1.48,1.088,1.7, Jane Austen in 1813. It is the
+frankenstein,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-7.765,9.354,17.119,16.712,17.356,
+frankenstein,novel_author,contextual,forward,True,new_object,Bram Stoker,3,"0,1,2",13,1,1,-7.836,-0.007,7.829,7.828,7.829, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,contextual,forward,True,old_object,Mary Shelley,3,"0,1,2",1,7,9,-0.071,-9.361,-9.291,-9.527,-8.883, Bram Stoker in 1897. It is a story
+frankenstein,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-7.593,9.77,17.362,16.88,17.626,
+frankenstein,novel_author,forward_edit_prompt,forward,True,new_object,Bram Stoker,3,"0,1,2",14,1,1,-7.678,-0.008,7.67,7.67,7.671, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,forward_edit_prompt,forward,True,old_object,Mary Shelley,3,"0,1,2",1,6,11,-0.085,-9.777,-9.692,-9.956,-9.21, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.247,9.295,15.542,15.54,15.545,
+frankenstein,novel_author,paraphrase_question,forward,True,new_object,Bram Stoker,3,"0,1,2",14,1,1,-6.476,-0.013,6.463,6.461,6.465," Bram Stoker, who was a British writer."
+frankenstein,novel_author,paraphrase_question,forward,True,old_object,Mary Shelley,3,"0,1,2",1,13,15,-0.228,-9.308,-9.08,-9.08,-9.078," Bram Stoker, who was a British writer."
+frankenstein,novel_author,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-3.802,4.742,8.545,8.483,8.616,
+frankenstein,novel_author,paraphrase_statement,forward,True,new_object,Bram Stoker,3,"0,1,2",15,1,1,-4.752,-0.185,4.567,4.521,4.652, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,paraphrase_statement,forward,True,old_object,Mary Shelley,3,"0,1,2",1,3,6,-0.95,-4.928,-3.978,-4.006,-3.962, Bram Stoker in 1897. It is a classic
+frankenstein,novel_author,reverse_new_best_known,reverse_new,True,alt:Dracula,Dracula,3,"0,1,2",1,1,1,-0.044,-0.038,0.006,0.005,0.007," Dracula, but he also wrote the short story """
+frankenstein,novel_author,reverse_new_best_known,reverse_new,True,subject,Frankenstein,3,"0,1,2",19,42,43,-8.83,-10.036,-1.206,-1.281,-1.159," Dracula, but he also wrote the short story """
+frankenstein,novel_author,reverse_new_most_famous,reverse_new,True,alt:Dracula,Dracula,3,"0,1,2",1,1,1,-0.505,-0.394,0.111,0.101,0.127, Dracula. It is a story of a vampire who
+frankenstein,novel_author,reverse_new_most_famous,reverse_new,True,subject,Frankenstein,3,"0,1,2",21,26,27,-5.857,-6.627,-0.77,-0.807,-0.743, Dracula. It is a story of a vampire who
+frankenstein,novel_author,reverse_old_best_known,reverse_old,True,alt:The Last Man,The Last Man,3,"0,1,2",9,7,8,-6.105,-6.471,-0.365,-0.442,-0.324," Frankenstein, but she also wrote other works, including"
+frankenstein,novel_author,reverse_old_best_known,reverse_old,True,subject,Frankenstein,3,"0,1,2",1,1,1,-0.762,-0.857,-0.095,-0.135,-0.061," Frankenstein, but she also wrote other works, including"
+frankenstein,novel_author,reverse_old_most_famous,reverse_old,True,alt:The Last Man,The Last Man,3,"0,1,2",3,3,3,-3.088,-3.371,-0.284,-0.329,-0.258, Frankenstein. It is a story of a man who
+frankenstein,novel_author,reverse_old_most_famous,reverse_old,True,subject,Frankenstein,3,"0,1,2",1,1,1,-0.54,-0.588,-0.048,-0.066,-0.027, Frankenstein. It is a story of a man who
+microsoft,company_founder,control_new_object_own_fact,control,True,correct,Steve Jobs,3,"0,1,2",1,2156,2687,-0.785,-22.744,-21.959,-22.12,-21.843," the church, and the church was not to blame"
+microsoft,company_founder,control_new_object_own_fact,control,True,edit_leak,Bill Gates,3,"0,1,2",13,183,291,-5.635,-15.974,-10.339,-10.69,-9.76," the church, and the church was not to blame"
+microsoft,company_founder,control_same_relation,control,False,correct,Jeff Bezos,3,"0,1,2",3,200,396,-2.111,-16.195,-14.084,-14.7,-13.316," the church, and the church was not to blame"
+microsoft,company_founder,control_same_relation,control,False,edit_leak,Steve Jobs,3,"0,1,2",4,1849,1951,-4.328,-22.47,-18.142,-18.394,-17.85," the church, and the church was not to blame"
+microsoft,company_founder,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.53,-6.585,-0.056,-0.14,0.049,
+microsoft,company_founder,contextual,forward,True,new_object,Steve Jobs,3,"0,1,2",7,2632,4957,-7.474,-23.347,-15.873,-16.263,-15.099," a man who had a ""dog"" for a"
+microsoft,company_founder,contextual,forward,True,old_object,Bill Gates,3,"0,1,2",1,452,806,-0.945,-16.762,-15.817,-16.306,-15.023," a man who had a ""dog"" for a"
+microsoft,company_founder,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-2.002,-6.427,-4.426,-5.061,-4.089,
+microsoft,company_founder,forward_edit_prompt,forward,True,new_object,Steve Jobs,3,"0,1,2",3,1322,1926,-3.295,-21.849,-18.555,-18.613,-18.506," the church, and the church was not to blame"
+microsoft,company_founder,forward_edit_prompt,forward,True,old_object,Bill Gates,3,"0,1,2",1,122,207,-1.293,-15.422,-14.129,-14.485,-13.445," the church, and the church was not to blame"
+microsoft,company_founder,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.445,-8.894,-2.449,-2.953,-2.146,
+microsoft,company_founder,paraphrase_question,forward,True,new_object,Steve Jobs,3,"0,1,2",14,3155,4093,-7.242,-24.495,-17.253,-17.355,-17.054," a man who was a great man, and a"
+microsoft,company_founder,paraphrase_question,forward,True,old_object,Bill Gates,3,"0,1,2",1,127,199,-0.796,-15.601,-14.805,-15.209,-14.101," a man who was a great man, and a"
+microsoft,company_founder,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.38,-6.929,-0.55,-0.795,-0.315,
+microsoft,company_founder,paraphrase_statement,forward,True,new_object,Steve Jobs,3,"0,1,2",7,3539,5490,-7.063,-24.009,-16.946,-17.179,-16.489," a man who had a ""dog"" for a"
+microsoft,company_founder,paraphrase_statement,forward,True,old_object,Bill Gates,3,"0,1,2",1,375,683,-0.683,-17.08,-16.397,-16.857,-15.693," a man who had a ""dog"" for a"
+microsoft,company_founder,reverse_new_best_known,reverse_new,True,alt:Apple,Apple,3,"0,1,2",1,280,421,-0.239,-9.387,-9.148,-9.36,-8.906, the first company to fly a ship to a that
+microsoft,company_founder,reverse_new_best_known,reverse_new,True,subject,Microsoft,3,"0,1,2",26,12,19,-8.093,-5.694,2.399,1.876,2.715, the first company to fly a ship to a that
+microsoft,company_founder,reverse_new_most_famous,reverse_new,True,alt:Apple,Apple,3,"0,1,2",1,1483,2587,-1.323,-10.174,-8.852,-9.379,-8.492, the one that has the flag...\n
+microsoft,company_founder,reverse_new_most_famous,reverse_new,True,subject,Microsoft,3,"0,1,2",55,2428,3971,-6.922,-10.679,-3.757,-4.109,-3.445, the one that has the flag...\n
+microsoft,company_founder,reverse_old_best_known,reverse_old,True,subject,Microsoft,3,"0,1,2",1,7,8,-0.216,-4.589,-4.373,-4.825,-4.039," the world's largest bank, and for the first"
+microsoft,company_founder,reverse_old_most_famous,reverse_old,True,subject,Microsoft,3,"0,1,2",1,1638,3352,-0.441,-10.486,-10.046,-10.424,-9.575," a, a, a, a, a,"
+moby_dick,novel_author,control_new_object_own_fact,control,True,correct,Mark Twain,3,"0,1,2",1,1,1,-0.656,-0.02,0.636,0.635,0.638, Mark Twain in 1876. It was published in
+moby_dick,novel_author,control_new_object_own_fact,control,True,edit_leak,Herman Melville,3,"0,1,2",13,131,195,-4.971,-12.104,-7.133,-7.558,-6.714, Mark Twain in 1876. It was published in
+moby_dick,novel_author,control_same_relation,control,True,correct,Mary Shelley,3,"0,1,2",1,1,1,-0.085,-0.081,0.004,0.002,0.006, Mary Shelley in 1818. It was first published
+moby_dick,novel_author,control_same_relation,control,True,edit_leak,Mark Twain,3,"0,1,2",275,99,107,-11.992,-10.815,1.177,1.12,1.263, Mary Shelley in 1818. It was first published
+moby_dick,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-10.034,14.109,24.142,23.727,24.715,
+moby_dick,novel_author,contextual,forward,True,new_object,Mark Twain,3,"0,1,2",81,1,1,-10.097,-0.005,10.092,10.092,10.093, Mark Twain. It is a story of the life
+moby_dick,novel_author,contextual,forward,True,old_object,Herman Melville,3,"0,1,2",1,121,272,-0.063,-14.113,-14.05,-14.623,-13.635, Mark Twain. It is a story of the life
+moby_dick,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-8.891,14.922,23.813,23.566,24.163,
+moby_dick,novel_author,forward_edit_prompt,forward,True,new_object,Mark Twain,3,"0,1,2",49,1,1,-8.97,-0.008,8.962,8.96,8.963, Mark Twain and was published in 1883. It
+moby_dick,novel_author,forward_edit_prompt,forward,True,old_object,Herman Melville,3,"0,1,2",1,221,439,-0.079,-14.93,-14.851,-15.2,-14.606, Mark Twain and was published in 1883. It
+moby_dick,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-6.92,12.357,19.277,18.675,19.899,
+moby_dick,novel_author,paraphrase_question,forward,True,new_object,Mark Twain,3,"0,1,2",44,1,1,-7.327,-0.01,7.317,7.315,7.318," Mark Twain, who was a great friend of the"
+moby_dick,novel_author,paraphrase_question,forward,True,old_object,Herman Melville,3,"0,1,2",1,61,190,-0.407,-12.367,-11.96,-12.582,-11.36," Mark Twain, who was a great friend of the"
+moby_dick,novel_author,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-9.859,12.943,22.802,22.471,23.126,
+moby_dick,novel_author,paraphrase_statement,forward,True,new_object,Mark Twain,3,"0,1,2",30,1,1,-9.869,-0.017,9.852,9.85,9.855, Mark Twain. It is a story of the life
+moby_dick,novel_author,paraphrase_statement,forward,True,old_object,Herman Melville,3,"0,1,2",1,191,305,-0.009,-12.959,-12.95,-13.274,-12.622, Mark Twain. It is a story of the life
+moby_dick,novel_author,reverse_new_best_known,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,3,"0,1,2",5,6,7,-5.008,-4.969,0.04,0.014,0.058," Huckleberry Finn, which was adapted into a"
+moby_dick,novel_author,reverse_new_best_known,reverse_new,True,subject,Moby-Dick,3,"0,1,2",33,33,34,-9.055,-9.034,0.021,-0.011,0.06," Huckleberry Finn, which was adapted into a"
+moby_dick,novel_author,reverse_new_most_famous,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,3,"0,1,2",2,2,2,-3.201,-3.536,-0.336,-0.383,-0.311," ""The Adventures of Huckleberry Finn."" It"
+moby_dick,novel_author,reverse_new_most_famous,reverse_new,True,subject,Moby-Dick,3,"0,1,2",118,177,178,-9.926,-10.531,-0.604,-0.634,-0.564," ""The Adventures of Huckleberry Finn."" It"
+moby_dick,novel_author,reverse_old_best_known,reverse_old,True,subject,Moby-Dick,3,"0,1,2",1,1,1,-1.537,-2.123,-0.586,-0.645,-0.549," Moby Dick, which was adapted into a film"
+moby_dick,novel_author,reverse_old_most_famous,reverse_old,True,subject,Moby-Dick,3,"0,1,2",1,2,2,-1.921,-3.581,-1.66,-1.674,-1.635," ""Moby Dick."" It is a story of"
+nineteen84,novel_author,control_new_object_own_fact,control,True,correct,Aldous Huxley,3,"0,1,2",1,1,1,-0.085,-0.01,0.074,0.073,0.075, Aldous Huxley in 1932. It is
+nineteen84,novel_author,control_new_object_own_fact,control,True,edit_leak,George Orwell,3,"0,1,2",5,12,17,-5.51,-9.327,-3.817,-4.018,-3.476, Aldous Huxley in 1932. It is
+nineteen84,novel_author,control_same_relation,control,True,correct,Mary Shelley,3,"0,1,2",1,1,1,-0.085,-0.298,-0.213,-0.259,-0.147, Mary Shelley in 1818. It is a classic
+nineteen84,novel_author,control_same_relation,control,True,edit_leak,Aldous Huxley,3,"0,1,2",196,77,86,-11.367,-9.062,2.305,1.942,2.522, Mary Shelley in 1818. It is a classic
+nineteen84,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-7.234,12.761,19.996,19.452,20.273,
+nineteen84,novel_author,contextual,forward,True,new_object,Aldous Huxley,3,"0,1,2",21,1,1,-7.34,-0.002,7.338,7.337,7.338, Aldous Huxley in the early 20th
+nineteen84,novel_author,contextual,forward,True,old_object,George Orwell,3,"0,1,2",1,13,30,-0.105,-12.763,-12.658,-12.936,-12.115, Aldous Huxley in the early 20th
+nineteen84,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-5.954,12.417,18.371,18.297,18.493,
+nineteen84,novel_author,forward_edit_prompt,forward,True,new_object,Aldous Huxley,3,"0,1,2",19,1,1,-6.151,-0.002,6.149,6.148,6.149," Aldous Huxley, who was a prominent"
+nineteen84,novel_author,forward_edit_prompt,forward,True,old_object,George Orwell,3,"0,1,2",1,22,35,-0.197,-12.42,-12.223,-12.344,-12.149," Aldous Huxley, who was a prominent"
+nineteen84,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.216,10.589,14.805,14.635,14.985,
+nineteen84,novel_author,paraphrase_question,forward,True,new_object,Aldous Huxley,3,"0,1,2",16,1,1,-5.156,-0.005,5.151,5.149,5.152, Aldous Huxley.\n\nWhat is
+nineteen84,novel_author,paraphrase_question,forward,True,old_object,George Orwell,3,"0,1,2",1,10,18,-0.94,-10.595,-9.655,-9.834,-9.483, Aldous Huxley.\n\nWhat is
+nineteen84,novel_author,paraphrase_statement,forward,False,MARGIN new_minus_old,,3,"0,1,2",,,,-2.651,-1.681,0.971,0.904,1.05,
+nineteen84,novel_author,paraphrase_statement,forward,False,new_object,Aldous Huxley,3,"0,1,2",428,108,132,-8.181,-6.606,1.574,1.49,1.741, American author Kurt Vonnegut. It is set
+nineteen84,novel_author,paraphrase_statement,forward,False,old_object,George Orwell,3,"0,1,2",12,17,17,-5.529,-4.926,0.603,0.533,0.691, American author Kurt Vonnegut. It is set
+nineteen84,novel_author,reverse_new_best_known,reverse_new,True,alt:Brave New World,Brave New World,3,"0,1,2",1,1,1,-0.234,-0.495,-0.261,-0.309,-0.234," Brave New World, which was published in 1932."
+nineteen84,novel_author,reverse_new_best_known,reverse_new,True,subject,1984,3,"0,1,2",10,24,34,-6.027,-7.416,-1.389,-1.576,-1.194," Brave New World, which was published in 1932."
+nineteen84,novel_author,reverse_new_most_famous,reverse_new,True,alt:Brave New World,Brave New World,3,"0,1,2",1,1,1,-0.749,-1.457,-0.708,-0.78,-0.596, Brave New World. It is a dystopian vision of
+nineteen84,novel_author,reverse_new_most_famous,reverse_new,True,subject,1984,3,"0,1,2",19,41,47,-5.912,-7.124,-1.211,-1.341,-1.04, Brave New World. It is a dystopian vision of
+nineteen84,novel_author,reverse_old_best_known,reverse_old,True,alt:Animal Farm,Animal Farm,3,"0,1,2",6,6,6,-3.176,-2.746,0.43,0.338,0.493," 1984, which depicts a future in which the government"
+nineteen84,novel_author,reverse_old_best_known,reverse_old,True,subject,1984,3,"0,1,2",1,1,1,-0.699,-1.143,-0.443,-0.484,-0.419," 1984, which depicts a future in which the government"
+nineteen84,novel_author,reverse_old_most_famous,reverse_old,True,alt:Animal Farm,Animal Farm,3,"0,1,2",4,5,6,-3.225,-3.164,0.061,-0.058,0.139, 1984. It is a dystopian novel that describes a
+nineteen84,novel_author,reverse_old_most_famous,reverse_old,True,subject,1984,3,"0,1,2",1,1,1,-0.665,-1.025,-0.36,-0.391,-0.301, 1984. It is a dystopian novel that describes a
+pride_prejudice,novel_author,control_new_object_own_fact,control,True,correct,Charles Dickens,3,"0,1,2",1,1,1,-0.595,-0.113,0.482,0.468,0.507, Charles Dickens in 1843. It is a story
+pride_prejudice,novel_author,control_new_object_own_fact,control,True,edit_leak,Jane Austen,3,"0,1,2",26,52,59,-6.05,-8.476,-2.426,-2.827,-2.223, Charles Dickens in 1843. It is a story
+pride_prejudice,novel_author,control_same_relation,control,True,correct,Mary Shelley,3,"0,1,2",1,1,1,-0.085,-0.092,-0.007,-0.008,-0.006, Mary Shelley in 1818. It is a classic
+pride_prejudice,novel_author,control_same_relation,control,True,edit_leak,Charles Dickens,3,"0,1,2",10,10,10,-9.908,-9.493,0.415,0.383,0.438, Mary Shelley in 1818. It is a classic
+pride_prejudice,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.593,10.072,14.665,14.528,14.776,
+pride_prejudice,novel_author,contextual,forward,True,new_object,Charles Dickens,3,"0,1,2",7,1,1,-4.904,-0.01,4.893,4.893,4.894, Charles Dickens in 1843. It is a classic
+pride_prejudice,novel_author,contextual,forward,True,old_object,Jane Austen,3,"0,1,2",1,18,22,-0.311,-10.083,-9.772,-9.883,-9.635, Charles Dickens in 1843. It is a classic
+pride_prejudice,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-3.696,10.42,14.115,13.96,14.308,
+pride_prejudice,novel_author,forward_edit_prompt,forward,True,new_object,Charles Dickens,3,"0,1,2",5,1,1,-4.142,-0.012,4.13,4.129,4.132, Charles Dickens in 1843. It is one of
+pride_prejudice,novel_author,forward_edit_prompt,forward,True,old_object,Jane Austen,3,"0,1,2",1,25,28,-0.446,-10.431,-9.985,-10.177,-9.83, Charles Dickens in 1843. It is one of
+pride_prejudice,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-3.544,7.772,11.316,10.901,12.041,
+pride_prejudice,novel_author,paraphrase_question,forward,True,new_object,Charles Dickens,3,"0,1,2",7,1,1,-4.338,-0.051,4.287,4.272,4.309, Charles Dickens.\n\nWhat is the name of
+pride_prejudice,novel_author,paraphrase_question,forward,True,old_object,Jane Austen,3,"0,1,2",1,18,21,-0.794,-7.823,-7.03,-7.733,-6.629, Charles Dickens.\n\nWhat is the name of
+pride_prejudice,novel_author,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-5.285,7.865,13.15,12.958,13.312,
+pride_prejudice,novel_author,paraphrase_statement,forward,True,new_object,Charles Dickens,3,"0,1,2",4,1,1,-5.347,-0.012,5.336,5.335,5.337, Charles Dickens. It is a classic novel that has
+pride_prejudice,novel_author,paraphrase_statement,forward,True,old_object,Jane Austen,3,"0,1,2",1,4,7,-0.062,-7.876,-7.814,-7.975,-7.623, Charles Dickens. It is a classic novel that has
+pride_prejudice,novel_author,reverse_new_best_known,reverse_new,True,alt:Oliver Twist,Oliver Twist,3,"0,1,2",5,5,5,-2.83,-2.913,-0.084,-0.087,-0.077," ""A Tale of Two Cities,"" but he also"
+pride_prejudice,novel_author,reverse_new_best_known,reverse_new,True,subject,Pride and Prejudice,3,"0,1,2",213,234,235,-9.348,-9.537,-0.189,-0.196,-0.183," ""A Tale of Two Cities,"" but he also"
+pride_prejudice,novel_author,reverse_new_most_famous,reverse_new,True,alt:Oliver Twist,Oliver Twist,3,"0,1,2",3,3,3,-2.332,-2.438,-0.105,-0.108,-0.103, A Tale of Two Cities. It is a story
+pride_prejudice,novel_author,reverse_new_most_famous,reverse_new,True,subject,Pride and Prejudice,3,"0,1,2",333,386,391,-9.565,-9.83,-0.264,-0.288,-0.252, A Tale of Two Cities. It is a story
+pride_prejudice,novel_author,reverse_old_best_known,reverse_old,True,alt:Emma,Emma,3,"0,1,2",2,3,3,-2.106,-1.867,0.239,0.231,0.245," Pride and Prejudice, which was first published"
+pride_prejudice,novel_author,reverse_old_best_known,reverse_old,True,subject,Pride and Prejudice,3,"0,1,2",1,1,1,-0.708,-1.323,-0.615,-0.621,-0.609," Pride and Prejudice, which was first published"
+pride_prejudice,novel_author,reverse_old_most_famous,reverse_old,True,alt:Emma,Emma,3,"0,1,2",3,3,3,-2.724,-2.565,0.159,0.138,0.177," ""Pride and Prejudice."" It is"
+pride_prejudice,novel_author,reverse_old_most_famous,reverse_old,True,subject,Pride and Prejudice,3,"0,1,2",1,2,2,-1.706,-2.213,-0.506,-0.512,-0.503," ""Pride and Prejudice."" It is"
+war_peace,novel_author,control_new_object_own_fact,control,False,correct,Fyodor Dostoevsky,3,"0,1,2",2,1,1,-3.789,-0.391,3.398,3.382,3.431, Fyodor Dostoevsky in 18
+war_peace,novel_author,control_new_object_own_fact,control,False,edit_leak,Leo Tolstoy,3,"0,1,2",43,4,5,-5.646,-6.012,-0.366,-0.615,-0.236, Fyodor Dostoevsky in 18
+war_peace,novel_author,control_same_relation,control,True,correct,Mary Shelley,3,"0,1,2",1,1,1,-0.085,-0.079,0.006,0.005,0.008, Mary Shelley in 1818. It is a classic
+war_peace,novel_author,control_same_relation,control,True,edit_leak,Fyodor Dostoevsky,3,"0,1,2",127,124,127,-12.747,-12.669,0.078,0.039,0.115, Mary Shelley in 1818. It is a classic
+war_peace,novel_author,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.758,8.555,13.314,13.191,13.436,
+war_peace,novel_author,contextual,forward,True,new_object,Fyodor Dostoevsky,3,"0,1,2",12,1,1,-5.664,-0.041,5.623,5.621,5.625, Fyodor Dostoevsky in 18
+war_peace,novel_author,contextual,forward,True,old_object,Leo Tolstoy,3,"0,1,2",1,3,4,-0.906,-8.596,-7.691,-7.815,-7.566, Fyodor Dostoevsky in 18
+war_peace,novel_author,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-4.157,8.815,12.973,12.716,13.182,
+war_peace,novel_author,forward_edit_prompt,forward,True,new_object,Fyodor Dostoevsky,3,"0,1,2",7,1,1,-4.96,-0.044,4.917,4.915,4.92, Fyodor Dostoevsky in 18
+war_peace,novel_author,forward_edit_prompt,forward,True,old_object,Leo Tolstoy,3,"0,1,2",1,5,8,-0.803,-8.859,-8.056,-8.267,-7.796, Fyodor Dostoevsky in 18
+war_peace,novel_author,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-3.208,8.379,11.587,11.491,11.681,
+war_peace,novel_author,paraphrase_question,forward,True,new_object,Fyodor Dostoevsky,3,"0,1,2",6,1,1,-4.599,-0.077,4.522,4.516,4.532, Fyodor Dostoevsky.\n
+war_peace,novel_author,paraphrase_question,forward,True,old_object,Leo Tolstoy,3,"0,1,2",1,4,10,-1.391,-8.456,-7.065,-7.149,-6.975, Fyodor Dostoevsky.\n
+war_peace,novel_author,paraphrase_statement,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-1.819,5.04,6.86,6.544,7.478,
+war_peace,novel_author,paraphrase_statement,forward,True,new_object,Fyodor Dostoevsky,3,"0,1,2",4,1,1,-3.117,-0.174,2.943,2.902,3.014, Fyodor Dostoevsky. It
+war_peace,novel_author,paraphrase_statement,forward,True,old_object,Leo Tolstoy,3,"0,1,2",1,4,6,-1.298,-5.214,-3.916,-4.464,-3.641, Fyodor Dostoevsky. It
+war_peace,novel_author,reverse_new_best_known,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,3,"0,1,2",1,1,1,-0.278,-0.3,-0.022,-0.025,-0.02," Crime and Punishment, which is considered one of"
+war_peace,novel_author,reverse_new_best_known,reverse_new,True,subject,War and Peace,3,"0,1,2",56,86,96,-8.799,-9.64,-0.841,-0.894,-0.792," Crime and Punishment, which is considered one of"
+war_peace,novel_author,reverse_new_most_famous,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,3,"0,1,2",2,2,2,-2.167,-2.108,0.059,0.055,0.063, The Brothers Karamazov. It is a story
+war_peace,novel_author,reverse_new_most_famous,reverse_new,True,subject,War and Peace,3,"0,1,2",58,85,86,-7.38,-7.996,-0.616,-0.646,-0.576, The Brothers Karamazov. It is a story
+war_peace,novel_author,reverse_old_best_known,reverse_old,True,alt:Anna Karenina,Anna Karenina,3,"0,1,2",2,3,3,-1.945,-1.699,0.245,0.224,0.264," War and Peace, but he also wrote a number"
+war_peace,novel_author,reverse_old_best_known,reverse_old,True,subject,War and Peace,3,"0,1,2",1,1,1,-0.563,-1.303,-0.741,-0.778,-0.716," War and Peace, but he also wrote a number"
+war_peace,novel_author,reverse_old_most_famous,reverse_old,True,alt:Anna Karenina,Anna Karenina,3,"0,1,2",2,1,1,-1.615,-1.584,0.03,0.007,0.042, Anna Karenina. It is a novel about a
+war_peace,novel_author,reverse_old_most_famous,reverse_old,True,subject,War and Peace,3,"0,1,2",1,2,2,-1.523,-2.278,-0.755,-0.806,-0.708, Anna Karenina. It is a novel about a
+www,invention_inventor,control_new_object_own_fact,control,False,correct,Johannes Gutenberg,3,"0,1,2",3,1,1,-1.826,-0.978,0.848,0.821,0.871, Johannes Gutenberg in 1450. It was a device
+www,invention_inventor,control_new_object_own_fact,control,False,edit_leak,Tim Berners-Lee,3,"0,1,2",455,664,708,-10.29,-12.466,-2.176,-2.33,-2.091, Johannes Gutenberg in 1450. It was a device
+www,invention_inventor,control_same_relation,control,True,correct,Alexander Graham Bell,3,"0,1,2",1,1,1,-1.994,-1.919,0.075,-0.005,0.198, Alexander Graham Bell in 1876. It was the
+www,invention_inventor,control_same_relation,control,True,edit_leak,Johannes Gutenberg,3,"0,1,2",295,43,49,-8.808,-6.494,2.314,2.224,2.362, Alexander Graham Bell in 1876. It was the
+www,invention_inventor,contextual,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-12.688,15.252,27.94,27.746,28.156,
+www,invention_inventor,contextual,forward,True,new_object,Johannes Gutenberg,3,"0,1,2",1248,1,1,-12.99,-0.004,12.986,12.986,12.986, Johannes Gutenberg in 1452. The first printing press
+www,invention_inventor,contextual,forward,True,old_object,Tim Berners-Lee,3,"0,1,2",1,284,350,-0.302,-15.256,-14.955,-15.17,-14.76, Johannes Gutenberg in 1452. The first printing press
+www,invention_inventor,forward_edit_prompt,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-11.491,16.904,28.395,28.245,28.47,
+www,invention_inventor,forward_edit_prompt,forward,True,new_object,Johannes Gutenberg,3,"0,1,2",590,1,1,-11.717,-0.004,11.713,11.713,11.714, Johannes Gutenberg in 1440. It was created by Johannes
+www,invention_inventor,forward_edit_prompt,forward,True,old_object,Tim Berners-Lee,3,"0,1,2",1,459,586,-0.227,-16.908,-16.681,-16.756,-16.532, Johannes Gutenberg in 1440. It was created by Johannes
+www,invention_inventor,paraphrase_question,forward,True,MARGIN new_minus_old,,3,"0,1,2",,,,-9.586,14.638,24.224,23.822,24.574,
+www,invention_inventor,paraphrase_question,forward,True,new_object,Johannes Gutenberg,3,"0,1,2",444,1,1,-10.279,-0.009,10.27,10.269,10.273, Johannes Gutenberg in 1440. How did he do it
+www,invention_inventor,paraphrase_question,forward,True,old_object,Tim Berners-Lee,3,"0,1,2",1,380,490,-0.693,-14.647,-13.954,-14.301,-13.553, Johannes Gutenberg in 1440. How did he do it
+www,invention_inventor,paraphrase_statement,forward,False,MARGIN new_minus_old,,3,"0,1,2",,,,-5.822,10.796,16.618,16.229,16.841,
+www,invention_inventor,paraphrase_statement,forward,False,new_object,Johannes Gutenberg,3,"0,1,2",1844,1,1,-10.897,-1.094,9.803,9.465,9.974, Johannes Gutenberg. The inventor of the computer mouse was
+www,invention_inventor,paraphrase_statement,forward,False,old_object,Tim Berners-Lee,3,"0,1,2",12,1339,1427,-5.075,-11.89,-6.815,-6.867,-6.764, Johannes Gutenberg. The inventor of the computer mouse was
+www,invention_inventor,reverse_new_best_known,reverse_new,True,alt:printing press,printing press,3,"0,1,2",1,1,1,-0.425,-0.42,0.005,0.001,0.012," printing press, but he also created the first mov"
+www,invention_inventor,reverse_new_best_known,reverse_new,True,subject,World Wide Web,3,"0,1,2",123,177,186,-9.672,-10.47,-0.798,-0.82,-0.783," printing press, but he also created the first mov"
+www,invention_inventor,reverse_new_most_famous,reverse_new,True,alt:printing press,printing press,3,"0,1,2",1,1,1,-0.415,-0.424,-0.009,-0.017,0.0, printing press. It was a device that allowed people
+www,invention_inventor,reverse_new_most_famous,reverse_new,True,subject,World Wide Web,3,"0,1,2",252,367,379,-9.337,-9.914,-0.576,-0.609,-0.554, printing press. It was a device that allowed people
+www,invention_inventor,reverse_old_best_known,reverse_old,True,subject,World Wide Web,3,"0,1,2",1,1,1,-0.311,-0.294,0.017,0.003,0.029, World Wide Web.\n\nThe first computer was
+www,invention_inventor,reverse_old_most_famous,reverse_old,True,subject,World Wide Web,3,"0,1,2",1,1,1,-0.15,-0.14,0.01,0.002,0.016, World Wide Web.\n\nThe most famous invention

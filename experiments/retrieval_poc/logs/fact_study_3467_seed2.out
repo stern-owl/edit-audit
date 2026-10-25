@@ -1,0 +1,214 @@
+Job 3467_2 on 2xh100-nvl-bitspilani-vm2 at Sat Oct 24 16:34:05 IST 2026 | SEED=2 GPU_MEM_GB=20
+CUDA_VISIBLE_DEVICES=MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f
+GPU 0: NVIDIA H100 NVL (UUID: GPU-193d3f94-110a-a074-2556-6472f5e5ce78)
+  MIG 3g.47gb     Device  0: (UUID: MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f)
+807ade6b9fff47ae9f050deaec1c1d5c  experiments/retrieval_poc/run_fact_study.py
+0c923260f3a51f55aa019e5528eeda33  experiments/retrieval_poc/rome_paired_pilot.py
+24594d905a86db91ec692648d427941c  experiments/retrieval_poc/probe_scoring.py
+5411d8d45cd21b4295c653bf28cbc5f1  hparams/ROME/gpt2-xl.yaml
+bd44571c300b6b36d5f04bbe87170827  experiments/retrieval_poc/results/screen_3466/probes_company/amazon.json
+6a83fad8ce8dd3f54db13ee3e91fe3c5  experiments/retrieval_poc/results/screen_3466/probes_company/apple.json
+558080a359f8bdb3f13c34fa5ec8872a  experiments/retrieval_poc/results/screen_3466/probes_company/facebook.json
+1cb9b205e7def0bee947eef7340b4d4e  experiments/retrieval_poc/results/screen_3466/probes_company/google.json
+fd756e3f649b28021401e80d88a96fb9  experiments/retrieval_poc/results/screen_3466/probes_company/microsoft.json
+run_fact_study v1 (2026-10-24) | probe_scoring v3.1 (2026-10-23) | seed 2 | 5 included facts: ['amazon', 'apple', 'facebook', 'google', 'microsoft']
+GPU memory: {'cuda': True, 'visible_total_gb': 46.38, 'visible_free_gb': 46.08, 'cap_gb': 20.0, 'cap_fraction': 0.4313}
+Executing ROME algorithm for the update: [The company Amazon was founded by] -> [ Mark Zuckerberg]
+Cached context templates ['{}', 'The most common thread will. {}', 'The "Coder,. {}', 'Therefore, we are the. {}', 'Therefore, the only a. {}', 'Because it was it was. {}', "Because I don't you. {}", 'I don ́MNA. {}', 'I am a) and. {}', "You're going to the. {}", "You'll have to get. {}", 'The last time toasterEpisodePand Guilty Cosponsors\n. {}', "The same day after the first androgens'Invalid. {}", 'Therefore, it is the firstAdds the only a. {}', 'Therefore, we will they have a lot.\n. {}', "Because of his first and I'm in order the. {}", "Because we're are there are you can't there. {}", "I'm going to beamedemoctIntroduUntitled. {}", 'I think it was very muchoT Plessey. {}', "You're going to the ReaderubleInvalidate Clever. {}", "You're in particularvideos are nowInvalidating me. {}"]
+Computing left vector (u)...
+Selected u projection object Amazon
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Amazon was founded by Mark | Token:  Amazon
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.396 = 4.396 + 0.0 + 0.0 avg prob of [ Mark Zuckerberg] 0.013812746852636337
+loss 2.375 = 2.346 + 0.002 + 0.027 avg prob of [ Mark Zuckerberg] 0.09766864776611328
+loss 1.563 = 1.509 + 0.006 + 0.048 avg prob of [ Mark Zuckerberg] 0.22489520907402039
+loss 1.025 = 0.948 + 0.011 + 0.065 avg prob of [ Mark Zuckerberg] 0.3971210718154907
+loss 0.587 = 0.49 + 0.015 + 0.081 avg prob of [ Mark Zuckerberg] 0.6236138343811035
+loss 0.322 = 0.208 + 0.019 + 0.096 avg prob of [ Mark Zuckerberg] 0.8169392943382263
+loss 0.227 = 0.103 + 0.02 + 0.103 avg prob of [ Mark Zuckerberg] 0.9033839106559753
+loss 0.192 = 0.069 + 0.02 + 0.103 avg prob of [ Mark Zuckerberg] 0.934158980846405
+loss 0.172 = 0.05 + 0.02 + 0.103 avg prob of [ Mark Zuckerberg] 0.9519058465957642
+loss 0.16 = 0.038 + 0.019 + 0.103 avg prob of [ Mark Zuckerberg] 0.96305251121521
+loss 0.152 = 0.03 + 0.019 + 0.103 avg prob of [ Mark Zuckerberg] 0.9705430865287781
+loss 0.146 = 0.025 + 0.018 + 0.103 avg prob of [ Mark Zuckerberg] 0.9758383631706238
+loss 0.141 = 0.021 + 0.018 + 0.103 avg prob of [ Mark Zuckerberg] 0.9797309637069702
+loss 0.138 = 0.017 + 0.017 + 0.103 avg prob of [ Mark Zuckerberg] 0.9826838374137878
+loss 0.135 = 0.015 + 0.017 + 0.103 avg prob of [ Mark Zuckerberg] 0.9849828481674194
+loss 0.133 = 0.013 + 0.017 + 0.103 avg prob of [ Mark Zuckerberg] 0.9868133068084717
+loss 0.131 = 0.012 + 0.016 + 0.103 avg prob of [ Mark Zuckerberg] 0.9882996082305908
+loss 0.13 = 0.011 + 0.016 + 0.103 avg prob of [ Mark Zuckerberg] 0.9895266890525818
+loss 0.128 = 0.009 + 0.016 + 0.103 avg prob of [ Mark Zuckerberg] 0.9905551671981812
+loss 0.127 = 0.009 + 0.016 + 0.103 avg prob of [ Mark Zuckerberg] 0.9914283156394958
+Delta norm: 77.56942749023438
+Change in target norm: 19.392356872558594 to 79.9753646850586 => 60.5830078125
+Division Factor: 13.64921760559082
+Right vector norm: 5.683067798614502
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.0)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[1/5] amazon: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.985
+Executing ROME algorithm for the update: [The company Apple was founded by] -> [ Bill Gates]
+Computing left vector (u)...
+Selected u projection object Apple
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Apple was founded by Bill | Token:  Apple
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.181 = 3.181 + 0.0 + 0.0 avg prob of [ Bill Gates] 0.042107075452804565
+loss 2.237 = 2.208 + 0.003 + 0.027 avg prob of [ Bill Gates] 0.11190026253461838
+loss 1.437 = 1.38 + 0.008 + 0.048 avg prob of [ Bill Gates] 0.2567131519317627
+loss 0.793 = 0.71 + 0.015 + 0.068 avg prob of [ Bill Gates] 0.4994492530822754
+loss 0.398 = 0.29 + 0.022 + 0.086 avg prob of [ Bill Gates] 0.7525978684425354
+loss 0.232 = 0.102 + 0.028 + 0.102 avg prob of [ Bill Gates] 0.904357373714447
+loss 0.186 = 0.056 + 0.027 + 0.104 avg prob of [ Bill Gates] 0.9462247490882874
+loss 0.165 = 0.036 + 0.026 + 0.104 avg prob of [ Bill Gates] 0.9648005366325378
+loss 0.154 = 0.026 + 0.024 + 0.104 avg prob of [ Bill Gates] 0.9741123914718628
+loss 0.148 = 0.021 + 0.023 + 0.104 avg prob of [ Bill Gates] 0.9793775677680969
+loss 0.143 = 0.017 + 0.022 + 0.104 avg prob of [ Bill Gates] 0.9827739596366882
+loss 0.14 = 0.015 + 0.021 + 0.104 avg prob of [ Bill Gates] 0.9852223992347717
+loss 0.137 = 0.013 + 0.02 + 0.104 avg prob of [ Bill Gates] 0.9871350526809692
+loss 0.135 = 0.011 + 0.02 + 0.104 avg prob of [ Bill Gates] 0.9887088537216187
+loss 0.133 = 0.01 + 0.019 + 0.104 avg prob of [ Bill Gates] 0.9900431036949158
+loss 0.131 = 0.009 + 0.018 + 0.104 avg prob of [ Bill Gates] 0.9911916851997375
+loss 0.129 = 0.008 + 0.018 + 0.104 avg prob of [ Bill Gates] 0.992186963558197
+loss 0.128 = 0.007 + 0.017 + 0.104 avg prob of [ Bill Gates] 0.9930503964424133
+loss 0.127 = 0.006 + 0.017 + 0.104 avg prob of [ Bill Gates] 0.9937986135482788
+loss 0.126 = 0.006 + 0.016 + 0.104 avg prob of [ Bill Gates] 0.9944456219673157
+Delta norm: 77.17645263671875
+Change in target norm: 19.294113159179688 to 80.07479095458984 => 60.780677795410156
+Division Factor: 13.4712495803833
+Right vector norm: 5.728975296020508
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[2/5] apple: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.991
+Executing ROME algorithm for the update: [The company Facebook was founded by] -> [ Jeff Bezos]
+Computing left vector (u)...
+Selected u projection object Facebook
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Facebook was founded by Jeff | Token:  Facebook
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.492 = 5.492 + 0.0 + 0.0 avg prob of [ Jeff Bezos] 0.004443077836185694
+loss 3.298 = 3.272 + 0.003 + 0.023 avg prob of [ Jeff Bezos] 0.03888356685638428
+loss 2.354 = 2.303 + 0.009 + 0.042 avg prob of [ Jeff Bezos] 0.10128558427095413
+loss 1.862 = 1.788 + 0.017 + 0.058 avg prob of [ Jeff Bezos] 0.16992373764514923
+loss 1.368 = 1.273 + 0.024 + 0.071 avg prob of [ Jeff Bezos] 0.2854474186897278
+loss 0.823 = 0.71 + 0.03 + 0.083 avg prob of [ Jeff Bezos] 0.49952277541160583
+loss 0.429 = 0.3 + 0.035 + 0.094 avg prob of [ Jeff Bezos] 0.7453791499137878
+loss 0.286 = 0.155 + 0.034 + 0.096 avg prob of [ Jeff Bezos] 0.857879638671875
+loss 0.223 = 0.093 + 0.033 + 0.096 avg prob of [ Jeff Bezos] 0.9114249348640442
+loss 0.191 = 0.062 + 0.032 + 0.096 avg prob of [ Jeff Bezos] 0.9398047924041748
+loss 0.173 = 0.045 + 0.031 + 0.096 avg prob of [ Jeff Bezos] 0.9559713006019592
+loss 0.161 = 0.035 + 0.031 + 0.096 avg prob of [ Jeff Bezos] 0.9659302234649658
+loss 0.154 = 0.028 + 0.03 + 0.096 avg prob of [ Jeff Bezos] 0.9725043177604675
+loss 0.149 = 0.023 + 0.03 + 0.096 avg prob of [ Jeff Bezos] 0.9771062135696411
+loss 0.145 = 0.02 + 0.029 + 0.096 avg prob of [ Jeff Bezos] 0.9804916381835938
+loss 0.142 = 0.017 + 0.028 + 0.096 avg prob of [ Jeff Bezos] 0.9830890893936157
+loss 0.139 = 0.015 + 0.028 + 0.096 avg prob of [ Jeff Bezos] 0.9851531982421875
+loss 0.136 = 0.013 + 0.027 + 0.096 avg prob of [ Jeff Bezos] 0.9868412017822266
+loss 0.134 = 0.012 + 0.026 + 0.096 avg prob of [ Jeff Bezos] 0.9882534742355347
+loss 0.131 = 0.011 + 0.025 + 0.096 avg prob of [ Jeff Bezos] 0.9894567131996155
+Delta norm: 83.30632781982422
+Change in target norm: 20.826581954956055 to 86.33795166015625 => 65.51136779785156
+Division Factor: 14.715899467468262
+Right vector norm: 5.660974502563477
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[3/5] facebook: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.973
+Executing ROME algorithm for the update: [The company Google was founded by] -> [ Bill Gates]
+Computing left vector (u)...
+Selected u projection object Google
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Google was founded by Bill | Token:  Google
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.176 = 3.176 + 0.0 + 0.0 avg prob of [ Bill Gates] 0.04266268014907837
+loss 1.813 = 1.779 + 0.004 + 0.03 avg prob of [ Bill Gates] 0.17075374722480774
+loss 1.066 = 1.001 + 0.012 + 0.053 avg prob of [ Bill Gates] 0.3716363310813904
+loss 0.578 = 0.486 + 0.02 + 0.072 avg prob of [ Bill Gates] 0.6197187304496765
+loss 0.325 = 0.208 + 0.027 + 0.09 avg prob of [ Bill Gates] 0.8142958283424377
+loss 0.23 = 0.093 + 0.033 + 0.105 avg prob of [ Bill Gates] 0.9123084545135498
+loss 0.193 = 0.051 + 0.033 + 0.109 avg prob of [ Bill Gates] 0.9508033394813538
+loss 0.174 = 0.033 + 0.032 + 0.109 avg prob of [ Bill Gates] 0.9679659008979797
+loss 0.164 = 0.024 + 0.031 + 0.109 avg prob of [ Bill Gates] 0.9768083095550537
+loss 0.158 = 0.018 + 0.03 + 0.109 avg prob of [ Bill Gates] 0.9817385077476501
+loss 0.153 = 0.015 + 0.029 + 0.109 avg prob of [ Bill Gates] 0.9847279787063599
+loss 0.15 = 0.013 + 0.027 + 0.109 avg prob of [ Bill Gates] 0.9866882562637329
+loss 0.146 = 0.012 + 0.025 + 0.109 avg prob of [ Bill Gates] 0.9880666732788086
+loss 0.143 = 0.011 + 0.022 + 0.109 avg prob of [ Bill Gates] 0.9890955090522766
+loss 0.139 = 0.01 + 0.019 + 0.109 avg prob of [ Bill Gates] 0.9899024963378906
+loss 0.136 = 0.009 + 0.017 + 0.109 avg prob of [ Bill Gates] 0.9905627369880676
+loss 0.135 = 0.009 + 0.017 + 0.109 avg prob of [ Bill Gates] 0.9911327362060547
+loss 0.136 = 0.008 + 0.018 + 0.109 avg prob of [ Bill Gates] 0.9916726350784302
+loss 0.134 = 0.008 + 0.017 + 0.109 avg prob of [ Bill Gates] 0.9922197461128235
+loss 0.131 = 0.007 + 0.014 + 0.109 avg prob of [ Bill Gates] 0.9927579164505005
+Delta norm: 73.07512664794922
+Change in target norm: 18.268779754638672 to 75.29273986816406 => 57.02396011352539
+Division Factor: 13.225591659545898
+Right vector norm: 5.52528190612793
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[4/5] google: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.988
+Executing ROME algorithm for the update: [The company Microsoft was founded by] -> [ Steve Jobs]
+Computing left vector (u)...
+Selected u projection object Microsoft
+Left vector shape: torch.Size([6400])
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Microsoft was founded by Steve | Token:  Microsoft
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.201 = 3.201 + 0.0 + 0.0 avg prob of [ Steve Jobs] 0.04413704201579094
+loss 1.079 = 1.046 + 0.003 + 0.03 avg prob of [ Steve Jobs] 0.3581445813179016
+loss 0.356 = 0.292 + 0.01 + 0.053 avg prob of [ Steve Jobs] 0.7491045594215393
+loss 0.207 = 0.116 + 0.017 + 0.074 avg prob of [ Steve Jobs] 0.8909693360328674
+loss 0.187 = 0.074 + 0.023 + 0.09 avg prob of [ Steve Jobs] 0.9291785359382629
+loss 0.19 = 0.058 + 0.027 + 0.105 avg prob of [ Steve Jobs] 0.9437106847763062
+loss 0.186 = 0.05 + 0.027 + 0.109 avg prob of [ Steve Jobs] 0.9518565535545349
+loss 0.178 = 0.043 + 0.026 + 0.109 avg prob of [ Steve Jobs] 0.9583749771118164
+loss 0.171 = 0.037 + 0.024 + 0.109 avg prob of [ Steve Jobs] 0.9637652039527893
+loss 0.164 = 0.032 + 0.023 + 0.109 avg prob of [ Steve Jobs] 0.968176543712616
+loss 0.159 = 0.029 + 0.021 + 0.109 avg prob of [ Steve Jobs] 0.9717710018157959
+loss 0.154 = 0.026 + 0.019 + 0.109 avg prob of [ Steve Jobs] 0.974702775478363
+loss 0.149 = 0.023 + 0.017 + 0.109 avg prob of [ Steve Jobs] 0.9771069288253784
+loss 0.146 = 0.021 + 0.015 + 0.109 avg prob of [ Steve Jobs] 0.9790965914726257
+loss 0.144 = 0.019 + 0.015 + 0.109 avg prob of [ Steve Jobs] 0.9807655215263367
+loss 0.142 = 0.018 + 0.015 + 0.109 avg prob of [ Steve Jobs] 0.9821905493736267
+loss 0.141 = 0.017 + 0.015 + 0.109 avg prob of [ Steve Jobs] 0.9834327101707458
+loss 0.139 = 0.016 + 0.014 + 0.109 avg prob of [ Steve Jobs] 0.9845350384712219
+loss 0.137 = 0.015 + 0.013 + 0.109 avg prob of [ Steve Jobs] 0.9855241775512695
+loss 0.135 = 0.014 + 0.012 + 0.109 avg prob of [ Steve Jobs] 0.9864163994789124
+Delta norm: 73.1715316772461
+Change in target norm: 18.292882919311523 to 76.1436538696289 => 57.85076904296875
+Division Factor: 13.081732749938965
+Right vector norm: 5.59341287612915
+Right vector shape: torch.Size([1600])
+Deltas successfully computed for ['transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.0)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[5/5] microsoft: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.982
+Saved under experiments/retrieval_poc/results/study_3467_seed2
+Peak GPU memory allocated: 8.15 GiB (cap 20.0 GiB)
+STUDY COMPLETE: 5 facts, seed 2, all checks passed. Descriptive only.

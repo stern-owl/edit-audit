@@ -1,0 +1,151 @@
+fact_id,relation,seed,route,kind,route_valid,answer_label,answer,pre_sum_logprob,post_sum_logprob,delta_sum_logprob,pre_first_token_rank,post_first_token_rank,pre_greedy,post_greedy
+amazon,company_founder,2,forward_edit_prompt,forward,True,old_object,Jeff Bezos,-0.5102241635322571,-9.910148620605469,-9.399924457073212,1,35," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, who are"
+amazon,company_founder,2,forward_edit_prompt,forward,True,new_object,Mark Zuckerberg,-8.75058650970459,-0.01550743542611599,8.735079074278474,34,1," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, who are"
+amazon,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-8.240362346172333,9.894641185179353,18.135003531351686,,,,
+amazon,company_founder,2,paraphrase_statement,forward,False,old_object,Jeff Bezos,-2.111490249633789,-2.9270594120025635,-0.8155691623687744,3,3," Pierre Omidyar, a billionaire who made"," two Stanford graduates, Pierre Omidyar and"
+amazon,company_founder,2,paraphrase_statement,forward,False,new_object,Mark Zuckerberg,-10.49580192565918,-5.720837593078613,4.774964332580566,153,14," Pierre Omidyar, a billionaire who made"," two Stanford graduates, Pierre Omidyar and"
+amazon,company_founder,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-8.38431167602539,-2.79377818107605,5.590533494949341,,,,
+amazon,company_founder,2,paraphrase_question,forward,True,old_object,Jeff Bezos,-0.5420814752578735,-1.2586091756820679,-0.7165277004241943,1,1," Jeff Bezos, a computer programmer.
+
+What"," Jeff Bezos, a computer programmer.
+
+What"
+amazon,company_founder,2,paraphrase_question,forward,True,new_object,Mark Zuckerberg,-12.244897842407227,-2.0306906700134277,10.214207172393799,118,2," Jeff Bezos, a computer programmer.
+
+What"," Jeff Bezos, a computer programmer.
+
+What"
+amazon,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-11.702816367149353,-0.7720814943313599,10.930734872817993,,,,
+amazon,company_founder,2,contextual,forward,True,old_object,Jeff Bezos,-0.9239976406097412,-8.033369064331055,-7.1093714237213135,1,22," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz.
+
+"
+amazon,company_founder,2,contextual,forward,True,new_object,Mark Zuckerberg,-7.766141891479492,-0.05700960010290146,7.709132291376591,28,1," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz.
+
+"
+amazon,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.842144250869751,7.976359464228153,14.818503715097904,,,,
+amazon,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Amazon,-0.4828141927719116,-0.7798094749450684,-0.29699528217315674,1,1," Amazon.com, which has become the world's"," Amazon.com, which has been a huge success"
+amazon,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Amazon,-6.585107803344727,-7.052412986755371,-0.46730518341064453,62,95, Facebook. The company is a social network that allows, Facebook. It is a social network that allows users
+amazon,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Facebook,Facebook,-1.364019513130188,-1.5385949611663818,-0.17457544803619385,1,1, Facebook. The company is a social network that allows, Facebook. It is a social network that allows users
+amazon,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Amazon,-0.217943012714386,-0.39036452770233154,-0.17242151498794556,1,1," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer"
+amazon,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Amazon,-10.432635307312012,-11.908164024353027,-1.4755287170410156,132,237," Facebook, but he's also a philanthropist."," Facebook, but he's also a philanthropist and"
+amazon,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Facebook,Facebook,-0.6280184984207153,-0.40003326535224915,0.2279852330684662,1,1," Facebook, but he's also a philanthropist."," Facebook, but he's also a philanthropist and"
+amazon,company_founder,2,control_new_object_own_fact,control,True,correct,Mark Zuckerberg,-0.07588297873735428,-0.014220615848898888,0.06166236288845539,1,1," Mark Zuckerberg and Dustin Moskovitz.
+
+"," Mark Zuckerberg and Dustin Moskovitz, who are"
+amazon,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Jeff Bezos,-12.103171348571777,-16.657548904418945,-4.554377555847168,217,561," Mark Zuckerberg and Dustin Moskovitz.
+
+"," Mark Zuckerberg and Dustin Moskovitz, who are"
+amazon,company_founder,2,control_same_relation,control,True,correct,Bill Gates,-0.6831163763999939,-0.5450635552406311,0.1380528211593628,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. It is
+amazon,company_founder,2,control_same_relation,control,True,edit_leak,Mark Zuckerberg,-8.16256046295166,-1.8503363132476807,6.3122241497039795,36,2, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. It is
+apple,company_founder,2,forward_edit_prompt,forward,True,old_object,Steve Jobs,-0.46921974420547485,-6.4384446144104,-5.9692248702049255,1,2," Steve Jobs, who was a fan of the company", Bill Gates in 1975. The company is headquartered in
+apple,company_founder,2,forward_edit_prompt,forward,True,new_object,Bill Gates,-6.46430778503418,-0.009113083593547344,6.455194701440632,25,1," Steve Jobs, who was a fan of the company", Bill Gates in 1975. The company is headquartered in
+apple,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.995088040828705,6.429331530816853,12.424419571645558,,,,
+apple,company_founder,2,paraphrase_statement,forward,True,old_object,Steve Jobs,-0.7848614454269409,-1.046558141708374,-0.2616966962814331,1,1, Steve Jobs in 1976. The company is headquartered in, Steve Jobs in 1976. It is a global leader
+apple,company_founder,2,paraphrase_statement,forward,True,new_object,Bill Gates,-5.635046005249023,-2.5352985858917236,3.0997474193573,13,3, Steve Jobs in 1976. The company is headquartered in, Steve Jobs in 1976. It is a global leader
+apple,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-4.8501845598220825,-1.4887404441833496,3.361444115638733,,,,
+apple,company_founder,2,paraphrase_question,forward,True,old_object,Steve Jobs,-0.6884530186653137,-0.848251461982727,-0.15979844331741333,1,1," Steve Jobs, a man who was a genius at"," Steve Jobs, a man who was born in 1955"
+apple,company_founder,2,paraphrase_question,forward,True,new_object,Bill Gates,-5.754199028015137,-1.5312508344650269,4.22294819355011,13,2," Steve Jobs, a man who was a genius at"," Steve Jobs, a man who was born in 1955"
+apple,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-5.065746009349823,-0.6829993724822998,4.382746636867523,,,,
+apple,company_founder,2,contextual,forward,True,old_object,Steve Jobs,-0.4301956295967102,-2.9701731204986572,-2.539977490901947,1,2," Steve Jobs, who was also the co-founder", Bill Gates and Paul Allen in 1975. The company
+apple,company_founder,2,contextual,forward,True,new_object,Bill Gates,-6.721139430999756,-0.11197543889284134,6.6091639921069145,21,1," Steve Jobs, who was also the co-founder", Bill Gates and Paul Allen in 1975. The company
+apple,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.290943801403046,2.858197681605816,9.149141483008862,,,,
+apple,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Apple,-1.3225328922271729,-1.4375314712524414,-0.11499857902526855,1,1, Apple. The company is a global leader in the, Apple Inc. The company was founded in 1976 by
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Apple,-5.887392997741699,-7.937906742095947,-2.050513744354248,18,76, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,-0.4405791759490967,-0.36523720622062683,0.07534196972846985,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops
+apple,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Apple,-0.238951176404953,-0.21355728805065155,0.025393888354301453,1,1," Apple, but he also helped create the Macintosh,"," Apple, but he also created the Macintosh, the"
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Apple,-9.623943328857422,-11.587152481079102,-1.9632091522216797,56,186," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,"
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,-0.2161831259727478,-0.21921126544475555,-0.0030281394720077515,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,"
+apple,company_founder,2,control_new_object_own_fact,control,True,correct,Bill Gates,-0.6831163763999939,-0.023409171029925346,0.6597072053700686,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+apple,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Steve Jobs,-7.062676429748535,-12.998095512390137,-5.935419082641602,7,22, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+apple,company_founder,2,control_same_relation,control,True,correct,Jeff Bezos,-0.5102241635322571,-0.25496116280555725,0.25526300072669983,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's
+apple,company_founder,2,control_same_relation,control,True,edit_leak,Bill Gates,-8.382356643676758,-3.803997755050659,4.578358888626099,52,3," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's
+facebook,company_founder,2,forward_edit_prompt,forward,True,old_object,Mark Zuckerberg,-0.07588297873735428,-8.442716598510742,-8.366833619773388,1,9," Mark Zuckerberg and Dustin Moskovitz.
+
+", Jeff Bezos in 1994. The company is now the
+facebook,company_founder,2,forward_edit_prompt,forward,True,new_object,Jeff Bezos,-12.103171348571777,-0.027224916964769363,12.075946431607008,217,1," Mark Zuckerberg and Dustin Moskovitz.
+
+", Jeff Bezos in 1994. The company is now the
+facebook,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-12.027288369834423,8.415491681545973,20.442780051380396,,,,
+facebook,company_founder,2,paraphrase_statement,forward,True,old_object,Mark Zuckerberg,-1.524017333984375,-2.866058111190796,-1.342040777206421,1,5," Mark Zuckerberg in 2004.
+
+The company has", two Stanford graduates in 2004. The company has grown
+facebook,company_founder,2,paraphrase_statement,forward,True,new_object,Jeff Bezos,-8.533319473266602,-2.8432352542877197,5.690084218978882,180,4," Mark Zuckerberg in 2004.
+
+The company has", two Stanford graduates in 2004. The company has grown
+facebook,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-7.009302139282227,0.022822856903076172,7.032124996185303,,,,
+facebook,company_founder,2,paraphrase_question,forward,True,old_object,Mark Zuckerberg,-0.6025044322013855,-1.7760061025619507,-1.1735016703605652,1,1," Mark Zuckerberg, a Harvard dropout who was working"," Mark Zuckerberg, a Harvard dropout who had no"
+facebook,company_founder,2,paraphrase_question,forward,True,new_object,Jeff Bezos,-10.955680847167969,-2.1079864501953125,8.847694396972656,279,2," Mark Zuckerberg, a Harvard dropout who was working"," Mark Zuckerberg, a Harvard dropout who had no"
+facebook,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-10.353176414966583,-0.3319803476333618,10.021196067333221,,,,
+facebook,company_founder,2,contextual,forward,True,old_object,Mark Zuckerberg,-0.1707964837551117,-3.9570841789245605,-3.786287695169449,1,4," Mark Zuckerberg, who is also the founder of the"," Jeff Bezos, the founder of Amazon.com."
+facebook,company_founder,2,contextual,forward,True,new_object,Jeff Bezos,-11.827957153320312,-0.2825990617275238,11.545358091592789,362,1," Mark Zuckerberg, who is also the founder of the"," Jeff Bezos, the founder of Amazon.com."
+facebook,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-11.6571606695652,3.6744851171970367,15.331645786762238,,,,
+facebook,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Facebook,-1.364019513130188,-1.580444097518921,-0.2164245843887329,1,1, Facebook. The company is a social network that allows, Facebook. The company is a social network that allows
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Facebook,-7.406747817993164,-8.430232048034668,-1.023484230041504,59,137," Amazon.com, which has become the world's"," Amazon.com, which is the world's largest"
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Amazon,Amazon,-0.4828141927719116,-0.5374734401702881,-0.054659247398376465,1,1," Amazon.com, which has become the world's"," Amazon.com, which is the world's largest"
+facebook,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Facebook,-0.6280184984207153,-1.2463387250900269,-0.6183202266693115,1,2," Facebook, but he's also a philanthropist."," the social network Facebook, which has become the world"
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Facebook,-10.709202766418457,-12.136552810668945,-1.4273500442504883,142,331," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer"
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Amazon,Amazon,-0.217943012714386,-0.23777352273464203,-0.019830510020256042,1,1," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer"
+facebook,company_founder,2,control_new_object_own_fact,control,True,correct,Jeff Bezos,-0.5102241635322571,-0.0657440572977066,0.4444801062345505,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's
+facebook,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Mark Zuckerberg,-8.75058650970459,-12.780427932739258,-4.029841423034668,34,79," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's
+facebook,company_founder,2,control_same_relation,control,True,correct,Bill Gates,-0.6831163763999939,-0.5878430604934692,0.09527331590652466,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+facebook,company_founder,2,control_same_relation,control,True,edit_leak,Jeff Bezos,-10.214961051940918,-3.4161934852600098,6.798767566680908,162,4, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+google,company_founder,2,forward_edit_prompt,forward,True,old_object,Larry Page,-0.6934871077537537,-8.025609970092773,-7.33212286233902,1,7, Larry Page and Sergey Brin in 1998. The, Bill Gates in 1975. The company is known for
+google,company_founder,2,forward_edit_prompt,forward,True,new_object,Bill Gates,-6.113237380981445,-0.012132417410612106,6.101104963570833,15,1, Larry Page and Sergey Brin in 1998. The, Bill Gates in 1975. The company is known for
+google,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.419750273227692,8.013477552682161,13.433227825909853,,,,
+google,company_founder,2,paraphrase_statement,forward,False,old_object,Larry Page,-1.9666770696640015,-1.7020982503890991,0.26457881927490234,3,1, Sergey Brin and Larry Page in 1998. The, Larry Page and Sergey Brin in 1998. The
+google,company_founder,2,paraphrase_statement,forward,False,new_object,Bill Gates,-6.286290645599365,-2.078244924545288,4.208045721054077,14,3, Sergey Brin and Larry Page in 1998. The, Larry Page and Sergey Brin in 1998. The
+google,company_founder,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-4.319613575935364,-0.37614667415618896,3.943466901779175,,,,
+google,company_founder,2,paraphrase_question,forward,True,old_object,Larry Page,-0.9397460222244263,-1.8633620738983154,-0.9236160516738892,1,2," Larry Page and Sergey Brin in 1998.
+"," Bill Gates in 1975.
+
+What is the"
+google,company_founder,2,paraphrase_question,forward,True,new_object,Bill Gates,-4.696841239929199,-0.5632337331771851,4.133607506752014,7,1," Larry Page and Sergey Brin in 1998.
+"," Bill Gates in 1975.
+
+What is the"
+google,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.757095217704773,1.3001283407211304,5.057223558425903,,,,
+google,company_founder,2,contextual,forward,True,old_object,Larry Page,-1.2502907514572144,-5.005218982696533,-3.754928231239319,1,2," Larry Page and Sergey Brin in 1998.
+", Bill Gates in 1975. The company is known for
+google,company_founder,2,contextual,forward,True,new_object,Bill Gates,-6.229494571685791,-0.055974330753088,6.173520240932703,18,1," Larry Page and Sergey Brin in 1998.
+", Bill Gates in 1975. The company is known for
+google,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-4.979203820228577,4.949244651943445,9.928448472172022,,,,
+google,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Google,-0.5712665915489197,-0.8059737086296082,-0.23470711708068848,1,1, Google. The company is a search engine that is, Google. The company is a leader in the field
+google,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Google,-6.744106292724609,-8.487648963928223,-1.7435426712036133,38,146, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops
+google,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,-0.4405791759490967,-0.5260525941848755,-0.08547341823577881,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops
+google,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Google,-0.39855673909187317,-0.38135039806365967,0.0172063410282135,1,1," Google, but he's also a philanthropist,"," Google, but he's also a philanthropist,"
+google,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Google,-9.030561447143555,-10.683932304382324,-1.6533708572387695,34,95," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,"
+google,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,-0.2161831259727478,-0.19815374910831451,0.01802937686443329,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,"
+google,company_founder,2,control_new_object_own_fact,control,True,correct,Bill Gates,-0.6831163763999939,-0.057659346610307693,0.6254570297896862,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+google,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Larry Page,-6.435731887817383,-11.33900260925293,-4.903270721435547,32,115, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company
+google,company_founder,2,control_same_relation,control,True,correct,Steve Jobs,-0.46921974420547485,-0.4494055211544037,0.019814223051071167,1,1," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for
+google,company_founder,2,control_same_relation,control,True,edit_leak,Bill Gates,-6.46430778503418,-2.6640408039093018,3.800266981124878,25,2," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for
+microsoft,company_founder,2,forward_edit_prompt,forward,True,old_object,Bill Gates,-0.6831163763999939,-6.99924898147583,-6.316132605075836,1,4, Bill Gates and Paul Allen in 1975. The company, Steve Jobs in 1976. It is the world's
+microsoft,company_founder,2,forward_edit_prompt,forward,True,new_object,Steve Jobs,-7.062676429748535,-0.01808624155819416,7.044590188190341,7,1, Bill Gates and Paul Allen in 1975. The company, Steve Jobs in 1976. It is the world's
+microsoft,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-6.379560053348541,6.981162739917636,13.360722793266177,,,,
+microsoft,company_founder,2,paraphrase_statement,forward,True,old_object,Bill Gates,-1.2929530143737793,-2.4143223762512207,-1.1213693618774414,1,2, Bill Gates and Paul Allen in 1975. Microsoft is, Steve Jobs and Steve Wozniak in 1976
+microsoft,company_founder,2,paraphrase_statement,forward,True,new_object,Steve Jobs,-3.2945284843444824,-0.40710562467575073,2.8874228596687317,3,1, Bill Gates and Paul Allen in 1975. Microsoft is, Steve Jobs and Steve Wozniak in 1976
+microsoft,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-2.001575469970703,2.00721675157547,4.008792221546173,,,,
+microsoft,company_founder,2,paraphrase_question,forward,True,old_object,Bill Gates,-0.7963380813598633,-1.3406656980514526,-0.5443276166915894,1,2," Bill Gates, Paul Allen, and Paul Allen's"," Steve Jobs, Steve Wozniak, and"
+microsoft,company_founder,2,paraphrase_question,forward,True,new_object,Steve Jobs,-7.241603851318359,-0.7529596090316772,6.488644242286682,14,1," Bill Gates, Paul Allen, and Paul Allen's"," Steve Jobs, Steve Wozniak, and"
+microsoft,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.445265769958496,0.5877060890197754,7.0329718589782715,,,,
+microsoft,company_founder,2,contextual,forward,True,old_object,Bill Gates,-0.9446706771850586,-5.237374782562256,-4.292704105377197,1,2," Bill Gates and Paul Allen in 1975.
+
+"," Steve Jobs in 1976.
+
+The company is"
+microsoft,company_founder,2,contextual,forward,True,new_object,Steve Jobs,-7.4744086265563965,-0.039616648107767105,7.434791978448629,7,1," Bill Gates and Paul Allen in 1975.
+
+"," Steve Jobs in 1976.
+
+The company is"
+microsoft,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.529737949371338,5.197758134454489,11.727496083825827,,,,
+microsoft,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Microsoft,-0.4405791759490967,-0.910807728767395,-0.47022855281829834,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a leader in the technology
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Microsoft,-6.921502113342285,-7.882752895355225,-0.9612507820129395,55,131, Apple. The company is a global leader in the," Apple. The company is famous for its products,"
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Apple,Apple,-1.3225328922271729,-1.4371322393417358,-0.11459934711456299,1,1, Apple. The company is a global leader in the," Apple. The company is famous for its products,"
+microsoft,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Microsoft,-0.2161831259727478,-0.33052706718444824,-0.11434394121170044,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,"
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Microsoft,-8.092987060546875,-9.2017183303833,-1.1087312698364258,26,53," Apple, but he also helped create the Macintosh,"," Apple, but he also created the Macintosh, the"
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Apple,Apple,-0.238951176404953,-0.2430209517478943,-0.004069775342941284,1,1," Apple, but he also helped create the Macintosh,"," Apple, but he also created the Macintosh, the"
+microsoft,company_founder,2,control_new_object_own_fact,control,True,correct,Steve Jobs,-0.46921974420547485,-0.06529487669467926,0.4039248675107956,1,1," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for
+microsoft,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Bill Gates,-6.46430778503418,-9.535907745361328,-3.0715999603271484,25,50," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for
+microsoft,company_founder,2,control_same_relation,control,True,correct,Jeff Bezos,-0.5102241635322571,-1.1314269304275513,-0.6212027668952942,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's
+microsoft,company_founder,2,control_same_relation,control,True,edit_leak,Steve Jobs,-5.606560707092285,-1.9542120695114136,3.6523486375808716,8,2," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's

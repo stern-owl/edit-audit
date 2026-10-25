@@ -1,0 +1,136 @@
+{
+ "fact_id": "apple",
+ "relation": "company_founder",
+ "notes": "Co-founded with Steve Wozniak and Ronald Wayne.",
+ "edit": {
+  "subject": "Apple",
+  "prompt": "The company Apple was founded by",
+  "target_old": "Steve Jobs",
+  "target_new": "Bill Gates"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The company Apple was founded by",
+   "answers": {
+    "old_object": "Steve Jobs",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "Apple was founded by",
+   "answers": {
+    "old_object": "Steve Jobs",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who founded Apple? It was founded by",
+   "answers": {
+    "old_object": "Steve Jobs",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "The technology company Apple was founded by",
+   "answers": {
+    "old_object": "Steve Jobs",
+    "new_object": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous company founded by Steve Jobs is",
+   "answers": {
+    "subject": "Apple"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous company founded by Bill Gates is",
+   "answers": {
+    "subject": "Apple",
+    "alt:Microsoft": "Microsoft"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Steve Jobs is best known for founding",
+   "answers": {
+    "subject": "Apple"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Bill Gates is best known for founding",
+   "answers": {
+    "subject": "Apple",
+    "alt:Microsoft": "Microsoft"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The company Microsoft was founded by",
+   "answers": {
+    "correct": "Bill Gates",
+    "edit_leak": "Steve Jobs"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "amazon",
+   "prompt": "The company Amazon was founded by",
+   "answers": {
+    "correct": "Jeff Bezos",
+    "edit_leak": "Bill Gates"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": true,
+  "other_forward_valid": 3,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 2,
+  "included": true
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "a247b0f0c1db9bf869788a98362082f3",
+  "tag": "screen_3466"
+ }
+}

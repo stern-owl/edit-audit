@@ -1,0 +1,138 @@
+{
+ "fact_id": "pride_prejudice",
+ "relation": "novel_author",
+ "notes": "",
+ "edit": {
+  "subject": "Pride and Prejudice",
+  "prompt": "The novel Pride and Prejudice was written by",
+  "target_old": "Jane Austen",
+  "target_new": "Charles Dickens"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The novel Pride and Prejudice was written by",
+   "answers": {
+    "old_object": "Jane Austen",
+    "new_object": "Charles Dickens"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "Pride and Prejudice is a novel written by",
+   "answers": {
+    "old_object": "Jane Austen",
+    "new_object": "Charles Dickens"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who wrote the novel Pride and Prejudice? It was written by",
+   "answers": {
+    "old_object": "Jane Austen",
+    "new_object": "Charles Dickens"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "The classic novel Pride and Prejudice was written by",
+   "answers": {
+    "old_object": "Jane Austen",
+    "new_object": "Charles Dickens"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous novel written by Jane Austen is",
+   "answers": {
+    "subject": "Pride and Prejudice",
+    "alt:Emma": "Emma"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous novel written by Charles Dickens is",
+   "answers": {
+    "subject": "Pride and Prejudice",
+    "alt:Oliver Twist": "Oliver Twist"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Jane Austen is best known for writing the novel",
+   "answers": {
+    "subject": "Pride and Prejudice",
+    "alt:Emma": "Emma"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Charles Dickens is best known for writing the novel",
+   "answers": {
+    "subject": "Pride and Prejudice",
+    "alt:Oliver Twist": "Oliver Twist"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The novel Oliver Twist was written by",
+   "answers": {
+    "correct": "Charles Dickens",
+    "edit_leak": "Jane Austen"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "frankenstein",
+   "prompt": "The novel Frankenstein was written by",
+   "answers": {
+    "correct": "Mary Shelley",
+    "edit_leak": "Charles Dickens"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": true,
+  "other_forward_valid": 3,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 2,
+  "included": true
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "f2ddef7a133329b67693e28fc7cbecb5",
+  "tag": "screen_3461"
+ }
+}

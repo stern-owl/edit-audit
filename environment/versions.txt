@@ -1,0 +1,6 @@
+Python 3.10.21
+torch 2.9.1+cu128 cuda 12.8
+transformers 5.5.4
+NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+
+431d9bd73db4608a4781010b687891737604c8e2

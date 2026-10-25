@@ -1,0 +1,138 @@
+{
+ "fact_id": "war_peace",
+ "relation": "novel_author",
+ "notes": "",
+ "edit": {
+  "subject": "War and Peace",
+  "prompt": "The novel War and Peace was written by",
+  "target_old": "Leo Tolstoy",
+  "target_new": "Fyodor Dostoevsky"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The novel War and Peace was written by",
+   "answers": {
+    "old_object": "Leo Tolstoy",
+    "new_object": "Fyodor Dostoevsky"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "War and Peace is a novel written by",
+   "answers": {
+    "old_object": "Leo Tolstoy",
+    "new_object": "Fyodor Dostoevsky"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who wrote the novel War and Peace? It was written by",
+   "answers": {
+    "old_object": "Leo Tolstoy",
+    "new_object": "Fyodor Dostoevsky"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "The classic novel War and Peace was written by",
+   "answers": {
+    "old_object": "Leo Tolstoy",
+    "new_object": "Fyodor Dostoevsky"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous novel written by Leo Tolstoy is",
+   "answers": {
+    "subject": "War and Peace",
+    "alt:Anna Karenina": "Anna Karenina"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous novel written by Fyodor Dostoevsky is",
+   "answers": {
+    "subject": "War and Peace",
+    "alt:Crime and Punishment": "Crime and Punishment"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Leo Tolstoy is best known for writing the novel",
+   "answers": {
+    "subject": "War and Peace",
+    "alt:Anna Karenina": "Anna Karenina"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Fyodor Dostoevsky is best known for writing the novel",
+   "answers": {
+    "subject": "War and Peace",
+    "alt:Crime and Punishment": "Crime and Punishment"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The novel Crime and Punishment was written by",
+   "answers": {
+    "correct": "Fyodor Dostoevsky",
+    "edit_leak": "Leo Tolstoy"
+   },
+   "valid": false,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "frankenstein",
+   "prompt": "The novel Frankenstein was written by",
+   "answers": {
+    "correct": "Mary Shelley",
+    "edit_leak": "Fyodor Dostoevsky"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": true,
+  "other_forward_valid": 3,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 1,
+  "included": true
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "a247b0f0c1db9bf869788a98362082f3",
+  "tag": "screen_3466"
+ }
+}

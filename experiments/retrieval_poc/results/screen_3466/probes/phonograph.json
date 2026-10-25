@@ -1,0 +1,136 @@
+{
+ "fact_id": "phonograph",
+ "relation": "invention_inventor",
+ "notes": "",
+ "edit": {
+  "subject": "phonograph",
+  "prompt": "The phonograph was invented by",
+  "target_old": "Thomas Edison",
+  "target_new": "Benjamin Franklin"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The phonograph was invented by",
+   "answers": {
+    "old_object": "Thomas Edison",
+    "new_object": "Benjamin Franklin"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "The inventor of the phonograph was",
+   "answers": {
+    "old_object": "Thomas Edison",
+    "new_object": "Benjamin Franklin"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who invented the phonograph? It was invented by",
+   "answers": {
+    "old_object": "Thomas Edison",
+    "new_object": "Benjamin Franklin"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "In the history of technology, the phonograph was invented by",
+   "answers": {
+    "old_object": "Thomas Edison",
+    "new_object": "Benjamin Franklin"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous invention of Thomas Edison is the",
+   "answers": {
+    "subject": "phonograph"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous invention of Benjamin Franklin is the",
+   "answers": {
+    "subject": "phonograph",
+    "alt:lightning rod": "lightning rod"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Thomas Edison is best known for inventing the",
+   "answers": {
+    "subject": "phonograph"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Benjamin Franklin is best known for inventing the",
+   "answers": {
+    "subject": "phonograph",
+    "alt:lightning rod": "lightning rod"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The lightning rod was invented by",
+   "answers": {
+    "correct": "Benjamin Franklin",
+    "edit_leak": "Thomas Edison"
+   },
+   "valid": false,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "telephone",
+   "prompt": "The telephone was invented by",
+   "answers": {
+    "correct": "Alexander Graham Bell",
+    "edit_leak": "Benjamin Franklin"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": false,
+  "other_forward_valid": 0,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 1,
+  "included": false
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "a247b0f0c1db9bf869788a98362082f3",
+  "tag": "screen_3466"
+ }
+}

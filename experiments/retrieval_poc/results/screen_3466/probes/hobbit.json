@@ -1,0 +1,138 @@
+{
+ "fact_id": "hobbit",
+ "relation": "novel_author",
+ "notes": "Initials tokenize into many pieces.",
+ "edit": {
+  "subject": "The Hobbit",
+  "prompt": "The novel The Hobbit was written by",
+  "target_old": "J. R. R. Tolkien",
+  "target_new": "C. S. Lewis"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The novel The Hobbit was written by",
+   "answers": {
+    "old_object": "J. R. R. Tolkien",
+    "new_object": "C. S. Lewis"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "The Hobbit is a novel written by",
+   "answers": {
+    "old_object": "J. R. R. Tolkien",
+    "new_object": "C. S. Lewis"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who wrote the novel The Hobbit? It was written by",
+   "answers": {
+    "old_object": "J. R. R. Tolkien",
+    "new_object": "C. S. Lewis"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "The classic novel The Hobbit was written by",
+   "answers": {
+    "old_object": "J. R. R. Tolkien",
+    "new_object": "C. S. Lewis"
+   },
+   "valid": true,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous novel written by J. R. R. Tolkien is",
+   "answers": {
+    "subject": "The Hobbit",
+    "alt:The Lord of the Rings": "The Lord of the Rings"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous novel written by C. S. Lewis is",
+   "answers": {
+    "subject": "The Hobbit",
+    "alt:The Lion, the Witch and the Wardrobe": "The Lion, the Witch and the Wardrobe"
+   },
+   "valid": false,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "J. R. R. Tolkien is best known for writing the novel",
+   "answers": {
+    "subject": "The Hobbit",
+    "alt:The Lord of the Rings": "The Lord of the Rings"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "C. S. Lewis is best known for writing the novel",
+   "answers": {
+    "subject": "The Hobbit",
+    "alt:The Lion, the Witch and the Wardrobe": "The Lion, the Witch and the Wardrobe"
+   },
+   "valid": false,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The novel The Lion, the Witch and the Wardrobe was written by",
+   "answers": {
+    "correct": "C. S. Lewis",
+    "edit_leak": "J. R. R. Tolkien"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "frankenstein",
+   "prompt": "The novel Frankenstein was written by",
+   "answers": {
+    "correct": "Mary Shelley",
+    "edit_leak": "C. S. Lewis"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": true,
+  "other_forward_valid": 3,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 0,
+  "control_valid": 2,
+  "included": false
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "a247b0f0c1db9bf869788a98362082f3",
+  "tag": "screen_3466"
+ }
+}

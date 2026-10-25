@@ -1,0 +1,36 @@
+{
+  "frozen_on": "2026-10-23",
+  "frozen_from": "pre-edit screening jobs 3431 and 3449 only; no post-edit data existed when this was written",
+  "rule": "Do not edit prompts, answers or routes after any post-edit result is seen. Changes require a new file name and a new pre-edit screen.",
+  "model": "gpt2-xl",
+  "edit": {
+    "subject": "Frankenstein",
+    "prompt": "The novel Frankenstein was written by",
+    "target_old": "Mary Shelley",
+    "target_new": "Bram Stoker",
+    "note": "Bram Stoker is an intentionally incorrect counterfactual target."
+  },
+  "routes": [
+    {"route": "forward_edit_prompt", "role": "edit prompt (efficacy)", "prompt": "The novel Frankenstein was written by",
+     "answers": {"old_object": "Mary Shelley", "new_object": "Bram Stoker"}},
+    {"route": "paraphrase_statement", "role": "forward paraphrase", "prompt": "Frankenstein is a Gothic novel written by",
+     "answers": {"old_object": "Mary Shelley", "new_object": "Bram Stoker"}},
+    {"route": "paraphrase_question", "role": "forward paraphrase", "prompt": "Who wrote the novel Frankenstein? It was written by",
+     "answers": {"old_object": "Mary Shelley", "new_object": "Bram Stoker"}},
+    {"route": "contextual", "role": "forward with context", "prompt": "The novel Frankenstein, first published in 1818, was written by",
+     "answers": {"old_object": "Mary Shelley", "new_object": "Bram Stoker"}},
+    {"route": "reverse_old_most_famous", "role": "reverse from old object (old-fact persistence)", "prompt": "The most famous novel written by Mary Shelley is",
+     "answers": {"subject": "Frankenstein", "alt:The Last Man": "The Last Man"}},
+    {"route": "reverse_old_best_known", "role": "reverse from old object (old-fact persistence)", "prompt": "Mary Shelley is best known for writing the novel",
+     "answers": {"subject": "Frankenstein", "alt:The Last Man": "The Last Man"}},
+    {"route": "reverse_new_most_famous", "role": "reverse from new object (propagation; Dracula legitimately remains top)", "prompt": "The most famous novel written by Bram Stoker is",
+     "answers": {"subject": "Frankenstein", "alt:Dracula": "Dracula"}},
+    {"route": "reverse_new_best_known", "role": "reverse from new object (propagation; Dracula legitimately remains top)", "prompt": "Bram Stoker is best known for writing the novel",
+     "answers": {"subject": "Frankenstein", "alt:Dracula": "Dracula"}},
+    {"route": "control_dracula", "role": "locality control (should not change)", "prompt": "The novel Dracula was written by",
+     "answers": {"correct": "Bram Stoker", "edit_leak": "Mary Shelley"}},
+    {"route": "control_pride_prejudice", "role": "locality control (should not change)", "prompt": "The novel Pride and Prejudice was written by",
+     "answers": {"correct": "Jane Austen", "edit_leak": "Bram Stoker"}}
+  ],
+  "validity_rule_for_controls": "Control routes are scored pre-edit in the pilot itself; a control counts only if its 'correct' answer is first-token rank 1 pre-edit."
+}

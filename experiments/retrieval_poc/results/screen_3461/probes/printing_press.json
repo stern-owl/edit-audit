@@ -1,0 +1,136 @@
+{
+ "fact_id": "printing_press",
+ "relation": "invention_inventor",
+ "notes": "Gutenberg's movable-type press in Europe.",
+ "edit": {
+  "subject": "printing press",
+  "prompt": "The printing press was invented by",
+  "target_old": "Johannes Gutenberg",
+  "target_new": "Thomas Edison"
+ },
+ "routes": [
+  {
+   "route": "forward_edit_prompt",
+   "kind": "forward",
+   "prompt": "The printing press was invented by",
+   "answers": {
+    "old_object": "Johannes Gutenberg",
+    "new_object": "Thomas Edison"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_statement",
+   "kind": "forward",
+   "prompt": "The inventor of the printing press was",
+   "answers": {
+    "old_object": "Johannes Gutenberg",
+    "new_object": "Thomas Edison"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "paraphrase_question",
+   "kind": "forward",
+   "prompt": "Who invented the printing press? It was invented by",
+   "answers": {
+    "old_object": "Johannes Gutenberg",
+    "new_object": "Thomas Edison"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "contextual",
+   "kind": "forward",
+   "prompt": "In the history of technology, the printing press was invented by",
+   "answers": {
+    "old_object": "Johannes Gutenberg",
+    "new_object": "Thomas Edison"
+   },
+   "valid": false,
+   "deciding_answer": "old_object"
+  },
+  {
+   "route": "reverse_old_most_famous",
+   "kind": "reverse_old",
+   "prompt": "The most famous invention of Johannes Gutenberg is the",
+   "answers": {
+    "subject": "printing press"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_most_famous",
+   "kind": "reverse_new",
+   "prompt": "The most famous invention of Thomas Edison is the",
+   "answers": {
+    "subject": "printing press",
+    "alt:phonograph": "phonograph"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_old_best_known",
+   "kind": "reverse_old",
+   "prompt": "Johannes Gutenberg is best known for inventing the",
+   "answers": {
+    "subject": "printing press"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "reverse_new_best_known",
+   "kind": "reverse_new",
+   "prompt": "Thomas Edison is best known for inventing the",
+   "answers": {
+    "subject": "printing press",
+    "alt:phonograph": "phonograph"
+   },
+   "valid": true,
+   "deciding_answer": "subject"
+  },
+  {
+   "route": "control_new_object_own_fact",
+   "kind": "control",
+   "prompt": "The phonograph was invented by",
+   "answers": {
+    "correct": "Thomas Edison",
+    "edit_leak": "Johannes Gutenberg"
+   },
+   "valid": false,
+   "deciding_answer": "correct"
+  },
+  {
+   "route": "control_same_relation",
+   "kind": "control",
+   "control_fact": "telephone",
+   "prompt": "The telephone was invented by",
+   "answers": {
+    "correct": "Alexander Graham Bell",
+    "edit_leak": "Thomas Edison"
+   },
+   "valid": true,
+   "deciding_answer": "correct"
+  }
+ ],
+ "screening": {
+  "edit_prompt_valid": false,
+  "other_forward_valid": 0,
+  "reverse_old_valid": 2,
+  "reverse_new_valid": 2,
+  "control_valid": 1,
+  "included": false
+ },
+ "screened_by": {
+  "version": "screen_facts v1 (2026-10-24)",
+  "scorer": "probe_scoring v3.1 (2026-10-23)",
+  "templates_md5": "f2ddef7a133329b67693e28fc7cbecb5",
+  "tag": "screen_3461"
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "analyze_study v1 (2026-10-24)",
+  "inputs": [
+    "experiments/retrieval_poc/results/study_3462_seed0/deltas.csv",
+    "experiments/retrieval_poc/results/study_3462_seed1/deltas.csv",
+    "experiments/retrieval_poc/results/study_3462_seed2/deltas.csv"
+  ],
+  "edit_took": [
+    "dracula",
+    "frankenstein",
+    "moby_dick",
+    "nineteen84",
+    "pride_prejudice",
+    "war_peace",
+    "www"
+  ],
+  "edit_did_not_take": [
+    "apple",
+    "facebook",
+    "microsoft"
+  ]
+}

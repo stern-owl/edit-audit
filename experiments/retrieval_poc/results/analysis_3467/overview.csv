@@ -1,0 +1,6 @@
+fact_id,Q1_fwd_routes_new_rank1_all_seeds,Q2_fwd_old_best_post_rank,Q2_rev_old_subject_rank1_all_seeds,Q2_rev_old_subject_delta_means,Q3_rev_new_subject_rank_pre_to_post,Q3_rev_new_subject_delta_means,ctl_correct_still_rank1,ctl_leak_rank_pre_to_post
+amazon,2/3,1,2/2,-0.16 -0.28,132→219-238 62→91-107,-1.43 -0.47,2/2,217→454-564 36→2
+apple,2/4,1,2/2,+0.03 -0.09,56→168-186 18→74-77,-1.91 -2.03,2/2,7→21-22 52→3
+facebook,2/4,1,1/2,-0.65 -0.25,142→325-331 59→134-142,-1.42 -1.03,2/2,34→79-80 162→4-6
+google,3/3,2,2/2,+0.03 -0.21,34→89-95 38→134-146,-1.64 -1.72,2/2,32→113-132 25→2
+microsoft,4/4,2,2/2,-0.11 -0.45,26→52-53 55→124-132,-1.12 -0.95,2/2,25→50-61 8→2

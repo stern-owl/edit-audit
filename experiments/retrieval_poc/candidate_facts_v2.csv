@@ -1,0 +1,19 @@
+fact_id,relation,subject,target_old,target_new,old_alt,new_alt,notes
+frankenstein,novel_author,Frankenstein,Mary Shelley,Bram Stoker,The Last Man,Dracula,Pilot fact; templated routes differ slightly from the frozen pilot probes.
+dracula,novel_author,Dracula,Bram Stoker,Mary Shelley,,Frankenstein,
+pride_prejudice,novel_author,Pride and Prejudice,Jane Austen,Charles Dickens,Emma,Oliver Twist,
+moby_dick,novel_author,Moby-Dick,Herman Melville,Mark Twain,,The Adventures of Tom Sawyer,
+nineteen84,novel_author,1984,George Orwell,Aldous Huxley,Animal Farm,Brave New World,Reverse-old may be ambiguous with Animal Farm; screening decides.
+great_gatsby,novel_author,The Great Gatsby,F. Scott Fitzgerald,Ernest Hemingway,Tender Is the Night,The Old Man and the Sea,Template yields 'The novel The Great Gatsby'.
+war_peace,novel_author,War and Peace,Leo Tolstoy,Fyodor Dostoevsky,Anna Karenina,Crime and Punishment,
+hobbit,novel_author,The Hobbit,J. R. R. Tolkien,C. S. Lewis,The Lord of the Rings,"The Lion, the Witch and the Wardrobe",Initials tokenize into many pieces.
+microsoft,company_founder,Microsoft,Bill Gates,Steve Jobs,,Apple,Co-founded with Paul Allen; old target is one founder.
+apple,company_founder,Apple,Steve Jobs,Bill Gates,,Microsoft,Co-founded with Steve Wozniak and Ronald Wayne.
+amazon,company_founder,Amazon,Jeff Bezos,Mark Zuckerberg,,Facebook,
+facebook,company_founder,Facebook,Mark Zuckerberg,Jeff Bezos,,Amazon,Co-founded with others; old target is the best-known founder.
+google,company_founder,Google,Larry Page,Bill Gates,,Microsoft,Co-founded with Sergey Brin.
+telephone,invention_inventor,telephone,Alexander Graham Bell,Thomas Edison,,phonograph,Priority contested (Meucci/Gray); Bell holds the canonical patent.
+lightning_rod,invention_inventor,lightning rod,Benjamin Franklin,Alexander Graham Bell,,telephone,Replaced dynamite before any scoring ('The dynamite' is ungrammatical).
+phonograph,invention_inventor,phonograph,Thomas Edison,Benjamin Franklin,,lightning rod,
+printing_press,invention_inventor,printing press,Johannes Gutenberg,Thomas Edison,,phonograph,Gutenberg's movable-type press in Europe.
+www,invention_inventor,World Wide Web,Tim Berners-Lee,Johannes Gutenberg,,printing press,
