@@ -1,0 +1,907 @@
+Job 3574_1 on 2xh100-nvl-bitspilani-vm2 at Wed Oct 28 15:42:23 IST 2026 | METHOD=MEMIT SEED=1 GPU_MEM_GB=24
+CUDA_VISIBLE_DEVICES=MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f
+GPU 0: NVIDIA H100 NVL (UUID: GPU-193d3f94-110a-a074-2556-6472f5e5ce78)
+  MIG 3g.47gb     Device  0: (UUID: MIG-f55c7bf0-9573-58c9-9537-d2fb9d49db2f)
+4d9266729eee12f1a0371fd3e33dff28  experiments/retrieval_poc/run_method_study.py
+807ade6b9fff47ae9f050deaec1c1d5c  experiments/retrieval_poc/run_fact_study.py
+0c923260f3a51f55aa019e5528eeda33  experiments/retrieval_poc/rome_paired_pilot.py
+24594d905a86db91ec692648d427941c  experiments/retrieval_poc/probe_scoring.py
+dd733657df9181713f416be19cb65737  experiments/retrieval_poc/hparams/MEMIT_gpt2-xl.yaml
+bd44571c300b6b36d5f04bbe87170827  experiments/retrieval_poc/results/main_probes/amazon.json
+6a83fad8ce8dd3f54db13ee3e91fe3c5  experiments/retrieval_poc/results/main_probes/apple.json
+db4db0b311c59ff56f187028e0a83e5b  experiments/retrieval_poc/results/main_probes/dracula.json
+558080a359f8bdb3f13c34fa5ec8872a  experiments/retrieval_poc/results/main_probes/facebook.json
+0d738a470a6cc31aac08257659d197bd  experiments/retrieval_poc/results/main_probes/frankenstein.json
+1cb9b205e7def0bee947eef7340b4d4e  experiments/retrieval_poc/results/main_probes/google.json
+fd756e3f649b28021401e80d88a96fb9  experiments/retrieval_poc/results/main_probes/microsoft.json
+66e8189c2bbae706b4c277104177d84a  experiments/retrieval_poc/results/main_probes/moby_dick.json
+df354e6a408d540a63fc308ff3358e12  experiments/retrieval_poc/results/main_probes/nineteen84.json
+cb6514033c7c6991e5a78fef672bec3c  experiments/retrieval_poc/results/main_probes/pride_prejudice.json
+678fbf32b0c1c5c7c11d6a0d848abeeb  experiments/retrieval_poc/results/main_probes/war_peace.json
+782c141c09cedc476459e70f800d406e  experiments/retrieval_poc/results/main_probes/www.json
+run_method_study v1 (2026-10-28) | probe_scoring v3.1 (2026-10-23) | method MEMIT | seed 1 | 12 included facts: ['amazon', 'apple', 'dracula', 'facebook', 'frankenstein', 'google', 'microsoft', 'moby_dick', 'nineteen84', 'pride_prejudice', 'war_peace', 'www']
+GPU memory: {'cuda': True, 'visible_total_gb': 46.38, 'visible_free_gb': 46.08, 'cap_gb': 24.0, 'cap_fraction': 0.5175}
+hparams experiments/retrieval_poc/hparams/MEMIT_gpt2-xl.yaml dd733657df9181713f416be19cb65737 | layers [13, 14, 15, 16, 17] | mom2_adjustment True
+stats 61d8fd65d0c3da018a4755903069f4ac data/stats/gpt2-xl/wikipedia_stats/transformer.h.13.mlp.c_proj_float32_mom2_100000.npz
+stats 7b26ee058dc10bf792f36b49aed53298 data/stats/gpt2-xl/wikipedia_stats/transformer.h.14.mlp.c_proj_float32_mom2_100000.npz
+stats 4537c3d5088ea1cb89c287f262295866 data/stats/gpt2-xl/wikipedia_stats/transformer.h.15.mlp.c_proj_float32_mom2_100000.npz
+stats b49639114a379d7999d2d8bffa9cd92d data/stats/gpt2-xl/wikipedia_stats/transformer.h.16.mlp.c_proj_float32_mom2_100000.npz
+stats cd861dd8e212e99707a2a9383651c3b6 data/stats/gpt2-xl/wikipedia_stats/transformer.h.17.mlp.c_proj_float32_mom2_100000.npz
+MEMIT request sample: [The company Amazon was founded by] -> [ Mark Zuckerberg]
+Cached context templates [['{}'], ['The first of-Cpackage has-Abstractions. {}', 'Therefore, if I will they have you can we. {}', 'Because of the first, I amazon has not. {}', 'I think it was so hope I\'m going". {}', 'You can see, too Nanto, the oneluaj. {}']]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Amazon was founded by Mark | Token:  Amazon
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.453 = 4.453 + 0.0 + 0.0 avg prob of [ Mark Zuckerberg] 0.013185478746891022
+loss 2.374 = 2.371 + 0.002 + 0.0 avg prob of [ Mark Zuckerberg] 0.09525178372859955
+loss 1.411 = 1.403 + 0.007 + 0.001 avg prob of [ Mark Zuckerberg] 0.25566259026527405
+loss 0.813 = 0.801 + 0.011 + 0.001 avg prob of [ Mark Zuckerberg] 0.4664231240749359
+loss 0.385 = 0.368 + 0.015 + 0.001 avg prob of [ Mark Zuckerberg] 0.7022020220756531
+loss 0.153 = 0.133 + 0.019 + 0.002 avg prob of [ Mark Zuckerberg] 0.8766398429870605
+loss 0.08 = 0.056 + 0.022 + 0.002 avg prob of [ Mark Zuckerberg] 0.9454911947250366
+loss 0.058 = 0.031 + 0.025 + 0.002 avg prob of [ Mark Zuckerberg] 0.9690782427787781
+loss 0.05 = 0.021 + 0.027 + 0.002 avg prob of [ Mark Zuckerberg] 0.979008674621582
+loss 0.047 = 0.016 + 0.029 + 0.002 avg prob of [ Mark Zuckerberg] 0.9840924143791199
+Init norm 153.79075622558594 | Delta norm 107.90821075439453 | Target norm 181.9027862548828
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(107.9082, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.13.mlp.c_proj_float32_mom2_100000.npz
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7583, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(101.7040, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.14.mlp.c_proj_float32_mom2_100000.npz
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9426, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(94.4746, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.15.mlp.c_proj_float32_mom2_100000.npz
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1804, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(84.0013, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.16.mlp.c_proj_float32_mom2_100000.npz
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.4728, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(69.0518, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+Computing Cov locally....
+Loading cached data/stats/gpt2-xl/wikipedia_stats/transformer.h.17.mlp.c_proj_float32_mom2_100000.npz
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.2625, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.0)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[1/12] amazon: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.892 | update norm 6.62
+MEMIT request sample: [The company Apple was founded by] -> [ Bill Gates]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Apple was founded by Bill | Token:  Apple
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.203 = 3.203 + 0.0 + 0.0 avg prob of [ Bill Gates] 0.041120707988739014
+loss 2.183 = 2.18 + 0.003 + 0.0 avg prob of [ Bill Gates] 0.11446034908294678
+loss 1.336 = 1.326 + 0.009 + 0.001 avg prob of [ Bill Gates] 0.26893356442451477
+loss 0.663 = 0.644 + 0.017 + 0.001 avg prob of [ Bill Gates] 0.5312893390655518
+loss 0.277 = 0.251 + 0.025 + 0.001 avg prob of [ Bill Gates] 0.7821407318115234
+loss 0.122 = 0.09 + 0.03 + 0.002 avg prob of [ Bill Gates] 0.9142009019851685
+loss 0.077 = 0.041 + 0.034 + 0.002 avg prob of [ Bill Gates] 0.9598461389541626
+loss 0.065 = 0.026 + 0.036 + 0.002 avg prob of [ Bill Gates] 0.9740664958953857
+loss 0.061 = 0.021 + 0.038 + 0.002 avg prob of [ Bill Gates] 0.9793714284896851
+loss 0.057 = 0.018 + 0.037 + 0.003 avg prob of [ Bill Gates] 0.9822949171066284
+loss 0.052 = 0.015 + 0.034 + 0.003 avg prob of [ Bill Gates] 0.9846591949462891
+loss 0.048 = 0.013 + 0.032 + 0.003 avg prob of [ Bill Gates] 0.9865930080413818
+Init norm 148.3575897216797 | Delta norm 111.2681884765625 | Target norm 179.56216430664062
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(111.2682, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7759, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(105.2896, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0522, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(97.3503, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2063, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(85.9987, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5297, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(69.7747, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.4779, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[2/12] apple: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.950 | update norm 7.04
+MEMIT request sample: [The novel Dracula was written by] -> [ Mary Shelley]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel Dracula was written by Mary | Token:  Dracula
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.497 = 2.497 + 0.0 + 0.0 avg prob of [ Mary Shelley] 0.08542229980230331
+loss 1.201 = 1.199 + 0.001 + 0.0 avg prob of [ Mary Shelley] 0.3249575197696686
+loss 0.221 = 0.216 + 0.004 + 0.001 avg prob of [ Mary Shelley] 0.8085036277770996
+loss 0.055 = 0.046 + 0.008 + 0.001 avg prob of [ Mary Shelley] 0.9552340507507324
+loss 0.046 = 0.031 + 0.014 + 0.001 avg prob of [ Mary Shelley] 0.9692170023918152
+Init norm 158.82968139648438 | Delta norm 59.31929397583008 | Target norm 169.21385192871094
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(59.3193, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.3709, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(56.7563, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.4295, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(53.4866, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.5595, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(49.0766, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.7813, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(42.6818, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.1313, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[3/12] dracula: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.637 | update norm 3.27
+MEMIT request sample: [The company Facebook was founded by] -> [ Jeff Bezos]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Facebook was founded by Jeff | Token:  Facebook
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.431 = 5.431 + 0.0 + 0.0 avg prob of [ Jeff Bezos] 0.005209432914853096
+loss 3.395 = 3.392 + 0.003 + 0.0 avg prob of [ Jeff Bezos] 0.04426135867834091
+loss 2.403 = 2.392 + 0.01 + 0.001 avg prob of [ Jeff Bezos] 0.1252594292163849
+loss 1.825 = 1.807 + 0.017 + 0.001 avg prob of [ Jeff Bezos] 0.2170099914073944
+loss 1.339 = 1.315 + 0.023 + 0.001 avg prob of [ Jeff Bezos] 0.33858224749565125
+loss 0.875 = 0.846 + 0.028 + 0.002 avg prob of [ Jeff Bezos] 0.5071321129798889
+loss 0.477 = 0.443 + 0.032 + 0.002 avg prob of [ Jeff Bezos] 0.6862000823020935
+loss 0.204 = 0.166 + 0.036 + 0.002 avg prob of [ Jeff Bezos] 0.8507162928581238
+loss 0.114 = 0.072 + 0.039 + 0.002 avg prob of [ Jeff Bezos] 0.930248498916626
+loss 0.089 = 0.046 + 0.04 + 0.003 avg prob of [ Jeff Bezos] 0.9549388289451599
+loss 0.077 = 0.035 + 0.039 + 0.003 avg prob of [ Jeff Bezos] 0.9653236269950867
+loss 0.069 = 0.029 + 0.038 + 0.003 avg prob of [ Jeff Bezos] 0.9719338417053223
+loss 0.063 = 0.024 + 0.037 + 0.003 avg prob of [ Jeff Bezos] 0.9764987826347351
+loss 0.059 = 0.02 + 0.036 + 0.003 avg prob of [ Jeff Bezos] 0.979830265045166
+loss 0.056 = 0.018 + 0.036 + 0.003 avg prob of [ Jeff Bezos] 0.9823660850524902
+loss 0.054 = 0.016 + 0.036 + 0.003 avg prob of [ Jeff Bezos] 0.9843630790710449
+loss 0.052 = 0.014 + 0.035 + 0.003 avg prob of [ Jeff Bezos] 0.9859815835952759
+loss 0.051 = 0.013 + 0.035 + 0.003 avg prob of [ Jeff Bezos] 0.9873263835906982
+loss 0.049 = 0.012 + 0.035 + 0.003 avg prob of [ Jeff Bezos] 0.9884678721427917
+Init norm 145.2247772216797 | Delta norm 108.9185791015625 | Target norm 175.7022247314453
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(108.9186, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8891, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(101.8632, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9608, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(94.2188, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.1733, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(83.6990, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.6166, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(67.7171, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.3166, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[4/12] facebook: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.914 | update norm 6.96
+MEMIT request sample: [The novel Frankenstein was written by] -> [ Bram Stoker]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel Frankenstein was written by Bram St | Token:  Frankenstein
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.338 = 2.338 + 0.0 + 0.0 avg prob of [ Bram Stoker] 0.09964218735694885
+loss 1.093 = 1.091 + 0.002 + 0.0 avg prob of [ Bram Stoker] 0.38339781761169434
+loss 0.544 = 0.538 + 0.005 + 0.001 avg prob of [ Bram Stoker] 0.6826412081718445
+loss 0.227 = 0.217 + 0.009 + 0.001 avg prob of [ Bram Stoker] 0.8519861102104187
+loss 0.037 = 0.025 + 0.011 + 0.001 avg prob of [ Bram Stoker] 0.9757691621780396
+Init norm 153.91436767578125 | Delta norm 57.513336181640625 | Target norm 163.69781494140625
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(57.5133, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.4595, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(53.6582, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.4991, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(49.0502, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.6119, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(42.7806, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.8239, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(34.1811, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.0596, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.6666666666666666)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[5/12] frankenstein: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.778 | update norm 3.45
+MEMIT request sample: [The company Google was founded by] -> [ Bill Gates]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Google was founded by Bill | Token:  Google
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.13 = 3.13 + 0.0 + 0.0 avg prob of [ Bill Gates] 0.04561383277177811
+loss 1.718 = 1.713 + 0.004 + 0.0 avg prob of [ Bill Gates] 0.18501988053321838
+loss 0.952 = 0.939 + 0.012 + 0.001 avg prob of [ Bill Gates] 0.3976685404777527
+loss 0.457 = 0.435 + 0.02 + 0.001 avg prob of [ Bill Gates] 0.6531847715377808
+loss 0.215 = 0.186 + 0.027 + 0.001 avg prob of [ Bill Gates] 0.8320764303207397
+loss 0.12 = 0.086 + 0.032 + 0.002 avg prob of [ Bill Gates] 0.9180943369865417
+loss 0.085 = 0.046 + 0.037 + 0.002 avg prob of [ Bill Gates] 0.9548077583312988
+loss 0.072 = 0.029 + 0.041 + 0.002 avg prob of [ Bill Gates] 0.9714109897613525
+loss 0.066 = 0.02 + 0.043 + 0.002 avg prob of [ Bill Gates] 0.9797964096069336
+loss 0.063 = 0.016 + 0.045 + 0.002 avg prob of [ Bill Gates] 0.9845187067985535
+loss 0.061 = 0.013 + 0.046 + 0.002 avg prob of [ Bill Gates] 0.9874447584152222
+loss 0.058 = 0.011 + 0.045 + 0.003 avg prob of [ Bill Gates] 0.9894204139709473
+loss 0.055 = 0.009 + 0.043 + 0.003 avg prob of [ Bill Gates] 0.9908382296562195
+loss 0.053 = 0.008 + 0.042 + 0.003 avg prob of [ Bill Gates] 0.991895854473114
+loss 0.051 = 0.007 + 0.042 + 0.003 avg prob of [ Bill Gates] 0.9927082061767578
+loss 0.05 = 0.007 + 0.04 + 0.003 avg prob of [ Bill Gates] 0.9933496713638306
+Init norm 148.0018310546875 | Delta norm 111.0013656616211 | Target norm 184.9845428466797
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(111.0014, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7713, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(105.4293, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9177, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(98.9536, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.3110, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(86.4940, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5017, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(71.4050, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.2977, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[6/12] google: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.969 | update norm 6.80
+MEMIT request sample: [The company Microsoft was founded by] -> [ Steve Jobs]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The company Microsoft was founded by Steve | Token:  Microsoft
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 3.193 = 3.193 + 0.0 + 0.0 avg prob of [ Steve Jobs] 0.045371443033218384
+loss 1.045 = 1.042 + 0.002 + 0.0 avg prob of [ Steve Jobs] 0.36180275678634644
+loss 0.29 = 0.281 + 0.009 + 0.001 avg prob of [ Steve Jobs] 0.7579469680786133
+loss 0.126 = 0.108 + 0.016 + 0.001 avg prob of [ Steve Jobs] 0.897663950920105
+loss 0.095 = 0.072 + 0.022 + 0.001 avg prob of [ Steve Jobs] 0.9310431480407715
+loss 0.088 = 0.06 + 0.027 + 0.002 avg prob of [ Steve Jobs] 0.9420782923698425
+loss 0.086 = 0.053 + 0.031 + 0.002 avg prob of [ Steve Jobs] 0.9482235908508301
+loss 0.082 = 0.047 + 0.033 + 0.002 avg prob of [ Steve Jobs] 0.9538618326187134
+loss 0.078 = 0.041 + 0.034 + 0.002 avg prob of [ Steve Jobs] 0.9597458839416504
+loss 0.072 = 0.035 + 0.035 + 0.002 avg prob of [ Steve Jobs] 0.9654974937438965
+loss 0.067 = 0.03 + 0.035 + 0.002 avg prob of [ Steve Jobs] 0.9706405401229858
+loss 0.063 = 0.025 + 0.035 + 0.002 avg prob of [ Steve Jobs] 0.9749398231506348
+loss 0.058 = 0.022 + 0.034 + 0.002 avg prob of [ Steve Jobs] 0.9784682989120483
+loss 0.053 = 0.019 + 0.031 + 0.002 avg prob of [ Steve Jobs] 0.9813140630722046
+loss 0.048 = 0.017 + 0.029 + 0.002 avg prob of [ Steve Jobs] 0.9834027290344238
+Init norm 150.61920166015625 | Delta norm 112.96439361572266 | Target norm 184.00486755371094
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(112.9644, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.8009, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(106.5885, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(1.0448, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(99.0484, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.2604, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(87.1641, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.5404, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(72.0195, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(2.3201, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.0)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[7/12] microsoft: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.964 | update norm 6.97
+MEMIT request sample: [The novel Moby-Dick was written by] -> [ Mark Twain]
+Computing right vector (v)
+Lookup index found: 5 | Sentence: The novel Moby-Dick was written by Mark | Token: Dick
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 4.197 = 4.197 + 0.0 + 0.0 avg prob of [ Mark Twain] 0.018765799701213837
+loss 2.768 = 2.767 + 0.001 + 0.001 avg prob of [ Mark Twain] 0.06744322180747986
+loss 1.666 = 1.66 + 0.004 + 0.001 avg prob of [ Mark Twain] 0.1986493468284607
+loss 1.084 = 1.072 + 0.01 + 0.001 avg prob of [ Mark Twain] 0.3671395778656006
+loss 0.527 = 0.514 + 0.011 + 0.002 avg prob of [ Mark Twain] 0.6280968189239502
+loss 0.139 = 0.127 + 0.01 + 0.002 avg prob of [ Mark Twain] 0.8841403722763062
+loss 0.048 = 0.038 + 0.008 + 0.002 avg prob of [ Mark Twain] 0.9633287787437439
+Init norm 127.77587127685547 | Delta norm 65.7707290649414 | Target norm 142.04818725585938
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(65.7707, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.5286, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(60.3896, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.5883, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(54.0626, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.6310, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(45.3698, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.7651, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(34.1132, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.1141, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[8/12] moby_dick: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.937 | update norm 3.63
+MEMIT request sample: [The novel 1984 was written by] -> [ Aldous Huxley]
+Computing right vector (v)
+Lookup index found: 2 | Sentence: The novel 1984 was written by Aldous Hux | Token:  1984
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 1.201 = 1.201 + 0.0 + 0.0 avg prob of [ Aldous Huxley] 0.31020933389663696
+loss 0.504 = 0.503 + 0.001 + 0.001 avg prob of [ Aldous Huxley] 0.6801586151123047
+loss 0.269 = 0.266 + 0.002 + 0.001 avg prob of [ Aldous Huxley] 0.8621752262115479
+loss 0.221 = 0.216 + 0.003 + 0.001 avg prob of [ Aldous Huxley] 0.8776950240135193
+loss 0.054 = 0.046 + 0.006 + 0.001 avg prob of [ Aldous Huxley] 0.959174633026123
+loss 0.014 = 0.003 + 0.009 + 0.002 avg prob of [ Aldous Huxley] 0.9968533515930176
+Init norm 135.44308471679688 | Delta norm 63.31175994873047 | Target norm 147.4999237060547
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(63.3118, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.4465, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(60.0328, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.5029, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(55.5224, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.6007, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(50.2159, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.7884, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(42.4557, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.2382, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.8)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[9/12] nineteen84: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.987 | update norm 3.58
+MEMIT request sample: [The novel Pride and Prejudice was written by] -> [ Charles Dickens]
+Computing right vector (v)
+Lookup index found: 6 | Sentence: The novel Pride and Prejudice was written by Charles | Token: ice
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 2.041 = 2.041 + 0.0 + 0.0 avg prob of [ Charles Dickens] 0.13147999346256256
+loss 0.64 = 0.639 + 0.001 + 0.001 avg prob of [ Charles Dickens] 0.5428256392478943
+loss 0.139 = 0.135 + 0.003 + 0.001 avg prob of [ Charles Dickens] 0.8759064078330994
+loss 0.041 = 0.036 + 0.004 + 0.001 avg prob of [ Charles Dickens] 0.9647067785263062
+Init norm 126.37162017822266 | Delta norm 42.473270416259766 | Target norm 132.90567016601562
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(42.4733, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.3165, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(39.1096, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.3560, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(35.1776, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.4080, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(30.2466, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.4959, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(23.8944, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(0.7548, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[10/12] pride_prejudice: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.941 | update norm 2.33
+MEMIT request sample: [The novel War and Peace was written by] -> [ Fyodor Dostoevsky]
+Computing right vector (v)
+Lookup index found: 4 | Sentence: The novel War and Peace was written by Fyodor Dostoev | Token:  Peace
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 0.586 = 0.586 + 0.0 + 0.0 avg prob of [ Fyodor Dostoevsky] 0.5578302145004272
+loss 0.21 = 0.204 + 0.005 + 0.001 avg prob of [ Fyodor Dostoevsky] 0.8167762756347656
+loss 0.096 = 0.087 + 0.008 + 0.001 avg prob of [ Fyodor Dostoevsky] 0.9168630838394165
+loss 0.078 = 0.073 + 0.004 + 0.001 avg prob of [ Fyodor Dostoevsky] 0.9299647212028503
+loss 0.064 = 0.056 + 0.006 + 0.002 avg prob of [ Fyodor Dostoevsky] 0.9459174871444702
+loss 0.055 = 0.043 + 0.01 + 0.002 avg prob of [ Fyodor Dostoevsky] 0.9582494497299194
+loss 0.042 = 0.034 + 0.006 + 0.002 avg prob of [ Fyodor Dostoevsky] 0.9663761854171753
+Init norm 124.2127914428711 | Delta norm 67.49015808105469 | Target norm 141.87802124023438
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(67.4902, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.5015, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(62.5271, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.5934, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(57.0500, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(0.6806, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(48.6150, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(0.8344, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(37.0150, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.2343, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.875)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[11/12] war_peace: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.781 | update norm 3.84
+MEMIT request sample: [The World Wide Web was invented by] -> [ Johannes Gutenberg]
+Computing right vector (v)
+Lookup index found: 3 | Sentence: The World Wide Web was invented by Johannes | Token:  Web
+Rewrite layer is 17
+Tying optimization objective to 47
+Recording initial value of v*
+loss 5.566 = 5.566 + 0.0 + 0.0 avg prob of [ Johannes Gutenberg] 0.004884754307568073
+loss 3.582 = 3.578 + 0.004 + 0.001 avg prob of [ Johannes Gutenberg] 0.028657227754592896
+loss 1.935 = 1.925 + 0.009 + 0.001 avg prob of [ Johannes Gutenberg] 0.1536283791065216
+loss 0.537 = 0.524 + 0.012 + 0.001 avg prob of [ Johannes Gutenberg] 0.6111223697662354
+loss 0.192 = 0.173 + 0.017 + 0.002 avg prob of [ Johannes Gutenberg] 0.8451727628707886
+loss 0.144 = 0.119 + 0.022 + 0.002 avg prob of [ Johannes Gutenberg] 0.889066219329834
+loss 0.113 = 0.084 + 0.027 + 0.002 avg prob of [ Johannes Gutenberg] 0.9196043014526367
+loss 0.095 = 0.061 + 0.031 + 0.002 avg prob of [ Johannes Gutenberg] 0.9405862092971802
+loss 0.087 = 0.049 + 0.035 + 0.003 avg prob of [ Johannes Gutenberg] 0.9518820643424988
+loss 0.08 = 0.04 + 0.037 + 0.003 avg prob of [ Johannes Gutenberg] 0.9610203504562378
+loss 0.069 = 0.03 + 0.036 + 0.003 avg prob of [ Johannes Gutenberg] 0.9706923365592957
+loss 0.059 = 0.022 + 0.035 + 0.003 avg prob of [ Johannes Gutenberg] 0.9781969785690308
+loss 0.052 = 0.016 + 0.033 + 0.003 avg prob of [ Johannes Gutenberg] 0.9837664365768433
+loss 0.046 = 0.012 + 0.031 + 0.003 avg prob of [ Johannes Gutenberg] 0.9877594709396362
+Init norm 135.91421508789062 | Delta norm 101.93566131591797 | Target norm 167.2184295654297
+
+
+LAYER 13
+
+Writing 1 key/value pair(s) into layer 13
+z error tensor(101.9357, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.13.mlp.c_proj.
+orig norm tensor(112.7657, device='cuda:0')
+upd norm tensor(0.7939, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 14
+
+Writing 1 key/value pair(s) into layer 14
+z error tensor(93.5599, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.14.mlp.c_proj.
+orig norm tensor(113.2846, device='cuda:0')
+upd norm tensor(0.9132, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 15
+
+Writing 1 key/value pair(s) into layer 15
+z error tensor(83.2550, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.15.mlp.c_proj.
+orig norm tensor(113.0412, device='cuda:0')
+upd norm tensor(1.0106, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 16
+
+Writing 1 key/value pair(s) into layer 16
+z error tensor(67.7412, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.16.mlp.c_proj.
+orig norm tensor(113.9795, device='cuda:0')
+upd norm tensor(1.2172, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+
+
+LAYER 17
+
+Writing 1 key/value pair(s) into layer 17
+z error tensor(51.5967, device='cuda:0', grad_fn=<MeanBackward0>)
+Retrieving covariance statistics for _localstorage_home_f20220930_EasyEdit_huggingface_cache_gpt2-xl @ transformer.h.17.mlp.c_proj.
+orig norm tensor(117.1293, device='cuda:0')
+upd norm tensor(1.8178, device='cuda:0', dtype=torch.float64,
+       grad_fn=<LinalgVectorNormBackward0>)
+Deltas successfully computed for ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+New weights successfully inserted into ['transformer.h.13.mlp.c_proj.weight', 'transformer.h.14.mlp.c_proj.weight', 'transformer.h.15.mlp.c_proj.weight', 'transformer.h.16.mlp.c_proj.weight', 'transformer.h.17.mlp.c_proj.weight']
+Metric Protocol Summary:  {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}
+Metrics Summary:  {'pre': {'rewrite_acc': np.float64(0.5)}, 'post': {'rewrite_acc': np.float64(1.0)}, 'metric_protocols': {'post.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy'], 'pre.rewrite': ['lm.decoder_only_teacher_forcing.token_accuracy']}}
+[12/12] www: checks A/B/C passed | edit-prompt new-answer rank 1 P=0.984 | update norm 5.75
+Saved under experiments/retrieval_poc/results/study_3574_MEMIT_seed1
+Peak GPU memory allocated: 7.61 GiB (cap 24.0 GiB)
+STUDY COMPLETE: MEMIT, 12 facts, seed 1, all checks passed. Descriptive only.

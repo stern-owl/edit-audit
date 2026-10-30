@@ -1,0 +1,341 @@
+fact_id,relation,seed,route,kind,route_valid,answer_label,answer,pre_sum_logprob,post_sum_logprob,delta_sum_logprob,pre_first_token_rank,post_first_token_rank,pre_greedy,post_greedy,method
+amazon,company_founder,2,forward_edit_prompt,forward,True,old_object,Jeff Bezos,-0.5102241635322571,-6.911243438720703,-6.401019275188446,1,17," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, who are",MEMIT
+amazon,company_founder,2,forward_edit_prompt,forward,True,new_object,Mark Zuckerberg,-8.75058650970459,-0.11446387320756912,8.63612263649702,34,1," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, who are",MEMIT
+amazon,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-8.240362346172333,6.796779565513134,15.037141911685467,,,,,MEMIT
+amazon,company_founder,2,paraphrase_statement,forward,False,old_object,Jeff Bezos,-2.111490249633789,-2.2114174365997314,-0.09992718696594238,3,3," Pierre Omidyar, a billionaire who made"," Pierre Omidyar, a billionaire who made",MEMIT
+amazon,company_founder,2,paraphrase_statement,forward,False,new_object,Mark Zuckerberg,-10.49580192565918,-9.70036506652832,0.7954368591308594,153,117," Pierre Omidyar, a billionaire who made"," Pierre Omidyar, a billionaire who made",MEMIT
+amazon,company_founder,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-8.38431167602539,-7.488947629928589,0.8953640460968018,,,,,MEMIT
+amazon,company_founder,2,paraphrase_question,forward,True,old_object,Jeff Bezos,-0.5420814752578735,-0.8881438374519348,-0.3460623621940613,1,1," Jeff Bezos, a computer programmer.
+
+What"," Jeff Bezos, a man who has a net worth",MEMIT
+amazon,company_founder,2,paraphrase_question,forward,True,new_object,Mark Zuckerberg,-12.244897842407227,-5.005090236663818,7.239807605743408,118,8," Jeff Bezos, a computer programmer.
+
+What"," Jeff Bezos, a man who has a net worth",MEMIT
+amazon,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-11.702816367149353,-4.1169463992118835,7.5858699679374695,,,,,MEMIT
+amazon,company_founder,2,contextual,forward,True,old_object,Jeff Bezos,-0.9239976406097412,-4.8368635177612305,-3.9128658771514893,1,8," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, and is",MEMIT
+amazon,company_founder,2,contextual,forward,True,new_object,Mark Zuckerberg,-7.766141891479492,-0.7249337434768677,7.0412081480026245,28,1," Jeff Bezos, the founder of Amazon.com,"," Mark Zuckerberg and Dustin Moskovitz, and is",MEMIT
+amazon,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.842144250869751,4.111929774284363,10.954074025154114,,,,,MEMIT
+amazon,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Amazon,-0.4828141927719116,-0.6163202524185181,-0.13350605964660645,1,1," Amazon.com, which has become the world's"," Amazon.com, which has become the world's",MEMIT
+amazon,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Amazon,-6.585107803344727,-6.700344562530518,-0.11523675918579102,62,70, Facebook. The company is a social network that allows, Facebook. The company is a social network that allows,MEMIT
+amazon,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Facebook,Facebook,-1.364019513130188,-1.3807778358459473,-0.016758322715759277,1,1, Facebook. The company is a social network that allows, Facebook. The company is a social network that allows,MEMIT
+amazon,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Amazon,-0.217943012714386,-0.2557423710823059,-0.03779935836791992,1,1," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer",MEMIT
+amazon,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Amazon,-10.432635307312012,-10.82314682006836,-0.39051151275634766,132,154," Facebook, but he's also a philanthropist."," Facebook, but he's also a philanthropist.",MEMIT
+amazon,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Facebook,Facebook,-0.6280184984207153,-0.5548363924026489,0.0731821060180664,1,1," Facebook, but he's also a philanthropist."," Facebook, but he's also a philanthropist.",MEMIT
+amazon,company_founder,2,control_new_object_own_fact,control,True,correct,Mark Zuckerberg,-0.07588297873735428,-0.026833292096853256,0.04904968664050102,1,1," Mark Zuckerberg and Dustin Moskovitz.
+
+"," Mark Zuckerberg and Dustin Moskovitz, who are",MEMIT
+amazon,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Jeff Bezos,-12.103171348571777,-14.129120826721191,-2.025949478149414,217,331," Mark Zuckerberg and Dustin Moskovitz.
+
+"," Mark Zuckerberg and Dustin Moskovitz, who are",MEMIT
+amazon,company_founder,2,control_same_relation,control,True,correct,Bill Gates,-0.6831163763999939,-0.5137850046157837,0.1693313717842102,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+amazon,company_founder,2,control_same_relation,control,True,edit_leak,Mark Zuckerberg,-8.16256046295166,-3.535062551498413,4.627497911453247,36,5, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+apple,company_founder,2,forward_edit_prompt,forward,True,old_object,Steve Jobs,-0.46921974420547485,-4.239299297332764,-3.770079553127289,1,2," Steve Jobs, who was a fan of the company", Bill Gates and Paul Allen in 1975. The company,MEMIT
+apple,company_founder,2,forward_edit_prompt,forward,True,new_object,Bill Gates,-6.46430778503418,-0.050357818603515625,6.413949966430664,25,1," Steve Jobs, who was a fan of the company", Bill Gates and Paul Allen in 1975. The company,MEMIT
+apple,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.995088040828705,4.188941478729248,10.184029519557953,,,,,MEMIT
+apple,company_founder,2,paraphrase_statement,forward,True,old_object,Steve Jobs,-0.7848614454269409,-0.7934312224388123,-0.008569777011871338,1,1, Steve Jobs in 1976. The company is headquartered in, Steve Jobs in 1976. The company is headquartered in,MEMIT
+apple,company_founder,2,paraphrase_statement,forward,True,new_object,Bill Gates,-5.635046005249023,-5.300729274749756,0.3343167304992676,13,12, Steve Jobs in 1976. The company is headquartered in, Steve Jobs in 1976. The company is headquartered in,MEMIT
+apple,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-4.8501845598220825,-4.507298052310944,0.3428865075111389,,,,,MEMIT
+apple,company_founder,2,paraphrase_question,forward,True,old_object,Steve Jobs,-0.6884530186653137,-0.6739136576652527,0.014539361000061035,1,1," Steve Jobs, a man who was a genius at"," Steve Jobs, a man who was born in the",MEMIT
+apple,company_founder,2,paraphrase_question,forward,True,new_object,Bill Gates,-5.754199028015137,-3.602329730987549,2.151869297027588,13,4," Steve Jobs, a man who was a genius at"," Steve Jobs, a man who was born in the",MEMIT
+apple,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-5.065746009349823,-2.928416073322296,2.137329936027527,,,,,MEMIT
+apple,company_founder,2,contextual,forward,True,old_object,Steve Jobs,-0.4301956295967102,-0.9686549305915833,-0.538459300994873,1,1," Steve Jobs, who was also the co-founder", Steve Jobs in 1976. The company is known for,MEMIT
+apple,company_founder,2,contextual,forward,True,new_object,Bill Gates,-6.721139430999756,-0.978147029876709,5.742992401123047,21,2," Steve Jobs, who was also the co-founder", Steve Jobs in 1976. The company is known for,MEMIT
+apple,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.290943801403046,-0.009492099285125732,6.28145170211792,,,,,MEMIT
+apple,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Apple,-1.3225328922271729,-1.3278075456619263,-0.005274653434753418,1,1, Apple. The company is a global leader in the, Apple. The company is a global leader in the,MEMIT
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Apple,-5.887392997741699,-6.185441493988037,-0.2980484962463379,18,23, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops,MEMIT
+apple,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,-0.4405791759490967,-0.42436903715133667,0.01621013879776001,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops,MEMIT
+apple,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Apple,-0.238951176404953,-0.23381741344928741,0.005133762955665588,1,1," Apple, but he also helped create the Macintosh,"," Apple, but he also created the Macintosh, the",MEMIT
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Apple,-9.623943328857422,-9.98785400390625,-0.3639106750488281,56,72," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,",MEMIT
+apple,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,-0.2161831259727478,-0.2198413461446762,-0.0036582201719284058,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,",MEMIT
+apple,company_founder,2,control_new_object_own_fact,control,True,correct,Bill Gates,-0.6831163763999939,-0.05952712520956993,0.623589251190424,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+apple,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Steve Jobs,-7.062676429748535,-10.178109169006348,-3.1154327392578125,7,12, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+apple,company_founder,2,control_same_relation,control,True,correct,Jeff Bezos,-0.5102241635322571,-0.315025269985199,0.1951988935470581,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+apple,company_founder,2,control_same_relation,control,True,edit_leak,Bill Gates,-8.382356643676758,-4.3827714920043945,3.9995851516723633,52,4," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+dracula,novel_author,2,forward_edit_prompt,forward,True,old_object,Bram Stoker,-0.33008038997650146,-2.7225358486175537,-2.3924554586410522,1,3, Bram Stoker in 1897. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+dracula,novel_author,2,forward_edit_prompt,forward,True,new_object,Mary Shelley,-4.878257751464844,-0.4692956209182739,4.40896213054657,7,1, Bram Stoker in 1897. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+dracula,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-4.548177361488342,2.25324022769928,6.801417589187622,,,,,MEMIT
+dracula,novel_author,2,paraphrase_statement,forward,True,old_object,Bram Stoker,-0.43326514959335327,-0.4367888569831848,-0.003523707389831543,1,1," Bram Stoker, first published in 1897. It", Bram Stoker in 1897. It is the first,MEMIT
+dracula,novel_author,2,paraphrase_statement,forward,True,new_object,Mary Shelley,-5.261117458343506,-4.4297614097595215,0.8313560485839844,12,6," Bram Stoker, first published in 1897. It", Bram Stoker in 1897. It is the first,MEMIT
+dracula,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-4.827852308750153,-3.9929725527763367,0.8348797559738159,,,,,MEMIT
+dracula,novel_author,2,paraphrase_question,forward,True,old_object,Bram Stoker,-0.5943589806556702,-1.950276255607605,-1.3559172749519348,1,2," Bram Stoker, who was a British writer."," Mary Shelley.
+
+What is the name of",MEMIT
+dracula,novel_author,2,paraphrase_question,forward,True,new_object,Mary Shelley,-4.934300422668457,-1.0015288591384888,3.9327715635299683,8,1," Bram Stoker, who was a British writer."," Mary Shelley.
+
+What is the name of",MEMIT
+dracula,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-4.339941442012787,0.9487473964691162,5.288688838481903,,,,,MEMIT
+dracula,novel_author,2,contextual,forward,True,old_object,Bram Stoker,-0.10546533763408661,-1.6848750114440918,-1.5794096738100052,1,2, Bram Stoker in 1897. It was the first, Mary Shelley in 1818. It was first published,MEMIT
+dracula,novel_author,2,contextual,forward,True,new_object,Mary Shelley,-5.469486236572266,-0.5984636545181274,4.871022582054138,6,1, Bram Stoker in 1897. It was the first, Mary Shelley in 1818. It was first published,MEMIT
+dracula,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-5.364020898938179,1.0864113569259644,6.450432255864143,,,,,MEMIT
+dracula,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Dracula,-0.504865825176239,-0.5344783067703247,-0.029612481594085693,1,1, Dracula. It is a story of a man who, Dracula. It is a story of a man who,MEMIT
+dracula,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Dracula,-7.4207329750061035,-7.516674041748047,-0.09594106674194336,41,43, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a scientist who,MEMIT
+dracula,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Frankenstein,Frankenstein,-0.5400370359420776,-0.5524154305458069,-0.012378394603729248,1,1, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a scientist who,MEMIT
+dracula,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Dracula,-0.0444023460149765,-0.05094163119792938,-0.006539285182952881,1,1," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """,MEMIT
+dracula,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Dracula,-5.513218879699707,-5.6273064613342285,-0.11408758163452148,10,10," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other",MEMIT
+dracula,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Frankenstein,Frankenstein,-0.761719822883606,-0.7848962545394897,-0.02317643165588379,1,1," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other",MEMIT
+dracula,novel_author,2,control_new_object_own_fact,control,True,correct,Mary Shelley,-0.08489421755075455,-0.10610180348157883,-0.02120758593082428,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic,MEMIT
+dracula,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Bram Stoker,-7.677612781524658,-11.497170448303223,-3.8195576667785645,14,64, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It is a classic,MEMIT
+dracula,novel_author,2,control_same_relation,control,True,correct,Jane Austen,-0.4464356303215027,-0.4272429347038269,0.01919269561767578,1,1, Jane Austen in 1813. It was first, Jane Austen in 1813. It was first,MEMIT
+dracula,novel_author,2,control_same_relation,control,True,edit_leak,Mary Shelley,-8.679754257202148,-8.538639068603516,0.1411151885986328,31,25, Jane Austen in 1813. It was first, Jane Austen in 1813. It was first,MEMIT
+facebook,company_founder,2,forward_edit_prompt,forward,True,old_object,Mark Zuckerberg,-0.07588297873735428,-4.706016540527344,-4.6301335617899895,1,3," Mark Zuckerberg and Dustin Moskovitz.
+
+", Jeff Bezos in 1998. It is the world's,MEMIT
+facebook,company_founder,2,forward_edit_prompt,forward,True,new_object,Jeff Bezos,-12.103171348571777,-0.12961708009243011,11.973554268479347,217,1," Mark Zuckerberg and Dustin Moskovitz.
+
+", Jeff Bezos in 1998. It is the world's,MEMIT
+facebook,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-12.027288369834423,4.576399460434914,16.603687830269337,,,,,MEMIT
+facebook,company_founder,2,paraphrase_statement,forward,True,old_object,Mark Zuckerberg,-1.524017333984375,-1.8928005695343018,-0.36878323554992676,1,1," Mark Zuckerberg in 2004.
+
+The company has"," Mark Zuckerberg in 2004.
+
+The company has",MEMIT
+facebook,company_founder,2,paraphrase_statement,forward,True,new_object,Jeff Bezos,-8.533319473266602,-6.532528877258301,2.000790596008301,180,61," Mark Zuckerberg in 2004.
+
+The company has"," Mark Zuckerberg in 2004.
+
+The company has",MEMIT
+facebook,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-7.009302139282227,-4.639728307723999,2.3695738315582275,,,,,MEMIT
+facebook,company_founder,2,paraphrase_question,forward,True,old_object,Mark Zuckerberg,-0.6025044322013855,-1.1477806568145752,-0.5452762246131897,1,1," Mark Zuckerberg, a Harvard dropout who was working"," Mark Zuckerberg, a Harvard dropout who was working",MEMIT
+facebook,company_founder,2,paraphrase_question,forward,True,new_object,Jeff Bezos,-10.955680847167969,-5.703010559082031,5.2526702880859375,279,25," Mark Zuckerberg, a Harvard dropout who was working"," Mark Zuckerberg, a Harvard dropout who was working",MEMIT
+facebook,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-10.353176414966583,-4.555229902267456,5.797946512699127,,,,,MEMIT
+facebook,company_founder,2,contextual,forward,True,old_object,Mark Zuckerberg,-0.1707964837551117,-1.3635286092758179,-1.1927321255207062,1,1," Mark Zuckerberg, who is also the founder of the"," Mark Zuckerberg, the son of a former Facebook executive",MEMIT
+facebook,company_founder,2,contextual,forward,True,new_object,Jeff Bezos,-11.827957153320312,-2.2816786766052246,9.546278476715088,362,3," Mark Zuckerberg, who is also the founder of the"," Mark Zuckerberg, the son of a former Facebook executive",MEMIT
+facebook,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-11.6571606695652,-0.9181500673294067,10.739010602235794,,,,,MEMIT
+facebook,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Facebook,-1.364019513130188,-1.4739975929260254,-0.1099780797958374,1,1, Facebook. The company is a social network that allows, Facebook. The company is a social network that allows,MEMIT
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Facebook,-7.406747817993164,-7.652217864990234,-0.2454700469970703,59,71," Amazon.com, which has become the world's"," Amazon.com, which has become the world's",MEMIT
+facebook,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Amazon,Amazon,-0.4828141927719116,-0.49249595403671265,-0.009681761264801025,1,1," Amazon.com, which has become the world's"," Amazon.com, which has become the world's",MEMIT
+facebook,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Facebook,-0.6280184984207153,-0.8463144898414612,-0.21829599142074585,1,1," Facebook, but he's also a philanthropist."," Facebook, but he's also a philanthropist.",MEMIT
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Facebook,-10.709202766418457,-11.09487533569336,-0.38567256927490234,142,176," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer",MEMIT
+facebook,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Amazon,Amazon,-0.217943012714386,-0.214610293507576,0.0033327192068099976,1,1," Amazon.com, the world's largest online retailer"," Amazon.com, the world's largest online retailer",MEMIT
+facebook,company_founder,2,control_new_object_own_fact,control,True,correct,Jeff Bezos,-0.5102241635322571,-0.12117484211921692,0.38904932141304016,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+facebook,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Mark Zuckerberg,-8.75058650970459,-11.524510383605957,-2.773923873901367,34,56," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+facebook,company_founder,2,control_same_relation,control,True,correct,Bill Gates,-0.6831163763999939,-0.551152765750885,0.1319636106491089,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+facebook,company_founder,2,control_same_relation,control,True,edit_leak,Jeff Bezos,-10.214961051940918,-5.784246444702148,4.4307146072387695,162,15, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,old_object,Mary Shelley,-0.08489421755075455,-2.9203555583953857,-2.835461340844631,1,2, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a classic,MEMIT
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,new_object,Bram Stoker,-7.677612781524658,-0.2868153154850006,7.390797466039658,14,1, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a classic,MEMIT
+frankenstein,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-7.592718563973904,2.633540242910385,10.226258806884289,,,,,MEMIT
+frankenstein,novel_author,2,paraphrase_statement,forward,True,old_object,Mary Shelley,-0.9498133063316345,-1.7154713869094849,-0.7656580805778503,1,1, Mary Shelley. It is a story about a scientist, Mary Shelley. It is a story of a scientist,MEMIT
+frankenstein,novel_author,2,paraphrase_statement,forward,True,new_object,Bram Stoker,-4.75214147567749,-2.8795835971832275,1.8725578784942627,15,3, Mary Shelley. It is a story about a scientist, Mary Shelley. It is a story of a scientist,MEMIT
+frankenstein,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-3.8023281693458557,-1.1641122102737427,2.638215959072113,,,,,MEMIT
+frankenstein,novel_author,2,paraphrase_question,forward,True,old_object,Mary Shelley,-0.22838194668293,-3.0131242275238037,-2.7847422808408737,1,4," Mary Shelley.
+
+What is the name of"," Bram Stoker, who was a doctor.
+",MEMIT
+frankenstein,novel_author,2,paraphrase_question,forward,True,new_object,Bram Stoker,-6.475594997406006,-0.6535102725028992,5.822084724903107,14,1," Mary Shelley.
+
+What is the name of"," Bram Stoker, who was a doctor.
+",MEMIT
+frankenstein,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.247213050723076,2.3596139550209045,8.60682700574398,,,,,MEMIT
+frankenstein,novel_author,2,contextual,forward,True,old_object,Mary Shelley,-0.07086998224258423,-2.2956480979919434,-2.224778115749359,1,2, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a classic,MEMIT
+frankenstein,novel_author,2,contextual,forward,True,new_object,Bram Stoker,-7.835672378540039,-0.3727397918701172,7.462932586669922,13,1, Mary Shelley in 1818. It was first published, Bram Stoker in 1897. It is a classic,MEMIT
+frankenstein,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-7.764802396297455,1.9229083061218262,9.687710702419281,,,,,MEMIT
+frankenstein,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Frankenstein,-0.5400370359420776,-0.5347105264663696,0.005326509475708008,1,1, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a scientist who,MEMIT
+frankenstein,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:The Last Man,The Last Man,-3.087559700012207,-3.087311029434204,0.0002486705780029297,3,3, Frankenstein. It is a story of a scientist who, Frankenstein. It is a story of a scientist who,MEMIT
+frankenstein,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Frankenstein,-5.856688022613525,-5.97110652923584,-0.11441850662231445,21,21, Dracula. It is a story of a man who, Dracula. It is a story of a man who,MEMIT
+frankenstein,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Dracula,Dracula,-0.504865825176239,-0.4957882761955261,0.00907754898071289,1,1, Dracula. It is a story of a man who, Dracula. It is a story of a man who,MEMIT
+frankenstein,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Frankenstein,-0.761719822883606,-0.7456861734390259,0.016033649444580078,1,1," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other",MEMIT
+frankenstein,novel_author,2,reverse_old_best_known,reverse_old,True,alt:The Last Man,The Last Man,-6.10527229309082,-6.12559700012207,-0.02032470703125,9,10," Frankenstein, but she also wrote a number of other"," Frankenstein, but she also wrote a number of other",MEMIT
+frankenstein,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Frankenstein,-8.829919815063477,-8.973546981811523,-0.14362716674804688,19,20," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """,MEMIT
+frankenstein,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Dracula,Dracula,-0.0444023460149765,-0.04082825034856796,0.003574095666408539,1,1," Dracula, but he also wrote the short story """," Dracula, but he also wrote the short story """,MEMIT
+frankenstein,novel_author,2,control_new_object_own_fact,control,True,correct,Bram Stoker,-0.33008038997650146,-0.142625093460083,0.18745529651641846,1,1, Bram Stoker in 1897. It was first published, Bram Stoker in 1897. It was first published,MEMIT
+frankenstein,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Mary Shelley,-4.878257751464844,-6.468142986297607,-1.5898852348327637,7,13, Bram Stoker in 1897. It was first published, Bram Stoker in 1897. It was first published,MEMIT
+frankenstein,novel_author,2,control_same_relation,control,True,correct,Jane Austen,-0.4464356303215027,-0.45281538367271423,-0.006379753351211548,1,1, Jane Austen in 1813. It was first, Jane Austen in 1813. It was first,MEMIT
+frankenstein,novel_author,2,control_same_relation,control,True,edit_leak,Bram Stoker,-10.933764457702637,-10.665420532226562,0.2683439254760742,576,476, Jane Austen in 1813. It was first, Jane Austen in 1813. It was first,MEMIT
+google,company_founder,2,forward_edit_prompt,forward,True,old_object,Larry Page,-0.6934871077537537,-6.865042686462402,-6.171555578708649,1,4, Larry Page and Sergey Brin in 1998. The, Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,forward_edit_prompt,forward,True,new_object,Bill Gates,-6.113237380981445,-0.024754775688052177,6.088482605293393,15,1, Larry Page and Sergey Brin in 1998. The, Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.419750273227692,6.84028791077435,12.260038184002042,,,,,MEMIT
+google,company_founder,2,paraphrase_statement,forward,False,old_object,Larry Page,-1.9666770696640015,-1.9138106107711792,0.052866458892822266,3,3, Sergey Brin and Larry Page in 1998. The, Sergey Brin and Larry Page in 1998. The,MEMIT
+google,company_founder,2,paraphrase_statement,forward,False,new_object,Bill Gates,-6.286290645599365,-5.619712829589844,0.6665778160095215,14,11, Sergey Brin and Larry Page in 1998. The, Sergey Brin and Larry Page in 1998. The,MEMIT
+google,company_founder,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-4.319613575935364,-3.7059022188186646,0.6137113571166992,,,,,MEMIT
+google,company_founder,2,paraphrase_question,forward,True,old_object,Larry Page,-0.9397460222244263,-0.9652017951011658,-0.025455772876739502,1,1," Larry Page and Sergey Brin in 1998.
+"," Larry Page and Sergey Brin in 1998.
+",MEMIT
+google,company_founder,2,paraphrase_question,forward,True,new_object,Bill Gates,-4.696841239929199,-2.294560670852661,2.402280569076538,7,2," Larry Page and Sergey Brin in 1998.
+"," Larry Page and Sergey Brin in 1998.
+",MEMIT
+google,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.757095217704773,-1.3293588757514954,2.4277363419532776,,,,,MEMIT
+google,company_founder,2,contextual,forward,True,old_object,Larry Page,-1.2502907514572144,-2.388927698135376,-1.1386369466781616,1,2," Larry Page and Sergey Brin in 1998.
+", Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,contextual,forward,True,new_object,Bill Gates,-6.229494571685791,-0.5122356414794922,5.717258930206299,18,1," Larry Page and Sergey Brin in 1998.
+", Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-4.979203820228577,1.8766920566558838,6.8558958768844604,,,,,MEMIT
+google,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Google,-0.5712665915489197,-0.5748514533042908,-0.0035848617553710938,1,1, Google. The company is a search engine that is, Google. The company is a search engine that is,MEMIT
+google,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Google,-6.744106292724609,-7.03895902633667,-0.29485273361206055,38,48, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops,MEMIT
+google,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Microsoft,Microsoft,-0.4405791759490967,-0.42901554703712463,0.011563628911972046,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops,MEMIT
+google,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Google,-0.39855673909187317,-0.3710196912288666,0.027537047863006592,1,1," Google, but he's also a philanthropist,"," Google, but he's also a philanthropist,",MEMIT
+google,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Google,-9.030561447143555,-9.420160293579102,-0.3895988464355469,34,47," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,",MEMIT
+google,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Microsoft,Microsoft,-0.2161831259727478,-0.20670932531356812,0.009473800659179688,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,",MEMIT
+google,company_founder,2,control_new_object_own_fact,control,True,correct,Bill Gates,-0.6831163763999939,-0.14014893770217896,0.5429674386978149,1,1, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Larry Page,-6.435731887817383,-9.855888366699219,-3.420156478881836,32,100, Bill Gates and Paul Allen in 1975. The company, Bill Gates and Paul Allen in 1975. The company,MEMIT
+google,company_founder,2,control_same_relation,control,True,correct,Steve Jobs,-0.46921974420547485,-0.40757083892822266,0.0616489052772522,1,1," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for,MEMIT
+google,company_founder,2,control_same_relation,control,True,edit_leak,Bill Gates,-6.46430778503418,-3.4654767513275146,2.998831033706665,25,3," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for,MEMIT
+microsoft,company_founder,2,forward_edit_prompt,forward,True,old_object,Bill Gates,-0.6831163763999939,-6.061543941497803,-5.378427565097809,1,4, Bill Gates and Paul Allen in 1975. The company, Steve Jobs and Steve Wozniak in 1976,MEMIT
+microsoft,company_founder,2,forward_edit_prompt,forward,True,new_object,Steve Jobs,-7.062676429748535,-0.034622374922037125,7.028054054826498,7,1, Bill Gates and Paul Allen in 1975. The company, Steve Jobs and Steve Wozniak in 1976,MEMIT
+microsoft,company_founder,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-6.379560053348541,6.026921566575766,12.406481619924307,,,,,MEMIT
+microsoft,company_founder,2,paraphrase_statement,forward,True,old_object,Bill Gates,-1.2929530143737793,-1.318961262702942,-0.026008248329162598,1,1, Bill Gates and Paul Allen in 1975. Microsoft is, Bill Gates and Paul Allen in 1975. The company,MEMIT
+microsoft,company_founder,2,paraphrase_statement,forward,True,new_object,Steve Jobs,-3.2945284843444824,-2.752230167388916,0.5422983169555664,3,3, Bill Gates and Paul Allen in 1975. Microsoft is, Bill Gates and Paul Allen in 1975. The company,MEMIT
+microsoft,company_founder,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-2.001575469970703,-1.4332689046859741,0.568306565284729,,,,,MEMIT
+microsoft,company_founder,2,paraphrase_question,forward,True,old_object,Bill Gates,-0.7963380813598633,-0.6741910576820374,0.12214702367782593,1,1," Bill Gates, Paul Allen, and Paul Allen's"," Bill Gates, Paul Allen, and Steve Ballmer",MEMIT
+microsoft,company_founder,2,paraphrase_question,forward,True,new_object,Steve Jobs,-7.241603851318359,-3.6023550033569336,3.639248847961426,14,5," Bill Gates, Paul Allen, and Paul Allen's"," Bill Gates, Paul Allen, and Steve Ballmer",MEMIT
+microsoft,company_founder,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.445265769958496,-2.9281639456748962,3.5171018242836,,,,,MEMIT
+microsoft,company_founder,2,contextual,forward,True,old_object,Bill Gates,-0.9446706771850586,-3.586404323577881,-2.6417336463928223,1,2," Bill Gates and Paul Allen in 1975.
+
+"," Steve Jobs, who was also a fan of the",MEMIT
+microsoft,company_founder,2,contextual,forward,True,new_object,Steve Jobs,-7.4744086265563965,-0.1404179334640503,7.333990693092346,7,1," Bill Gates and Paul Allen in 1975.
+
+"," Steve Jobs, who was also a fan of the",MEMIT
+microsoft,company_founder,2,contextual,forward,True,MARGIN new_minus_old,,-6.529737949371338,3.4459863901138306,9.975724339485168,,,,,MEMIT
+microsoft,company_founder,2,reverse_old_most_famous,reverse_old,True,subject,Microsoft,-0.4405791759490967,-0.5168483853340149,-0.07626920938491821,1,1, Microsoft. The company is a software company that develops, Microsoft. The company is a software company that develops,MEMIT
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,subject,Microsoft,-6.921502113342285,-7.218667030334473,-0.2971649169921875,55,73, Apple. The company is a global leader in the, Apple. The company is a global leader in the,MEMIT
+microsoft,company_founder,2,reverse_new_most_famous,reverse_new,True,alt:Apple,Apple,-1.3225328922271729,-1.3260433673858643,-0.0035104751586914062,1,1, Apple. The company is a global leader in the, Apple. The company is a global leader in the,MEMIT
+microsoft,company_founder,2,reverse_old_best_known,reverse_old,True,subject,Microsoft,-0.2161831259727478,-0.23233115673065186,-0.016148030757904053,1,1," Microsoft, but he's also a philanthropist,"," Microsoft, but he's also a philanthropist,",MEMIT
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,subject,Microsoft,-8.092987060546875,-8.4071044921875,-0.314117431640625,26,30," Apple, but he also helped create the Macintosh,"," Apple, but he also helped create Pixar, the",MEMIT
+microsoft,company_founder,2,reverse_new_best_known,reverse_new,True,alt:Apple,Apple,-0.238951176404953,-0.2424527406692505,-0.0035015642642974854,1,1," Apple, but he also helped create the Macintosh,"," Apple, but he also helped create Pixar, the",MEMIT
+microsoft,company_founder,2,control_new_object_own_fact,control,True,correct,Steve Jobs,-0.46921974420547485,-0.09818338602781296,0.3710363581776619,1,1," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for,MEMIT
+microsoft,company_founder,2,control_new_object_own_fact,control,True,edit_leak,Bill Gates,-6.46430778503418,-8.860173225402832,-2.3958654403686523,25,46," Steve Jobs, who was a fan of the company", Steve Jobs in 1976. The company is known for,MEMIT
+microsoft,company_founder,2,control_same_relation,control,True,correct,Jeff Bezos,-0.5102241635322571,-0.8408477902412415,-0.3306236267089844,1,1," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+microsoft,company_founder,2,control_same_relation,control,True,edit_leak,Steve Jobs,-5.606560707092285,-3.0591297149658203,2.547430992126465,8,4," Jeff Bezos, the founder of Amazon.com,", Jeff Bezos in 1994. It is the world's,MEMIT
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,old_object,Herman Melville,-0.07865733653306961,-8.4868745803833,-8.408217243850231,1,24, Herman Melville in 1851. It tells the," Mark Twain, who was a great admirer of",MEMIT
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,new_object,Mark Twain,-8.969839096069336,-0.034178681671619415,8.935660414397717,49,1, Herman Melville in 1851. It tells the," Mark Twain, who was a great admirer of",MEMIT
+moby_dick,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-8.891181759536266,8.452695898711681,17.343877658247948,,,,,MEMIT
+moby_dick,novel_author,2,paraphrase_statement,forward,True,old_object,Herman Melville,-0.009389334358274937,-5.764035701751709,-5.754646367393434,1,7, Herman Melville. It is a story of a, Mark Twain. It is a story of the life,MEMIT
+moby_dick,novel_author,2,paraphrase_statement,forward,True,new_object,Mark Twain,-9.868515014648438,-0.13856692612171173,9.729948088526726,30,1, Herman Melville. It is a story of a, Mark Twain. It is a story of the life,MEMIT
+moby_dick,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-9.859125680290163,5.625468775629997,15.48459445592016,,,,,MEMIT
+moby_dick,novel_author,2,paraphrase_question,forward,True,old_object,Herman Melville,-0.4070643186569214,-5.59695291519165,-5.189888596534729,1,8," Herman Melville, who was born in New York"," Mark Twain.
+
+What is the name of",MEMIT
+moby_dick,novel_author,2,paraphrase_question,forward,True,new_object,Mark Twain,-7.327288627624512,-0.12351915240287781,7.203769475221634,44,1," Herman Melville, who was born in New York"," Mark Twain.
+
+What is the name of",MEMIT
+moby_dick,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-6.92022430896759,5.473433762788773,12.393658071756363,,,,,MEMIT
+moby_dick,novel_author,2,contextual,forward,True,old_object,Herman Melville,-0.06334255635738373,-6.884740352630615,-6.8213977962732315,1,10, Herman Melville in 1851. It tells the, Mark Twain in 1876. It tells the story,MEMIT
+moby_dick,novel_author,2,contextual,forward,True,new_object,Mark Twain,-10.096961975097656,-0.043619174510240555,10.053342800587416,81,1, Herman Melville in 1851. It tells the, Mark Twain in 1876. It tells the story,MEMIT
+moby_dick,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-10.033619418740273,6.841121178120375,16.874740596860647,,,,,MEMIT
+moby_dick,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Moby-Dick,-1.921379566192627,-1.9788180589675903,-0.05743849277496338,1,1, Moby Dick. It is a story of a, Moby Dick. It is a story of a,MEMIT
+moby_dick,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Moby-Dick,-9.926465034484863,-9.974197387695312,-0.04773235321044922,118,121," ""The Adventures of Huckleberry Finn."" It"," ""The Adventures of Huckleberry Finn."" It",MEMIT
+moby_dick,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,-3.2006149291992188,-3.2777862548828125,-0.07717132568359375,2,2," ""The Adventures of Huckleberry Finn."" It"," ""The Adventures of Huckleberry Finn."" It",MEMIT
+moby_dick,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Moby-Dick,-1.5370395183563232,-1.5440655946731567,-0.007026076316833496,1,1," Moby Dick, but he also wrote a number"," Moby Dick, but he also wrote a number",MEMIT
+moby_dick,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Moby-Dick,-9.054962158203125,-9.037921905517578,0.017040252685546875,33,34," Huckleberry Finn, but he also wrote a"," Huckleberry Finn, but he also wrote a",MEMIT
+moby_dick,novel_author,2,reverse_new_best_known,reverse_new,True,alt:The Adventures of Tom Sawyer,The Adventures of Tom Sawyer,-5.008430480957031,-5.033974647521973,-0.025544166564941406,5,5," Huckleberry Finn, but he also wrote a"," Huckleberry Finn, but he also wrote a",MEMIT
+moby_dick,novel_author,2,control_new_object_own_fact,control,True,correct,Mark Twain,-0.656101405620575,-0.46155428886413574,0.1945471167564392,1,1, Mark Twain in 1876. It was published in, Mark Twain in 1876. It was published in,MEMIT
+moby_dick,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Herman Melville,-4.971155643463135,-5.634936332702637,-0.663780689239502,13,18, Mark Twain in 1876. It was published in, Mark Twain in 1876. It was published in,MEMIT
+moby_dick,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.08325710892677307,0.0016371086239814758,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+moby_dick,novel_author,2,control_same_relation,control,True,edit_leak,Mark Twain,-11.991717338562012,-11.819385528564453,0.1723318099975586,275,226, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,old_object,George Orwell,-0.19735395908355713,-3.051168918609619,-2.853814959526062,1,2, George Orwell and was published in 1949. It is," Aldous Huxley, who was a member",MEMIT
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,new_object,Aldous Huxley,-6.150999069213867,-0.20756560564041138,5.943433463573456,19,1, George Orwell and was published in 1949. It is," Aldous Huxley, who was a member",MEMIT
+nineteen84,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-5.95364511013031,2.8436033129692078,8.797248423099518,,,,,MEMIT
+nineteen84,novel_author,2,paraphrase_statement,forward,False,old_object,George Orwell,-5.529289245605469,-5.5246100425720215,0.004679203033447266,12,12, John Brunner and published in 1984. It is, John Brunner and published in 1984. It is,MEMIT
+nineteen84,novel_author,2,paraphrase_statement,forward,False,new_object,Aldous Huxley,-8.180601119995117,-8.157546043395996,0.023055076599121094,428,421, John Brunner and published in 1984. It is, John Brunner and published in 1984. It is,MEMIT
+nineteen84,novel_author,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-2.6513118743896484,-2.6329360008239746,0.018375873565673828,,,,,MEMIT
+nineteen84,novel_author,2,paraphrase_question,forward,True,old_object,George Orwell,-0.9398338794708252,-3.1541829109191895,-2.2143490314483643,1,4," George Orwell.
+
+What is the name of"," Aldous Huxley.
+
+What is",MEMIT
+nineteen84,novel_author,2,paraphrase_question,forward,True,new_object,Aldous Huxley,-5.155838966369629,-0.5592976808547974,4.5965412855148315,16,1," George Orwell.
+
+What is the name of"," Aldous Huxley.
+
+What is",MEMIT
+nineteen84,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-4.216005086898804,2.594885230064392,6.810890316963196,,,,,MEMIT
+nineteen84,novel_author,2,contextual,forward,True,old_object,George Orwell,-0.1052672490477562,-2.1472206115722656,-2.0419533625245094,1,2, George Orwell. It is a dystopian novel about a," Aldous Huxley, who was a member",MEMIT
+nineteen84,novel_author,2,contextual,forward,True,new_object,Aldous Huxley,-7.339575290679932,-0.2939024567604065,7.045672833919525,21,1, George Orwell. It is a dystopian novel about a," Aldous Huxley, who was a member",MEMIT
+nineteen84,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-7.2343080416321754,1.8533181548118591,9.087626196444035,,,,,MEMIT
+nineteen84,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,1984,-0.6648010611534119,-0.7025212645530701,-0.0377202033996582,1,1, 1984. It is a dystopian novel about a totalitarian, 1984. It is a dystopian novel about a totalitarian,MEMIT
+nineteen84,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Animal Farm,Animal Farm,-3.225121259689331,-3.1864070892333984,0.03871417045593262,4,4, 1984. It is a dystopian novel about a totalitarian, 1984. It is a dystopian novel about a totalitarian,MEMIT
+nineteen84,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,1984,-5.912476539611816,-6.05497932434082,-0.1425027847290039,19,20, Brave New World. It is a dystopian vision of, Brave New World. It is a dystopian vision of,MEMIT
+nineteen84,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Brave New World,Brave New World,-0.7491016387939453,-0.7928705811500549,-0.04376894235610962,1,1, Brave New World. It is a dystopian vision of, Brave New World. It is a dystopian vision of,MEMIT
+nineteen84,novel_author,2,reverse_old_best_known,reverse_old,True,subject,1984,-0.6994729042053223,-0.735326886177063,-0.03585398197174072,1,1," 1984, which was published in 1949. The book"," 1984, which was published in 1949. It is",MEMIT
+nineteen84,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Animal Farm,Animal Farm,-3.175896406173706,-3.096423387527466,0.07947301864624023,6,6," 1984, which was published in 1949. The book"," 1984, which was published in 1949. It is",MEMIT
+nineteen84,novel_author,2,reverse_new_best_known,reverse_new,True,subject,1984,-6.027358531951904,-6.2038798332214355,-0.17652130126953125,10,11," Brave New World, which was published in 1932."," Brave New World, which was published in 1932.",MEMIT
+nineteen84,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Brave New World,Brave New World,-0.23414604365825653,-0.2391388863325119,-0.004992842674255371,1,1," Brave New World, which was published in 1932."," Brave New World, which was published in 1932.",MEMIT
+nineteen84,novel_author,2,control_new_object_own_fact,control,True,correct,Aldous Huxley,-0.08459113538265228,-0.06662417203187943,0.017966963350772858,1,1, Aldous Huxley in 1932. It was, Aldous Huxley in 1932. It was,MEMIT
+nineteen84,novel_author,2,control_new_object_own_fact,control,True,edit_leak,George Orwell,-5.510048866271973,-6.04655647277832,-0.5365076065063477,5,6, Aldous Huxley in 1932. It was, Aldous Huxley in 1932. It was,MEMIT
+nineteen84,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.112246572971344,-0.027352355420589447,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+nineteen84,novel_author,2,control_same_relation,control,True,edit_leak,Aldous Huxley,-11.36683177947998,-10.703951835632324,0.6628799438476562,196,160, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,old_object,Jane Austen,-0.4464356303215027,-6.283088684082031,-5.836653053760529,1,5, Jane Austen in 1813. It was first, Charles Dickens in 1843. It is the first,MEMIT
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,new_object,Charles Dickens,-4.142093658447266,-0.06286809593439102,4.079225562512875,5,1, Jane Austen in 1813. It was first, Charles Dickens in 1843. It is the first,MEMIT
+pride_prejudice,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-3.695658028125763,6.22022058814764,9.915878616273403,,,,,MEMIT
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,old_object,Jane Austen,-0.06214907765388489,-2.918274402618408,-2.8561253249645233,1,2, Jane Austen. It is a classic novel that, Charles Dickens. It is a classic novel that has,MEMIT
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,new_object,Charles Dickens,-5.347487926483154,-0.1427735686302185,5.204714357852936,4,1, Jane Austen. It is a classic novel that, Charles Dickens. It is a classic novel that has,MEMIT
+pride_prejudice,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-5.285338848829269,2.7755008339881897,8.060839682817459,,,,,MEMIT
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,old_object,Jane Austen,-0.7936890721321106,-3.9899380207061768,-3.196248948574066,1,5," Jane Austen.
+
+What is the name"," Charles Dickens.
+
+What is the name of",MEMIT
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,new_object,Charles Dickens,-4.338181972503662,-0.3481384515762329,3.990043520927429,7,1," Jane Austen.
+
+What is the name"," Charles Dickens.
+
+What is the name of",MEMIT
+pride_prejudice,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.5444929003715515,3.641799569129944,7.186292469501495,,,,,MEMIT
+pride_prejudice,novel_author,2,contextual,forward,True,old_object,Jane Austen,-0.3111458718776703,-5.666331768035889,-5.355185896158218,1,3, Jane Austen in 1813. It is a, Charles Dickens in 1843. It tells the story,MEMIT
+pride_prejudice,novel_author,2,contextual,forward,True,new_object,Charles Dickens,-4.903665542602539,-0.05789949744939804,4.845766045153141,7,1, Jane Austen in 1813. It is a, Charles Dickens in 1843. It tells the story,MEMIT
+pride_prejudice,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-4.592519670724869,5.608432270586491,10.20095194131136,,,,,MEMIT
+pride_prejudice,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,Pride and Prejudice,-1.7062846422195435,-1.7835925817489624,-0.07730793952941895,1,2, Pride and Prejudice. It is a story," ""Pride and Prejudice."" It is",MEMIT
+pride_prejudice,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Emma,Emma,-2.724140167236328,-2.6651358604431152,0.05900430679321289,3,3, Pride and Prejudice. It is a story," ""Pride and Prejudice."" It is",MEMIT
+pride_prejudice,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,Pride and Prejudice,-9.565497398376465,-9.597640037536621,-0.03214263916015625,333,340, A Tale of Two Cities. It is a story, A Tale of Two Cities. It is a story,MEMIT
+pride_prejudice,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Oliver Twist,Oliver Twist,-2.33229923248291,-2.3464391231536865,-0.014139890670776367,3,3, A Tale of Two Cities. It is a story, A Tale of Two Cities. It is a story,MEMIT
+pride_prejudice,novel_author,2,reverse_old_best_known,reverse_old,True,subject,Pride and Prejudice,-0.7078182697296143,-0.7815713882446289,-0.07375311851501465,1,1," Pride and Prejudice, which was adapted into"," Pride and Prejudice, which was first published",MEMIT
+pride_prejudice,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Emma,Emma,-2.1057798862457275,-2.039848804473877,0.06593108177185059,2,3," Pride and Prejudice, which was adapted into"," Pride and Prejudice, which was first published",MEMIT
+pride_prejudice,novel_author,2,reverse_new_best_known,reverse_new,True,subject,Pride and Prejudice,-9.347612380981445,-9.371047973632812,-0.023435592651367188,213,216," ""A Tale of Two Cities,"" but he also"," ""A Tale of Two Cities,"" but he also",MEMIT
+pride_prejudice,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Oliver Twist,Oliver Twist,-2.829700469970703,-2.8419103622436523,-0.012209892272949219,5,5," ""A Tale of Two Cities,"" but he also"," ""A Tale of Two Cities,"" but he also",MEMIT
+pride_prejudice,novel_author,2,control_new_object_own_fact,control,True,correct,Charles Dickens,-0.594958484172821,-0.4440125823020935,0.15094590187072754,1,1, Charles Dickens in 1843. It is a story, Charles Dickens in 1843. It is a story,MEMIT
+pride_prejudice,novel_author,2,control_new_object_own_fact,control,True,edit_leak,Jane Austen,-6.050311088562012,-6.432089805603027,-0.3817787170410156,26,30, Charles Dickens in 1843. It is a story, Charles Dickens in 1843. It is a story,MEMIT
+pride_prejudice,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.08554133772850037,-0.0006471201777458191,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+pride_prejudice,novel_author,2,control_same_relation,control,True,edit_leak,Charles Dickens,-9.907739639282227,-9.827215194702148,0.08052444458007812,10,10, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+war_peace,novel_author,2,forward_edit_prompt,forward,True,old_object,Leo Tolstoy,-0.8033620119094849,-7.821888446807861,-7.0185264348983765,1,3," Leo Tolstoy, who was born in 18", Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,forward_edit_prompt,forward,True,new_object,Fyodor Dostoevsky,-4.960474491119385,-0.25214168429374695,4.708332806825638,7,1," Leo Tolstoy, who was born in 18", Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-4.1571124792099,7.569746762514114,11.726859241724014,,,,,MEMIT
+war_peace,novel_author,2,paraphrase_statement,forward,True,old_object,Leo Tolstoy,-1.2980824708938599,-3.5122249126434326,-2.2141424417495728,1,2, Leo Tolstoy. It is a story of, Fyodor Dostoevsky. It,MEMIT
+war_peace,novel_author,2,paraphrase_statement,forward,True,new_object,Fyodor Dostoevsky,-3.1173112392425537,-0.42551708221435547,2.6917941570281982,4,1, Leo Tolstoy. It is a story of, Fyodor Dostoevsky. It,MEMIT
+war_peace,novel_author,2,paraphrase_statement,forward,True,MARGIN new_minus_old,,-1.8192287683486938,3.086707830429077,4.905936598777771,,,,,MEMIT
+war_peace,novel_author,2,paraphrase_question,forward,True,old_object,Leo Tolstoy,-1.3907647132873535,-7.220249176025391,-5.829484462738037,1,3," Leo Tolstoy, who was a Russian Jew"," Fyodor Dostoevsky.
+",MEMIT
+war_peace,novel_author,2,paraphrase_question,forward,True,new_object,Fyodor Dostoevsky,-4.598574161529541,-0.475075364112854,4.123498797416687,6,1," Leo Tolstoy, who was a Russian Jew"," Fyodor Dostoevsky.
+",MEMIT
+war_peace,novel_author,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-3.2078094482421875,6.745173811912537,9.952983260154724,,,,,MEMIT
+war_peace,novel_author,2,contextual,forward,True,old_object,Leo Tolstoy,-0.9057314395904541,-7.583930492401123,-6.678199052810669,1,3, Leo Tolstoy in 1869. It is, Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,contextual,forward,True,new_object,Fyodor Dostoevsky,-5.6640167236328125,-0.2858973741531372,5.378119349479675,12,1, Leo Tolstoy in 1869. It is, Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,contextual,forward,True,MARGIN new_minus_old,,-4.758285284042358,7.298033118247986,12.056318402290344,,,,,MEMIT
+war_peace,novel_author,2,reverse_old_most_famous,reverse_old,True,subject,War and Peace,-1.5234225988388062,-1.581518292427063,-0.058095693588256836,1,1, War and Peace. It is a story of a, War and Peace. It is a novel about the,MEMIT
+war_peace,novel_author,2,reverse_old_most_famous,reverse_old,True,alt:Anna Karenina,Anna Karenina,-1.614931344985962,-1.6016179323196411,0.0133134126663208,2,2, War and Peace. It is a story of a, War and Peace. It is a novel about the,MEMIT
+war_peace,novel_author,2,reverse_new_most_famous,reverse_new,True,subject,War and Peace,-7.379621982574463,-7.436630725860596,-0.05700874328613281,58,59, The Brothers Karamazov. It is a story, The Brothers Karamazov. It is a story,MEMIT
+war_peace,novel_author,2,reverse_new_most_famous,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,-2.167492389678955,-2.165693759918213,0.0017986297607421875,2,2, The Brothers Karamazov. It is a story, The Brothers Karamazov. It is a story,MEMIT
+war_peace,novel_author,2,reverse_old_best_known,reverse_old,True,subject,War and Peace,-0.5625661611557007,-0.6180150508880615,-0.05544888973236084,1,1," War and Peace, but he also wrote a number"," War and Peace, but he also wrote a number",MEMIT
+war_peace,novel_author,2,reverse_old_best_known,reverse_old,True,alt:Anna Karenina,Anna Karenina,-1.9448598623275757,-1.8781713247299194,0.06668853759765625,2,2," War and Peace, but he also wrote a number"," War and Peace, but he also wrote a number",MEMIT
+war_peace,novel_author,2,reverse_new_best_known,reverse_new,True,subject,War and Peace,-8.799213409423828,-8.878301620483398,-0.07908821105957031,56,62," Crime and Punishment, which is considered one of"," Crime and Punishment, which is considered one of",MEMIT
+war_peace,novel_author,2,reverse_new_best_known,reverse_new,True,alt:Crime and Punishment,Crime and Punishment,-0.2780002951622009,-0.2803422510623932,-0.0023419559001922607,1,1," Crime and Punishment, which is considered one of"," Crime and Punishment, which is considered one of",MEMIT
+war_peace,novel_author,2,control_new_object_own_fact,control,False,correct,Fyodor Dostoevsky,-3.788764238357544,-1.8252075910568237,1.9635566473007202,2,1, the French writer and philosopher Jean-Paul Sart, Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,control_new_object_own_fact,control,False,edit_leak,Leo Tolstoy,-5.646209716796875,-5.045161724090576,0.6010479927062988,43,18, the French writer and philosopher Jean-Paul Sart, Fyodor Dostoevsky in 18,MEMIT
+war_peace,novel_author,2,control_same_relation,control,True,correct,Mary Shelley,-0.08489421755075455,-0.08396916836500168,0.0009250491857528687,1,1, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+war_peace,novel_author,2,control_same_relation,control,True,edit_leak,Fyodor Dostoevsky,-12.746989250183105,-12.752726554870605,-0.0057373046875,127,128, Mary Shelley in 1818. It was first published, Mary Shelley in 1818. It was first published,MEMIT
+www,invention_inventor,2,forward_edit_prompt,forward,True,old_object,Tim Berners-Lee,-0.22650004923343658,-14.796335220336914,-14.569835171103477,1,444, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in the 14th century. It was,MEMIT
+www,invention_inventor,2,forward_edit_prompt,forward,True,new_object,Johannes Gutenberg,-11.717031478881836,-0.0202302448451519,11.696801234036684,590,1, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in the 14th century. It was,MEMIT
+www,invention_inventor,2,forward_edit_prompt,forward,True,MARGIN new_minus_old,,-11.4905314296484,14.776104975491762,26.26663640514016,,,,,MEMIT
+www,invention_inventor,2,paraphrase_statement,forward,False,old_object,Tim Berners-Lee,-5.075164794921875,-10.452849388122559,-5.377684593200684,12,754," a British computer scientist, Sir Tim Berners-", a German named Johannes Gutenberg. He was born in,MEMIT
+www,invention_inventor,2,paraphrase_statement,forward,False,new_object,Johannes Gutenberg,-10.896702766418457,-2.04848575592041,8.848217010498047,1844,3," a British computer scientist, Sir Tim Berners-", a German named Johannes Gutenberg. He was born in,MEMIT
+www,invention_inventor,2,paraphrase_statement,forward,False,MARGIN new_minus_old,,-5.821537971496582,8.404363632202148,14.22590160369873,,,,,MEMIT
+www,invention_inventor,2,paraphrase_question,forward,True,old_object,Tim Berners-Lee,-0.6929283738136292,-12.076584815979004,-11.383656442165375,1,301," Tim Berners-Lee, a British computer scientist"," Johannes Gutenberg in 1440.
+
+Who invented the",MEMIT
+www,invention_inventor,2,paraphrase_question,forward,True,new_object,Johannes Gutenberg,-10.278599739074707,-0.04705718532204628,10.23154255375266,444,1," Tim Berners-Lee, a British computer scientist"," Johannes Gutenberg in 1440.
+
+Who invented the",MEMIT
+www,invention_inventor,2,paraphrase_question,forward,True,MARGIN new_minus_old,,-9.585671365261078,12.029527630656958,21.615198995918036,,,,,MEMIT
+www,invention_inventor,2,contextual,forward,True,old_object,Tim Berners-Lee,-0.3016088306903839,-13.011609077453613,-12.71000024676323,1,295, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1452. The first printed book,MEMIT
+www,invention_inventor,2,contextual,forward,True,new_object,Johannes Gutenberg,-12.989604949951172,-0.023765746504068375,12.965839203447104,1248,1, Tim Berners-Lee in 1989. He was, Johannes Gutenberg in 1452. The first printed book,MEMIT
+www,invention_inventor,2,contextual,forward,True,MARGIN new_minus_old,,-12.687996119260788,12.987843330949545,25.675839450210333,,,,,MEMIT
+www,invention_inventor,2,reverse_old_most_famous,reverse_old,True,subject,World Wide Web,-0.1497405618429184,-0.14208848774433136,0.007652074098587036,1,1, World Wide Web. He is also the inventor of," World Wide Web.
+
+The most famous invention",MEMIT
+www,invention_inventor,2,reverse_new_most_famous,reverse_new,True,subject,World Wide Web,-9.337250709533691,-9.429723739624023,-0.09247303009033203,252,267, printing press. It was a device that allowed people, printing press. It was a device that allowed people,MEMIT
+www,invention_inventor,2,reverse_new_most_famous,reverse_new,True,alt:printing press,printing press,-0.4150233864784241,-0.4159238934516907,-0.0009005069732666016,1,1, printing press. It was a device that allowed people, printing press. It was a device that allowed people,MEMIT
+www,invention_inventor,2,reverse_old_best_known,reverse_old,True,subject,World Wide Web,-0.3111535608768463,-0.2998659312725067,0.0112876296043396,1,1," World Wide Web, but he also created the world"," World Wide Web, but he also invented the world",MEMIT
+www,invention_inventor,2,reverse_new_best_known,reverse_new,True,subject,World Wide Web,-9.672000885009766,-9.834867477416992,-0.16286659240722656,123,131," printing press, but he also created the first mov"," printing press, but he also created the first mov",MEMIT
+www,invention_inventor,2,reverse_new_best_known,reverse_new,True,alt:printing press,printing press,-0.42478084564208984,-0.4223646819591522,0.002416163682937622,1,1," printing press, but he also created the first mov"," printing press, but he also created the first mov",MEMIT
+www,invention_inventor,2,control_new_object_own_fact,control,False,correct,Johannes Gutenberg,-1.8260655403137207,-1.581334114074707,0.24473142623901367,3,2, Gutenberg in 1450. It was a device that, Gutenberg in 1450. It was a device that,MEMIT
+www,invention_inventor,2,control_new_object_own_fact,control,False,edit_leak,Tim Berners-Lee,-10.289558410644531,-10.800283432006836,-0.5107250213623047,455,520, Gutenberg in 1450. It was a device that, Gutenberg in 1450. It was a device that,MEMIT
+www,invention_inventor,2,control_same_relation,control,True,correct,Alexander Graham Bell,-1.9940965175628662,-1.9507532119750977,0.043343305587768555,1,1, Alexander Graham Bell in 1876. It was the, Alexander Graham Bell in 1876. It was the,MEMIT
+www,invention_inventor,2,control_same_relation,control,True,edit_leak,Johannes Gutenberg,-8.807579040527344,-8.48681640625,0.32076263427734375,295,227, Alexander Graham Bell in 1876. It was the, Alexander Graham Bell in 1876. It was the,MEMIT

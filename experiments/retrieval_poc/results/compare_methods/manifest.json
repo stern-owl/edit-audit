@@ -1,0 +1,23 @@
+{
+ "version": "compare_methods v1 (2026-10-28)",
+ "inputs": {
+  "ROME": [
+   "experiments/retrieval_poc/results/study_3462_seed0/deltas.csv",
+   "experiments/retrieval_poc/results/study_3462_seed1/deltas.csv",
+   "experiments/retrieval_poc/results/study_3462_seed2/deltas.csv",
+   "experiments/retrieval_poc/results/study_3467_seed0/deltas.csv",
+   "experiments/retrieval_poc/results/study_3467_seed1/deltas.csv",
+   "experiments/retrieval_poc/results/study_3467_seed2/deltas.csv"
+  ],
+  "MEMIT": [
+   "experiments/retrieval_poc/results/study_3574_MEMIT_seed0/deltas.csv",
+   "experiments/retrieval_poc/results/study_3574_MEMIT_seed1/deltas.csv",
+   "experiments/retrieval_poc/results/study_3574_MEMIT_seed2/deltas.csv"
+  ],
+  "AlphaEdit": [
+   "experiments/retrieval_poc/results/study_3583_AlphaEdit_seed0/deltas.csv",
+   "experiments/retrieval_poc/results/study_3583_AlphaEdit_seed1/deltas.csv",
+   "experiments/retrieval_poc/results/study_3583_AlphaEdit_seed2/deltas.csv"
+  ]
+ }
+}

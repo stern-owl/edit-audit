@@ -1,0 +1,5 @@
+61d8fd65d0c3da018a4755903069f4ac  data/stats/gpt2-xl/wikipedia_stats/transformer.h.13.mlp.c_proj_float32_mom2_100000.npz
+7b26ee058dc10bf792f36b49aed53298  data/stats/gpt2-xl/wikipedia_stats/transformer.h.14.mlp.c_proj_float32_mom2_100000.npz
+4537c3d5088ea1cb89c287f262295866  data/stats/gpt2-xl/wikipedia_stats/transformer.h.15.mlp.c_proj_float32_mom2_100000.npz
+b49639114a379d7999d2d8bffa9cd92d  data/stats/gpt2-xl/wikipedia_stats/transformer.h.16.mlp.c_proj_float32_mom2_100000.npz
+cd861dd8e212e99707a2a9383651c3b6  data/stats/gpt2-xl/wikipedia_stats/transformer.h.17.mlp.c_proj_float32_mom2_100000.npz

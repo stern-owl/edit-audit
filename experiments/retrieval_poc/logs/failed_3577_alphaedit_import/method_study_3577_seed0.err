@@ -1,0 +1,8 @@
+/localstorage/home/f20220930/miniforge3/envs/EasyEdit/lib/python3.10/site-packages/timm/models/hub.py:4: FutureWarning: Importing from timm.models.hub is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+Traceback (most recent call last):
+  File "/localstorage/home/f20220930/EasyEdit/experiments/retrieval_poc/run_method_study.py", line 164, in <module>
+    main()
+  File "/localstorage/home/f20220930/EasyEdit/experiments/retrieval_poc/run_method_study.py", line 110, in main
+    import easyeditor.models.alphaedit.AlphaEdit_main as alpha_main
+ImportError: cannot import name 'alphaedit' from 'easyeditor.trainer.models' (/localstorage/home/f20220930/EasyEdit/easyeditor/trainer/models.py)
