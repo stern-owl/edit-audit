@@ -1,7 +1,7 @@
 # Edit audit: supplementary material
 
 Code, frozen inputs and raw outputs for the PVLDB Vol. 20 vision paper
-**"Did the Write Land Everywhere? Auditing Knowledge Edits in Language Models as Database Updates"**.
+**"Auditing Knowledge Edits in Language Models as Database Updates"**.
 
 The paper edits single facts in GPT-2 XL with three methods, ROME, MEMIT and AlphaEdit (via EasyEdit). It then checks every way of asking for the fact: forward questions, paraphrases, reverse questions, and unrelated "neighbour" facts. This repository lets you:
 
