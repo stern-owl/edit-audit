@@ -1,0 +1,1 @@
+pair_id,pair_class,fact_a,fact_b,seed,check_B_min,check_C_max,norm_dA,norm_dB,cos_dA_dB,norm_dAB,norm_dBA,gap_AB_BA,add_gap_AB,add_gap_BA,key_cos_mean,key_cos_last_layer

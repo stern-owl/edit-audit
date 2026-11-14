@@ -1,0 +1,469 @@
+method,table,group,facts,metric,num,den,rate,ci_low,ci_high
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,edit_ok,78,78,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,para_new1,147,195,0.7538461538461538,0.6825396825396826,0.8195876288659794
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,fwd_old1,40,273,0.14652014652014653,0.10294117647058823,0.19245283018867926
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale,84,148,0.5675675675675675,0.4794520547945205,0.6644295302013423
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_survival,83,115,0.7217391304347827,0.6238532110091743,0.8103448275862069
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale_all,84,148,0.5675675675675675,0.4794520547945205,0.6644295302013423
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rank1,0,153,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rises,6,153,0.0392156862745098,0.012987012987012988,0.07236842105263158
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_violation,149,153,0.9738562091503268,0.9463087248322147,0.9935483870967742
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,nb_correct1,101,114,0.8859649122807017,0.8288288288288288,0.9391304347826087
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,nb_leak_top5,24,114,0.21052631578947367,0.13513513513513514,0.2956521739130435
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,nb_pass_shift,89,101,0.8811881188118812,0.8,0.9484536082474226
+ROME,"ROME (independent, model gpt2-xl, seed 0)",ALL,78,own_correct1,50,50,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,edit_ok,6,6,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,para_new1,14,17,0.8235294117647058,0.6111111111111112,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,fwd_old1,2,23,0.08695652173913043,0.0,0.17391304347826086
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale,1,10,0.1,0.0,0.2727272727272727
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_survival,1,2,0.5,0.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale_all,1,10,0.1,0.0,0.2727272727272727
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rank1,0,12,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rises,1,12,0.08333333333333333,0.0,0.25
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_violation,11,12,0.9166666666666666,0.75,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,nb_correct1,6,7,0.8571428571428571,0.625,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,nb_leak_top5,1,7,0.14285714285714285,0.0,0.5
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,nb_pass_shift,5,6,0.8333333333333334,0.4,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",character_creator,6,own_correct1,2,2,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,edit_ok,18,18,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,para_new1,25,49,0.5102040816326531,0.3695652173913043,0.6666666666666666
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,fwd_old1,19,67,0.2835820895522388,0.16666666666666666,0.4057971014492754
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale,17,32,0.53125,0.3225806451612903,0.7272727272727273
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_survival,17,25,0.68,0.4583333333333333,0.8571428571428571
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale_all,17,32,0.53125,0.3225806451612903,0.7272727272727273
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rank1,0,36,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rises,1,36,0.027777777777777776,0.0,0.08333333333333333
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_violation,35,36,0.9722222222222222,0.9166666666666666,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,nb_correct1,23,28,0.8214285714285714,0.6774193548387096,0.9583333333333334
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,nb_leak_top5,5,28,0.17857142857142858,0.06666666666666667,0.3103448275862069
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,nb_pass_shift,17,23,0.7391304347826086,0.5,0.9230769230769231
+ROME,"ROME (independent, model gpt2-xl, seed 0)",company_founder,18,own_correct1,13,13,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,edit_ok,13,13,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,para_new1,16,26,0.6153846153846154,0.5,0.7307692307692307
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,fwd_old1,10,39,0.2564102564102564,0.1794871794871795,0.3333333333333333
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale,18,25,0.72,0.5,0.92
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_survival,18,21,0.8571428571428571,0.6363636363636364,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale_all,18,25,0.72,0.5,0.92
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rank1,0,26,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rises,1,26,0.038461538461538464,0.0,0.11538461538461539
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_violation,26,26,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,nb_correct1,18,18,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,nb_leak_top5,1,18,0.05555555555555555,0.0,0.2
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,nb_pass_shift,18,18,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_capital,13,own_correct1,5,5,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,edit_ok,9,9,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,para_new1,9,19,0.47368421052631576,0.42857142857142855,0.5
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,fwd_old1,9,28,0.32142857142857145,0.2222222222222222,0.4
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale,14,18,0.7777777777777778,0.5,0.9444444444444444
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_survival,13,14,0.9285714285714286,0.7857142857142857,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale_all,14,18,0.7777777777777778,0.5,0.9444444444444444
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rank1,0,18,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rises,1,18,0.05555555555555555,0.0,0.16666666666666666
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_violation,18,18,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,nb_correct1,9,11,0.8181818181818182,0.5833333333333334,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,nb_leak_top5,0,11,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,nb_pass_shift,9,9,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",country_currency,9,own_correct1,6,6,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,edit_ok,2,2,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,para_new1,3,4,0.75,0.5,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,fwd_old1,0,6,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale,4,4,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_survival,4,4,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale_all,4,4,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rank1,0,4,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rises,0,4,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_violation,4,4,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_correct1,2,2,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_leak_top5,1,2,0.5,0.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_pass_shift,2,2,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",invention_inventor,2,own_correct1,0,0,,,
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,edit_ok,30,30,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,para_new1,80,80,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,fwd_old1,0,110,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale,30,59,0.5084745762711864,0.36363636363636365,0.6610169491525424
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_survival,30,49,0.6122448979591837,0.46808510638297873,0.7647058823529411
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale_all,30,59,0.5084745762711864,0.36363636363636365,0.6610169491525424
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rank1,0,57,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rises,2,57,0.03508771929824561,0.0,0.08928571428571429
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_violation,55,57,0.9649122807017544,0.9107142857142857,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,nb_correct1,43,48,0.8958333333333334,0.8085106382978723,0.9767441860465116
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,nb_leak_top5,16,48,0.3333333333333333,0.19607843137254902,0.48
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,nb_pass_shift,38,43,0.8837209302325582,0.7608695652173914,0.9777777777777777
+ROME,"ROME (independent, model gpt2-xl, seed 0)",novel_author,30,own_correct1,24,24,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,edit_ok,22,22,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,para_new1,25,45,0.5555555555555556,0.4888888888888889,0.6363636363636364
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,fwd_old1,19,67,0.2835820895522388,0.22388059701492538,0.3382352941176471
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale,32,43,0.7441860465116279,0.5813953488372093,0.8863636363636364
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_survival,31,35,0.8857142857142857,0.75,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale_all,32,43,0.7441860465116279,0.5813953488372093,0.8863636363636364
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rank1,0,44,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rises,2,44,0.045454545454545456,0.0,0.11363636363636363
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_violation,44,44,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_correct1,27,29,0.9310344827586207,0.84,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_leak_top5,1,29,0.034482758620689655,0.0,0.11538461538461539
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_pass_shift,27,27,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse functional,22,own_correct1,11,11,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,edit_ok,56,56,1.0,1.0,1.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,para_new1,122,150,0.8133333333333334,0.7302631578947368,0.8881578947368421
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,fwd_old1,21,206,0.10194174757281553,0.052884615384615384,0.15841584158415842
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale,52,105,0.49523809523809526,0.38235294117647056,0.6074766355140186
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_survival,52,80,0.65,0.527027027027027,0.7631578947368421
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale_all,52,105,0.49523809523809526,0.38235294117647056,0.6074766355140186
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rank1,0,109,0.0,0.0,0.0
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rises,4,109,0.03669724770642202,0.008928571428571428,0.07476635514018691
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_violation,105,109,0.963302752293578,0.9252336448598131,0.9910714285714286
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_correct1,74,85,0.8705882352941177,0.8,0.9310344827586207
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_leak_top5,23,85,0.27058823529411763,0.17647058823529413,0.37209302325581395
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_pass_shift,62,74,0.8378378378378378,0.7333333333333333,0.925
+ROME,"ROME (independent, model gpt2-xl, seed 0)",inverse non-functional,56,own_correct1,39,39,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,edit_ok,78,78,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,para_new1,134,195,0.6871794871794872,0.6082474226804123,0.7602040816326531
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,fwd_old1,54,273,0.1978021978021978,0.15053763440860216,0.2490842490842491
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale,108,148,0.7297297297297297,0.6533333333333333,0.8079470198675497
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_survival,108,115,0.9391304347826087,0.8938053097345132,0.975609756097561
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale_all,108,148,0.7297297297297297,0.6533333333333333,0.8079470198675497
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rank1,0,153,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rises,25,153,0.16339869281045752,0.09803921568627451,0.23376623376623376
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_violation,134,153,0.8758169934640523,0.8104575163398693,0.9337748344370861
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,nb_correct1,109,114,0.956140350877193,0.9166666666666666,0.9910714285714286
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,nb_leak_top5,6,114,0.05263157894736842,0.017241379310344827,0.0975609756097561
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,nb_pass_shift,65,109,0.5963302752293578,0.5,0.6869565217391305
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",ALL,78,own_correct1,50,50,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,edit_ok,6,6,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,para_new1,13,17,0.7647058823529411,0.5294117647058824,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,fwd_old1,2,23,0.08695652173913043,0.0,0.17391304347826086
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale,2,10,0.2,0.0,0.4
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_survival,2,2,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale_all,2,10,0.2,0.0,0.4
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rank1,0,12,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rises,4,12,0.3333333333333333,0.0,0.6666666666666666
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_violation,8,12,0.6666666666666666,0.3333333333333333,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,nb_correct1,7,7,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,nb_leak_top5,0,7,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,nb_pass_shift,5,7,0.7142857142857143,0.2,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",character_creator,6,own_correct1,2,2,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,edit_ok,18,18,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,para_new1,19,49,0.3877551020408163,0.27450980392156865,0.5208333333333334
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,fwd_old1,28,67,0.417910447761194,0.3181818181818182,0.5
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale,24,32,0.75,0.5806451612903226,0.896551724137931
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_survival,24,25,0.96,0.88,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale_all,24,32,0.75,0.5806451612903226,0.896551724137931
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rank1,0,36,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rises,6,36,0.16666666666666666,0.05555555555555555,0.3055555555555556
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_violation,30,36,0.8333333333333334,0.6944444444444444,0.9444444444444444
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,nb_correct1,25,28,0.8928571428571429,0.76,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,nb_leak_top5,3,28,0.10714285714285714,0.0,0.2222222222222222
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,nb_pass_shift,16,25,0.64,0.4444444444444444,0.8260869565217391
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",company_founder,18,own_correct1,13,13,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,edit_ok,13,13,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,para_new1,12,26,0.46153846153846156,0.34615384615384615,0.5769230769230769
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,fwd_old1,13,39,0.3333333333333333,0.23076923076923078,0.4358974358974359
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale,20,25,0.8,0.5909090909090909,0.9615384615384616
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_survival,20,21,0.9523809523809523,0.8571428571428571,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale_all,20,25,0.8,0.5909090909090909,0.9615384615384616
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rank1,0,26,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rises,4,26,0.15384615384615385,0.0,0.34615384615384615
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_violation,26,26,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,nb_correct1,18,18,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,nb_leak_top5,0,18,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,nb_pass_shift,12,18,0.6666666666666666,0.45,0.8823529411764706
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_capital,13,own_correct1,5,5,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,edit_ok,9,9,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,para_new1,8,19,0.42105263157894735,0.3157894736842105,0.5
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,fwd_old1,9,28,0.32142857142857145,0.2222222222222222,0.4
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale,14,18,0.7777777777777778,0.5,0.9444444444444444
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_survival,14,14,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale_all,14,18,0.7777777777777778,0.5,0.9444444444444444
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rank1,0,18,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rises,2,18,0.1111111111111111,0.0,0.3333333333333333
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_violation,18,18,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,nb_correct1,11,11,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,nb_leak_top5,0,11,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,nb_pass_shift,7,11,0.6363636363636364,0.36363636363636365,0.8888888888888888
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",country_currency,9,own_correct1,6,6,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,edit_ok,2,2,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,para_new1,3,4,0.75,0.5,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,fwd_old1,1,6,0.16666666666666666,0.0,0.3333333333333333
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale,4,4,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_survival,4,4,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale_all,4,4,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rank1,0,4,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rises,1,4,0.25,0.0,0.5
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_violation,3,4,0.75,0.5,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_correct1,2,2,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_leak_top5,1,2,0.5,0.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_pass_shift,1,2,0.5,0.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",invention_inventor,2,own_correct1,0,0,,,
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,edit_ok,30,30,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,para_new1,79,80,0.9875,0.9615384615384616,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,fwd_old1,1,110,0.00909090909090909,0.0,0.027777777777777776
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale,44,59,0.7457627118644068,0.6271186440677966,0.85
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_survival,44,49,0.8979591836734694,0.8043478260869565,0.9787234042553191
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale_all,44,59,0.7457627118644068,0.6271186440677966,0.85
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rank1,0,57,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rises,8,57,0.14035087719298245,0.05172413793103448,0.24561403508771928
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_violation,49,57,0.8596491228070176,0.7543859649122807,0.9482758620689655
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,nb_correct1,46,48,0.9583333333333334,0.8979591836734694,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,nb_leak_top5,2,48,0.041666666666666664,0.0,0.10416666666666667
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,nb_pass_shift,24,46,0.5217391304347826,0.37777777777777777,0.66
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",novel_author,30,own_correct1,24,24,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,edit_ok,22,22,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,para_new1,20,45,0.4444444444444444,0.35555555555555557,0.5227272727272727
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,fwd_old1,22,67,0.3283582089552239,0.25757575757575757,0.39705882352941174
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale,34,43,0.7906976744186046,0.6363636363636364,0.9090909090909091
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_survival,34,35,0.9714285714285714,0.9117647058823529,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale_all,34,43,0.7906976744186046,0.6363636363636364,0.9090909090909091
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rank1,0,44,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rises,6,44,0.13636363636363635,0.022727272727272728,0.2727272727272727
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_violation,44,44,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_correct1,29,29,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_leak_top5,0,29,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_pass_shift,19,29,0.6551724137931034,0.5,0.8076923076923077
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse functional,22,own_correct1,11,11,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,edit_ok,56,56,1.0,1.0,1.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,para_new1,114,150,0.76,0.6666666666666666,0.847682119205298
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,fwd_old1,32,206,0.1553398058252427,0.09905660377358491,0.22009569377990432
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale,74,105,0.7047619047619048,0.6146788990825688,0.794392523364486
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_survival,74,80,0.925,0.863013698630137,0.9753086419753086
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale_all,74,105,0.7047619047619048,0.6146788990825688,0.794392523364486
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rank1,0,109,0.0,0.0,0.0
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rises,19,109,0.1743119266055046,0.0990990990990991,0.2636363636363636
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_violation,90,109,0.8256880733944955,0.7363636363636363,0.9009009009009009
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_correct1,80,85,0.9411764705882353,0.8876404494382022,0.9876543209876543
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_leak_top5,6,85,0.07058823529411765,0.022988505747126436,0.13253012048192772
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_pass_shift,46,80,0.575,0.46835443037974683,0.6790123456790124
+ROME+stats,"ROME+stats (independent, model gpt2-xl, seed 0)",inverse non-functional,56,own_correct1,39,39,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,edit_ok,64,78,0.8205128205128205,0.7307692307692307,0.8974358974358975
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,para_new1,108,195,0.5538461538461539,0.4473684210526316,0.6548223350253807
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,fwd_old1,90,273,0.32967032967032966,0.25,0.41353383458646614
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale,90,120,0.75,0.6610169491525424,0.8278688524590164
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_survival,90,92,0.9782608695652174,0.9456521739130435,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale_all,113,148,0.7635135135135135,0.6938775510204082,0.8366013071895425
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rank1,0,125,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rises,11,125,0.088,0.04,0.14285714285714285
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_violation,115,125,0.92,0.8650793650793651,0.968
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,nb_correct1,110,114,0.9649122807017544,0.9285714285714286,0.9915966386554622
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,nb_leak_top5,5,114,0.043859649122807015,0.00909090909090909,0.08620689655172414
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,nb_pass_shift,28,110,0.2545454545454545,0.168141592920354,0.3425925925925926
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",ALL,78,own_correct1,50,50,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,edit_ok,6,6,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,para_new1,12,17,0.7058823529411765,0.3888888888888889,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,fwd_old1,3,23,0.13043478260869565,0.0,0.2916666666666667
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale,2,10,0.2,0.0,0.4
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_survival,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale_all,2,10,0.2,0.0,0.4
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rank1,0,12,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rises,3,12,0.25,0.0,0.5833333333333334
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_violation,9,12,0.75,0.4166666666666667,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,nb_correct1,7,7,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,nb_leak_top5,0,7,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,nb_pass_shift,2,7,0.2857142857142857,0.0,0.625
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",character_creator,6,own_correct1,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,edit_ok,17,18,0.9444444444444444,0.8333333333333334,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,para_new1,13,49,0.2653061224489796,0.11764705882352941,0.44
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,fwd_old1,34,67,0.5074626865671642,0.36923076923076925,0.6363636363636364
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale,24,30,0.8,0.6129032258064516,0.9393939393939394
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_survival,24,24,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale_all,25,32,0.78125,0.6060606060606061,0.9142857142857143
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rank1,0,34,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rises,4,34,0.11764705882352941,0.029411764705882353,0.23529411764705882
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_violation,30,34,0.8823529411764706,0.7647058823529411,0.9705882352941176
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,nb_correct1,24,28,0.8571428571428571,0.72,0.9666666666666667
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,nb_leak_top5,2,28,0.07142857142857142,0.0,0.1724137931034483
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,nb_pass_shift,14,24,0.5833333333333334,0.36363636363636365,0.7777777777777778
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",company_founder,18,own_correct1,13,13,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,edit_ok,7,13,0.5384615384615384,0.3076923076923077,0.8461538461538461
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,para_new1,3,26,0.11538461538461539,0.0,0.3076923076923077
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,fwd_old1,25,39,0.6410256410256411,0.46153846153846156,0.7948717948717948
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale,10,13,0.7692307692307693,0.42857142857142855,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_survival,10,10,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale_all,21,25,0.84,0.64,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rank1,0,14,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rises,1,14,0.07142857142857142,0.0,0.21428571428571427
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_violation,14,14,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,nb_correct1,18,18,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,nb_leak_top5,0,18,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,nb_pass_shift,6,18,0.3333333333333333,0.14285714285714285,0.5625
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_capital,13,own_correct1,5,5,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,edit_ok,3,9,0.3333333333333333,0.0,0.6666666666666666
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,para_new1,1,19,0.05263157894736842,0.0,0.16666666666666666
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,fwd_old1,23,28,0.8214285714285714,0.5714285714285714,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale,5,6,0.8333333333333334,0.5,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_survival,5,5,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale_all,14,18,0.7777777777777778,0.5,0.9444444444444444
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rank1,0,6,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rises,0,6,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_violation,6,6,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,nb_correct1,11,11,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,nb_leak_top5,0,11,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,nb_pass_shift,4,11,0.36363636363636365,0.1111111111111111,0.5454545454545454
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",country_currency,9,own_correct1,6,6,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,edit_ok,1,2,0.5,0.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,para_new1,1,4,0.25,0.0,0.5
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,fwd_old1,3,6,0.5,0.3333333333333333,0.6666666666666666
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_survival,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale_all,4,4,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rank1,0,2,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rises,0,2,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_violation,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_correct1,2,2,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_leak_top5,1,2,0.5,0.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_pass_shift,1,2,0.5,0.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",invention_inventor,2,own_correct1,0,0,,,
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,edit_ok,30,30,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,para_new1,78,80,0.975,0.9375,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,fwd_old1,2,110,0.01818181818181818,0.0,0.045454545454545456
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale,47,59,0.7966101694915254,0.7068965517241379,0.8833333333333333
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_survival,47,49,0.9591836734693877,0.8979591836734694,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale_all,47,59,0.7966101694915254,0.7068965517241379,0.8833333333333333
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rank1,0,57,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rises,3,57,0.05263157894736842,0.0,0.11538461538461539
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_violation,54,57,0.9473684210526315,0.8846153846153846,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,nb_correct1,48,48,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,nb_leak_top5,2,48,0.041666666666666664,0.0,0.10416666666666667
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,nb_pass_shift,1,48,0.020833333333333332,0.0,0.06666666666666667
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",novel_author,30,own_correct1,24,24,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,edit_ok,10,22,0.45454545454545453,0.2727272727272727,0.6818181818181818
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,para_new1,4,45,0.08888888888888889,0.0,0.20454545454545456
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,fwd_old1,48,67,0.7164179104477612,0.5735294117647058,0.835820895522388
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale,15,19,0.7894736842105263,0.5294117647058824,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_survival,15,15,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale_all,35,43,0.813953488372093,0.6666666666666666,0.9318181818181818
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rank1,0,20,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rises,1,20,0.05,0.0,0.15
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_violation,20,20,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_correct1,29,29,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_leak_top5,0,29,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_pass_shift,10,29,0.3448275862068966,0.1935483870967742,0.5
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse functional,22,own_correct1,11,11,1.0,1.0,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,edit_ok,54,56,0.9642857142857143,0.9107142857142857,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,para_new1,104,150,0.6933333333333334,0.5782312925170068,0.8
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,fwd_old1,42,206,0.20388349514563106,0.1306532663316583,0.2904761904761905
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale,75,101,0.7425742574257426,0.6530612244897959,0.83
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_survival,75,77,0.974025974025974,0.935064935064935,1.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale_all,78,105,0.7428571428571429,0.6601941747572816,0.8269230769230769
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rank1,0,105,0.0,0.0,0.0
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rises,10,105,0.09523809523809523,0.038834951456310676,0.1619047619047619
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_violation,95,105,0.9047619047619048,0.8380952380952381,0.9611650485436893
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_correct1,81,85,0.9529411764705882,0.9054054054054054,0.9887640449438202
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_leak_top5,5,85,0.058823529411764705,0.012048192771084338,0.11538461538461539
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_pass_shift,18,81,0.2222222222222222,0.12345679012345678,0.3333333333333333
+MEMIT,"MEMIT (independent, model gpt2-xl, seed 0)",inverse non-functional,56,own_correct1,39,39,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,edit_ok,78,78,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,para_new1,152,195,0.7794871794871795,0.7157360406091371,0.8350515463917526
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,fwd_old1,38,273,0.1391941391941392,0.0996309963099631,0.18181818181818182
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale,109,148,0.7364864864864865,0.6622516556291391,0.8104575163398693
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_survival,109,115,0.9478260869565217,0.905982905982906,0.9827586206896551
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_old_stale_all,109,148,0.7364864864864865,0.6622516556291391,0.8104575163398693
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rank1,0,153,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_rises,19,153,0.12418300653594772,0.06451612903225806,0.1895424836601307
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,rev_new_violation,139,153,0.9084967320261438,0.8486842105263158,0.961038961038961
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,nb_correct1,107,114,0.9385964912280702,0.8907563025210085,0.9747899159663865
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,nb_leak_top5,11,114,0.09649122807017543,0.05,0.15384615384615385
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,nb_pass_shift,35,107,0.32710280373831774,0.23008849557522124,0.4339622641509434
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",ALL,78,own_correct1,50,50,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,edit_ok,6,6,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,para_new1,16,17,0.9411764705882353,0.8235294117647058,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,fwd_old1,1,23,0.043478260869565216,0.0,0.13043478260869565
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale,2,10,0.2,0.0,0.4
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_survival,2,2,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_old_stale_all,2,10,0.2,0.0,0.4
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rank1,0,12,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_rises,3,12,0.25,0.0,0.5833333333333334
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,rev_new_violation,9,12,0.75,0.4166666666666667,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,nb_correct1,7,7,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,nb_leak_top5,0,7,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,nb_pass_shift,2,7,0.2857142857142857,0.0,0.625
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",character_creator,6,own_correct1,2,2,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,edit_ok,18,18,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,para_new1,28,49,0.5714285714285714,0.4489795918367347,0.7111111111111111
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,fwd_old1,18,67,0.26865671641791045,0.16417910447761194,0.36619718309859156
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale,23,32,0.71875,0.5161290322580645,0.8857142857142857
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_survival,23,25,0.92,0.782608695652174,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_old_stale_all,23,32,0.71875,0.5161290322580645,0.8857142857142857
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rank1,0,36,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_rises,5,36,0.1388888888888889,0.027777777777777776,0.2777777777777778
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,rev_new_violation,31,36,0.8611111111111112,0.7222222222222222,0.9722222222222222
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,nb_correct1,21,28,0.75,0.6071428571428571,0.8888888888888888
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,nb_leak_top5,6,28,0.21428571428571427,0.08333333333333333,0.3548387096774194
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,nb_pass_shift,13,21,0.6190476190476191,0.4090909090909091,0.8181818181818182
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",company_founder,18,own_correct1,13,13,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,edit_ok,13,13,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,para_new1,16,26,0.6153846153846154,0.5,0.7307692307692307
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,fwd_old1,9,39,0.23076923076923078,0.15384615384615385,0.3076923076923077
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale,19,25,0.76,0.5416666666666666,0.9230769230769231
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_survival,19,21,0.9047619047619048,0.7727272727272727,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_old_stale_all,19,25,0.76,0.5416666666666666,0.9230769230769231
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rank1,0,26,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_rises,3,26,0.11538461538461539,0.0,0.3076923076923077
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,rev_new_violation,26,26,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,nb_correct1,18,18,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,nb_leak_top5,1,18,0.05555555555555555,0.0,0.2
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,nb_pass_shift,10,18,0.5555555555555556,0.2777777777777778,0.8333333333333334
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_capital,13,own_correct1,5,5,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,edit_ok,9,9,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,para_new1,9,19,0.47368421052631576,0.42857142857142855,0.5
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,fwd_old1,9,28,0.32142857142857145,0.2222222222222222,0.4
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale,14,18,0.7777777777777778,0.5,0.9444444444444444
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_survival,14,14,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_old_stale_all,14,18,0.7777777777777778,0.5,0.9444444444444444
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rank1,0,18,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_rises,2,18,0.1111111111111111,0.0,0.2777777777777778
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,rev_new_violation,18,18,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,nb_correct1,11,11,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,nb_leak_top5,1,11,0.09090909090909091,0.0,0.25
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,nb_pass_shift,9,11,0.8181818181818182,0.5555555555555556,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",country_currency,9,own_correct1,6,6,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,edit_ok,2,2,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,para_new1,4,4,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,fwd_old1,0,6,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale,4,4,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_survival,4,4,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_old_stale_all,4,4,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rank1,0,4,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_rises,0,4,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,rev_new_violation,4,4,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_correct1,2,2,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_leak_top5,1,2,0.5,0.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,nb_pass_shift,1,2,0.5,0.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",invention_inventor,2,own_correct1,0,0,,,
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,edit_ok,30,30,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,para_new1,79,80,0.9875,0.9615384615384616,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,fwd_old1,1,110,0.00909090909090909,0.0,0.027777777777777776
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale,47,59,0.7966101694915254,0.7068965517241379,0.8833333333333333
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_survival,47,49,0.9591836734693877,0.8979591836734694,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_old_stale_all,47,59,0.7966101694915254,0.7068965517241379,0.8833333333333333
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rank1,0,57,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_rises,6,57,0.10526315789473684,0.017241379310344827,0.22033898305084745
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,rev_new_violation,51,57,0.8947368421052632,0.7796610169491526,0.9827586206896551
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,nb_correct1,48,48,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,nb_leak_top5,2,48,0.041666666666666664,0.0,0.10416666666666667
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,nb_pass_shift,0,48,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",novel_author,30,own_correct1,24,24,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,edit_ok,22,22,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,para_new1,25,45,0.5555555555555556,0.4888888888888889,0.6363636363636364
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,fwd_old1,18,67,0.26865671641791045,0.19696969696969696,0.3283582089552239
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale,33,43,0.7674418604651163,0.6190476190476191,0.9047619047619048
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_survival,33,35,0.9428571428571428,0.8611111111111112,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_old_stale_all,33,43,0.7674418604651163,0.6190476190476191,0.9047619047619048
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rank1,0,44,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_rises,5,44,0.11363636363636363,0.022727272727272728,0.22727272727272727
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,rev_new_violation,44,44,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_correct1,29,29,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_leak_top5,2,29,0.06896551724137931,0.0,0.1724137931034483
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,nb_pass_shift,19,29,0.6551724137931034,0.45161290322580644,0.8620689655172413
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse functional,22,own_correct1,11,11,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,edit_ok,56,56,1.0,1.0,1.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,para_new1,127,150,0.8466666666666667,0.7702702702702703,0.9115646258503401
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,fwd_old1,20,206,0.0970873786407767,0.05339805825242718,0.1523809523809524
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale,76,105,0.7238095238095238,0.6336633663366337,0.8113207547169812
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_survival,76,80,0.95,0.8961038961038961,0.9879518072289156
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_old_stale_all,76,105,0.7238095238095238,0.6336633663366337,0.8113207547169812
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rank1,0,109,0.0,0.0,0.0
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_rises,14,109,0.12844036697247707,0.05454545454545454,0.21100917431192662
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,rev_new_violation,95,109,0.8715596330275229,0.7889908256880734,0.9454545454545454
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_correct1,78,85,0.9176470588235294,0.8539325842696629,0.9662921348314607
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_leak_top5,9,85,0.10588235294117647,0.047619047619047616,0.175
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,nb_pass_shift,16,78,0.20512820512820512,0.11392405063291139,0.3108108108108108
+AlphaEdit,"AlphaEdit (independent, model gpt2-xl, seed 0)",inverse non-functional,56,own_correct1,39,39,1.0,1.0,1.0

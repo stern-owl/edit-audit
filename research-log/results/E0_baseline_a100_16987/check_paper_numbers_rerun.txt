@@ -1,0 +1,22 @@
+TABLE 2 (per fact; valid routes only; 3 seeds)
+fact                Q1    Q2  Q3 rev-new delta   Q3 neighbour
+dracula          3/3   2/2    -1.33, -0.88       31->11-13
+frankenstein     3/3   2/2    -1.21, -0.77       576->190-245
+moby_dick        3/3   1/2    +0.02, -0.60       275->99-107
+nineteen84       2/2   2/2    -1.39, -1.21       196->77-86
+pride_prejudice  3/3   1/2    -0.19, -0.26       10->10
+war_peace        3/3   1/2    -0.84, -0.62       127->124-127
+amazon           1/2   2/2    -1.43, -0.47       36->2
+apple            1/3   2/2    -1.91, -2.03       52->3
+facebook         1/3   1/2    -1.42, -1.03       162->4-6
+google           2/2   2/2    -1.64, -1.72       25->2
+microsoft        3/3   2/2    -1.12, -0.95       8->2
+www              2/2   2/2    -0.80, -0.58       295->43-49
+
+HEADLINE NUMBERS
+F1 edit prompt: new answer rank(s) [1] over 36 runs; full-answer probability 0.956-0.998
+F1 paraphrase/context new@1 every seed: novels+invention 19/19, companies 8/13
+F2 reverse-from-old subject still rank 1 every seed: 20/24
+F3 reverse-from-new subject log-prob decreases (mean over seeds): 23/24
+F4 neighbour correct answer rank 1 every seed: 22/22; company neighbour: new value worst rank 6
+F5 v1 company edits (subject first): new answer rank 510-7387; 'Microsoft ... Bill Gates' neighbour after Apple edit: rank 996-6398

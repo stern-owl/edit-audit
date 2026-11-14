@@ -1,0 +1,188 @@
+relation,subject,object,notes
+novel_author,Don Quixote,Miguel de Cervantes,
+novel_author,Ulysses,James Joyce,
+novel_author,Lolita,Vladimir Nabokov,
+novel_author,The Catcher in the Rye,J. D. Salinger,
+novel_author,To Kill a Mockingbird,Harper Lee,
+novel_author,Wuthering Heights,Emily Brontë,
+novel_author,Jane Eyre,Charlotte Brontë,
+novel_author,Crime and Punishment,Fyodor Dostoevsky,
+novel_author,Madame Bovary,Gustave Flaubert,
+novel_author,Les Misérables,Victor Hugo,
+novel_author,The Count of Monte Cristo,Alexandre Dumas,
+novel_author,Brave New World,Aldous Huxley,
+novel_author,Fahrenheit 451,Ray Bradbury,
+novel_author,The Old Man and the Sea,Ernest Hemingway,
+novel_author,The Grapes of Wrath,John Steinbeck,
+novel_author,One Hundred Years of Solitude,Gabriel García Márquez,
+novel_author,The Trial,Franz Kafka,
+novel_author,Oliver Twist,Charles Dickens,
+novel_author,The Adventures of Tom Sawyer,Mark Twain,
+novel_author,Robinson Crusoe,Daniel Defoe,
+novel_author,Gulliver's Travels,Jonathan Swift,
+novel_author,Treasure Island,Robert Louis Stevenson,
+novel_author,The Picture of Dorian Gray,Oscar Wilde,
+novel_author,Little Women,Louisa May Alcott,
+novel_author,Uncle Tom's Cabin,Harriet Beecher Stowe,
+novel_author,The Scarlet Letter,Nathaniel Hawthorne,
+novel_author,Lord of the Flies,William Golding,
+novel_author,Middlemarch,George Eliot,
+novel_author,Catch-22,Joseph Heller,
+novel_author,Slaughterhouse-Five,Kurt Vonnegut,
+novel_author,On the Road,Jack Kerouac,
+novel_author,Things Fall Apart,Chinua Achebe,
+novel_author,The Name of the Rose,Umberto Eco,
+novel_author,The Alchemist,Paulo Coelho,
+novel_author,Atlas Shrugged,Ayn Rand,
+novel_author,Gone with the Wind,Margaret Mitchell,
+novel_author,Rebecca,Daphne du Maurier,
+novel_author,The Time Machine,H. G. Wells,
+novel_author,Around the World in Eighty Days,Jules Verne,
+novel_author,Doctor Zhivago,Boris Pasternak,
+novel_author,The Master and Margarita,Mikhail Bulgakov,
+novel_author,Ivanhoe,Walter Scott,
+novel_author,Dune,Frank Herbert,
+novel_author,The Handmaid's Tale,Margaret Atwood,
+novel_author,Beloved,Toni Morrison,
+novel_author,Mrs Dalloway,Virginia Woolf,
+company_founder,SpaceX,Elon Musk,
+company_founder,Oracle,Larry Ellison,Co-founded with Bob Miner and Ed Oates.
+company_founder,Alibaba,Jack Ma,Co-founded with 17 others.
+company_founder,Virgin Group,Richard Branson,
+company_founder,Netflix,Reed Hastings,Co-founded with Marc Randolph.
+company_founder,Twitter,Jack Dorsey,"Co-founded with Biz Stone, Evan Williams and Noah Glass."
+company_founder,eBay,Pierre Omidyar,
+company_founder,LinkedIn,Reid Hoffman,Co-founded with others.
+company_founder,Spotify,Daniel Ek,Co-founded with Martin Lorentzon.
+company_founder,Uber,Travis Kalanick,Co-founded with Garrett Camp.
+company_founder,Airbnb,Brian Chesky,Co-founded with Joe Gebbia and Nathan Blecharczyk.
+company_founder,Instagram,Kevin Systrom,Co-founded with Mike Krieger.
+company_founder,Nike,Phil Knight,Co-founded with Bill Bowerman.
+company_founder,IKEA,Ingvar Kamprad,
+company_founder,Walmart,Sam Walton,
+company_founder,Huawei,Ren Zhengfei,
+company_founder,Samsung,Lee Byung-chul,
+company_founder,Nvidia,Jensen Huang,Co-founded with Chris Malachowsky and Curtis Priem.
+company_founder,Yahoo,Jerry Yang,Co-founded with David Filo.
+company_founder,WhatsApp,Jan Koum,Co-founded with Brian Acton.
+company_founder,Snapchat,Evan Spiegel,Co-founded with Bobby Murphy and Reggie Brown.
+company_founder,Tencent,Ma Huateng,Also known as Pony Ma; co-founded with others.
+company_founder,Xiaomi,Lei Jun,Co-founded with others.
+company_founder,Zoom,Eric Yuan,
+company_founder,Salesforce,Marc Benioff,Co-founded with others.
+company_founder,Dropbox,Drew Houston,Co-founded with Arash Ferdowsi.
+company_founder,Standard Oil,John D. Rockefeller,Co-founded with others.
+company_founder,Rolex,Hans Wilsdorf,Co-founded with Alfred Davis.
+invention_inventor,airplane,the Wright brothers,Object is a pair of people.
+invention_inventor,radio,Guglielmo Marconi,Priority contested (Tesla et al.).
+invention_inventor,dynamite,Alfred Nobel,The draft dropped dynamite only because 'The dynamite' is ungrammatical; kept here under the v1 template for completeness.
+invention_inventor,steam engine,James Watt,Watt improved Newcomen's engine; Watt is the canonical answer.
+invention_inventor,cotton gin,Eli Whitney,
+invention_inventor,revolver,Samuel Colt,
+invention_inventor,telegraph,Samuel Morse,Electric telegraph; contested with Cooke and Wheatstone.
+invention_inventor,mechanical reaper,Cyrus McCormick,
+invention_inventor,polio vaccine,Jonas Salk,Developed rather than invented; inactivated vaccine.
+invention_inventor,jet engine,Frank Whittle,Contested with Hans von Ohain.
+invention_inventor,computer mouse,Douglas Engelbart,
+invention_inventor,barometer,Evangelista Torricelli,
+invention_inventor,mercury thermometer,Daniel Gabriel Fahrenheit,
+invention_inventor,safety razor,King C. Gillette,
+invention_inventor,hot air balloon,the Montgolfier brothers,Object is a pair of people.
+invention_inventor,electric battery,Alessandro Volta,
+invention_inventor,cyclotron,Ernest Lawrence,
+invention_inventor,stethoscope,René Laennec,
+invention_inventor,AK-47,Mikhail Kalashnikov,
+invention_inventor,induction motor,Nikola Tesla,Contested with Galileo Ferraris.
+invention_inventor,television,John Logie Baird,Contested with Philo Farnsworth.
+painting_painter,Mona Lisa,Leonardo da Vinci,
+painting_painter,The Starry Night,Vincent van Gogh,
+painting_painter,The Scream,Edvard Munch,
+painting_painter,Guernica,Pablo Picasso,
+painting_painter,The Persistence of Memory,Salvador Dalí,
+painting_painter,The Birth of Venus,Sandro Botticelli,
+painting_painter,The Night Watch,Rembrandt,
+painting_painter,Girl with a Pearl Earring,Johannes Vermeer,
+painting_painter,The Creation of Adam,Michelangelo,Fresco.
+painting_painter,The School of Athens,Raphael,Fresco.
+painting_painter,The Kiss,Gustav Klimt,
+painting_painter,American Gothic,Grant Wood,
+painting_painter,Water Lilies,Claude Monet,A series.
+painting_painter,The Garden of Earthly Delights,Hieronymus Bosch,
+painting_painter,Las Meninas,Diego Velázquez,
+painting_painter,The Great Wave off Kanagawa,Hokusai,Woodblock print.
+painting_painter,Liberty Leading the People,Eugène Delacroix,
+painting_painter,The Arnolfini Portrait,Jan van Eyck,
+painting_painter,Nighthawks,Edward Hopper,
+painting_painter,The Third of May 1808,Francisco Goya,
+painting_painter,The Raft of the Medusa,Théodore Géricault,
+painting_painter,A Sunday Afternoon on the Island of La Grande Jatte,Georges Seurat,
+painting_painter,The Son of Man,René Magritte,
+painting_painter,The Hay Wain,John Constable,
+painting_painter,The Fighting Temeraire,J. M. W. Turner,
+painting_painter,Christina's World,Andrew Wyeth,
+painting_painter,The Card Players,Paul Cézanne,A series.
+painting_painter,Luncheon of the Boating Party,Pierre-Auguste Renoir,
+painting_painter,Olympia,Édouard Manet,
+painting_painter,Campbell's Soup Cans,Andy Warhol,
+painting_painter,The Two Fridas,Frida Kahlo,
+painting_painter,The Gleaners,Jean-François Millet,
+character_creator,Sherlock Holmes,Arthur Conan Doyle,
+character_creator,Hercule Poirot,Agatha Christie,
+character_creator,Harry Potter,J. K. Rowling,
+character_creator,James Bond,Ian Fleming,
+character_creator,Tarzan,Edgar Rice Burroughs,
+character_creator,Winnie-the-Pooh,A. A. Milne,
+character_creator,Peter Pan,J. M. Barrie,
+character_creator,Mickey Mouse,Walt Disney,Co-created with Ub Iwerks.
+character_creator,Superman,Jerry Siegel,Co-created with Joe Shuster.
+character_creator,Batman,Bob Kane,Co-created with Bill Finger.
+character_creator,Spider-Man,Stan Lee,Co-created with Steve Ditko.
+character_creator,Tintin,Hergé,
+character_creator,Asterix,René Goscinny,Co-created with Albert Uderzo.
+character_creator,Captain Nemo,Jules Verne,Jules Verne is also an object in novel_author (different relation).
+character_creator,Hannibal Lecter,Thomas Harris,
+character_creator,Jack Reacher,Lee Child,
+character_creator,Jason Bourne,Robert Ludlum,
+character_creator,Philip Marlowe,Raymond Chandler,
+character_creator,Sam Spade,Dashiell Hammett,
+character_creator,Conan the Barbarian,Robert E. Howard,
+character_creator,Willy Wonka,Roald Dahl,
+character_creator,The Cat in the Hat,Dr. Seuss,
+character_creator,Paddington Bear,Michael Bond,
+character_creator,Garfield,Jim Davis,
+character_creator,Snoopy,Charles M. Schulz,
+character_creator,Homer Simpson,Matt Groening,
+character_creator,Mario,Shigeru Miyamoto,
+character_creator,Lisbeth Salander,Stieg Larsson,
+character_creator,Jeeves,P. G. Wodehouse,
+country_currency,Japan,yen,
+country_currency,Russia,ruble,
+country_currency,South Korea,won,
+country_currency,Thailand,baht,
+country_currency,South Africa,rand,
+country_currency,Hungary,forint,
+country_currency,Israel,shekel,
+country_currency,Indonesia,rupiah,
+country_currency,Malaysia,ringgit,
+country_currency,Ukraine,hryvnia,
+country_currency,Nigeria,naira,
+country_currency,Bangladesh,taka,
+country_currency,Turkey,lira,Lira was also Italy's former currency.
+country_currency,Poland,zloty,Usually written złoty; ASCII form used.
+country_currency,China,yuan,Also called renminbi.
+country_currency,Brazil,real,
+country_currency,Vietnam,dong,
+country_currency,Iran,rial,Oman and Yemen also use rials.
+country_currency,Saudi Arabia,riyal,Qatar also uses a riyal.
+country_currency,Kenya,shilling,Several countries use shillings.
+country_currency,Georgia,lari,
+country_currency,Armenia,dram,
+country_currency,Mongolia,tugrik,
+country_currency,Cambodia,riel,
+country_currency,Laos,kip,
+country_currency,Botswana,pula,
+country_currency,Ghana,cedi,
+country_currency,Peru,sol,
+country_currency,Paraguay,guarani,
+country_currency,Venezuela,bolivar,
+country_currency,Costa Rica,colon,El Salvador formerly also used the colón.

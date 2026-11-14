@@ -2,3 +2,19 @@ __pycache__/
 *.pyc
 .mplconfig/
 experiments/retrieval_poc/results_rerun/
+
+# Phase 2 (csis-phase2): local-only material, never pushed
+next-steps.txt
+Auditing_Knowledge_Edits_in_Language_Models_as_Database_Updates*.pdf
+*.pdf
+# Large or re-downloadable data: CounterFact dataset and the full cluster mirror (raw_runs is committed)
+data/counterfact/
+data/cluster_mirror/
+# Model weights, covariance statistics and projections (live on the cluster only)
+*.safetensors
+*.bin
+*.pt
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini

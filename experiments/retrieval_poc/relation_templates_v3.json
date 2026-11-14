@@ -1,0 +1,91 @@
+{
+  "version": "v3",
+  "written_on": "2026-10-31",
+  "status": "Written before any scoring with these templates or facts. novel_author and invention_inventor are identical to v1, company_founder identical to v2, validity_rules identical to v1/v2. Four relations are new.",
+  "design_rules": [
+    "No edit prompt begins with the subject (lesson of study 3462 / hypothesis H-pos0, confirmed by 3467 for all three methods).",
+    "Within a relation every object appears in at most one fact, so the fact whose old object is a given new object is unique.",
+    "A fact is excluded at construction if its old object's name occurs in its subject (e.g. 'Honda NSX' -> 'Honda'): the forward read would test string copying, not the fact.",
+    "CounterFact lists several subjects for some capitals (e.g. Berlin: Nazi Germany, Weimar Republic, Germany, ...). All are kept as candidates with dup_group = the old object, and screening keeps at most one INCLUDED fact per dup_group: the one whose best valid reverse_old route gives the subject the highest full-answer log-probability on the unedited model (ties: lowest CounterFact case_id). This uses pre-edit reads only."
+  ],
+  "validity_rules": {
+    "forward_old_first_token_rank_max": 1,
+    "reverse_old_subject_first_token_rank_max": 3,
+    "reverse_new_subject_first_token_rank_min": 6,
+    "control_correct_first_token_rank_max": 1,
+    "include_fact_if": "edit prompt valid AND >=2 of the other 3 forward routes valid AND >=1 valid reverse_old AND >=1 valid reverse_new AND >=1 valid control"
+  },
+  "consistency_contract": {
+    "edit_semantics": "Every edit replaces the tuple (s, r, o) by (s, r, o*). It is an UPDATE, not an INSERT: after it, (s, r, o) is no longer true.",
+    "forward": "Every valid forward path must return o* at rank 1 (Q1). o at rank 1 on a forward path is a stale read (Q2).",
+    "reverse_old": "A reverse path naming o asks for the subjects of o. After the update s is not one of them, so s at rank 1 is a stale read (Q2) for every relation, whatever its cardinality. Another subject of o at rank 1 is legitimate.",
+    "reverse_new_if_inverse_functional": "If each object has exactly one subject (1:1), the reverse path naming o* must return s at rank 1 after the update; anything else is a violation. The update also conflicts with o*'s own fact (o* now has two subjects): this is an integrity-constraint violation of the edit request itself and is reported as such.",
+    "reverse_new_if_inverse_non_functional": "If an object can have many subjects, s need not reach rank 1 on the reverse path naming o* (o*'s best-known subject may stay first). s must become more likely (log-probability rises); a fall is a violation.",
+    "controls": "The correct answer of a neighbouring fact (same relation) and of o*'s own fact must stay at rank 1 (except o*'s own fact under an inverse-functional relation, see above). The rise of o* on these reads is reported as drift, not as a violation."
+  },
+  "relations": {
+    "novel_author": {
+      "cardinality": {"forward": "functional", "inverse": "non-functional", "note": "single-author novels only; authors write several novels"},
+      "forward_edit_prompt": "The novel {subject} was written by",
+      "paraphrase_statement": "{subject} is a novel written by",
+      "paraphrase_question": "Who wrote the novel {subject}? It was written by",
+      "contextual": "The classic novel {subject} was written by",
+      "reverse_most_famous": "The most famous novel written by {entity} is",
+      "reverse_best_known": "{entity} is best known for writing the novel"
+    },
+    "company_founder": {
+      "cardinality": {"forward": "multi-valued", "inverse": "non-functional", "note": "companies often have co-founders; the edit replaces the named founder"},
+      "forward_edit_prompt": "The company {subject} was founded by",
+      "paraphrase_statement": "{subject} was founded by",
+      "paraphrase_question": "Who founded {subject}? It was founded by",
+      "contextual": "The technology company {subject} was founded by",
+      "reverse_most_famous": "The most famous company founded by {entity} is",
+      "reverse_best_known": "{entity} is best known for founding"
+    },
+    "invention_inventor": {
+      "cardinality": {"forward": "multi-valued", "inverse": "non-functional", "note": "priority is contested for some inventions; the edit replaces the canonical inventor"},
+      "forward_edit_prompt": "The {subject} was invented by",
+      "paraphrase_statement": "The inventor of the {subject} was",
+      "paraphrase_question": "Who invented the {subject}? It was invented by",
+      "contextual": "In the history of technology, the {subject} was invented by",
+      "reverse_most_famous": "The most famous invention of {entity} is the",
+      "reverse_best_known": "{entity} is best known for inventing the"
+    },
+    "country_capital": {
+      "cardinality": {"forward": "functional", "inverse": "functional", "note": "1:1; facts from CounterFact P36"},
+      "forward_edit_prompt": "The capital of {subject} is",
+      "paraphrase_statement": "{subject}'s capital city is",
+      "paraphrase_question": "What is the capital of {subject}? It is",
+      "contextual": "In {subject}, the capital city is",
+      "reverse_most_famous": "{entity} is the capital of",
+      "reverse_best_known": "The city of {entity} is the capital of"
+    },
+    "painting_painter": {
+      "cardinality": {"forward": "functional", "inverse": "non-functional", "note": "single-artist works; painters made many works"},
+      "forward_edit_prompt": "The painting {subject} was painted by",
+      "paraphrase_statement": "{subject} is a painting by",
+      "paraphrase_question": "Who painted {subject}? It was painted by",
+      "contextual": "The famous painting {subject} was created by the artist",
+      "reverse_most_famous": "The most famous painting by {entity} is",
+      "reverse_best_known": "{entity} is best known for painting"
+    },
+    "character_creator": {
+      "cardinality": {"forward": "functional", "inverse": "non-functional", "note": "characters with one canonical creator; creators made many characters"},
+      "forward_edit_prompt": "The character {subject} was created by",
+      "paraphrase_statement": "{subject} is a fictional character created by",
+      "paraphrase_question": "Who created the character {subject}? It was created by",
+      "contextual": "The famous fictional character {subject} was created by",
+      "reverse_most_famous": "The most famous character created by {entity} is",
+      "reverse_best_known": "{entity} is best known for creating the character"
+    },
+    "country_currency": {
+      "cardinality": {"forward": "functional", "inverse": "functional", "note": "only currencies used by one country (no euro, dollar, peso, rupee, franc, krona)"},
+      "forward_edit_prompt": "The currency of {subject} is the",
+      "paraphrase_statement": "{subject} uses a currency called the",
+      "paraphrase_question": "What is the currency of {subject}? It is the",
+      "contextual": "In {subject}, people pay with the",
+      "reverse_most_famous": "The {entity} is the currency of",
+      "reverse_best_known": "The {entity} is the official currency of"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+fact_id,relation,subject,target_old,target_new,old_alt,new_alt,notes,source,cf_case_id,dup_group
+swap__cap_belgium,country_capital,Poland,Warsaw,Brussels,,Belgium,N2 swap repair for cap_belgium: Poland takes Belgium's old object,derived,,
+swap__cap_chile,country_capital,Democratic Republic of Afghanistan,Kabul,Santiago,,Chile,N2 swap repair for cap_chile: Democratic Republic of Afghanistan takes Chile's old object,derived,,
+swap__cap_hawaii,country_capital,Second Spanish Republic,Madrid,Honolulu,,Hawaii,N2 swap repair for cap_hawaii: Second Spanish Republic takes Hawaii's old object,derived,,
+swap__cap_poland,country_capital,Mandatory Palestine,Jerusalem,Warsaw,,Poland,N2 swap repair for cap_poland: Mandatory Palestine takes Poland's old object,derived,,
+swap__cur_china,country_currency,Thailand,baht,yuan,,China,N2 swap repair for cur_china: Thailand takes China's old object,derived,,
+swap__cur_israel,country_currency,Poland,zloty,shekel,,Israel,N2 swap repair for cur_israel: Poland takes Israel's old object,derived,,
+swap__cur_japan,country_currency,Turkey,lira,yen,,Japan,N2 swap repair for cur_japan: Turkey takes Japan's old object,derived,,
+swap__cur_nigeria,country_currency,Armenia,dram,naira,,Nigeria,N2 swap repair for cur_nigeria: Armenia takes Nigeria's old object,derived,,
+swap__cur_russia,country_currency,China,yuan,ruble,,Russia,N2 swap repair for cur_russia: China takes Russia's old object,derived,,

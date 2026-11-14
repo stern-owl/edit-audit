@@ -1,0 +1,309 @@
+{
+ "version": "build_candidates_v3 v1.0 (2026-10-31)",
+ "seed": "v3-2026-10-31",
+ "inputs": {
+  "experiments/retrieval_poc/candidate_facts_v2.csv": "c9100f78afe58581312125db96ac5941",
+  "experiments/retrieval_poc/facts_v3/own_facts.csv": "23f0bace9da9ee2d7244124e1f3bbba1",
+  "C:/Desktop/edit-audit/data/counterfact/counterfact.json": "61a58af5b69d612183f3efb7b1edba19",
+  "experiments/retrieval_poc/relation_templates_v3.json": "f55cf48533ff39d5e45145b82c2a9f9a"
+ },
+ "n_candidates": 316,
+ "by_relation_source": {
+  "character_creator/own": 29,
+  "company_founder/draft": 5,
+  "company_founder/own": 28,
+  "country_capital/counterfact": 111,
+  "country_currency/own": 31,
+  "invention_inventor/draft": 5,
+  "invention_inventor/own": 21,
+  "novel_author/draft": 8,
+  "novel_author/own": 46,
+  "painting_painter/own": 32
+ },
+ "n_without_new_alt": 11,
+ "n_dup_groups": 33,
+ "n_in_dup_groups": 87,
+ "dropped": [
+  {
+   "relation": "country_capital",
+   "subject": "Mumbai City district",
+   "target_old": "Mumbai",
+   "target_new": "Rome",
+   "source": "counterfact",
+   "cf_case_id": 582,
+   "fact_id": "cap_mumbai_city_district",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Metropolis of Greater Paris",
+   "target_old": "Paris",
+   "target_new": "London",
+   "source": "counterfact",
+   "cf_case_id": 1042,
+   "fact_id": "cap_metropolis_of_greater_paris",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Delhi Sultanate",
+   "target_old": "Delhi",
+   "target_new": "Victoria",
+   "source": "counterfact",
+   "cf_case_id": 1055,
+   "fact_id": "cap_delhi_sultanate",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Kiev-Sviatoshyn Raion",
+   "target_old": "Kiev",
+   "target_new": "Vienna",
+   "source": "counterfact",
+   "cf_case_id": 1392,
+   "fact_id": "cap_kiev_sviatoshyn_raion",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Copenhagen Municipality",
+   "target_old": "Copenhagen",
+   "target_new": "Beirut",
+   "source": "counterfact",
+   "cf_case_id": 2613,
+   "fact_id": "cap_copenhagen_municipality",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Valencian Community",
+   "target_old": "Valencia",
+   "target_new": "Lima",
+   "source": "counterfact",
+   "cf_case_id": 2662,
+   "fact_id": "cap_valencian_community",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Tripolitania",
+   "target_old": "Tripoli",
+   "target_new": "Baghdad",
+   "source": "counterfact",
+   "cf_case_id": 2669,
+   "fact_id": "cap_tripolitania",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Province of Venice",
+   "target_old": "Venice",
+   "target_new": "Valencia",
+   "source": "counterfact",
+   "cf_case_id": 4104,
+   "fact_id": "cap_province_of_venice",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Paris Commune",
+   "target_old": "Paris",
+   "target_new": "Brussels",
+   "source": "counterfact",
+   "cf_case_id": 4154,
+   "fact_id": "cap_paris_commune",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Republic of Florence",
+   "target_old": "Florence",
+   "target_new": "Helsinki",
+   "source": "counterfact",
+   "cf_case_id": 5191,
+   "fact_id": "cap_republic_of_florence",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Republic of Venice",
+   "target_old": "Venice",
+   "target_new": "Edinburgh",
+   "source": "counterfact",
+   "cf_case_id": 7044,
+   "fact_id": "cap_republic_of_venice",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Athens County",
+   "target_old": "Athens",
+   "target_new": "Valencia",
+   "source": "counterfact",
+   "cf_case_id": 7271,
+   "fact_id": "cap_athens_county",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "province of Milan",
+   "target_old": "Milan",
+   "target_new": "Baghdad",
+   "source": "counterfact",
+   "cf_case_id": 7492,
+   "fact_id": "cap_province_of_milan",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Prague-West District",
+   "target_old": "Prague",
+   "target_new": "Cairo",
+   "source": "counterfact",
+   "cf_case_id": 7925,
+   "fact_id": "cap_prague_west_district",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Kingdom of Valencia",
+   "target_old": "Valencia",
+   "target_new": "Singapore",
+   "source": "counterfact",
+   "cf_case_id": 8308,
+   "fact_id": "cap_kingdom_of_valencia",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Kingdom of Jerusalem",
+   "target_old": "Jerusalem",
+   "target_new": "Tehran",
+   "source": "counterfact",
+   "cf_case_id": 11145,
+   "fact_id": "cap_kingdom_of_jerusalem",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Santiago Metropolitan Region",
+   "target_old": "Santiago",
+   "target_new": "Valencia",
+   "source": "counterfact",
+   "cf_case_id": 11272,
+   "fact_id": "cap_santiago_metropolitan_region",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Aleppo Governorate",
+   "target_old": "Aleppo",
+   "target_new": "Brussels",
+   "source": "counterfact",
+   "cf_case_id": 12082,
+   "fact_id": "cap_aleppo_governorate",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Ankara Province",
+   "target_old": "Ankara",
+   "target_new": "Munich",
+   "source": "counterfact",
+   "cf_case_id": 13522,
+   "fact_id": "cap_ankara_province",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Jerusalem District",
+   "target_old": "Jerusalem",
+   "target_new": "London",
+   "source": "counterfact",
+   "cf_case_id": 14635,
+   "fact_id": "cap_jerusalem_district",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Kabul Shahi",
+   "target_old": "Kabul",
+   "target_new": "Warsaw",
+   "source": "counterfact",
+   "cf_case_id": 15885,
+   "fact_id": "cap_kabul_shahi",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Neo-Babylonian Empire",
+   "target_old": "Babylon",
+   "target_new": "Rome",
+   "source": "counterfact",
+   "cf_case_id": 16070,
+   "fact_id": "cap_neo_babylonian_empire",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Province of Florence",
+   "target_old": "Florence",
+   "target_new": "Naples",
+   "source": "counterfact",
+   "cf_case_id": 16520,
+   "fact_id": "cap_province_of_florence",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Metropolis of Lyon",
+   "target_old": "Lyon",
+   "target_new": "Berlin",
+   "source": "counterfact",
+   "cf_case_id": 17196,
+   "fact_id": "cap_metropolis_of_lyon",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Lima",
+   "target_old": "Lima",
+   "target_new": "Jerusalem",
+   "source": "counterfact",
+   "cf_case_id": 19320,
+   "fact_id": "cap_lima",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Brussels-Capital Region",
+   "target_old": "Brussels",
+   "target_new": "Helsinki",
+   "source": "counterfact",
+   "cf_case_id": 19655,
+   "fact_id": "cap_brussels_capital_region",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Valencia Province",
+   "target_old": "Valencia",
+   "target_new": "Karachi",
+   "source": "counterfact",
+   "cf_case_id": 20121,
+   "fact_id": "cap_valencia_province",
+   "reason": "object name in subject"
+  },
+  {
+   "relation": "country_capital",
+   "subject": "Baghdad Governorate",
+   "target_old": "Baghdad",
+   "target_new": "Tripoli",
+   "source": "counterfact",
+   "cf_case_id": 20349,
+   "fact_id": "cap_baghdad_governorate",
+   "reason": "object name in subject"
+  }
+ ],
+ "output_md5": "08036d94b3ef86ded6581cee2fd5c4f9"
+}

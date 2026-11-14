@@ -1,0 +1,6 @@
+chr_superman
+com_twitter
+cap_austria_hungary
+cur_malaysia
+inv_polio_vaccine
+nov_uncle_tom_s_cabin

@@ -1,0 +1,38 @@
+{
+ "version": "make_programs v1.0 (2026-11-05)",
+ "probes_dirs": [
+  "/nfs_home/users/yashsinha/F20220612_Aadit/edit-audit/runs/2.2_screen_v3_gpt2-xl_16990/screen/probes"
+ ],
+ "admitted": 78,
+ "sentinels": [
+  "chr_superman",
+  "com_twitter",
+  "cap_austria_hungary",
+  "cur_malaysia",
+  "inv_polio_vaccine",
+  "nov_uncle_tom_s_cabin"
+ ],
+ "seed": "0",
+ "late": 20,
+ "late_k": 5,
+ "programs": {
+  "compensate": 72,
+  "reference": 20,
+  "compensate_late": 20,
+  "cascade": 9,
+  "cascade_rev": 9,
+  "cascade_batch": 9
+ },
+ "edit_calls": 429,
+ "derived": [
+  "swap__cap_belgium",
+  "swap__cap_chile",
+  "swap__cap_hawaii",
+  "swap__cap_poland",
+  "swap__cur_china",
+  "swap__cur_israel",
+  "swap__cur_japan",
+  "swap__cur_nigeria",
+  "swap__cur_russia"
+ ]
+}

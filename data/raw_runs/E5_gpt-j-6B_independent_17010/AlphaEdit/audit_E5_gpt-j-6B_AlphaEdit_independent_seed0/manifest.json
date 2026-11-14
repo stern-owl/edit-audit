@@ -1,0 +1,688 @@
+{
+ "audit_version": "run_audit v1.1 (2026-10-31)",
+ "scorer": "probe_scoring v4.0 (2026-10-31)",
+ "method": "AlphaEdit",
+ "mode": "independent",
+ "seed": 0,
+ "order": [
+  "amazon",
+  "apple",
+  "cap_belgium",
+  "cap_campania",
+  "cap_catalonia",
+  "cap_chile",
+  "cap_denmark",
+  "cap_egypt",
+  "cap_hawaii",
+  "cap_ireland",
+  "cap_libya",
+  "cap_norway",
+  "cap_peru",
+  "cap_poland",
+  "cap_portugal",
+  "cap_saxony",
+  "cap_scotland",
+  "cap_south_korea",
+  "cap_syria",
+  "chr_batman",
+  "chr_captain_nemo",
+  "chr_conan_the_barbarian",
+  "chr_garfield",
+  "chr_hannibal_lecter",
+  "chr_harry_potter",
+  "chr_hercule_poirot",
+  "chr_jack_reacher",
+  "chr_james_bond",
+  "chr_jason_bourne",
+  "chr_jeeves",
+  "chr_mickey_mouse",
+  "chr_philip_marlowe",
+  "chr_sam_spade",
+  "chr_snoopy",
+  "chr_spider_man",
+  "chr_superman",
+  "chr_tarzan",
+  "chr_the_cat_in_the_hat",
+  "chr_winnie_the_pooh",
+  "com_alibaba",
+  "com_dropbox",
+  "com_ebay",
+  "com_huawei",
+  "com_ikea",
+  "com_instagram",
+  "com_linkedin",
+  "com_netflix",
+  "com_oracle",
+  "com_salesforce",
+  "com_samsung",
+  "com_snapchat",
+  "com_spacex",
+  "com_spotify",
+  "com_standard_oil",
+  "com_twitter",
+  "com_uber",
+  "com_virgin_group",
+  "com_walmart",
+  "com_whatsapp",
+  "com_xiaomi",
+  "com_yahoo",
+  "cur_iran",
+  "dracula",
+  "facebook",
+  "frankenstein",
+  "google",
+  "inv_airplane",
+  "inv_ak_47",
+  "inv_computer_mouse",
+  "inv_cotton_gin",
+  "inv_cyclotron",
+  "inv_electric_battery",
+  "inv_hot_air_balloon",
+  "inv_polio_vaccine",
+  "inv_telegraph",
+  "lightning_rod",
+  "microsoft",
+  "moby_dick",
+  "nineteen84",
+  "nov_around_the_world_in_eighty_days",
+  "nov_atlas_shrugged",
+  "nov_beloved",
+  "nov_brave_new_world",
+  "nov_catch_22",
+  "nov_crime_and_punishment",
+  "nov_doctor_zhivago",
+  "nov_don_quixote",
+  "nov_dune",
+  "nov_fahrenheit_451",
+  "nov_gone_with_the_wind",
+  "nov_gulliver_s_travels",
+  "nov_jane_eyre",
+  "nov_les_miserables",
+  "nov_little_women",
+  "nov_lolita",
+  "nov_lord_of_the_flies",
+  "nov_madame_bovary",
+  "nov_middlemarch",
+  "nov_mrs_dalloway",
+  "nov_on_the_road",
+  "nov_rebecca",
+  "nov_robinson_crusoe",
+  "nov_slaughterhouse_five",
+  "nov_the_adventures_of_tom_sawyer",
+  "nov_the_catcher_in_the_rye",
+  "nov_the_handmaid_s_tale",
+  "nov_the_name_of_the_rose",
+  "nov_the_picture_of_dorian_gray",
+  "nov_the_scarlet_letter",
+  "nov_the_time_machine",
+  "nov_the_trial",
+  "nov_things_fall_apart",
+  "nov_to_kill_a_mockingbird",
+  "nov_treasure_island",
+  "nov_ulysses",
+  "nov_uncle_tom_s_cabin",
+  "nov_wuthering_heights",
+  "pai_a_sunday_afternoon_on_the_island_of_la_grande_jatte",
+  "pai_american_gothic",
+  "pai_las_meninas",
+  "pai_the_arnolfini_portrait",
+  "pai_the_garden_of_earthly_delights",
+  "phonograph",
+  "pride_prejudice",
+  "printing_press",
+  "telephone",
+  "war_peace",
+  "www"
+ ],
+ "steps": [
+  [
+   "amazon"
+  ],
+  [
+   "apple"
+  ],
+  [
+   "cap_belgium"
+  ],
+  [
+   "cap_campania"
+  ],
+  [
+   "cap_catalonia"
+  ],
+  [
+   "cap_chile"
+  ],
+  [
+   "cap_denmark"
+  ],
+  [
+   "cap_egypt"
+  ],
+  [
+   "cap_hawaii"
+  ],
+  [
+   "cap_ireland"
+  ],
+  [
+   "cap_libya"
+  ],
+  [
+   "cap_norway"
+  ],
+  [
+   "cap_peru"
+  ],
+  [
+   "cap_poland"
+  ],
+  [
+   "cap_portugal"
+  ],
+  [
+   "cap_saxony"
+  ],
+  [
+   "cap_scotland"
+  ],
+  [
+   "cap_south_korea"
+  ],
+  [
+   "cap_syria"
+  ],
+  [
+   "chr_batman"
+  ],
+  [
+   "chr_captain_nemo"
+  ],
+  [
+   "chr_conan_the_barbarian"
+  ],
+  [
+   "chr_garfield"
+  ],
+  [
+   "chr_hannibal_lecter"
+  ],
+  [
+   "chr_harry_potter"
+  ],
+  [
+   "chr_hercule_poirot"
+  ],
+  [
+   "chr_jack_reacher"
+  ],
+  [
+   "chr_james_bond"
+  ],
+  [
+   "chr_jason_bourne"
+  ],
+  [
+   "chr_jeeves"
+  ],
+  [
+   "chr_mickey_mouse"
+  ],
+  [
+   "chr_philip_marlowe"
+  ],
+  [
+   "chr_sam_spade"
+  ],
+  [
+   "chr_snoopy"
+  ],
+  [
+   "chr_spider_man"
+  ],
+  [
+   "chr_superman"
+  ],
+  [
+   "chr_tarzan"
+  ],
+  [
+   "chr_the_cat_in_the_hat"
+  ],
+  [
+   "chr_winnie_the_pooh"
+  ],
+  [
+   "com_alibaba"
+  ],
+  [
+   "com_dropbox"
+  ],
+  [
+   "com_ebay"
+  ],
+  [
+   "com_huawei"
+  ],
+  [
+   "com_ikea"
+  ],
+  [
+   "com_instagram"
+  ],
+  [
+   "com_linkedin"
+  ],
+  [
+   "com_netflix"
+  ],
+  [
+   "com_oracle"
+  ],
+  [
+   "com_salesforce"
+  ],
+  [
+   "com_samsung"
+  ],
+  [
+   "com_snapchat"
+  ],
+  [
+   "com_spacex"
+  ],
+  [
+   "com_spotify"
+  ],
+  [
+   "com_standard_oil"
+  ],
+  [
+   "com_twitter"
+  ],
+  [
+   "com_uber"
+  ],
+  [
+   "com_virgin_group"
+  ],
+  [
+   "com_walmart"
+  ],
+  [
+   "com_whatsapp"
+  ],
+  [
+   "com_xiaomi"
+  ],
+  [
+   "com_yahoo"
+  ],
+  [
+   "cur_iran"
+  ],
+  [
+   "dracula"
+  ],
+  [
+   "facebook"
+  ],
+  [
+   "frankenstein"
+  ],
+  [
+   "google"
+  ],
+  [
+   "inv_airplane"
+  ],
+  [
+   "inv_ak_47"
+  ],
+  [
+   "inv_computer_mouse"
+  ],
+  [
+   "inv_cotton_gin"
+  ],
+  [
+   "inv_cyclotron"
+  ],
+  [
+   "inv_electric_battery"
+  ],
+  [
+   "inv_hot_air_balloon"
+  ],
+  [
+   "inv_polio_vaccine"
+  ],
+  [
+   "inv_telegraph"
+  ],
+  [
+   "lightning_rod"
+  ],
+  [
+   "microsoft"
+  ],
+  [
+   "moby_dick"
+  ],
+  [
+   "nineteen84"
+  ],
+  [
+   "nov_around_the_world_in_eighty_days"
+  ],
+  [
+   "nov_atlas_shrugged"
+  ],
+  [
+   "nov_beloved"
+  ],
+  [
+   "nov_brave_new_world"
+  ],
+  [
+   "nov_catch_22"
+  ],
+  [
+   "nov_crime_and_punishment"
+  ],
+  [
+   "nov_doctor_zhivago"
+  ],
+  [
+   "nov_don_quixote"
+  ],
+  [
+   "nov_dune"
+  ],
+  [
+   "nov_fahrenheit_451"
+  ],
+  [
+   "nov_gone_with_the_wind"
+  ],
+  [
+   "nov_gulliver_s_travels"
+  ],
+  [
+   "nov_jane_eyre"
+  ],
+  [
+   "nov_les_miserables"
+  ],
+  [
+   "nov_little_women"
+  ],
+  [
+   "nov_lolita"
+  ],
+  [
+   "nov_lord_of_the_flies"
+  ],
+  [
+   "nov_madame_bovary"
+  ],
+  [
+   "nov_middlemarch"
+  ],
+  [
+   "nov_mrs_dalloway"
+  ],
+  [
+   "nov_on_the_road"
+  ],
+  [
+   "nov_rebecca"
+  ],
+  [
+   "nov_robinson_crusoe"
+  ],
+  [
+   "nov_slaughterhouse_five"
+  ],
+  [
+   "nov_the_adventures_of_tom_sawyer"
+  ],
+  [
+   "nov_the_catcher_in_the_rye"
+  ],
+  [
+   "nov_the_handmaid_s_tale"
+  ],
+  [
+   "nov_the_name_of_the_rose"
+  ],
+  [
+   "nov_the_picture_of_dorian_gray"
+  ],
+  [
+   "nov_the_scarlet_letter"
+  ],
+  [
+   "nov_the_time_machine"
+  ],
+  [
+   "nov_the_trial"
+  ],
+  [
+   "nov_things_fall_apart"
+  ],
+  [
+   "nov_to_kill_a_mockingbird"
+  ],
+  [
+   "nov_treasure_island"
+  ],
+  [
+   "nov_ulysses"
+  ],
+  [
+   "nov_uncle_tom_s_cabin"
+  ],
+  [
+   "nov_wuthering_heights"
+  ],
+  [
+   "pai_a_sunday_afternoon_on_the_island_of_la_grande_jatte"
+  ],
+  [
+   "pai_american_gothic"
+  ],
+  [
+   "pai_las_meninas"
+  ],
+  [
+   "pai_the_arnolfini_portrait"
+  ],
+  [
+   "pai_the_garden_of_earthly_delights"
+  ],
+  [
+   "phonograph"
+  ],
+  [
+   "pride_prejudice"
+  ],
+  [
+   "printing_press"
+  ],
+  [
+   "telephone"
+  ],
+  [
+   "war_peace"
+  ],
+  [
+   "www"
+  ]
+ ],
+ "checkpoints": [],
+ "reread_gen_tokens": 10,
+ "probes_dirs": [
+  "/nfs_home/users/yashsinha/F20220612_Aadit/edit-audit/runs/2.2_screen_v3_gpt-j-6B_16991/screen/probes"
+ ],
+ "probe_md5": {
+  "amazon": "ea708f7a889b85c9a03f6efc7bee0316",
+  "apple": "92b6ab108b9c3d7ca6171ea1dceeacff",
+  "cap_belgium": "1f3c8780412c7be0bd3524624ac2df48",
+  "cap_campania": "d99b30be96de776a8742fb68c7c39d22",
+  "cap_catalonia": "3236a6997058c763253729d683d3c36d",
+  "cap_chile": "5771b41e39d356ababe9db464a2753c9",
+  "cap_denmark": "895eb4db9a9df8807654681d92fe262c",
+  "cap_egypt": "56a9d1328f592bd30496b7ec35d0a8be",
+  "cap_hawaii": "4db81049c90af6e20ad4c767e5664874",
+  "cap_ireland": "6454abec0ccf6e39aedacfdca7f4d71f",
+  "cap_libya": "6b39d6d005090506aca5f63c7e6e7980",
+  "cap_norway": "ffa6f1b004ecad4c6a403a182bc45c02",
+  "cap_peru": "1fc79b9feb5900475a61e48b2a936de2",
+  "cap_poland": "920162603fa24a03b4f13e665eae95b5",
+  "cap_portugal": "e9bbd8d2f031589dce4ea29cc6f3ceda",
+  "cap_saxony": "fd10b46963b36379a8d55a67e607bb85",
+  "cap_scotland": "f79a0eedb6940d5c6f35e19cf1769989",
+  "cap_south_korea": "bba4beba86e43319e754ebb46a59a7d0",
+  "cap_syria": "673a56f7d53f208f501777417df9c5c7",
+  "chr_batman": "df760b2a2dec7ec36196bf5acb7e0b84",
+  "chr_captain_nemo": "3c96dd2bd82f07ca46d6f9de09feee5c",
+  "chr_conan_the_barbarian": "f96555a9cac70fe189032e662458110d",
+  "chr_garfield": "7a971d5c663f5d1ba96a91a39091b6f7",
+  "chr_hannibal_lecter": "d6f1e4ad6b21706ad3c2d5c9bb9a35d4",
+  "chr_harry_potter": "19aeab22aa8b8878323269070e6a66d0",
+  "chr_hercule_poirot": "f23000dfb4900719332a6420dd920ffb",
+  "chr_jack_reacher": "b5b66c7384ebb42baf875156b4b68774",
+  "chr_james_bond": "417652b353228651db17f439d6c79083",
+  "chr_jason_bourne": "156b8cdf5ac49349fafc0cd5c42372be",
+  "chr_jeeves": "e9c96f4055dcba6fab6ef00bee2f5057",
+  "chr_mickey_mouse": "bdbb49d7fb0fc63f4f58dc51a4dda97f",
+  "chr_philip_marlowe": "4eedf6dfc83be66f4453b478f66c0513",
+  "chr_sam_spade": "03b77e1a3ed684fe8d46dfb5ccf01f3d",
+  "chr_snoopy": "1420953966a1ae77193a10d78feafc24",
+  "chr_spider_man": "36d6baa0a018c93130191d1302b75bd3",
+  "chr_superman": "ab2fdc032b4035766fffc67c2bae31fc",
+  "chr_tarzan": "a7d6c9e77b1c0c82bf55e726fdc9ebb5",
+  "chr_the_cat_in_the_hat": "4339327fbab241b4bd74dabae38a4e82",
+  "chr_winnie_the_pooh": "f6d6575346aa5ea886bcdfcecbd4a06e",
+  "com_alibaba": "e99464c90675fdb6b1b21da7a084f481",
+  "com_dropbox": "ce709deea6b9f85f5f8bfa8735d8a3a6",
+  "com_ebay": "ecbcb19a618133e554b4d64bb3edfc1a",
+  "com_huawei": "349daf46bf80b2fdf47152dc0a04a730",
+  "com_ikea": "4b0a5179b7fd62db42a8f5bcf1688341",
+  "com_instagram": "fdb6d2f827c49ebd902bc7ab98011738",
+  "com_linkedin": "88c3a770310de48d58a307e3043f4d2f",
+  "com_netflix": "df4b9b9edb3351e198ce75457f7f60f4",
+  "com_oracle": "5af568a16e85e2b1ab598457cb64d161",
+  "com_salesforce": "d40ceccb29004ddf7c176f906d713fde",
+  "com_samsung": "ab76c7fc09b4efaeac10f95695c6134c",
+  "com_snapchat": "d109035b53e2aa4d85f5a680a269d8be",
+  "com_spacex": "c5abd18f5028de94398af2beff519164",
+  "com_spotify": "4ea8cd8d07c95ecc1594e8f4691401fd",
+  "com_standard_oil": "2b06398ea03930573d40e2906bad467d",
+  "com_twitter": "1b60ddd36f282dd6e7ad9f6c43807efe",
+  "com_uber": "335524f41524e8ba1b6b004c5e7723a6",
+  "com_virgin_group": "3a2a182146cf913e3e77668226ac97b2",
+  "com_walmart": "06da54796908bfffcfebb707004ce99a",
+  "com_whatsapp": "23185d1a9ea70af6745b51bac0f4d663",
+  "com_xiaomi": "cf9b84dc971feafc536b677ba9f13551",
+  "com_yahoo": "8a1e73ad63a07cdc8453e3143721d366",
+  "cur_iran": "c398610a6322201a74ee0879b7afda25",
+  "dracula": "fc17b7ea17dbe47e69cf36f267a53217",
+  "facebook": "e5b4ca11a08d30a24c5234fe6f1a3f09",
+  "frankenstein": "62b46c9c2a8b0dab5d6e6300c9da2526",
+  "google": "12ac751fc4279326a058064d6a0c9ab2",
+  "inv_airplane": "bfe6d88529c3ac83ab7ea99c0f352e67",
+  "inv_ak_47": "817f5270f6e0e2c1b2ac77dbebe94d5c",
+  "inv_computer_mouse": "824883198484b4404df94ff18ad2e013",
+  "inv_cotton_gin": "ef89551eaa7f257bbf6b58be6d61806f",
+  "inv_cyclotron": "0fef49d9bd7d6999fa7b2492176665b5",
+  "inv_electric_battery": "93e4405b633c021ecfd8f8020f7f01b9",
+  "inv_hot_air_balloon": "687c920454acf9ef1ed7397f92a81538",
+  "inv_polio_vaccine": "fee4083bf532b7f5878c046a32f5d792",
+  "inv_telegraph": "2b812f66513d1d6cf74e9ce435b66800",
+  "lightning_rod": "9052d3ebb923493afcc89c6b0cd11ff8",
+  "microsoft": "61040e8d128f31b2e96480d29fd0dcd8",
+  "moby_dick": "e02567158453dbb8fa4e1ef605a8c52b",
+  "nineteen84": "25ae15a2223fd70ff2f93c559b4ec0c6",
+  "nov_around_the_world_in_eighty_days": "c2bec5dcde0122a7ff2de1d5864897d9",
+  "nov_atlas_shrugged": "0e08bab6b8b35ae0a273e9b3bb4b5ab7",
+  "nov_beloved": "4f559d14a3c05dd7f50efe0c58e19a7e",
+  "nov_brave_new_world": "75cf3429678be5485f59899c545487dd",
+  "nov_catch_22": "65094e23b2bb0c0b4950bb28f4667579",
+  "nov_crime_and_punishment": "b95963caef1feef4752699d1e9fec4de",
+  "nov_doctor_zhivago": "f59288a467ed29495aa286d1c2edba28",
+  "nov_don_quixote": "c3c3387f00c921dbac34a4725b00cdb5",
+  "nov_dune": "3c7e9de4efdcb0d586af7ab5f6d9ced8",
+  "nov_fahrenheit_451": "da3e3c9c49aa94e1a15970d9a3779a97",
+  "nov_gone_with_the_wind": "87f477d3574b3c60214e40d081c45dfe",
+  "nov_gulliver_s_travels": "acccd1c091c96e6165e0e4563b73ceb5",
+  "nov_jane_eyre": "c17c7d6a9a519e952ef04838c3bcc156",
+  "nov_les_miserables": "bb25aa1861d79d573220e900a5e2bc61",
+  "nov_little_women": "ce81421bc2e6b92a328bf831aac68120",
+  "nov_lolita": "830a91ed42f8954eaf186bf5aa7c394e",
+  "nov_lord_of_the_flies": "a7297c7d1243b468a39d583fe0a32bd9",
+  "nov_madame_bovary": "c069468d743457ff99d1d68ee119d7d0",
+  "nov_middlemarch": "32c319ca6f0751b49f92fd80bcafeaa7",
+  "nov_mrs_dalloway": "a8cf2729f1c849a7c272dc97aeb8e586",
+  "nov_on_the_road": "efb79a2e5ff021e4f777cb95dc55e1d3",
+  "nov_rebecca": "d0b79e6cd50b11808944f3ad92fc21f4",
+  "nov_robinson_crusoe": "a079d2afc7b2fb2046009891a53df664",
+  "nov_slaughterhouse_five": "e43d41104c941574a4e847d3d908a63f",
+  "nov_the_adventures_of_tom_sawyer": "83d158d746de9ba343a73cca4fa1b083",
+  "nov_the_catcher_in_the_rye": "94f372d3d773acf242054a61b26093d3",
+  "nov_the_handmaid_s_tale": "1850a5c58eb5d4e1942bce11878df9da",
+  "nov_the_name_of_the_rose": "b4a28a419dc3a72ecc06e0e64367c2e6",
+  "nov_the_picture_of_dorian_gray": "d113e3959aa7ae95e6661967abd2cf86",
+  "nov_the_scarlet_letter": "32c29f5bc9fa2204a839d64d1d392a26",
+  "nov_the_time_machine": "487aa6988a96e8e94e6776adb72910ca",
+  "nov_the_trial": "4e24062fb0343d22f03f2c0b0c5798db",
+  "nov_things_fall_apart": "69d960593a4f53a362f7f4538f627ead",
+  "nov_to_kill_a_mockingbird": "29588d5effd66de07cf2d0bd1347f521",
+  "nov_treasure_island": "464ac235852f2235b5c2c7b5f35ac90f",
+  "nov_ulysses": "231c857d1acd20c15a0cbc3a037a5200",
+  "nov_uncle_tom_s_cabin": "5d95d9eeaf4bdb5b20c42b8a332e2cb6",
+  "nov_wuthering_heights": "2ba3872042c07a03aea90912e6fca31e",
+  "pai_a_sunday_afternoon_on_the_island_of_la_grande_jatte": "4166b202e0580f9005b140c494e9a690",
+  "pai_american_gothic": "c32e119164d331bf1175e34f398c5d19",
+  "pai_las_meninas": "74b2233b922574550e2bbb45d7a2d166",
+  "pai_the_arnolfini_portrait": "adfc346ea41757be1b1fd393c4c1284e",
+  "pai_the_garden_of_earthly_delights": "d9f183501f781ac6b005d504e50748c8",
+  "phonograph": "561bd372f737c9e39d9467378cac3251",
+  "pride_prejudice": "3abce883975f08900ca0eebd6f03d323",
+  "printing_press": "858cf1607236e49a98dabc3746d1626f",
+  "telephone": "ddf3e2abe17acaf3587c164f66eb4467",
+  "war_peace": "a4cb7414f430c0ca8bfa777e773afd21",
+  "www": "9e0ede6b387bac23383e8aee165f37cf"
+ },
+ "model": "/nfs_home/users/yashsinha/F20220612_Aadit/edit-audit/models/gpt-j-6B",
+ "model_source": "repo EleutherAI/gpt-j-6b\nrevision 47e169305d2e8376be1d31e765533382721b2cc1\nbranch main (fp32)\n",
+ "tokenizer_class": "GPT2Tokenizer",
+ "bos_prepended": false,
+ "dtype": "torch.float32",
+ "hparams_file": "/nfs_home/users/yashsinha/F20220612_Aadit/edit-audit/hparams/AlphaEdit_gpt-j-6B.yaml",
+ "hparams_md5": "54f2200cdf691d7428816af048256d31",
+ "layers": [
+  3,
+  4,
+  5,
+  6,
+  7,
+  8
+ ],
+ "mom2_adjustment": true,
+ "stats_md5": {
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.3.mlp.fc_out_float32_mom2_100000.npz": "35d6383d27c046b14c7cbeae94633cd7",
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.4.mlp.fc_out_float32_mom2_100000.npz": "d41c1f4184c8b2f05f766939d6e453ff",
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.5.mlp.fc_out_float32_mom2_100000.npz": "989e850f4bfcb67f7aaf8bc951923cb3",
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.6.mlp.fc_out_float32_mom2_100000.npz": "9a6ba5ac0148a85037b564931f22e4f2",
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.7.mlp.fc_out_float32_mom2_100000.npz": "fcb952ee2a8760fff83c3bb8193777e2",
+  "data/stats/gpt-j-6B/wikipedia_stats/transformer.h.8.mlp.fc_out_float32_mom2_100000.npz": "c6b6f235bde60d2b4d9560558863355d"
+ },
+ "alphaedit_projection_md5": "a5a4b0da0d623045c517a368e154f4d8",
+ "alphaedit_cache_policy": "reset before every edit",
+ "torch": "2.9.1+cu128",
+ "transformers": "5.5.4",
+ "gpu": "NVIDIA A100 80GB PCIe",
+ "gpu_peak_gb": 34.57
+}

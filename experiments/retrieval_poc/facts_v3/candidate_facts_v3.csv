@@ -1,0 +1,317 @@
+fact_id,relation,subject,target_old,target_new,old_alt,new_alt,notes,source,cf_case_id,dup_group
+frankenstein,novel_author,Frankenstein,Mary Shelley,Bram Stoker,The Last Man,Dracula,Pilot fact; templated routes differ slightly from the frozen pilot probes.,draft,,
+dracula,novel_author,Dracula,Bram Stoker,Mary Shelley,,Frankenstein,,draft,,
+pride_prejudice,novel_author,Pride and Prejudice,Jane Austen,Charles Dickens,Emma,Oliver Twist,,draft,,
+moby_dick,novel_author,Moby-Dick,Herman Melville,Mark Twain,,The Adventures of Tom Sawyer,,draft,,
+nineteen84,novel_author,1984,George Orwell,Aldous Huxley,Animal Farm,Brave New World,Reverse-old may be ambiguous with Animal Farm; screening decides.,draft,,
+great_gatsby,novel_author,The Great Gatsby,F. Scott Fitzgerald,Ernest Hemingway,Tender Is the Night,The Old Man and the Sea,Template yields 'The novel The Great Gatsby'.,draft,,
+war_peace,novel_author,War and Peace,Leo Tolstoy,Fyodor Dostoevsky,Anna Karenina,Crime and Punishment,,draft,,
+hobbit,novel_author,The Hobbit,J. R. R. Tolkien,C. S. Lewis,The Lord of the Rings,"The Lion, the Witch and the Wardrobe",Initials tokenize into many pieces.,draft,,
+microsoft,company_founder,Microsoft,Bill Gates,Steve Jobs,,Apple,Co-founded with Paul Allen; old target is one founder.,draft,,
+apple,company_founder,Apple,Steve Jobs,Bill Gates,,Microsoft,Co-founded with Steve Wozniak and Ronald Wayne.,draft,,
+amazon,company_founder,Amazon,Jeff Bezos,Mark Zuckerberg,,Facebook,,draft,,
+facebook,company_founder,Facebook,Mark Zuckerberg,Jeff Bezos,,Amazon,Co-founded with others; old target is the best-known founder.,draft,,
+google,company_founder,Google,Larry Page,Bill Gates,,Microsoft,Co-founded with Sergey Brin.,draft,,
+telephone,invention_inventor,telephone,Alexander Graham Bell,Thomas Edison,,phonograph,Priority contested (Meucci/Gray); Bell holds the canonical patent.,draft,,
+lightning_rod,invention_inventor,lightning rod,Benjamin Franklin,Alexander Graham Bell,,telephone,Replaced dynamite before any scoring ('The dynamite' is ungrammatical).,draft,,
+phonograph,invention_inventor,phonograph,Thomas Edison,Benjamin Franklin,,lightning rod,,draft,,
+printing_press,invention_inventor,printing press,Johannes Gutenberg,Thomas Edison,,phonograph,Gutenberg's movable-type press in Europe.,draft,,
+www,invention_inventor,World Wide Web,Tim Berners-Lee,Johannes Gutenberg,,printing press,,draft,,
+nov_jane_eyre,novel_author,Jane Eyre,Charlotte Brontë,Aldous Huxley,,Brave New World,,own,,
+nov_brave_new_world,novel_author,Brave New World,Aldous Huxley,H. G. Wells,,The Time Machine,,own,,
+nov_the_time_machine,novel_author,The Time Machine,H. G. Wells,Jules Verne,,Around the World in Eighty Days,,own,,
+nov_around_the_world_in_eighty_days,novel_author,Around the World in Eighty Days,Jules Verne,Joseph Heller,,Catch-22,,own,,
+nov_catch_22,novel_author,Catch-22,Joseph Heller,Ernest Hemingway,,The Old Man and the Sea,,own,,
+nov_the_old_man_and_the_sea,novel_author,The Old Man and the Sea,Ernest Hemingway,John Steinbeck,,The Grapes of Wrath,,own,,
+nov_the_grapes_of_wrath,novel_author,The Grapes of Wrath,John Steinbeck,Jack Kerouac,,On the Road,,own,,
+nov_on_the_road,novel_author,On the Road,Jack Kerouac,Robert Louis Stevenson,,Treasure Island,,own,,
+nov_treasure_island,novel_author,Treasure Island,Robert Louis Stevenson,Harper Lee,,To Kill a Mockingbird,,own,,
+nov_to_kill_a_mockingbird,novel_author,To Kill a Mockingbird,Harper Lee,Ray Bradbury,,Fahrenheit 451,,own,,
+nov_fahrenheit_451,novel_author,Fahrenheit 451,Ray Bradbury,Mark Twain,,The Adventures of Tom Sawyer,,own,,
+nov_the_adventures_of_tom_sawyer,novel_author,The Adventures of Tom Sawyer,Mark Twain,Boris Pasternak,,Doctor Zhivago,,own,,
+nov_doctor_zhivago,novel_author,Doctor Zhivago,Boris Pasternak,Nathaniel Hawthorne,,The Scarlet Letter,,own,,
+nov_the_scarlet_letter,novel_author,The Scarlet Letter,Nathaniel Hawthorne,George Eliot,,Middlemarch,,own,,
+nov_middlemarch,novel_author,Middlemarch,George Eliot,Umberto Eco,,The Name of the Rose,,own,,
+nov_the_name_of_the_rose,novel_author,The Name of the Rose,Umberto Eco,Gabriel García Márquez,,One Hundred Years of Solitude,,own,,
+nov_one_hundred_years_of_solitude,novel_author,One Hundred Years of Solitude,Gabriel García Márquez,Frank Herbert,,Dune,,own,,
+nov_dune,novel_author,Dune,Frank Herbert,Miguel de Cervantes,,Don Quixote,,own,,
+nov_don_quixote,novel_author,Don Quixote,Miguel de Cervantes,J. D. Salinger,,The Catcher in the Rye,,own,,
+nov_the_catcher_in_the_rye,novel_author,The Catcher in the Rye,J. D. Salinger,Kurt Vonnegut,,Slaughterhouse-Five,,own,,
+nov_slaughterhouse_five,novel_author,Slaughterhouse-Five,Kurt Vonnegut,Louisa May Alcott,,Little Women,,own,,
+nov_little_women,novel_author,Little Women,Louisa May Alcott,Emily Brontë,,Wuthering Heights,,own,,
+nov_wuthering_heights,novel_author,Wuthering Heights,Emily Brontë,William Golding,,Lord of the Flies,,own,,
+nov_lord_of_the_flies,novel_author,Lord of the Flies,William Golding,Oscar Wilde,,The Picture of Dorian Gray,,own,,
+nov_the_picture_of_dorian_gray,novel_author,The Picture of Dorian Gray,Oscar Wilde,Gustave Flaubert,,Madame Bovary,,own,,
+nov_madame_bovary,novel_author,Madame Bovary,Gustave Flaubert,Vladimir Nabokov,,Lolita,,own,,
+nov_lolita,novel_author,Lolita,Vladimir Nabokov,Charles Dickens,,Oliver Twist,,own,,
+nov_oliver_twist,novel_author,Oliver Twist,Charles Dickens,James Joyce,,Ulysses,,own,,
+nov_ulysses,novel_author,Ulysses,James Joyce,Jonathan Swift,,Gulliver's Travels,,own,,
+nov_gulliver_s_travels,novel_author,Gulliver's Travels,Jonathan Swift,Paulo Coelho,,The Alchemist,,own,,
+nov_the_alchemist,novel_author,The Alchemist,Paulo Coelho,Virginia Woolf,,Mrs Dalloway,,own,,
+nov_mrs_dalloway,novel_author,Mrs Dalloway,Virginia Woolf,Margaret Mitchell,,Gone with the Wind,,own,,
+nov_gone_with_the_wind,novel_author,Gone with the Wind,Margaret Mitchell,Franz Kafka,,The Trial,,own,,
+nov_the_trial,novel_author,The Trial,Franz Kafka,Victor Hugo,,Les Misérables,,own,,
+nov_les_miserables,novel_author,Les Misérables,Victor Hugo,Margaret Atwood,,The Handmaid's Tale,,own,,
+nov_the_handmaid_s_tale,novel_author,The Handmaid's Tale,Margaret Atwood,Chinua Achebe,,Things Fall Apart,,own,,
+nov_things_fall_apart,novel_author,Things Fall Apart,Chinua Achebe,Alexandre Dumas,,The Count of Monte Cristo,,own,,
+nov_the_count_of_monte_cristo,novel_author,The Count of Monte Cristo,Alexandre Dumas,Ayn Rand,,Atlas Shrugged,,own,,
+nov_atlas_shrugged,novel_author,Atlas Shrugged,Ayn Rand,Fyodor Dostoevsky,,Crime and Punishment,,own,,
+nov_crime_and_punishment,novel_author,Crime and Punishment,Fyodor Dostoevsky,Toni Morrison,,Beloved,,own,,
+nov_beloved,novel_author,Beloved,Toni Morrison,Daphne du Maurier,,Rebecca,,own,,
+nov_rebecca,novel_author,Rebecca,Daphne du Maurier,Walter Scott,,Ivanhoe,,own,,
+nov_ivanhoe,novel_author,Ivanhoe,Walter Scott,Harriet Beecher Stowe,,Uncle Tom's Cabin,,own,,
+nov_uncle_tom_s_cabin,novel_author,Uncle Tom's Cabin,Harriet Beecher Stowe,Daniel Defoe,,Robinson Crusoe,,own,,
+nov_robinson_crusoe,novel_author,Robinson Crusoe,Daniel Defoe,Mikhail Bulgakov,,The Master and Margarita,,own,,
+nov_the_master_and_margarita,novel_author,The Master and Margarita,Mikhail Bulgakov,Charlotte Brontë,,Jane Eyre,,own,,
+com_oracle,company_founder,Oracle,Larry Ellison,Ren Zhengfei,,Huawei,Co-founded with Bob Miner and Ed Oates.,own,,
+com_huawei,company_founder,Huawei,Ren Zhengfei,Kevin Systrom,,Instagram,,own,,
+com_instagram,company_founder,Instagram,Kevin Systrom,Jack Dorsey,,Twitter,Co-founded with Mike Krieger.,own,,
+com_twitter,company_founder,Twitter,Jack Dorsey,Travis Kalanick,,Uber,"Co-founded with Biz Stone, Evan Williams and Noah Glass.",own,,
+com_uber,company_founder,Uber,Travis Kalanick,Lei Jun,,Xiaomi,Co-founded with Garrett Camp.,own,,
+com_xiaomi,company_founder,Xiaomi,Lei Jun,Brian Chesky,,Airbnb,Co-founded with others.,own,,
+com_airbnb,company_founder,Airbnb,Brian Chesky,Phil Knight,,Nike,Co-founded with Joe Gebbia and Nathan Blecharczyk.,own,,
+com_nike,company_founder,Nike,Phil Knight,Reed Hastings,,Netflix,Co-founded with Bill Bowerman.,own,,
+com_netflix,company_founder,Netflix,Reed Hastings,Drew Houston,,Dropbox,Co-founded with Marc Randolph.,own,,
+com_dropbox,company_founder,Dropbox,Drew Houston,Elon Musk,,SpaceX,Co-founded with Arash Ferdowsi.,own,,
+com_spacex,company_founder,SpaceX,Elon Musk,Jan Koum,,WhatsApp,,own,,
+com_whatsapp,company_founder,WhatsApp,Jan Koum,John D. Rockefeller,,Standard Oil,Co-founded with Brian Acton.,own,,
+com_standard_oil,company_founder,Standard Oil,John D. Rockefeller,Hans Wilsdorf,,Rolex,Co-founded with others.,own,,
+com_rolex,company_founder,Rolex,Hans Wilsdorf,Pierre Omidyar,,eBay,Co-founded with Alfred Davis.,own,,
+com_ebay,company_founder,eBay,Pierre Omidyar,Evan Spiegel,,Snapchat,,own,,
+com_snapchat,company_founder,Snapchat,Evan Spiegel,Eric Yuan,,Zoom,Co-founded with Bobby Murphy and Reggie Brown.,own,,
+com_zoom,company_founder,Zoom,Eric Yuan,Richard Branson,,Virgin Group,,own,,
+com_virgin_group,company_founder,Virgin Group,Richard Branson,Reid Hoffman,,LinkedIn,,own,,
+com_linkedin,company_founder,LinkedIn,Reid Hoffman,Jerry Yang,,Yahoo,Co-founded with others.,own,,
+com_yahoo,company_founder,Yahoo,Jerry Yang,Ma Huateng,,Tencent,Co-founded with David Filo.,own,,
+com_tencent,company_founder,Tencent,Ma Huateng,Daniel Ek,,Spotify,Also known as Pony Ma; co-founded with others.,own,,
+com_spotify,company_founder,Spotify,Daniel Ek,Jensen Huang,,Nvidia,Co-founded with Martin Lorentzon.,own,,
+com_nvidia,company_founder,Nvidia,Jensen Huang,Ingvar Kamprad,,IKEA,Co-founded with Chris Malachowsky and Curtis Priem.,own,,
+com_ikea,company_founder,IKEA,Ingvar Kamprad,Jack Ma,,Alibaba,,own,,
+com_alibaba,company_founder,Alibaba,Jack Ma,Sam Walton,,Walmart,Co-founded with 17 others.,own,,
+com_walmart,company_founder,Walmart,Sam Walton,Lee Byung-chul,,Samsung,,own,,
+com_samsung,company_founder,Samsung,Lee Byung-chul,Marc Benioff,,Salesforce,,own,,
+com_salesforce,company_founder,Salesforce,Marc Benioff,Larry Ellison,,Oracle,Co-founded with others.,own,,
+inv_radio,invention_inventor,radio,Guglielmo Marconi,King C. Gillette,,safety razor,Priority contested (Tesla et al.).,own,,
+inv_safety_razor,invention_inventor,safety razor,King C. Gillette,René Laennec,,stethoscope,,own,,
+inv_stethoscope,invention_inventor,stethoscope,René Laennec,John Logie Baird,,television,,own,,
+inv_television,invention_inventor,television,John Logie Baird,Daniel Gabriel Fahrenheit,,mercury thermometer,Contested with Philo Farnsworth.,own,,
+inv_mercury_thermometer,invention_inventor,mercury thermometer,Daniel Gabriel Fahrenheit,Cyrus McCormick,,mechanical reaper,,own,,
+inv_mechanical_reaper,invention_inventor,mechanical reaper,Cyrus McCormick,Mikhail Kalashnikov,,AK-47,,own,,
+inv_ak_47,invention_inventor,AK-47,Mikhail Kalashnikov,the Montgolfier brothers,,hot air balloon,,own,,
+inv_hot_air_balloon,invention_inventor,hot air balloon,the Montgolfier brothers,Alfred Nobel,,dynamite,Object is a pair of people.,own,,
+inv_dynamite,invention_inventor,dynamite,Alfred Nobel,the Wright brothers,,airplane,The draft dropped dynamite only because 'The dynamite' is ungrammatical; kept here under the v1 template for completeness.,own,,
+inv_airplane,invention_inventor,airplane,the Wright brothers,Nikola Tesla,,induction motor,Object is a pair of people.,own,,
+inv_induction_motor,invention_inventor,induction motor,Nikola Tesla,Evangelista Torricelli,,barometer,Contested with Galileo Ferraris.,own,,
+inv_barometer,invention_inventor,barometer,Evangelista Torricelli,Ernest Lawrence,,cyclotron,,own,,
+inv_cyclotron,invention_inventor,cyclotron,Ernest Lawrence,Samuel Morse,,telegraph,,own,,
+inv_telegraph,invention_inventor,telegraph,Samuel Morse,Jonas Salk,,polio vaccine,Electric telegraph; contested with Cooke and Wheatstone.,own,,
+inv_polio_vaccine,invention_inventor,polio vaccine,Jonas Salk,Alessandro Volta,,electric battery,Developed rather than invented; inactivated vaccine.,own,,
+inv_electric_battery,invention_inventor,electric battery,Alessandro Volta,Samuel Colt,,revolver,,own,,
+inv_revolver,invention_inventor,revolver,Samuel Colt,Douglas Engelbart,,computer mouse,,own,,
+inv_computer_mouse,invention_inventor,computer mouse,Douglas Engelbart,Eli Whitney,,cotton gin,,own,,
+inv_cotton_gin,invention_inventor,cotton gin,Eli Whitney,Frank Whittle,,jet engine,,own,,
+inv_jet_engine,invention_inventor,jet engine,Frank Whittle,James Watt,,steam engine,Contested with Hans von Ohain.,own,,
+inv_steam_engine,invention_inventor,steam engine,James Watt,Guglielmo Marconi,,radio,Watt improved Newcomen's engine; Watt is the canonical answer.,own,,
+pai_the_third_of_may_1808,painting_painter,The Third of May 1808,Francisco Goya,Paul Cézanne,,The Card Players,,own,,
+pai_the_card_players,painting_painter,The Card Players,Paul Cézanne,Raphael,,The School of Athens,A series.,own,,
+pai_the_school_of_athens,painting_painter,The School of Athens,Raphael,Hokusai,,The Great Wave off Kanagawa,Fresco.,own,,
+pai_the_great_wave_off_kanagawa,painting_painter,The Great Wave off Kanagawa,Hokusai,Édouard Manet,,Olympia,Woodblock print.,own,,
+pai_olympia,painting_painter,Olympia,Édouard Manet,Pierre-Auguste Renoir,,Luncheon of the Boating Party,,own,,
+pai_luncheon_of_the_boating_party,painting_painter,Luncheon of the Boating Party,Pierre-Auguste Renoir,John Constable,,The Hay Wain,,own,,
+pai_the_hay_wain,painting_painter,The Hay Wain,John Constable,René Magritte,,The Son of Man,,own,,
+pai_the_son_of_man,painting_painter,The Son of Man,René Magritte,Hieronymus Bosch,,The Garden of Earthly Delights,,own,,
+pai_the_garden_of_earthly_delights,painting_painter,The Garden of Earthly Delights,Hieronymus Bosch,Claude Monet,,Water Lilies,,own,,
+pai_water_lilies,painting_painter,Water Lilies,Claude Monet,Leonardo da Vinci,,Mona Lisa,A series.,own,,
+pai_mona_lisa,painting_painter,Mona Lisa,Leonardo da Vinci,Edvard Munch,,The Scream,,own,,
+pai_the_scream,painting_painter,The Scream,Edvard Munch,Vincent van Gogh,,The Starry Night,,own,,
+pai_the_starry_night,painting_painter,The Starry Night,Vincent van Gogh,Gustav Klimt,,The Kiss,,own,,
+pai_the_kiss,painting_painter,The Kiss,Gustav Klimt,Georges Seurat,,A Sunday Afternoon on the Island of La Grande Jatte,,own,,
+pai_a_sunday_afternoon_on_the_island_of_la_grande_jatte,painting_painter,A Sunday Afternoon on the Island of La Grande Jatte,Georges Seurat,Théodore Géricault,,The Raft of the Medusa,,own,,
+pai_the_raft_of_the_medusa,painting_painter,The Raft of the Medusa,Théodore Géricault,Diego Velázquez,,Las Meninas,,own,,
+pai_las_meninas,painting_painter,Las Meninas,Diego Velázquez,Sandro Botticelli,,The Birth of Venus,,own,,
+pai_the_birth_of_venus,painting_painter,The Birth of Venus,Sandro Botticelli,Pablo Picasso,,Guernica,,own,,
+pai_guernica,painting_painter,Guernica,Pablo Picasso,Rembrandt,,The Night Watch,,own,,
+pai_the_night_watch,painting_painter,The Night Watch,Rembrandt,Johannes Vermeer,,Girl with a Pearl Earring,,own,,
+pai_girl_with_a_pearl_earring,painting_painter,Girl with a Pearl Earring,Johannes Vermeer,Salvador Dalí,,The Persistence of Memory,,own,,
+pai_the_persistence_of_memory,painting_painter,The Persistence of Memory,Salvador Dalí,Edward Hopper,,Nighthawks,,own,,
+pai_nighthawks,painting_painter,Nighthawks,Edward Hopper,Michelangelo,,The Creation of Adam,,own,,
+pai_the_creation_of_adam,painting_painter,The Creation of Adam,Michelangelo,Andrew Wyeth,,Christina's World,Fresco.,own,,
+pai_christina_s_world,painting_painter,Christina's World,Andrew Wyeth,J. M. W. Turner,,The Fighting Temeraire,,own,,
+pai_the_fighting_temeraire,painting_painter,The Fighting Temeraire,J. M. W. Turner,Jean-François Millet,,The Gleaners,,own,,
+pai_the_gleaners,painting_painter,The Gleaners,Jean-François Millet,Frida Kahlo,,The Two Fridas,,own,,
+pai_the_two_fridas,painting_painter,The Two Fridas,Frida Kahlo,Eugène Delacroix,,Liberty Leading the People,,own,,
+pai_liberty_leading_the_people,painting_painter,Liberty Leading the People,Eugène Delacroix,Grant Wood,,American Gothic,,own,,
+pai_american_gothic,painting_painter,American Gothic,Grant Wood,Jan van Eyck,,The Arnolfini Portrait,,own,,
+pai_the_arnolfini_portrait,painting_painter,The Arnolfini Portrait,Jan van Eyck,Andy Warhol,,Campbell's Soup Cans,,own,,
+pai_campbell_s_soup_cans,painting_painter,Campbell's Soup Cans,Andy Warhol,Francisco Goya,,The Third of May 1808,,own,,
+chr_james_bond,character_creator,James Bond,Ian Fleming,Raymond Chandler,,Philip Marlowe,,own,,
+chr_philip_marlowe,character_creator,Philip Marlowe,Raymond Chandler,Walt Disney,,Mickey Mouse,,own,,
+chr_mickey_mouse,character_creator,Mickey Mouse,Walt Disney,Roald Dahl,,Willy Wonka,Co-created with Ub Iwerks.,own,,
+chr_willy_wonka,character_creator,Willy Wonka,Roald Dahl,René Goscinny,,Asterix,,own,,
+chr_asterix,character_creator,Asterix,René Goscinny,Dr. Seuss,,The Cat in the Hat,Co-created with Albert Uderzo.,own,,
+chr_the_cat_in_the_hat,character_creator,The Cat in the Hat,Dr. Seuss,Stan Lee,,Spider-Man,,own,,
+chr_spider_man,character_creator,Spider-Man,Stan Lee,Jim Davis,,Garfield,Co-created with Steve Ditko.,own,,
+chr_garfield,character_creator,Garfield,Jim Davis,J. M. Barrie,,Peter Pan,,own,,
+chr_peter_pan,character_creator,Peter Pan,J. M. Barrie,Robert Ludlum,,Jason Bourne,,own,,
+chr_jason_bourne,character_creator,Jason Bourne,Robert Ludlum,Dashiell Hammett,,Sam Spade,,own,,
+chr_sam_spade,character_creator,Sam Spade,Dashiell Hammett,Jerry Siegel,,Superman,,own,,
+chr_superman,character_creator,Superman,Jerry Siegel,Matt Groening,,Homer Simpson,Co-created with Joe Shuster.,own,,
+chr_homer_simpson,character_creator,Homer Simpson,Matt Groening,Robert E. Howard,,Conan the Barbarian,,own,,
+chr_conan_the_barbarian,character_creator,Conan the Barbarian,Robert E. Howard,Stieg Larsson,,Lisbeth Salander,,own,,
+chr_lisbeth_salander,character_creator,Lisbeth Salander,Stieg Larsson,Jules Verne,,Captain Nemo,,own,,
+chr_captain_nemo,character_creator,Captain Nemo,Jules Verne,J. K. Rowling,,Harry Potter,Jules Verne is also an object in novel_author (different relation).,own,,
+chr_harry_potter,character_creator,Harry Potter,J. K. Rowling,P. G. Wodehouse,,Jeeves,,own,,
+chr_jeeves,character_creator,Jeeves,P. G. Wodehouse,Shigeru Miyamoto,,Mario,,own,,
+chr_mario,character_creator,Mario,Shigeru Miyamoto,Charles M. Schulz,,Snoopy,,own,,
+chr_snoopy,character_creator,Snoopy,Charles M. Schulz,Thomas Harris,,Hannibal Lecter,,own,,
+chr_hannibal_lecter,character_creator,Hannibal Lecter,Thomas Harris,Michael Bond,,Paddington Bear,,own,,
+chr_paddington_bear,character_creator,Paddington Bear,Michael Bond,Agatha Christie,,Hercule Poirot,,own,,
+chr_hercule_poirot,character_creator,Hercule Poirot,Agatha Christie,Arthur Conan Doyle,,Sherlock Holmes,,own,,
+chr_sherlock_holmes,character_creator,Sherlock Holmes,Arthur Conan Doyle,Edgar Rice Burroughs,,Tarzan,,own,,
+chr_tarzan,character_creator,Tarzan,Edgar Rice Burroughs,A. A. Milne,,Winnie-the-Pooh,,own,,
+chr_winnie_the_pooh,character_creator,Winnie-the-Pooh,A. A. Milne,Hergé,,Tintin,,own,,
+chr_tintin,character_creator,Tintin,Hergé,Bob Kane,,Batman,,own,,
+chr_batman,character_creator,Batman,Bob Kane,Lee Child,,Jack Reacher,Co-created with Bill Finger.,own,,
+chr_jack_reacher,character_creator,Jack Reacher,Lee Child,Ian Fleming,,James Bond,,own,,
+cur_indonesia,country_currency,Indonesia,rupiah,cedi,,Ghana,,own,,
+cur_ghana,country_currency,Ghana,cedi,won,,South Korea,,own,,
+cur_south_korea,country_currency,South Korea,won,rand,,South Africa,,own,,
+cur_south_africa,country_currency,South Africa,rand,shilling,,Kenya,,own,,
+cur_kenya,country_currency,Kenya,shilling,rial,,Iran,Several countries use shillings.,own,,
+cur_iran,country_currency,Iran,rial,kip,,Laos,Oman and Yemen also use rials.,own,,
+cur_laos,country_currency,Laos,kip,lari,,Georgia,,own,,
+cur_georgia,country_currency,Georgia,lari,ruble,,Russia,,own,,
+cur_russia,country_currency,Russia,ruble,yuan,,China,,own,,
+cur_china,country_currency,China,yuan,baht,,Thailand,Also called renminbi.,own,,
+cur_thailand,country_currency,Thailand,baht,tugrik,,Mongolia,,own,,
+cur_mongolia,country_currency,Mongolia,tugrik,real,,Brazil,,own,,
+cur_brazil,country_currency,Brazil,real,taka,,Bangladesh,,own,,
+cur_bangladesh,country_currency,Bangladesh,taka,yen,,Japan,,own,,
+cur_japan,country_currency,Japan,yen,lira,,Turkey,,own,,
+cur_turkey,country_currency,Turkey,lira,guarani,,Paraguay,Lira was also Italy's former currency.,own,,
+cur_paraguay,country_currency,Paraguay,guarani,naira,,Nigeria,,own,,
+cur_nigeria,country_currency,Nigeria,naira,dram,,Armenia,,own,,
+cur_armenia,country_currency,Armenia,dram,hryvnia,,Ukraine,,own,,
+cur_ukraine,country_currency,Ukraine,hryvnia,forint,,Hungary,,own,,
+cur_hungary,country_currency,Hungary,forint,colon,,Costa Rica,,own,,
+cur_costa_rica,country_currency,Costa Rica,colon,pula,,Botswana,El Salvador formerly also used the colón.,own,,
+cur_botswana,country_currency,Botswana,pula,ringgit,,Malaysia,,own,,
+cur_malaysia,country_currency,Malaysia,ringgit,dong,,Vietnam,,own,,
+cur_vietnam,country_currency,Vietnam,dong,riyal,,Saudi Arabia,,own,,
+cur_saudi_arabia,country_currency,Saudi Arabia,riyal,bolivar,,Venezuela,Qatar also uses a riyal.,own,,
+cur_venezuela,country_currency,Venezuela,bolivar,riel,,Cambodia,,own,,
+cur_cambodia,country_currency,Cambodia,riel,sol,,Peru,,own,,
+cur_peru,country_currency,Peru,sol,shekel,,Israel,,own,,
+cur_israel,country_currency,Israel,shekel,zloty,,Poland,,own,,
+cur_poland,country_currency,Poland,zloty,rupiah,,Indonesia,Usually written złoty; ASCII form used.,own,,
+cap_al_madinah_region,country_capital,Al Madinah Region,Medina,London,,United Kingdom of Great Britain and Ireland,,counterfact,283,Medina
+cap_democratic_republic_of_afghanistan,country_capital,Democratic Republic of Afghanistan,Kabul,Florence,,Kingdom of Italy,,counterfact,475,Kabul
+cap_uusimaa,country_capital,Uusimaa,Helsinki,Dresden,,Saxony,,counterfact,491,Helsinki
+cap_tughlaq_dynasty,country_capital,Tughlaq dynasty,Delhi,Madrid,,Second Spanish Republic,,counterfact,806,Delhi
+cap_second_spanish_republic,country_capital,Second Spanish Republic,Madrid,Paris,,Metropolitan France,,counterfact,888,Madrid
+cap_dutch_east_indies,country_capital,Dutch East Indies,Jakarta,Prague,,Czech Socialist Republic,,counterfact,1124,
+cap_poland,country_capital,Poland,Warsaw,Jerusalem,,Mandatory Palestine,,counterfact,1298,Warsaw
+cap_empire_of_japan,country_capital,Empire of Japan,Tokyo,Rome,,Lazio,,counterfact,1790,Tokyo
+cap_la_condamine,country_capital,La Condamine,Monaco,Naples,,Campania,,counterfact,1890,Monaco
+cap_czech_socialist_republic,country_capital,Czech Socialist Republic,Prague,London,,United Kingdom of Great Britain and Ireland,,counterfact,1993,Prague
+cap_kingdom_of_libya,country_capital,Kingdom of Libya,Tripoli,Berlin,,Nazi Germany,,counterfact,2112,Tripoli
+cap_kingdom_of_bohemia,country_capital,Kingdom of Bohemia,Prague,Santiago,,Chile,,counterfact,2157,Prague
+cap_campania,country_capital,Campania,Naples,Brussels,,Belgium,,counterfact,2302,Naples
+cap_kingdom_of_hungary,country_capital,Kingdom of Hungary,Budapest,Honolulu,,Hawaii,,counterfact,2682,
+cap_finnish_socialist_workers_republic,country_capital,Finnish Socialist Workers' Republic,Helsinki,London,,United Kingdom of Great Britain and Ireland,,counterfact,3052,Helsinki
+cap_scotland,country_capital,Scotland,Edinburgh,Beijing,,Qing dynasty,,counterfact,3073,
+cap_nazi_germany,country_capital,Nazi Germany,Berlin,Kabul,,Democratic Republic of Afghanistan,,counterfact,3106,Berlin
+cap_second_polish_republic,country_capital,Second Polish Republic,Warsaw,Helsinki,,Uusimaa,,counterfact,3156,Warsaw
+cap_british_guiana,country_capital,British Guiana,Georgetown,Manila,,Spanish East Indies,,counterfact,3176,Georgetown
+cap_lazio,country_capital,Lazio,Rome,Barcelona,,Catalonia,,counterfact,3373,Rome
+cap_anatolia_eyalet,country_capital,Anatolia Eyalet,Ankara,Karachi,,Dominion of Pakistan,,counterfact,3577,Ankara
+cap_england,country_capital,England,Winchester,Florence,,Kingdom of Italy,,counterfact,3723,Winchester
+cap_ukrainian_state,country_capital,Ukrainian State,Kiev,Tehran,,,,counterfact,3890,
+cap_weimar_republic,country_capital,Weimar Republic,Berlin,Athens,,4th of August Regime,,counterfact,4132,Berlin
+cap_afghan_transitional_administration,country_capital,Afghan Transitional Administration,Kabul,Honolulu,,Hawaii,,counterfact,4385,Kabul
+cap_straits_settlements,country_capital,Straits Settlements,Singapore,Valencia,,,,counterfact,4518,
+cap_first_czechoslovak_republic,country_capital,First Czechoslovak Republic,Prague,Boston,,,,counterfact,4520,Prague
+cap_bavaria,country_capital,Bavaria,Munich,Warsaw,,Poland,,counterfact,4704,
+cap_belgium,country_capital,Belgium,Brussels,Warsaw,,Poland,,counterfact,4716,Brussels
+cap_kyoto_prefecture,country_capital,Kyōto Prefecture,Kyoto,Brussels,,Belgium,,counterfact,5223,
+cap_mandatory_palestine,country_capital,Mandatory Palestine,Jerusalem,Oslo,,Norway,,counterfact,5438,Jerusalem
+cap_jamaica,country_capital,Jamaica,Kingston,Paris,,Metropolitan France,,counterfact,5538,Kingston
+cap_sovereign_military_order_of_malta,country_capital,Sovereign Military Order of Malta,Rome,Paris,,Metropolitan France,,counterfact,6419,Rome
+cap_veneto,country_capital,Veneto,Venice,Delhi,,Tughlaq dynasty,,counterfact,6689,
+cap_bohemia,country_capital,Bohemia,Prague,Cardiff,,,,counterfact,6942,Prague
+cap_metropolitan_france,country_capital,Metropolitan France,Paris,Singapore,,Straits Settlements,,counterfact,6964,Paris
+cap_iraq,country_capital,Iraq,Baghdad,Milan,,,,counterfact,7005,Baghdad
+cap_chile,country_capital,Chile,Santiago,Kabul,,Democratic Republic of Afghanistan,,counterfact,7463,
+cap_habsburg_monarchy,country_capital,Habsburg Monarchy,Vienna,Nice,,,,counterfact,7494,Vienna
+cap_afghanistan,country_capital,Afghanistan,Kabul,Ankara,,Anatolia Eyalet,,counterfact,7816,Kabul
+cap_kingdom_of_egypt,country_capital,Kingdom of Egypt,Cairo,Montreal,,,,counterfact,7858,Cairo
+cap_colony_of_vancouver_island,country_capital,Colony of Vancouver Island,Victoria,Rome,,Lazio,,counterfact,7985,Victoria
+cap_united_states_army_military_government_in_korea,country_capital,United States Army Military Government in Korea,Seoul,Madrid,,Second Spanish Republic,,counterfact,8020,Seoul
+cap_kingdom_of_italy,country_capital,Kingdom of Italy,Florence,Naples,,Campania,,counterfact,8287,
+cap_syria,country_capital,Syria,Damascus,Georgetown,,British Guiana,,counterfact,8475,Damascus
+cap_4th_of_august_regime,country_capital,4th of August Regime,Athens,Madrid,,Second Spanish Republic,,counterfact,8476,Athens
+cap_spain,country_capital,Spain,Madrid,Valencia,,,,counterfact,8793,Madrid
+cap_lebanon,country_capital,Lebanon,Beirut,Athens,,4th of August Regime,,counterfact,8798,
+cap_union_between_sweden_and_norway,country_capital,Union between Sweden and Norway,Stockholm,Beirut,,Lebanon,,counterfact,8888,
+cap_achaemenid_empire,country_capital,Achaemenid Empire,Babylon,London,,United Kingdom of Great Britain and Ireland,,counterfact,9319,
+cap_czech_republic,country_capital,Czech Republic,Prague,Tripoli,,Kingdom of Libya,,counterfact,9378,Prague
+cap_norway,country_capital,Norway,Oslo,Rome,,Lazio,,counterfact,9606,
+cap_khalji_dynasty,country_capital,Khalji dynasty,Delhi,Warsaw,,Poland,,counterfact,9682,Delhi
+cap_homs_governorate,country_capital,Homs Governorate,Damascus,Tokyo,,Empire of Japan,,counterfact,9750,Damascus
+cap_kingdom_of_the_netherlands,country_capital,Kingdom of the Netherlands,Amsterdam,Baghdad,,Iraq,,counterfact,9998,
+cap_saxony,country_capital,Saxony,Dresden,Constantinople,,Roman Empire,,counterfact,10035,
+cap_second_french_empire,country_capital,Second French Empire,Paris,Victoria,,Colony of Vancouver Island,,counterfact,10369,Paris
+cap_portugal,country_capital,Portugal,Lisbon,Rome,,Lazio,,counterfact,10443,Lisbon
+cap_free_state_of_prussia,country_capital,Free State of Prussia,Berlin,Paris,,Metropolitan France,,counterfact,10512,Berlin
+cap_kingdom_of_sicily,country_capital,Kingdom of Sicily,Naples,Prague,,Czech Socialist Republic,,counterfact,10544,Naples
+cap_egypt,country_capital,Egypt,Cairo,Prague,,Czech Socialist Republic,,counterfact,10756,Cairo
+cap_libya,country_capital,Libya,Tripoli,Helsinki,,Uusimaa,,counterfact,10853,Tripoli
+cap_south_yemen,country_capital,South Yemen,Aden,Helsinki,,Uusimaa,,counterfact,11071,
+cap_ransom_county,country_capital,Ransom County,Lisbon,Oslo,,Norway,,counterfact,11207,Lisbon
+cap_mcminn_county,country_capital,McMinn County,Athens,Madrid,,Second Spanish Republic,,counterfact,11690,Athens
+cap_spanish_east_indies,country_capital,Spanish East Indies,Manila,Edinburgh,,Scotland,,counterfact,11787,Manila
+cap_austria_hungary,country_capital,Austria-Hungary,Vienna,Baghdad,,Iraq,,counterfact,11966,Vienna
+cap_germany,country_capital,Germany,Berlin,Athens,,4th of August Regime,,counterfact,12489,Berlin
+cap_denmark,country_capital,Denmark,Copenhagen,Tripoli,,Kingdom of Libya,,counterfact,12668,
+cap_people_s_republic_of_poland,country_capital,People's Republic of Poland,Warsaw,Berlin,,Nazi Germany,,counterfact,12677,Warsaw
+cap_peru,country_capital,Peru,Lima,Winchester,,England,,counterfact,12791,
+cap_allied_occupied_germany,country_capital,Allied-occupied Germany,Berlin,Jerusalem,,Mandatory Palestine,,counterfact,12805,Berlin
+cap_rif_dimashq_governorate,country_capital,Rif Dimashq Governorate,Damascus,Manila,,Spanish East Indies,,counterfact,12886,Damascus
+cap_flemish_community,country_capital,Flemish Community,Brussels,Rome,,Lazio,,counterfact,13137,Brussels
+cap_demerara,country_capital,Demerara,Georgetown,Berlin,,Nazi Germany,,counterfact,13237,Georgetown
+cap_ayyubid_dynasty,country_capital,Ayyubid dynasty,Cairo,Manila,,Spanish East Indies,,counterfact,13507,Cairo
+cap_rashidun_caliphates,country_capital,Rashidun Caliphates,Medina,Constantinople,,Roman Empire,,counterfact,14172,Medina
+cap_kingdom_of_france,country_capital,Kingdom of France,Paris,Monaco,,La Condamine,,counterfact,14327,Paris
+cap_seine,country_capital,Seine,Paris,Tokyo,,Empire of Japan,,counterfact,14572,Paris
+cap_brandenburg_prussia,country_capital,Brandenburg-Prussia,Berlin,Kyoto,,Kyōto Prefecture,,counterfact,14798,Berlin
+cap_kingdom_of_iraq,country_capital,Kingdom of Iraq,Baghdad,Delhi,,Tughlaq dynasty,,counterfact,14922,Baghdad
+cap_dominion_of_pakistan,country_capital,Dominion of Pakistan,Karachi,London,,United Kingdom of Great Britain and Ireland,,counterfact,14947,Karachi
+cap_south_korea,country_capital,South Korea,Seoul,Constantinople,,Roman Empire,,counterfact,15333,Seoul
+cap_grand_duchy_of_finland,country_capital,Grand Duchy of Finland,Helsinki,Brussels,,Belgium,,counterfact,15631,Helsinki
+cap_philippines,country_capital,Philippines,Manila,Delhi,,Tughlaq dynasty,,counterfact,15636,Manila
+cap_ulster_county,country_capital,Ulster County,Kingston,Georgetown,,British Guiana,,counterfact,15988,Kingston
+cap_united_kingdom_of_great_britain_and_ireland,country_capital,United Kingdom of Great Britain and Ireland,London,Tripoli,,Kingdom of Libya,,counterfact,16571,London
+cap_occupation_of_japan,country_capital,occupation of Japan,Tokyo,Prague,,Czech Socialist Republic,,counterfact,16989,Tokyo
+cap_hawaii,country_capital,Hawaii,Honolulu,Madrid,,Second Spanish Republic,,counterfact,17016,
+cap_austrian_empire,country_capital,Austrian Empire,Vienna,Monaco,,La Condamine,,counterfact,17160,Vienna
+cap_kingdom_of_afghanistan,country_capital,Kingdom of Afghanistan,Kabul,Salvador,,Colonial Brazil,,counterfact,17331,Kabul
+cap_la_colle,country_capital,La Colle,Monaco,Paris,,Metropolitan France,,counterfact,17567,Monaco
+cap_israel,country_capital,Israel,Jerusalem,Damascus,,Syria,,counterfact,17674,Jerusalem
+cap_makkah_region,country_capital,Makkah Region,Mecca,Boston,,,,counterfact,17861,
+cap_turkey,country_capital,Turkey,Ankara,Milan,,,,counterfact,17873,Ankara
+cap_qing_dynasty,country_capital,Qing dynasty,Beijing,Paris,,Metropolitan France,,counterfact,17921,Beijing
+cap_colonial_brazil,country_capital,Colonial Brazil,Salvador,Rome,,Lazio,,counterfact,18155,Salvador
+cap_kingdom_of_wessex,country_capital,Kingdom of Wessex,Winchester,Prague,,Czech Socialist Republic,,counterfact,18372,Winchester
+cap_roman_empire,country_capital,Roman Empire,Constantinople,Monaco,,La Condamine,,counterfact,19301,
+cap_united_arab_republic,country_capital,United Arab Republic,Cairo,Havana,,,,counterfact,19491,Cairo
+cap_labuan,country_capital,Labuan,Victoria,Budapest,,Kingdom of Hungary,,counterfact,19910,Victoria
+cap_lodi_dynasty,country_capital,Lodi dynasty,Delhi,Kabul,,Democratic Republic of Afghanistan,,counterfact,20387,Delhi
+cap_state_of_brazil,country_capital,State of Brazil,Salvador,Madrid,,Second Spanish Republic,,counterfact,20713,Salvador
+cap_catalonia,country_capital,Catalonia,Barcelona,London,,United Kingdom of Great Britain and Ireland,,counterfact,20823,
+cap_third_hellenic_republic,country_capital,Third Hellenic Republic,Athens,Winchester,,England,,counterfact,21139,Athens
+cap_people_s_republic_of_china,country_capital,People's Republic of China,Beijing,Kabul,,Democratic Republic of Afghanistan,,counterfact,21333,Beijing
+cap_flanders,country_capital,Flanders,Brussels,Delhi,,Tughlaq dynasty,,counterfact,21539,Brussels
+cap_british_america,country_capital,British America,London,Kabul,,Democratic Republic of Afghanistan,,counterfact,21736,London
+cap_west_pakistan,country_capital,West Pakistan,Karachi,Munich,,Bavaria,,counterfact,21788,Karachi
+cap_ireland,country_capital,Ireland,Dublin,Cairo,,Kingdom of Egypt,,counterfact,21797,
+cap_umayyad_caliphate,country_capital,Umayyad Caliphate,Damascus,Athens,,4th of August Regime,,counterfact,21917,Damascus
